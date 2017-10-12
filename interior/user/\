@@ -7,13 +7,22 @@
 #include <osapi.h>
 #include <spi_flash.h>
 #include <mem.h>
-#include "user_flash.h"
+
+// Memory Addresses - the ESP8266 doesn't have dedicated EEPROM, however the SDK
+// provides functions to write to flash memory, and guarantees that certain sectors
+// are left available for user data. Addresses below are handpicked from those 
+// sectors, starting from 0x0003C000. Flash is handled in 4KB sectors, numbered 
+// starting from 0
+#define USER_DATA_START_ADDR    0x0003C000
+#define USER_DATA_START_SECT    USER_DATA_START_ADDR / (4 * 1024)
+#define USER_DATA_END_ADDR      0x00040000
+#define USER_DATA_END_SECT      USER_DATA_END_SECT / (4 * 1024)
 
 // IP Macros
 #define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
 
 // Global Configurations (must be accessible from callback functions)
-struct softap_config ap_config = {      // SoftAP configuration
+struct softap_config ap_config = {        // SoftAP configuration
         "HBFC/D Wireless Setup",        // SSID
         "",                             // Password
         21,                             // SSID length
@@ -23,7 +32,7 @@ struct softap_config ap_config = {      // SoftAP configuration
         1,                              // Maximum connection #
         100                             // Beacon broadcast interval
 };
-struct station_config client_config;    // Station configuration
+struct station_config client_config;   // Station configuration
 
 // Software Timers
 os_timer_t timer_1;
@@ -31,7 +40,7 @@ os_timer_t timer_1;
 // Function prototypes
 void ICACHE_FLASH_ATTR user_init(void);
 void ICACHE_FLASH_ATTR user_scan(void);
-static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
+void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
 void ICACHE_FLASH_ATTR user_check_ip(void);
 void ICACHE_FLASH_ATTR user_apmode(void);
 
@@ -54,13 +63,49 @@ void ICACHE_FLASH_ATTR user_init(void)
         system_init_done_cb(user_scan);      
 }
 
+// Callback Function: user_scan()
+// Desc: Callback once system initialization is complete. Pulls saved connection 
+//      info from flash and checks for APs braodcasting that SSID. 
+void ICACHE_FLASH_ATTR user_scan(void)
+{
+        struct station_config *saved_conn = (struct station_config *)os_zalloc(sizeof(struct station_config));
+        struct scan_config ap_scan_config;
+        uint8 flash_result = 0; 
+
+        os_printf("init\r\n");
+
+        // Set ESP8266 to station (client) mode
+        wifi_set_opmode(STATION_MODE);
+        os_printf("opmode=station\r\n");
+
+        // Pull station info (SSID/pass) from memory
+        flash_result = spi_flash_read(USER_DATA_START_ADDR, (uint32 *)saved_conn, sizeof(struct station_config));
+        if (flash_result != SPI_FLASH_RESULT_OK) {
+                os_printf("flash read failed\r\n");
+        }
+        os_printf("read user_data, result=%d\r\n", flash_result);
+        os_printf("read_ssid=%s\r\n", saved_conn->ssid);
+        os_printf("read_pass=%s\r\n", saved_conn->password);
+        
+        client_config = *saved_conn;    // Save retrieved station configuration for later use
+
+        // Check for AP's broadcasting the saved SSID
+        ap_scan_config.ssid = saved_conn->ssid;
+        os_free(saved_conn);
+        if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
+                os_printf("AP scan failed\r\n");
+        }
+        os_printf("dropped to end\r\n");
+}
+
 // Callback Function: user_scan_done(void *arg, STATUS status)
 // Desc: Callback once AP scan is complete. Interprets AP scan results
 //      and hands off to another function accordingly.
 // Args:
 //      void *arg: Information on AP's found by wifi_station_scan
 //      STATUS status:  get status
-static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
+
+void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 {
         sint8 best_rssi = -128;         // Best RSSI from found APs
         uint8 *best_bssid;              // BSSID of best AP
@@ -105,52 +150,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         } else {
                 os_printf("no valid APs found with saved SSID\r\n");
                 user_apmode();          // Create network for user to reach the ESP8266
-        }
-}
-
-// Callback Function: user_scan()
-// Desc: Callback once system initialization is complete. Pulls saved connection 
-//      info from flash and checks for APs braodcasting that SSID. 
-void ICACHE_FLASH_ATTR user_scan(void)
-{
-        os_printf("entered user_scan\r\n");
-        struct scan_config ap_scan_config;
-        struct user_data_station_config  saved_conn;
-        uint8 flash_result = 0; 
-
-        os_printf("init\r\n");
-
-        // Set ESP8266 to station (client) mode
-        wifi_set_opmode(STATION_MODE);
-        os_printf("opmode=station\r\n");
-
-        // Pull station info (SSID/pass) from memory
-        flash_result = spi_flash_read(
-                        USER_DATA_START_ADDR, 
-                        (uint32 *)&saved_conn, 
-                        sizeof(struct user_data_station_config)
-        );
-        if (flash_result != SPI_FLASH_RESULT_OK) {
-                os_printf("flash read failed\r\n");
-        }
-        os_printf("read user_data, result=%d\r\n", flash_result);
-        os_printf("read_ssid=%s\r\n", saved_conn.config.ssid);
-        os_printf("read_pass=%s\r\n", saved_conn.config.password);
-        
-        client_config = saved_conn.config;    // Save retrieved station configuration for later use
-
-        os_printf("saved client info\r\n");
-
-        // Check for AP's broadcasting the saved SSID
-        os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
-        ap_scan_config.ssid = saved_conn.config.ssid;
-
-        os_printf("scanning ...\r\n");
-
-        if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
-                os_printf("AP scan failed\r\n");
-        }
-        os_printf("dropped to end\r\n");
+        }        
 }
 
 // Callback Function: user_check_ip()

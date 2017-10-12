@@ -7,7 +7,7 @@ CC = xtensa-lx106-elf-gcc
 # -mlongcalls : translate direct calls to indirect calls, unless it can
 #       be determined that the call is in range. Ensures calls to API
 #       functions (defined elswhere) work correctly
-CFLAGS = -I. -mlongcalls
+CFLAGS = -I. -mlongcalls -DICACHE_FLASH
 
 # === Linker Libraries === #
 # -nostdlib : disallow linker for searching the standard library for libraries. Only 
