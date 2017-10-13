@@ -8,14 +8,17 @@
 int main(int arg, char *argv[])
 {
 	int socket_desc;		//used as socket descriptor
-	int error = 0;
-	int broadcastPermission = 1;
+	int error = 0;			//error checking
 	char *bIP = "255.255.255.255";	//broadcast location
 	int bPort = 50000;		//currently arbitrary
 	struct sockaddr_in bAddress;	//contains destination info
 
 	//Sets the broadcast message
 	char *message = "Hello";
+
+	/*Variable containing our broadcast permissions
+	 * Permission Granted = 1; Permission Denied = 0;*/
+	int broadcastPermission = 1;
 
 	/* socket() opens a socket. AF_INET is the communication
 	 * protocol used, SOCK_DGRAM is the type of socket, final argument
