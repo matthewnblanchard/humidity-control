@@ -3,6 +3,9 @@
 // Description: Contains function / definitions to facilitate storage of user
 //      data in flash
 
+#ifndef USER_FLASH_H
+#define USER_FLASH_H
+
 #include <user_interface.h>
 
 // Memory Addresses - the ESP8266 doesn't have dedicated EEPROM, however the SDK
@@ -23,3 +26,5 @@ struct user_data_station_config {       // Client configuration info (SSID, etc)
         struct station_config config;   // Station config info - 103 bytes 
         uint8 pad[1];                   // Extra padding - 1 byte
 };
+
+#endif /* USER_FLASH_H */

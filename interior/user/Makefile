@@ -17,12 +17,17 @@ LDLIBS = -nostdlib -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -
 # === Linker Flags === #
 LDFLAGS = -Teagle.app.v6.ld
 
-user_main-0x00000.bin: user_main
+TARGET = user_main
+OBJ = user_main.o user_connect.o user_network.o
+
+user_main-0x00000.bin: $(TARGET)
 	esptool.py elf2image $^
 
-user_main: user_main.o
+user_main: $(OBJ)
+	$(CC) $(CFLAGS) $^ $(LDFLAGS) $(LDLIBS) -o $(TARGET)
 
-user_main.o: user_main.c
+%.0: %.c
+	$(CC) $(CFLAGS) $< $(LDFLAGS) $(LDLIBS)
 
 flash: user_main-0x00000.bin
 	esptool.py write_flash 0 user_main-0x00000.bin 0x10000 user_main-0x10000.bin
@@ -31,4 +36,4 @@ default: esp_init_data_default.bin
 	esptool.py write_flash 0x3FC000 esp_init_data_default.bin
 
 clean:
-	rm -f user_main user_main.o user_main-0x00000.bin user_main-0x10000.bin
+	rm -f user_main user_main.o user_connect.o user_network.o user_main-0x00000.bin user_main-0x10000.bin
