@@ -7,10 +7,14 @@
 #include <osapi.h>
 #include <spi_flash.h>
 #include <mem.h>
+#include <espconn.h>
 #include "user_flash.h"
 
 // IP Macros
 #define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
+
+// Port info
+#define UDP_LISTEN_PORT 5000
 
 // Global Configurations (must be accessible from callback functions)
 struct softap_config ap_config = {      // SoftAP configuration
@@ -25,6 +29,10 @@ struct softap_config ap_config = {      // SoftAP configuration
 };
 struct station_config client_config;    // Station configuration
 
+// espconn structs - these are control structures for TCP/UDP connections
+struct espconn udp_listen_conn;
+struct _esp_udp udp_listen_proto;
+
 // Software Timers
 os_timer_t timer_1;
 
@@ -34,6 +42,8 @@ void ICACHE_FLASH_ATTR user_scan(void);
 static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
 void ICACHE_FLASH_ATTR user_check_ip(void);
 void ICACHE_FLASH_ATTR user_apmode(void);
+void ICACHE_FLASH_ATTR user_check_connect(void);
+void ICACHE_FLASH_ATTR packet_rec_cb(void *arg, char *pdata, unsigned short len);
 
 // User Task: user_init()
 // Desc: Initialization. ESP8266 hooks into this function after boot.
@@ -71,14 +81,16 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         
         // Check AP info for valid APs
         if (status == OK) {
-                struct bss_info *scan_results = (struct bss_info *)arg;
-                while (scan_results != NULL) {
+                struct bss_info *scan_results = (struct bss_info *)arg;         // Copy BSS info from arguments
+
+                // Follow the queue of found APs to the end, comparing RSSI's for the best connection
+                while (scan_results != NULL) {                          
                         ap_count++;
-                        if (scan_results->rssi > best_rssi) {    // Check if RSSI beats the old best
+                        if (scan_results->rssi > best_rssi) {                   // Check if RSSI beats the old best
                                 best_rssi = scan_results->rssi;
                                 best_ap = scan_results;
                         }
-                        scan_results = scan_results->next.stqe_next;   // Move to next found AP
+                        scan_results = scan_results->next.stqe_next;            // Move to next found AP
                 }               
         }
 
@@ -87,11 +99,13 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                 best_bssid = best_ap->bssid;
                 os_printf("found %d APs, best_rssi=%d\r\n", ap_count, best_rssi);
                 os_printf("bssid=%x:%x:%x:%x:%x:%x\r\n",
-                        best_bssid[0],best_bssid[1],best_bssid[2],best_bssid[3],best_bssid[4],best_bssid[5]);
+                        best_bssid[0],best_bssid[1],best_bssid[2],best_bssid[3],best_bssid[4],best_bssid[5]);   // BSSI MAC in hex
 
                 // Connect
-                if (wifi_station_set_config(&client_config) == true) {
+                if (wifi_station_set_config(&client_config) == true) {          // Set client config (SSID/pass)
                         os_printf("station_config set\r\n");
+
+                        // Attempt to connect, check for obtained IP every second until an IP has been received
                         if (wifi_station_connect() == true) {
                                 os_printf("attempting to connect ...\r\n");
                                 os_timer_setfn(&timer_1, user_check_ip, NULL);  // Set timer callback function
@@ -168,9 +182,7 @@ void ICACHE_FLASH_ATTR user_scan(void)
         // Check for AP's broadcasting the saved SSID
         os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
         ap_scan_config.ssid = saved_conn.config.ssid;
-
         os_printf("scanning ...\r\n");
-
         if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
                 os_printf("AP scan failed\r\n");
         }
@@ -180,7 +192,6 @@ void ICACHE_FLASH_ATTR user_scan(void)
 // Callback Function: user_check_ip()
 // Desc: Called every 1000ms to check if the ESP8266 has received an IP. Disarms timer
 //      And moves forward when an IP is obtained
-
 void ICACHE_FLASH_ATTR user_check_ip(void)
 {
         struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info));
@@ -191,17 +202,33 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
         // Check if the ESP8266 has received an IP through DHCP
         if (status == STATION_GOT_IP) {
                 os_printf("ip received\r\n");
-                os_timer_disarm(&timer_1);      // Stop checking the connection
+                os_timer_disarm(&timer_1);                      // Stop checking the connection
                 if (wifi_get_ip_info(STATION_IF, ip) == true) { // Check ip info on station interface
                         os_printf("ip=%d.%d.%d.%d\r\n",
-                        IP_OCTET(ip->ip.addr,3),IP_OCTET(ip->ip.addr,2),
-                        IP_OCTET(ip->ip.addr,1),IP_OCTET(ip->ip.addr,0)); 
+                                IP_OCTET(ip->ip.addr,0),IP_OCTET(ip->ip.addr,1),
+                                IP_OCTET(ip->ip.addr,2),IP_OCTET(ip->ip.addr,3)); 
                         os_printf("netmask=%d.%d.%d.%d\r\n",
-                        IP_OCTET(ip->netmask.addr,3),IP_OCTET(ip->netmask.addr,2),
-                        IP_OCTET(ip->netmask.addr,1),IP_OCTET(ip->netmask.addr,0)); 
+                                IP_OCTET(ip->netmask.addr,0),IP_OCTET(ip->netmask.addr,1),
+                                IP_OCTET(ip->netmask.addr,2),IP_OCTET(ip->netmask.addr,3)); 
                         os_printf("gw=%d.%d.%d.%d\r\n",
-                        IP_OCTET(ip->gw.addr,3),IP_OCTET(ip->gw.addr,2),
-                        IP_OCTET(ip->gw.addr,1),IP_OCTET(ip->gw.addr,0)); 
+                                IP_OCTET(ip->gw.addr,0),IP_OCTET(ip->gw.addr,1),
+                                IP_OCTET(ip->gw.addr,2),IP_OCTET(ip->gw.addr,3)); 
+
+                        // Set up UDP listening connection
+                        os_memset(&udp_listen_conn, 0, sizeof(udp_listen_conn));        // Clear control structure
+                        os_memset(&udp_listen_proto, 0, sizeof(udp_listen_proto));      // Clear protocol structure
+                        udp_listen_conn.type = ESPCONN_UDP;                             // UDP protocol
+                        udp_listen_conn.state = ESPCONN_NONE;                           // UDP lacks state info, so no state
+                        udp_listen_conn.proto.udp = &udp_listen_proto;                  // Point to protocol info
+                        udp_listen_conn.recv_callback = packet_rec_cb;                  // Callback function on received data
+                        udp_listen_proto.local_port = UDP_LISTEN_PORT;                  // Local port
+                        //os_memcpy(&udp_listen_proto.remote_ip, &(ip->ip.addr), 4);      // Remote ip
+                        os_printf("configured udp listening\r\n");
+                        if (espconn_create(&udp_listen_conn) < 0) {
+                                os_printf("failed to start listening\r\n");
+                        } else {
+                                os_printf("started listening\r\n");
+                        }  
                 } else {
                         os_printf("failed tp check ip\r\n");
                 }
@@ -212,7 +239,6 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
 // Application Function: user_apmode()
 // Desc: On failure to locate the saved wireless network, switches the ESP8266
 //      to AP mode. 
-
 void ICACHE_FLASH_ATTR user_apmode(void)
 {
         wifi_set_opmode_current(SOFTAP_MODE);      // Set ESP8266 to AP mode
@@ -226,4 +252,40 @@ void ICACHE_FLASH_ATTR user_apmode(void)
         }
 
 
+}
+
+// Application Function: user_check_connect()
+// Desc: Checks for handshake packets from the user program and responds to them,
+//      in order for the user program to locate the ESP8266 and establish a
+//      connection with it.
+void ICACHE_FLASH_ATTR user_check_connect(void) 
+{
+        
+}
+
+// Callback Function: packet_rec_cb(void *arg, char *pdata, unsigned short len)
+// Desc: Callback function which is called whenever UDP or TCP data is received
+void ICACHE_FLASH_ATTR packet_rec_cb(void *arg, char *pdata, unsigned short len)
+{
+        os_printf("received data\r\n");
+        struct espconn *rec_conn = arg; 
+        remot_info *info = NULL;
+
+        if (rec_conn->type == ESPCONN_TCP) {
+                os_printf("type=tcp\r\n");
+        }
+        if (rec_conn->type == ESPCONN_UDP) {
+                os_printf("type=udp\r\n");
+        }
+        if (rec_conn->type == ESPCONN_INVALID) {
+                os_printf("type=invalid\r\n");
+        }
+
+        espconn_get_connection_info(rec_conn, &info, 0);
+        os_printf("src_ip=%d.%d.%d.%d",
+                info->remote_ip[0],
+                info->remote_ip[1],
+                info->remote_ip[2],
+                info->remote_ip[3]
+        );
 }
