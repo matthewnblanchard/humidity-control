@@ -120,15 +120,39 @@ void ICACHE_FLASH_ATTR user_scan(void)
 
         os_printf("init\r\n");
 
+        /* -------------- */
+        /* TEMPORARY CODE */
+        /* -------------- */
+        flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
+        if (flash_result != SPI_FLASH_RESULT_OK) {
+                os_printf("flash erase failed\r\n");
+        }
+        struct user_data_station_config test_config = {
+                "Soochboys",
+                "purplefinch654",
+                0x00
+        };
+        flash_result = spi_flash_write(
+                USER_DATA_START_ADDR,
+                (uint32 *)&test_config,
+                sizeof(struct user_data_station_config)
+        );
+        if (flash_result != SPI_FLASH_RESULT_OK) {
+                os_printf("flash write failed\r\n");
+        }
+        /* ------------------ */
+        /* TEMPORARY CODE END */
+        /* ------------------ */
+
         // Set ESP8266 to station (client) mode
         wifi_set_opmode(STATION_MODE);
         os_printf("opmode=station\r\n");
 
         // Pull station info (SSID/pass) from memory
         flash_result = spi_flash_read(
-                        USER_DATA_START_ADDR, 
-                        (uint32 *)&saved_conn, 
-                        sizeof(struct user_data_station_config)
+                USER_DATA_START_ADDR, 
+                (uint32 *)&saved_conn, 
+                sizeof(struct user_data_station_config)
         );
         if (flash_result != SPI_FLASH_RESULT_OK) {
                 os_printf("flash read failed\r\n");

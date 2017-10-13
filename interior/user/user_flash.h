@@ -11,9 +11,9 @@
 // sectors, starting from 0x0003C000. Flash is handled in 4KB sectors, numbered 
 // starting from 0
 
-#define USER_DATA_START_ADDR            0x0003C000
+#define USER_DATA_START_ADDR            0x00070000
 #define USER_DATA_START_SECT            USER_DATA_START_ADDR / (4 * 1024)
-#define USER_DATA_END_ADDR              0x00040000
+#define USER_DATA_END_ADDR              0x00080000
 #define USER_DATA_END_SECT              USER_DATA_END_SECT / (4 * 1024)        
 
 // Structures for saved data - all data to be saved/read from flash memory
