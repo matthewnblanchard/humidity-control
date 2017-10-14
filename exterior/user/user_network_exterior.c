@@ -1,18 +1,7 @@
-// user_network.c
+// user_network_ext.c
 // Authors: Christian Auspland & Matthew Blanchard
 
-#include "user_network.h"
-
-struct softap_config ap_config = {      // SoftAP configuration
-        "HBFC/D Wireless Setup",        // SSID
-        " ",                            // Password
-        0,                              // SSID length
-        1,                              // Channel
-        AUTH_OPEN,                      // Authentication mode
-        false,                          // SSID hidden
-        1,                              // Maximum connection #
-        100                             // Beacon broadcast interval
-};
+#include "user_network_ext.h"
 
 void ICACHE_FLASH_ATTR user_scan(void)
 {
@@ -28,7 +17,7 @@ void ICACHE_FLASH_ATTR user_scan(void)
                 os_printf("flash erase failed\r\n");
         }
         struct user_data_station_config test_config = {
-                "TESTTTTTT",
+                "Soochboys",
                 "purplefinch654",
                 0x00
         };
@@ -167,18 +156,4 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                 }
         }
         os_free(ip);
-};
-
-void ICACHE_FLASH_ATTR user_apmode(void)
-{
-        wifi_set_opmode_current(SOFTAP_MODE);           // Set ESP8266 to AP mode
- 
-        os_printf("opmode=softap\r\n");
-
-        if (wifi_softap_set_config(&ap_config) == true) {      // Configure SoftAP settings
-                os_printf("softap config succeeded\r\n");
-        } else {
-                os_printf("softap config failed\r\n");
-        }
-
 };
