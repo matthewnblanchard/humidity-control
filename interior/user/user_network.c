@@ -3,18 +3,7 @@
 
 #include "user_network.h"
 
-struct softap_config ap_config = {      // SoftAP configuration
-        "HBFC/D Wireless Setup",        // SSID
-        " ",                            // Password
-        0,                              // SSID length
-        1,                              // Channel
-        AUTH_OPEN,                      // Authentication mode
-        false,                          // SSID hidden
-        1,                              // Maximum connection #
-        100                             // Beacon broadcast interval
-};
-
-void ICACHE_FLASH_ATTR user_scan(void)
+void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
 {
         struct scan_config ap_scan_config;              // AP scanning config
         struct user_data_station_config  saved_conn;    // Retrieved station config
@@ -26,6 +15,8 @@ void ICACHE_FLASH_ATTR user_scan(void)
         flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
         if (flash_result != SPI_FLASH_RESULT_OK) {
                 os_printf("flash erase failed\r\n");
+                CALL_ERROR(ERR_FATAL);
+                return;
         }
         struct user_data_station_config test_config = {
                 "TESTTTTTT",
@@ -39,14 +30,15 @@ void ICACHE_FLASH_ATTR user_scan(void)
         );
         if (flash_result != SPI_FLASH_RESULT_OK) {
                 os_printf("flash write failed\r\n");
+                CALL_ERROR(ERR_FATAL);
+                return;
         }
         /* ------------------ */
         /* TEMPORARY CODE END */
         /* ------------------ */
 
         // Set ESP8266 to station (client) mode
-        wifi_set_opmode(STATION_MODE);
-        os_printf("opmode=station\r\n");
+        wifi_set_opmode_current(STATION_MODE);
 
         // Pull station info (SSID/pass) from memory
         flash_result = spi_flash_read(
@@ -56,19 +48,24 @@ void ICACHE_FLASH_ATTR user_scan(void)
         );
         if (flash_result != SPI_FLASH_RESULT_OK) {
                 os_printf("flash read failed\r\n");
+                CALL_ERROR(ERR_FATAL);
+                return;
         }
         os_printf("read user_data, result=%d\r\n", flash_result);
         os_printf("read_ssid=%s\r\n", saved_conn.config.ssid);
         os_printf("read_pass=%s\r\n", saved_conn.config.password);
-      
-        client_config = saved_conn.config;    // Save retrieved station configuration for later use
+     
+        // Save retrieved station configuration for later use 
+        client_config = saved_conn.config;
 
         // Check for AP's broadcasting the saved SSID
         os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));  // Clear scan config
         ap_scan_config.ssid = saved_conn.config.ssid;           // Scan based on SSID only
-        os_printf("scanning ...\r\n");
+        os_printf("scanning for APs\r\n");
         if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
                 os_printf("AP scan failed\r\n");
+                CALL_ERROR(ERR_FATAL);
+                return;
         }
 };
 
@@ -105,23 +102,26 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         best_bssid[4],best_bssid[5]);
 
                 // Connect
-                if (wifi_station_set_config(&client_config) == true) {          // Set client config (SSID/pass)
-                        os_printf("station_config set\r\n");
-
-                        // Attempt to connect, check for obtained IP every second until an IP has been received
-                        if (wifi_station_connect() == true) {
-                                os_printf("attempting to connect ...\r\n");
-                                os_timer_setfn(&timer_1, user_check_ip, NULL);  // Set timer callback function
-                                os_timer_arm(&timer_1, 1000, true);             // Check for an IP every 1000 ms
-                        } else {
-                                os_printf("connection attempt failed \r\n");
-                        }
-                } else {
+                if (wifi_station_set_config(&client_config) == false) {          // Set client config (SSID/pass)
                         os_printf("station_config failed\r\n");
+                        CALL_ERROR(ERR_FATAL);
+                        return;
+                }
+
+                // Attempt to connect, check for obtained IP every second until an IP has been received
+                if (wifi_station_connect() == true) {
+                        os_printf("attempting to connect ...\r\n");
+                        os_timer_setfn(&timer_1, user_check_ip, NULL);  // Set timer callback function
+                        os_timer_arm(&timer_1, 1000, true);             // Check for an IP every 1000 ms
+                } else {
+                       os_printf("connection attempt failed \r\n");
+                        CALL_ERROR(ERR_FATAL);
+                        return;
                 }
         } else {
-                os_printf("no valid APs found with saved SSID\r\n");
-                user_apmode();          // Create network for user to reach the ESP8266
+                os_printf("no valid APs found with saved SSID\r\n");    // Switch to AP mode
+                system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+                system_os_post(USER_TASK_PRIO_1, 0, 0); 
         }
 };
 
@@ -155,7 +155,6 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                         udp_listen_conn.proto.udp = &udp_listen_proto;                  // Point to protocol info
                         udp_listen_conn.recv_callback = udp_listen_cb;                  // Callback function on received data
                         udp_listen_proto.local_port = UDP_DISCOVERY_PORT;               // Local port
-                        //os_memcpy(&udp_listen_proto.remote_ip, &(ip->ip.addr), 4);    // Remote ip
                         os_printf("configured udp listening\r\n");
                         if (espconn_create(&udp_listen_conn) < 0) {
                                 os_printf("failed to start listening\r\n");
@@ -167,18 +166,4 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                 }
         }
         os_free(ip);
-};
-
-void ICACHE_FLASH_ATTR user_apmode(void)
-{
-        wifi_set_opmode_current(SOFTAP_MODE);           // Set ESP8266 to AP mode
- 
-        os_printf("opmode=softap\r\n");
-
-        if (wifi_softap_set_config(&ap_config) == true) {      // Configure SoftAP settings
-                os_printf("softap config succeeded\r\n");
-        } else {
-                os_printf("softap config failed\r\n");
-        }
-
 };
