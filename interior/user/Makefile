@@ -39,4 +39,4 @@ erase:
 	esptool.py erase_flash
 
 clean:
-	rm -f user_main user_main.o user_connect.o user_network.o user_main-0x00000.bin user_main-0x10000.bin
+	rm -f $(TARGET) $(OBJ) user_main-0x00000.bin user_main-0x10000.bin

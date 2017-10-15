@@ -70,6 +70,7 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         os_memset(&tcp_captive_proto, 0, sizeof(tcp_captive_proto));
         tcp_captive_proto.local_port = HTTP_PORT;                       // Listen for HTTP traffic
         tcp_captive_conn.type = ESPCONN_TCP;                            // TCP protocol
+        tcp_captive_conn.state = ESPCONN_NONE;
         tcp_captive_conn.proto.tcp = &tcp_captive_proto;
 
         // Register callbacks for the TCP server
@@ -90,4 +91,35 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg)
 {
         os_printf("client connected to the captive portal\r\n");
+        struct espconn *client_conn = arg;      // Grab connection control structure
+
+        // Register callbacks for the connected client
+        espconn_regist_recvcb(client_conn, user_captive_recv_cb);
+        espconn_regist_reconcb(client_conn, user_captive_recon_cb);
+        espconn_regist_disconcb(client_conn, user_captive_discon_cb);
+        espconn_regist_sentcb(client_conn, user_captive_sent_cb);
+};
+        
+void ICACHE_FLASH_ATTR user_captive_recon_cb(void *arg, sint8 err)
+{
+        os_printf("tcp connection error occured\r\n");
+};
+
+void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg)
+{
+        os_printf("tcp connection disconnected\r\n");
+};
+
+void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length)
+{
+        os_printf("received data from client\r\n");
+        os_printf("data=%s\r\n", pusrdata);
+
+        struct espconn *client_conn = arg;
+        espconn_send(client_conn, pusrdata, length);
+};
+
+void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg)
+{
+        os_printf("echoed to client\r\n");
 };

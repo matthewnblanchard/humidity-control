@@ -38,4 +38,32 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e);
 //      void *arg: pointer to the espconn which called this function
 void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg);
 
+// Callback Function: user_captive_recv_cb(void *arg, sint8 err)
+// Desc: Reconnect callback. This is called when an error occurs
+//      in the TCP connection
+// Args:
+//      void *arg: pointer to the espconn which called this function
+//      sint8 err: error code
+void ICACHE_FLASH_ATTR user_captive_recon_cb(void *arg, sint8 err);
+
+// Callback Function: user_captive_recv_cb(void *arg)
+// Desc: Disconnect callback. Called when a disconnection occurs
+// Args:
+//      void *arg: pointer to the espconn which called this function
+void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg);
+
+// Callback Function: user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length)
+// Desc: Data receipt callback. Called when the client sents a packet to the server
+// Args:
+//      void *arg: pointer to the espconn which called this function
+//      char *pusrdata: received client data
+//      unsigned short length: length of user data
+void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length);
+
+// Callback Function: user_captive_sent_cb(void *arg)
+// Desc: Data sent callback. Called when data is sent to the client
+// Args:
+//      void *arg: pointer to the espconn which called this function
+void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg);
+
 #endif
