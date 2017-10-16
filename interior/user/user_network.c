@@ -11,7 +11,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
 
         /* -------------- */
         /* TEMPORARY CODE */
-        /* -------------- */
+        /* -------------- *//*
         flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
         if (flash_result != SPI_FLASH_RESULT_OK) {
                 os_printf("flash erase failed\r\n");
@@ -33,7 +33,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
                 CALL_ERROR(ERR_FATAL);
                 return;
         }
-        /* ------------------ */
+        *//* ------------------ */
         /* TEMPORARY CODE END */
         /* ------------------ */
 

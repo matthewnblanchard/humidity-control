@@ -14,6 +14,48 @@ struct softap_config ap_config = {      // SoftAP configuration
         1000                            // Beacon broadcast interval
 };
 
+// HTML for captive portal webpage
+char *captive_page = {
+        "HTTP/1.1 200 OK\r\n\
+        Content-type: text/html\r\n\r\n\
+        <html>\
+        <head><title>HBFC/D Wireless Config</title></head>\
+        <body>\
+        <h1>\
+                Humidity Based Fan Controller / Dehumidifier Wifi Configuration<br>\
+        </h1>\
+        <p>\
+                The HBFC/D either couldn't find the SSID it has saved in memory,\
+                or the password was incorrect. Please enter wifi credentials and\
+                hit \"Submit\"<br>\
+        </p>\
+        <form id=\"wifi_config\" action=\"./submit\" method=\"post\">\
+                Wifi Credentials:<br><br>\
+                SSID:<br>\
+                <input type=\"text\" name=\"ssid\"><br>\
+                Password:<br>\
+                <input type=\"password\" name=\"pass\"><br>\
+                <input type=\"submit\" value=\"Submit\"><br>\
+        </form>\
+        </body>\
+        </html>"
+};
+
+// HTML for form submission page
+char *submit_page = {
+        "HTTP/1.1 200 OK\r\n\
+        Content-type: text/html\r\n\r\n\
+        <html>\
+        <head><title>HBFC/D Config Submission</title></head>\
+        <body>\
+        <p>\
+        Wireless configuration submitted. The system will attempt to connect to the\
+        given network.\
+        </p>\
+        </body>\
+        </html>"
+};
+
 void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 {
         // DHCP lease range
@@ -112,14 +154,73 @@ void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
+        struct espconn * client_conn = arg;                     // Pull client connection
+        uint8 flash_result = 0;                                 // Result of flash operation
+        char *p1;                                               // Char pointer for string manipulations
+        char *p2;                              
+        char *ssid;                                             // User sent SSID
+        uint8 ssid_len;                                         // Length of the SSID
+        char *pass;                                             // User sent password
+        uint8 pass_len;                                         // Length of the password
+
         os_printf("received data from client\r\n");
         os_printf("data=%s\r\n", pusrdata);
 
-        struct espconn *client_conn = arg;
-        espconn_send(client_conn, pusrdata, length);
+        // Check if we recieved an HTTP GET request
+        if (os_strncmp(pusrdata, "GET ", 4) == 0) {
+                os_printf("http GET request detected\r\n");
+
+                os_printf("sending captive portal\r\n");
+                espconn_send(client_conn, captive_page, os_strlen(captive_page)); 
+        }
+
+        // Check if we received an HTTP POST request
+        else if (os_strncmp(pusrdata, "POST ", 5) == 0) {
+                os_printf("user submitted config\r\n");
+                espconn_send(client_conn, submit_page, os_strlen(submit_page));
+
+                // Search for form data
+                p1 = (char *)os_strstr(pusrdata, "ssid=");      // Locate SSID
+                p1 = p1 + 5;                                    // Move past "ssid=" to the actual SSID
+                p2 = os_strchr(p1, '&');                        // Search for &, which separates values
+                ssid_len = (uint8)((uint32)p2 - (uint32)p1);    // Calculate SSID length
+                ssid = p1;                                      // Save location of SSID
+
+                p1 = (char *)os_strstr(pusrdata, "pass=");      // Locate password
+                p1 = p1 + 5;                                    // Move past "pass=" to the actual password
+                pass_len = os_strlen(p1);                       // Calculate password length.
+                pass = p1;
+
+                // Store retrieved data in flash     
+                struct user_data_station_config post_config;
+                os_memcpy(post_config.config.ssid, ssid, ssid_len);
+                os_memcpy(post_config.config.password, pass, pass_len);
+                post_config.config.ssid[ssid_len] = '\0';       
+                post_config.config.password[pass_len] = '\0';
+
+                flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
+                if (flash_result != SPI_FLASH_RESULT_OK) {
+                        os_printf("flash erase failed\r\n");
+                        CALL_ERROR(ERR_FATAL);
+                        return;
+                }
+
+                flash_result = spi_flash_write(
+                        USER_DATA_START_ADDR,
+                        (uint32 *)&post_config,
+                        sizeof(struct user_data_station_config)
+                );
+
+                if (flash_result != SPI_FLASH_RESULT_OK) {
+                        os_printf("flash write failed\r\n");
+                        CALL_ERROR(ERR_FATAL);
+                        return;
+                }
+                 
+        } 
 };
 
 void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg)
 {
-        os_printf("echoed to client\r\n");
+        os_printf("sent to client\r\n");
 };
