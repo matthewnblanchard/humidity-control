@@ -13,6 +13,7 @@
 #include <spi_flash.h>
 #include "user_task.h"
 #include "user_flash.h"
+#include "user_network.h"
 
 // Port definitions
 #define HTTP_PORT       80

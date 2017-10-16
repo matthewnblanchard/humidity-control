@@ -216,7 +216,16 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
                         CALL_ERROR(ERR_FATAL);
                         return;
                 }
-                 
+                
+                // Begin AP scan once again, with new credentials 
+                if (system_os_task(user_scan, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false) {
+                        os_printf("failed to initialize user_scan task\r\n");
+                        CALL_ERROR(ERR_FATAL);
+                }
+                if (system_os_post(USER_TASK_PRIO_1, 0, 0) == false) {
+                        os_printf("failed to call user_scan\r\n");
+                        CALL_ERROR(ERR_FATAL);
+                }
         } 
 };
 
