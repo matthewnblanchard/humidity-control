@@ -160,7 +160,12 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 os_printf("failed to start listening\r\n");
                         } else {
                                 os_printf("started listening\r\n");
-                        }  
+                        }
+
+                        // Register humidity reading timer
+                        os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
+                        os_timer_arm(&timer_humidity, 3000, true);
+
                 } else {
                         os_printf("failed tp check ip\r\n");
                 }

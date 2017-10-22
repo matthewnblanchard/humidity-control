@@ -6,6 +6,7 @@
 #include <osapi.h>
 #include "user_network.h"
 #include "user_task.h"
+#include "user_humidity.h"
 
 // Function prototypes
 void ICACHE_FLASH_ATTR user_init(void);
@@ -24,6 +25,9 @@ void ICACHE_FLASH_ATTR user_init(void)
         uart_div_modify(0, UART_CLK_FREQ / 115200);
 
         os_printf("UART speed set to 115200\r\n");
+
+        // Initialize I2C interface
+        user_i2c_init();
 
         // Once the system has finished initializing,
         //      continue initializing user tasks

@@ -14,6 +14,7 @@
 #include "user_connect.h"
 #include "user_captive.h"
 #include "user_task.h"
+#include "user_humidity.h"
 
 // Global configurations (must be accessible from callback functions)
 struct station_config client_config;            // Station configuration
