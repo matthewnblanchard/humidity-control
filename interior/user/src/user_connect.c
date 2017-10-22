@@ -110,6 +110,16 @@ void ICACHE_FLASH_ATTR user_front_discon_cb(void *arg)
 void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
         struct espconn *client_conn = arg;      // Pull client connection info 
+        uint8 *p1;                              // Character pointers for navagating data
+        uint8 *p2;
+        uint8 key[64];                          // Concatenated secure key
+        uint8 key_len = 0;                      // Length of secure key
+        uint8 guid_len = os_strlen(ws_guid);    // Length of GUID
+        uint8 sha1_sum[20];                     // SHA-1 Hash sum
+        uint8 sha1_key[32];                     // Secure key post-hash
+        uint8 olen = 0;                         // Base-64 econding length     
+        uint8 response_buf[256];                // Buffer for HTTP response
+        uint8 response_len = 0;                 // Length of HTTP response
 
         os_printf("received data from client\r\n");
         os_printf("data=%s\r\n", pusrdata);
@@ -120,10 +130,42 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                 os_printf("http GET request detected\r\n");
 
                 // Check if the request is for a web socket
-                if (os_strstr(pusrdata, "Upgrade: websocket") != NULL) {
-                        
+                if (os_strstr(pusrdata, ws_header) != NULL) {
 
-                // Check if the request is ordinary
+                // Get the secure key from the client data
+                p1 = (uint8 *)os_strstr(pusrdata, ws_key);      // Navigate to key line
+                p2 = (uint8 *)os_strstr(p1, "\r\n");            // Navigate to end of key
+                key_len = p2 - p1;
+
+                // Concatenate the secure key with the GUID for WebSockets
+                if (key_len + guid_len < 64) {
+                        os_memcpy(key, p1, key_len);                            // First half = client key
+                        os_memcpy(&key[key_len], ws_guid, guid_len);            // Second half = GUID        
+                        os_printf("concat_key=%s\r\n", key);    
+                } else {
+                        os_printf("failed to create websocket response\r\n");
+                        return;
+                } 
+
+                // Calculate SHA-1 Hash
+                mbedtls_sha1(key, guid_len + key_len - 1, sha1_sum);    
+
+                // Encode SHA-1 Hash in base 64
+                mbedtls_base64_encode(NULL, 0, &olen, sha1_sum, 20);                                    // Buffer length needed for Base64 encoding -> olen
+                if (mbedtls_base64_encode(sha1_key, sizeof(sha1_key), &olen, sha1_sum, 20) == 0) {      // Encode in base 64
+                       
+                        // Form WebSocket request response & send
+                        sha1_key[olen] = '\0'; 
+                        os_printf("base64=%s\r\n", sha1_key);
+                        response_len = os_sprintf(response_buf, ws_response, sha1_key); 
+                        espconn_send(client_conn, response_buf, response_len);                         
+                         
+                } else {
+                        os_printf("failed to create websocket response\r\n");
+                        return;
+                }
+
+                // The request is ordinary
                 } else {
                         os_printf("sending front page\r\n");
                         espconn_send(client_conn, front_page, os_strlen(front_page)); 

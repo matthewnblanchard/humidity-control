@@ -8,8 +8,10 @@
 #include <user_interface.h>
 #include <espconn.h>
 #include <osapi.h>
-#include "user_task.h"
 #include "mbedtls/sha1.h"
+#include "mbedtls/base64.h"
+#include "user_task.h"
+
 
 // Port definitions
 #define UDP_DISCOVERY_PORT 5000
