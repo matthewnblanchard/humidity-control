@@ -154,8 +154,8 @@ void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
-        struct espconn * client_conn = arg;                     // Pull client connection
-        uint8 flash_result = 0;                                 // Result of flash operation
+        struct espconn *client_conn = arg;                     // Pull client connection
+        sint8 flash_result = 0;                                 // Result of flash operation
         char *p1;                                               // Char pointer for string manipulations
         char *p2;                              
         char *ssid;                                             // User sent SSID
@@ -222,7 +222,7 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
                         os_printf("failed to initialize user_scan task\r\n");
                         CALL_ERROR(ERR_FATAL);
                 }
-                if (system_os_post(USER_TASK_PRIO_1, 0, 0) == false) {
+                if (system_os_post(USER_TASK_PRIO_1, SIG_CAPTIVE_DONE, 0) == false) {
                         os_printf("failed to call user_scan\r\n");
                         CALL_ERROR(ERR_FATAL);
                 }

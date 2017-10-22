@@ -16,6 +16,11 @@
 #include "user_task.h"
 #include "user_humidity.h"
 
+// User Task signals
+#define SIG_CAPTIVE_DONE 1      // Sent to user_scan when the captive portal has received data.
+                                // Causes user_scan to disconnect and delete the captive portal
+                                // connection.
+
 // Global configurations (must be accessible from callback functions)
 struct station_config client_config;            // Station configuration
 

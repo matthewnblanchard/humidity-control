@@ -9,6 +9,21 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         struct user_data_station_config  saved_conn;    // Retrieved station config
         uint8 flash_result = 0;                         // Result of flash operation 
 
+        // Delete captive portal connections if task call came from it
+        if (e->sig == SIG_CAPTIVE_DONE) {
+                if (espconn_disconnect(&tcp_captive_conn) < 0) {
+                        os_printf("failed to disconnect captive portal\r\n");
+                } else {
+                        os_printf("captive portal disconnected\r\n");
+                }
+
+                if (espconn_delete(&tcp_captive_conn) < 0) {
+                        os_printf("failed to terminate captive portal\r\n");                
+                } else {
+                        os_printf("captive portal terminated\r\n");
+                }
+        }
+
         /* -------------- */
         /* TEMPORARY CODE */
         /* -------------- *//*
@@ -165,6 +180,10 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                         // Register humidity reading timer
                         os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
                         os_timer_arm(&timer_humidity, 3000, true);
+
+                        // Initiate webserver
+                        system_os_task(user_front_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+                        system_os_post(USER_TASK_PRIO_1, 0, 0);
 
                 } else {
                         os_printf("failed tp check ip\r\n");

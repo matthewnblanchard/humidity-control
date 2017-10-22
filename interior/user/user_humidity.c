@@ -10,7 +10,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         uint16 humidity = 0;            // Humidity reading w/o calculations
         float adj_humidity = 0;         // Humidity reading after calculations
 
-        //wifi_set_opmode(NULL_MODE);     // Disable wifi for the duration of the read
+        os_printf("current sleep=%d\r\n", wifi_get_sleep_type());
+        wifi_set_sleep_type(MODEM_SLEEP_T);
 
         // Wake up the sensor by sending a measurement request. This consists of the slaves address
         // and a single 0 bit. 
@@ -43,7 +44,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 
         os_printf("reading=%d, humidity=%d, status=%d\r\n", humidity, (uint32)adj_humidity, status);
 
-        //wifi_set_opmode(STATION_MODE);                          // Re-enable Wifi      
+        wifi_set_sleep_type(NONE_SLEEP_T);
 
         return;
 };
