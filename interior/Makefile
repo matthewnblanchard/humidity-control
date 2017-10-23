@@ -38,10 +38,10 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) -c $(CFLAGS) $< $(LDFLAGS) $(LDLIBS) -o $@
 
 flash: $(BINDIR)/user_main-0x00000.bin
-	esptool.py --port /dev/ttyACM0 write_flash 0 user_main-0x00000.bin 0x10000 user_main-0x10000.bin
+	esptool.py --port /dev/ttyACM0 write_flash 0 $(BINDIR)/user_main-0x00000.bin 0x10000 $(BINDIR)/user_main-0x10000.bin
 
 default: $(BINDIR)/esp_init_data_default.bin
-	esptool.py --port /dev/ttyACM0 write_flash 0x3FC000 esp_init_data_default.bin
+	esptool.py --port /dev/ttyACM0 write_flash 0x3FC000 $(BINDIR)/esp_init_data_default.bin
 
 erase:
 	esptool.py --port /dev/ttyACM0 erase_flash
