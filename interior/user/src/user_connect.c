@@ -11,10 +11,14 @@ char *front_page = {
         <head>\
                 <title>HBFC/D Front Page</title>\
                 <script>\
-                        var websocket;\
+                        var ws;\
                         function button_ws() {\
-                                websocket = new WebSocket('ws://' + window.location.hostname + ':80/');\
-                                console.log('Web socket opened (hopefully)');\
+                                ws = new WebSocket('ws://' + window.location.hostname + ':80/');\
+                                console.log('WebSocket opened (hopefully)');\
+                                ws.onopen = function(evt) {\
+                                        console.log('WebSocket connected');\
+                                        ws.send('Hello HBFC/D');\
+                                };\
                         };\
                 </script>\
         <body>\
@@ -169,6 +173,9 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                                 response_len = os_sprintf(response_buf, ws_response, sha1_key); 
                                 espconn_send(client_conn, response_buf, response_len);
                                 os_printf("sent=%s\r\n", response_buf);                         
+
+                                // The connection has upgraded to a WebSocket. Apply WebSocket callbacks for data transmission
+                                espconn_regist_recvcb(client_conn, user_ws_recv_cb);
                          
                         } else {
                                 os_printf("failed to create websocket response\r\n");
@@ -188,4 +195,86 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
 void ICACHE_FLASH_ATTR user_front_sent_cb(void *arg)
 {
         os_printf("sent to client\r\n");
+};
+
+void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short length)
+{
+        struct espconn *client_conn= arg;       // Grab connection
+        uint8 opcode = 0;                       // WebSocket packet Opcode
+        uint64 payload_len = 0;                 // Payload size
+        uint8 mask[4];                          // Payload mask
+        bool mask_flag = 0;                     // Flag indicating if data is masked
+        uint8 mask_start = 0;                   // Index of start of mask
+        uint64 i = 0;                           // Loop index
+
+        /* Websocket Packet Structure ================================= */
+        /*                                                              */
+        /* Byte 0:                                                      */
+        /*      Bit 0:    FIN (1 if last packet, 0 otherwise            */
+        /*      Bit 1-3:  RSV (Reserved)                                */
+        /*      Bit 4-7:  OPCODE (denotes data type                     */
+        /* Byte 1:                                                      */
+        /*      Bit 0:    MASK (1 if data is masked)                    */
+        /*      Bit 1-7:  Payload Length (length of actual data)        */
+        /* ----- If Payload Length is 126        ---------------------- */
+        /* Byte 2-3:                                                    */
+        /*      Bit 0-7:  Extended payload length                       */
+        /* Byte 4-7:                                                    */
+        /*      Bit 0-7:  Masking key                                   */
+        /* ----- If Payload Length is 127 ----------------------------- */
+        /* Byte 2-9:                                                    */
+        /*      Bit 0-7:  Extended payload length                       */
+        /* Byte 10-13:                                                  */
+        /*      Bit 0-7:  Masking key                                   */
+        /* ----- Else ------------------------------------------------- */
+        /* Byte 2-5:                                                    */
+        /*      Bit 0-7: Masking key                                    */
+        /* ---- Always ------------------------------------------------ */
+        /* Byte 6/8/14 - ?:                                             */
+        /*      Bit 0-7: Payload data                                   */
+        /* ============================================================ */
+  
+        // The smallest possible packet (Opcode and payload length with no mask or payload)      
+        if (length < 2) {
+                os_printf("received malformed ws packet\r\n");
+                return;
+        }
+
+        // Evaluate Opcode 
+        opcode = (pusrdata[0] & 0x0F);
+        switch (opcode) {
+                case 0x01:      // Text   data
+                case 0x02:      // Binary data
+                case 0x08:      // Close signal
+                        os_printf("opcode=%d\r\n", opcode);
+
+                        // Parse payload length
+                        payload_len = (pusrdata[1] & 0xEF);
+                        if (payload_len == 126) {
+                                payload_len = ((uint64)pusrdata[2] << 8) | ((uint64)pusrdata[3] << 16);
+                                mask_start = 4;
+                        } else if (payload_len == 127) {
+                                payload_len = ((uint64)pusrdata[2] << 0) | ((uint64)pusrdata[3] << 8) | ((uint64)pusrdata[4] << 16) | ((uint64)pusrdata[5] << 24);
+                                payload_len |= ((uint64)pusrdata[6] << 32) | ((uint64)pusrdata[7] << 40) | ((uint64)pusrdata[8] << 48) | ((uint64)pusrdata[9] << 56);
+                                mask_start = 10;
+                        } else {
+                                mask_start = 2;
+                        } 
+
+                        // Extract mask if necessary
+                        mask_flag = pusrdata[1] & 0x80;
+                        if (mask_flag == 0) {
+                                os_printf("received unmasked packet=%s\r\n", pusrdata);
+                                return;
+                        }       
+                        os_strncpy(mask, &pusrdata[mask_start], 4); 
+
+                        // Perform unmasking operation: each byte can be unmasked by XORing it with byte (i % 4) of the mask
+                        for (i = 0; i < (length - mask_start + 4); i++) {
+                                pusrdata[mask_start + 4 + i] ^= mask[i % 4];
+                        }
+                        os_printf("received masked packet=%s\r\n", &pusrdata[mask_start + 4]);
+                        break;
+        }; 
+        return;
 };

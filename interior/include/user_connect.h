@@ -54,7 +54,7 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e);
 //      void *arg: pointer to the espconn which called this function
 void ICACHE_FLASH_ATTR user_front_connect_cb(void *arg);
 
-// Callback Function: user_front_recv_cb(void *arg, sint8 err)
+// Callback Function: user_front_recon_cb(void *arg, sint8 err)
 // Desc: Reconnect callback. This is called when an error occurs
 //      in the TCP connection
 // Args:
@@ -62,7 +62,7 @@ void ICACHE_FLASH_ATTR user_front_connect_cb(void *arg);
 //      sint8 err: error code
 void ICACHE_FLASH_ATTR user_front_recon_cb(void *arg, sint8 err);
 
-// Callback Function: user_front_recv_cb(void *arg)
+// Callback Function: user_front_discon_cb(void *arg)
 // Desc: Disconnect callback. Called when a disconnection occurs
 // Args:
 //      void *arg: pointer to the espconn which called this function
@@ -81,5 +81,13 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
 // Args:
 //      void *arg: pointer to the espconn which called this function
 void ICACHE_FLASH_ATTR user_front_sent_cb(void *arg);
+
+// Callback Function: user_ws_recv_cb(void *arg, char *pusrdata, unsigned short length)
+// Desc: Data receipt callback for the WebSocket connection.
+// Args:
+//      void *arg: pointer to the espconn which called this function
+//      char *pusrdata: received client data
+//      unsigned short length: length of user data
+void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short length);
 
 #endif /* USER_CONNECT_H */
