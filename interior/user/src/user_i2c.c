@@ -39,7 +39,7 @@ void ICACHE_FLASH_ATTR user_i2c_init(void)
         return;
 };
 
-void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state)
+static void user_i2c_sda_set(bool state)
 {
         // To drive the line low, pull the pin low (low output)
         // To "drive" the line high, let it float at Hi-Z (input)
@@ -52,7 +52,7 @@ void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state)
         return;
 };
 
-void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state)
+static void user_i2c_scl_set(bool state)
 {
         // To drive the line low, pull the pin low (low output)
         // To "drive" the line high, let it float at Hi-Z (input)
@@ -93,19 +93,19 @@ void ICACHE_FLASH_ATTR user_i2c_stop_bit(void)
         return;
 };
 
-bool ICACHE_FLASH_ATTR user_i2c_scl_read(void)
+static bool user_i2c_scl_read(void)
 {
         // Read and return SCL line
         return GPIO_INPUT_GET(GPIO_ID_PIN(SCL_PIN));
 };
 
-bool ICACHE_FLASH_ATTR user_i2c_sda_read(void)
+static bool user_i2c_sda_read(void)
 {
         // Read and return SDA line
         return GPIO_INPUT_GET(GPIO_ID_PIN(SDA_PIN));
 };
 
-uint8 ICACHE_FLASH_ATTR user_i2c_read_bit(void)
+static uint8 user_i2c_read_bit(void)
 {
         uint8 bit = 0;
 
@@ -125,7 +125,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_read_bit(void)
         return bit;
 };
 
-void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit)
+static void user_i2c_write_bit(uint8 bit)
 {
         // To write a bit, pull SCL low, write the desired bit to SDA,
         // then float SCL high delay and pull it back low

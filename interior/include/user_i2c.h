@@ -36,21 +36,21 @@
 //      None
 void ICACHE_FLASH_ATTR user_i2c_init(void);
 
-// void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state);
+// void user_i2c_sda_set(bool state);
 // Desc: Sets the SDA line to state (high or low)
 // Args:
 //      bool state: The desired state for SDA
 // Returns:
 //      Nothing
-void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state);
+static void user_i2c_sda_set(bool state);
 
-// void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state);
+// void user_i2c_scl_set(bool state);
 // Desc: Sets the SCL line to state (high or low)
 // Args:
 //      bool state: The desired state for SCL
 // Returns:
 //      Nothing
-void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state);
+static void user_i2c_scl_set(bool state);
 
 // void ICACHE_FLASH_ATTR user_i2c_start_bit(void);
 // Desc: Sends an I2C start bit
@@ -68,39 +68,39 @@ void ICACHE_FLASH_ATTR user_i2c_start_bit(void);
 //      Nothing
 void ICACHE_FLASH_ATTR user_i2c_stop_bit(void);
 
-// bool ICACHE_FLASH_ATTR user_i2c_scl_read(void);
+// bool user_i2c_scl_read(void);
 // Desc: Reads the SCL line
 // Args:
 //      None
 // Returns:
 //      SCL line state
-bool ICACHE_FLASH_ATTR user_i2c_scl_read(void);
+static bool user_i2c_scl_read(void);
 
-// bool ICACHE_FLASH_ATTR user_i2c_sda_read(void);
+// bool user_i2c_sda_read(void);
 // Desc: Reads the SDA line
 // Args:
 //      None
 // Returns:
 //      SDA line state
-bool ICACHE_FLASH_ATTR user_i2c_sda_read(void);
+static bool user_i2c_sda_read(void);
 
-// uint8 ICACHE_FLASH_ATTR user_i2c_read_bit(void);
+// uint8 user_i2c_read_bit(void);
 // Desc:
 //      Reads a single bit from the slave device
 // Args:
 //      None
 // Returns:
 //      The bit which was read
-uint8 ICACHE_FLASH_ATTR user_i2c_read_bit(void);
+static uint8 user_i2c_read_bit(void);
 
-// void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit);
+// void user_i2c_write_bit(uint8 bit);
 // Desc:
 //      Writes a single bit to the slave device
 // Args:
 //      uint8 bit: Bit to be written
 // Returns:
 //      Nothing
-void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit);
+static void user_i2c_write_bit(uint8 bit);
 
 // uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte);
 // Desc:
@@ -133,7 +133,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack);
 //      Nothing
 void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level);
 
-// uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void)
+// uint8 ICAHCE_FLASH_ATTR user_i2c_recv_ack(void)
 // Desc:
 //      Checks for an ACK/NACK from the slave device
 // Args:
