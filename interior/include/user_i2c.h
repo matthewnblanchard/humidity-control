@@ -42,7 +42,7 @@ void ICACHE_FLASH_ATTR user_i2c_init(void);
 //      bool state: The desired state for SDA
 // Returns:
 //      Nothing
-static void user_i2c_sda_set(bool state);
+static void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state);
 
 // void user_i2c_scl_set(bool state);
 // Desc: Sets the SCL line to state (high or low)
@@ -50,7 +50,7 @@ static void user_i2c_sda_set(bool state);
 //      bool state: The desired state for SCL
 // Returns:
 //      Nothing
-static void user_i2c_scl_set(bool state);
+static void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state);
 
 // void ICACHE_FLASH_ATTR user_i2c_start_bit(void);
 // Desc: Sends an I2C start bit
@@ -74,7 +74,7 @@ void ICACHE_FLASH_ATTR user_i2c_stop_bit(void);
 //      None
 // Returns:
 //      SCL line state
-static bool user_i2c_scl_read(void);
+static bool ICACHE_FLASH_ATTR user_i2c_scl_read(void);
 
 // bool user_i2c_sda_read(void);
 // Desc: Reads the SDA line
@@ -82,7 +82,7 @@ static bool user_i2c_scl_read(void);
 //      None
 // Returns:
 //      SDA line state
-static bool user_i2c_sda_read(void);
+static bool ICACHE_FLASH_ATTR user_i2c_sda_read(void);
 
 // uint8 user_i2c_read_bit(void);
 // Desc:
@@ -91,7 +91,7 @@ static bool user_i2c_sda_read(void);
 //      None
 // Returns:
 //      The bit which was read
-static uint8 user_i2c_read_bit(void);
+static ICACHE_FLASH_ATTR uint8 user_i2c_read_bit(void);
 
 // void user_i2c_write_bit(uint8 bit);
 // Desc:
@@ -100,7 +100,7 @@ static uint8 user_i2c_read_bit(void);
 //      uint8 bit: Bit to be written
 // Returns:
 //      Nothing
-static void user_i2c_write_bit(uint8 bit);
+static void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit);
 
 // uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte);
 // Desc:
