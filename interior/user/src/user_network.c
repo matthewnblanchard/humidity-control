@@ -24,34 +24,6 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
                 }
         }
 
-        /* -------------- */
-        /* TEMPORARY CODE */
-        /* -------------- *//*
-        flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
-        if (flash_result != SPI_FLASH_RESULT_OK) {
-                os_printf("flash erase failed\r\n");
-                CALL_ERROR(ERR_FATAL);
-                return;
-        }
-        struct user_data_station_config test_config = {
-                "TESTTTTTT",
-                "purplefinch654",
-                0x00
-        };
-        flash_result = spi_flash_write(
-                USER_DATA_START_ADDR,
-                (uint32 *)&test_config,
-                sizeof(struct user_data_station_config)
-        );
-        if (flash_result != SPI_FLASH_RESULT_OK) {
-                os_printf("flash write failed\r\n");
-                CALL_ERROR(ERR_FATAL);
-                return;
-        }
-        *//* ------------------ */
-        /* TEMPORARY CODE END */
-        /* ------------------ */
-
         // Set ESP8266 to station (client) mode
         wifi_set_opmode_current(STATION_MODE);
 
@@ -177,9 +149,13 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 os_printf("started listening\r\n");
                         }
 
+                        // Allocate memory for humidity sensor data buffers
+                        sensor_data_int = (float *)os_zalloc(SENSOR_BUFFER_SIZE * sizeof(float));                        
+
                         // Register humidity reading timer
                         os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
                         os_timer_arm(&timer_humidity, 3000, true);
+
 
                         // Initiate webserver
                         system_os_task(user_front_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);

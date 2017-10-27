@@ -11,6 +11,7 @@
 #include "mbedtls/sha1.h"
 #include "mbedtls/base64.h"
 #include "user_task.h"
+#include "user_humidity.h"
 
 
 // Port definitions
@@ -25,6 +26,10 @@ struct espconn udp_listen_conn;
 struct _esp_udp udp_listen_proto;
 struct espconn tcp_front_conn;
 struct _esp_tcp tcp_front_proto;
+
+// WebSocket update timer
+os_timer_t ws_timer;
+#define WS_UPDATE_TIME 500      // Update interval for the WebSocket in milliseconds
 
 /* ------------------- */
 /* Function prototypes */
@@ -89,5 +94,11 @@ void ICACHE_FLASH_ATTR user_front_sent_cb(void *arg);
 //      char *pusrdata: received client data
 //      unsigned short length: length of user data
 void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short length);
+
+// Callback Function: user_ws_update(void *parg)
+// Desc: Timer function which periodically sends updated information to the websocket
+// Args:
+//      void *parg: Pointer to espconn containing the websocket
+void ICACHE_FLASH_ATTR user_ws_update(void *parg);
 
 #endif /* USER_CONNECT_H */

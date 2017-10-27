@@ -3,15 +3,14 @@
 
 #include "user_humidity.h"
 
+uint16 data_index_int = 0;
+
 void ICACHE_FLASH_ATTR user_read_humidity(void)
 {
         uint8 status = 0;               // Status reported by humidity sensor
         uint8 read_byte = 0;            // Byte read from the humidity sensor
         uint16 humidity = 0;            // Humidity reading w/o calculations
         float adj_humidity = 0;         // Humidity reading after calculations
-
-        os_printf("current sleep=%d\r\n", wifi_get_sleep_type());
-        wifi_set_sleep_type(MODEM_SLEEP_T);
 
         // Wake up the sensor by sending a measurement request. This consists of the slaves address
         // and a single 0 bit. 
@@ -44,7 +43,9 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 
         os_printf("reading=%d, humidity=%d, status=%d\r\n", humidity, (uint32)adj_humidity, status);
 
-        wifi_set_sleep_type(NONE_SLEEP_T);
+        // Store humidity. Rotate to bottom of buffer if full
+        sensor_data_int[data_index_int] = adj_humidity;
+        (data_index_int >= SENSOR_BUFFER_SIZE - 1) ? (data_index_int = 0) : (data_index_int++);         // Wrap around buffer if full
 
         return;
 };

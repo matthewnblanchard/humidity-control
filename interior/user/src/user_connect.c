@@ -14,10 +14,18 @@ char *front_page = {
                         var ws;\
                         function button_ws() {\
                                 ws = new WebSocket('ws://' + window.location.hostname + ':80/');\
+                                ws.binaryType = \"arraybuffer\";\
                                 console.log('WebSocket opened (hopefully)');\
                                 ws.onopen = function(evt) {\
                                         console.log('WebSocket connected');\
                                         ws.send('Hello HBFC/D');\
+                                };\
+                                ws.onmessage = function(evt) {\
+                                        if(evt.data instanceof ArrayBuffer) {\
+                                                var buffer = evt.data;\
+                                                var view = new DataView(buffer);\
+                                                console.log(view.getFloat32(0));\
+                                        };\
                                 };\
                         };\
                 </script>\
@@ -26,6 +34,10 @@ char *front_page = {
                         Humidity Based Fan Controller / Dehumidifer Monitoring & Control\
                 </h1>\
                 <button id=\"ws_start\" type=\"button\" onclick=\"button_ws();\">Start Websocket</button>\
+                <p>\
+                        Interior Humidity:<br>\
+                        <div id=\"interior_humidity\">No reading yet ...</div><br>\
+                </p>\
         </body>\
         </html>"
 };
@@ -176,6 +188,10 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
 
                                 // The connection has upgraded to a WebSocket. Apply WebSocket callbacks for data transmission
                                 espconn_regist_recvcb(client_conn, user_ws_recv_cb);
+
+                                // Arm WebSocket update timer
+                                os_timer_setfn(&ws_timer, user_ws_update, client_conn);
+                                os_timer_arm(&ws_timer, WS_UPDATE_TIME, 1);
                          
                         } else {
                                 os_printf("failed to create websocket response\r\n");
@@ -278,3 +294,48 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
         }; 
         return;
 };
+
+void ICACHE_FLASH_ATTR user_ws_update(void *parg)
+{
+        sint8 result = 0;                       // Function result
+        struct espconn *ws_conn = parg;         // Grab WebSocket connection
+        uint8 data[6];                          // Packet data
+        os_memset(&data, 0, 6);                  
+        float humidity_int = 0;                 // Interior humidity reading
+
+        // Contruct packet. See user_sw_recv_cb for information on WebSocket packet structure.
+        //      Packets from the server should never be masked
+
+
+        // Contruct bytes 1 & 2
+        data[0] = (0x80) | (0x02);     // Unfragmented, binary data 
+        data[1] = 0x04;                // Unmasked, payload length 4 bytes  
+        
+        // Read humidity data
+        humidity_int = sensor_data_int[data_index_int == 0 ? SENSOR_BUFFER_SIZE : data_index_int - 1];
+        os_printf("sending humidity %d\n", (uint32)humidity_int);
+
+        // Organize payload in big endian format
+        os_memcpy(&data[2], &humidity_int, 4); 
+        user_endian_flip(&data[2], 4);  // Swap endianess
+
+        // Send data to WebSocket
+        result = espconn_send(ws_conn, data, 6);
+
+        return;
+};
+
+void user_endian_flip(uint8 *buf, uint8 n)
+{
+        uint8 swp = 0;  // Swap byte
+        uint8 i = 0;    // Loop index
+
+        // Swap each pair of bytes, moving in from the ends
+        for (i = 0; i < (n/2); i++) {
+                swp = buf[i];
+                buf[i] = buf[n - 1 - i];
+                buf[n - 1 - i] = swp;               
+        };
+
+        return;
+}
