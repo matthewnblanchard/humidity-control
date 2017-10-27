@@ -15,4 +15,4 @@ determines the humidity difference and drives the exhaust fan accordingly.
 
 The project also contains a user program, designed for Linux CLI use, which will
 locate and communicate with the ESP-12S modules, for debugging/logging purposes 
-as well as control purposes. 
+as well as control purposes.. 
