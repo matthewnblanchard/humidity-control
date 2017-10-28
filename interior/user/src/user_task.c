@@ -3,7 +3,7 @@
 
 #include "user_task.h"
 
-void user_task_error(os_event_t * e) 
+void ICACHE_FLASH_ATTR user_task_error(os_event_t * e) 
 {
         switch (e->sig) {
                 case ERR_FATAL:  // Fatal (default) error: hangs user program indefinetly

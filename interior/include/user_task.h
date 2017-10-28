@@ -43,5 +43,5 @@ os_timer_t timer_humidity;
 //      this task will handle recovery. If recovery is not possible, this task
 //      will call itself, forcing the user program to idle indefinetly until
 //      reset.
-void user_task_error(os_event_t * e);
+void ICACHE_FLASH_ATTR user_task_error(os_event_t * e);
 #endif
