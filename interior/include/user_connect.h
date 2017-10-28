@@ -101,4 +101,11 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
 //      void *parg: Pointer to espconn containing the websocket
 void ICACHE_FLASH_ATTR user_ws_update(void *parg);
 
+// Application Function: user_endian_flip(uint8 *buf, uint8 n)
+// Desc: Flips the endianness of the next n bytes of buf 
+// Args:
+//      uint8 *buf: Data buffer
+//      uint8 n: Number of bytes to invert
+void ICACHE_FLASH_ATTR user_endian_flip(uint8 *buf, uint8 n);
+
 #endif /* USER_CONNECT_H */

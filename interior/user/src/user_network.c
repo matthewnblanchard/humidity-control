@@ -149,13 +149,16 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 os_printf("started listening\r\n");
                         }
 
+			// Initialize the fan driving timer
+			user_fan_init();
+
                         // Allocate memory for humidity sensor data buffers
                         sensor_data_int = (float *)os_zalloc(SENSOR_BUFFER_SIZE * sizeof(float));                        
+			sensor_data_ext = (float *)os_zalloc(SENSOR_BUFFER_SIZE * sizeof(float));
 
                         // Register humidity reading timer
                         os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
                         os_timer_arm(&timer_humidity, 3000, true);
-
 
                         // Initiate webserver
                         system_os_task(user_front_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);

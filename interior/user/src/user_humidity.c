@@ -4,6 +4,8 @@
 #include "user_humidity.h"
 
 uint16 data_index_int = 0;
+uint16 data_index_ext = 0;
+float threshold_humidity = 40;
 
 void ICACHE_FLASH_ATTR user_read_humidity(void)
 {
@@ -47,5 +49,43 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         sensor_data_int[data_index_int] = adj_humidity;
         (data_index_int >= SENSOR_BUFFER_SIZE - 1) ? (data_index_int = 0) : (data_index_int++);         // Wrap around buffer if full
 
+	// Compare interior/exterior humidities
+	user_humidity_cmp();
+
         return;
+};
+
+void ICACHE_FLASH_ATTR user_humidity_cmp(void)
+{
+	float interior_humidity = 0;
+	float exterior_humidity = 0;	
+
+	// Pull current interior/exterior humidities
+	if (data_index_int == 0) {
+		interior_humidity = sensor_data_int[SENSOR_BUFFER_SIZE];
+	} else {
+		interior_humidity = sensor_data_int[data_index_int - 1];
+	};	
+	if (data_index_ext == 0) {
+		exterior_humidity = sensor_data_ext[SENSOR_BUFFER_SIZE];
+	} else {
+		exterior_humidity = sensor_data_ext[data_index_int - 1];
+	};
+
+	// Don't try to push the humidity below the threshold
+	if (interior_humidity <= threshold_humidity) {
+		drive_flag = false;
+		return;
+	
+	// Drive the humidity down if the interior is above the exterior
+	} else if (interior_humidity > exterior_humidity) {
+		drive_flag = true;
+		return;
+
+	// Otherise, do not try to drive the humidity down
+	} else {
+		drive_flag = false;
+		return;
+	}
+
 };

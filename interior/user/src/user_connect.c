@@ -325,7 +325,7 @@ void ICACHE_FLASH_ATTR user_ws_update(void *parg)
         return;
 };
 
-void user_endian_flip(uint8 *buf, uint8 n)
+void ICACHE_FLASH_ATTR user_endian_flip(uint8 *buf, uint8 n)
 {
         uint8 swp = 0;  // Swap byte
         uint8 i = 0;    // Loop index

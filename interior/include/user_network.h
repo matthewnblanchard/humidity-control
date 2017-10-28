@@ -15,6 +15,7 @@
 #include "user_captive.h"
 #include "user_task.h"
 #include "user_humidity.h"
+#include "user_fan.h"
 
 // User Task signals
 #define SIG_CAPTIVE_DONE 1      // Sent to user_scan when the captive portal has received data.
