@@ -120,8 +120,9 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                 }
         } else {
                 os_printf("no valid APs found with saved SSID\r\n");    // Switch to AP mode
-                system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
-                system_os_post(USER_TASK_PRIO_1, 0, 0); 
+                //commenting out these lines, as we won't be switching to AP mode
+		//system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+                //system_os_post(USER_TASK_PRIO_1, 0, 0); 
         }
 };
 

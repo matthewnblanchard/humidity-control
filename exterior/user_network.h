@@ -12,7 +12,7 @@
 #include <mem.h>
 #include "user_flash.h"
 #include "user_connect.h"
-#include "user_captive.h"
+//#include "user_captive.h"
 #include "user_task.h"
 
 // Global configurations (must be accessible from callback functions)
