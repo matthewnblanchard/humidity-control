@@ -1,6 +1,6 @@
 # Ignore everything except source code and README
-*
+*.*
+!.gitignore
+!.README.md
 !*.c
 !*.h
-!*.md
-!.gitignore
