@@ -8,6 +8,7 @@
 #include <user_interface.h>
 #include <espconn.h>
 #include <osapi.h>
+#include "user_network.h"
 
 // Port definitions
 #define UDP_DISCOVERY_PORT 5000
@@ -16,13 +17,17 @@
 #define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
 
 // espconn structs - these are control structures for TCP/UDP connections
-struct espconn udp_listen_conn;
-struct _esp_udp udp_listen_proto;
+struct espconn udp_broadcast_conn;
+struct _esp_udp udp_broadcast_proto;
 
 /* ------------------- */
 /* Function prototypes */
 /* ------------------- */
 
+// Task: udp_broadcast_send()
+// Desc: Broadcasts UDP discovery data over wireless network.
+// Args: none 
+void ICACHE_FLASH_ATTR udp_broadcast();
 
 // Callback Function: udp_listen_cb(void *arg, char *pdata, unsigned short len)
 // Desc: Callback function to be called when packets are received over the
@@ -31,6 +36,6 @@ struct _esp_udp udp_listen_proto;
 //      void *arg:              Passed espconn struct for the triggering connection
 //      char *pdata:            Packet data
 //      unsigned short len:     Data length
-void ICACHE_FLASH_ATTR udp_listen_cb(void *arg, char *pdata, unsigned short len);
+void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg);
 
 #endif /* USER_CONNECT_H */

@@ -33,6 +33,7 @@ os_timer_t timer_1;
 // Args: None
 void ICACHE_FLASH_ATTR user_scan(os_event_t *e);
 
+
 // Callback Function: user_scan_done(void *arg, STATUS status)
 // Desc: Callback once AP scan is complete. Interprets AP scan results
 //      and connects/sets up SoftAP accordingly

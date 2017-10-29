@@ -101,7 +101,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         best_bssid[0],best_bssid[1],best_bssid[2],best_bssid[3],
                         best_bssid[4],best_bssid[5]);
 
-                // Connect
+                // Save wifi configurations
                 if (wifi_station_set_config(&client_config) == false) {          // Set client config (SSID/pass)
                         os_printf("station_config failed\r\n");
                         CALL_ERROR(ERR_FATAL);
@@ -129,6 +129,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 void ICACHE_FLASH_ATTR user_check_ip(void)
 {
         struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info));
+	const char udp_broadcast_ip[4] = {255,255,255,255};
         uint8 status = wifi_station_get_connect_status();       // Check connection status
 
         os_printf("connecting ... status=%d\r\n", status);
@@ -149,18 +150,24 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 IP_OCTET(ip->gw.addr,2),IP_OCTET(ip->gw.addr,3)); 
 
                         // Set up UDP listening connection
-                        os_memset(&udp_listen_conn, 0, sizeof(udp_listen_conn));        // Clear control structure
-                        os_memset(&udp_listen_proto, 0, sizeof(udp_listen_proto));      // Clear protocol structure
-                        udp_listen_conn.type = ESPCONN_UDP;                             // UDP protocol
-                        udp_listen_conn.state = ESPCONN_NONE;                           // UDP lacks state info, so no state
-                        udp_listen_conn.proto.udp = &udp_listen_proto;                  // Point to protocol info
-                        udp_listen_conn.recv_callback = udp_listen_cb;                  // Callback function on received data
-                        udp_listen_proto.local_port = UDP_DISCOVERY_PORT;               // Local port
-                        os_printf("configured udp listening\r\n");
-                        if (espconn_create(&udp_listen_conn) < 0) {
-                                os_printf("failed to start listening\r\n");
+                        os_memset(&udp_broadcast_conn, 0, sizeof(udp_broadcast_conn));        // Clear control structure
+                        os_memset(&udp_broadcast_proto, 0, sizeof(udp_broadcast_proto));      // Clear protocol structure
+                        udp_broadcast_conn.type = ESPCONN_UDP;                             // UDP protocol
+                       //commented out because not sure if necessary
+			// udp_listen_conn.state = ESPCONN_NONE;                           // UDP lacks state info, so no state
+                        udp_broadcast_conn.proto.udp = (esp_udp *)os_zalloc(sizeof(esp_udp)); // Point to protocol info
+                        //udp_listen_conn.recv_callback = udp_listen_cb;                     // Callback function on received data
+                        udp_broadcast_proto.local_port = UDP_DISCOVERY_PORT;                  // Local port
+			//copy broadcast address to control structure
+			os_memcpy(udp_broadcast_conn.proto.udp->remote_ip, udp_broadcast_ip, 4);
+			espconn_regist_sentcb(&udp_broadcast_conn, udp_broadcast_cb);	//register send packet callback
+
+			os_printf("configured udp listening\r\n");
+                        if (espconn_create(&udp_broadcast_conn) < 0) {
+                                os_printf("failed to start broadcasting\r\n");
                         } else {
-                                os_printf("started listening\r\n");
+                                os_printf("started broadcasting\r\n");
+				udp_broadcast(); //send udp data
                         }  
                 } else {
                         os_printf("failed tp check ip\r\n");
