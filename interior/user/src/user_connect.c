@@ -215,7 +215,7 @@ void ICACHE_FLASH_ATTR user_front_sent_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
-        struct espconn *client_conn= arg;       // Grab connection
+        struct espconn *client_conn = arg;      // Grab connection
         uint8 opcode = 0;                       // WebSocket packet Opcode
         uint64 payload_len = 0;                 // Payload size
         uint8 mask[4];                          // Payload mask
