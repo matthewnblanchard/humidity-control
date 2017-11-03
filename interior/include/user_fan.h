@@ -9,6 +9,7 @@
 #include <user_interface.h>
 #include <osapi.h>
 #include <gpio.h>
+#include <eagle_soc.h>
 
 #define TRIAC_PULSE_PERIOD	3	// Pulse length in us for driving the triac
 // Fan supply definitions
@@ -17,8 +18,14 @@
 #define SUPPLY_HALF_CYCLE	SUPPLY_PERIOD / 2			// Fan supply half cycle period
 #define CALC_DELAY(X)		(SUPPLY_HALF_CYCLE * X) / FAN_RPM_MAX 	// Calculate delay required for RPM X
 
-#define TRIAC_GPIO	6	// GPIO pin connected to the fan triac
-#define ZCD_GPIO	7	// GPIO pin connected to the ZCD
+#define TRIAC_PIN	12	// GPIO pin connected to the fan triac
+#define TRIAC_BIT       BIT12
+#define TRIAC_MUX       PERIPHS_IO_MUX_MTDI_U
+#define TRIAC_FUNC      FUNC_GPIO12
+#define ZCD_PIN	        13	// GPIO pin connected to the ZCD
+#define ZCD_BIT         BIT13
+#define ZCD_MUX         PERIPHS_IO_MUX_MTCK_U
+#define ZCD_FUNC        FUNC_GPIO13
 
 extern bool drive_flag;		// Flag to indicate if fan should be driven
 extern uint16 drive_rpm;	// Desired fan drive speed
@@ -33,11 +40,6 @@ void ICACHE_FLASH_ATTR hw_timer_arm (u32 val);
 void ICACHE_FLASH_ATTR hw_timer_set_func(void (* user_hw_timer_cb_set)(void));
 void ICACHE_FLASH_ATTR hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req);
 /* ---------------------------------- */
-
-// Application Function: user_fan_init()
-// Desc: Initializes the GPIO pins and timers
-//	necessary to drive the fan 
-void ICACHE_FLASH_ATTR user_fan_init();
 
 // Interrupt Service Routine: user_gpio_isr(uint32 intr_mask, void *arg)
 // Desc: ISR called when a GPIO interrupt happens

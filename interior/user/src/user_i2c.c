@@ -3,42 +3,6 @@
 
 #include <user_i2c.h>
 
-
-
-void ICACHE_FLASH_ATTR user_i2c_init(void) 
-{
-        // Disable GPIO interrupts during initialization
-        ETS_GPIO_INTR_DISABLE();
-
-        // Set pin functions to GPIO 
-        PIN_FUNC_SELECT(SDA_MUX, SDA_FUNC);
-        PIN_FUNC_SELECT(SCL_MUX, SCL_FUNC);
-
-        // Enable internal pullups on SDA/SCL
-        // PIN_PULLUP_EN(SDA_MUX);
-        // PIN_PULLUP_EN(SCL_MUX);
-
-        // Set to open-drain
-        GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
-        GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
-
-        // Enable pins
-        GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | SDA_BIT);
-        GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | SCL_BIT);
-
-        // GPIO initialization
-        gpio_init();
-
-        // Re-enable GPIO interrupts
-        ETS_GPIO_INTR_ENABLE();
-
-        // Both pins begin high
-        user_i2c_sda_set(1);
-        user_i2c_scl_set(1);
-
-        return;
-};
-
 static void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state)
 {
         // To drive the line low, pull the pin low (low output)
@@ -61,34 +25,6 @@ static void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state)
         } else {
                 gpio_output_set(SCL_BIT, 0, SCL_BIT, 0);
         }
-
-        return;
-};
-
-
-void ICACHE_FLASH_ATTR user_i2c_start_bit(void)
-{
-        // An I2C start bit begins with both SDA & SCL high. It then
-        // pulls SDA low while keeping SCL high
-        user_i2c_sda_set(1);
-        user_i2c_scl_set(1);
-        os_delay_us(I2C_DELAY);
-        user_i2c_sda_set(0);
-        os_delay_us(I2C_DELAY);
-        user_i2c_scl_set(0);
-
-        return;
-};
-
-void ICACHE_FLASH_ATTR user_i2c_stop_bit(void)
-{
-        // An I2C stop bit starts with SDA low and SCL HIGH. It then
-        // pulls SDA high while keeping SCL high
-        os_delay_us(I2C_DELAY);
-        user_i2c_scl_set(1);
-        os_delay_us(I2C_DELAY);
-        user_i2c_sda_set(1);
-        os_delay_us(I2C_DELAY);
 
         return;
 };
@@ -135,6 +71,33 @@ static void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit)
         os_delay_us(I2C_DELAY);        
         user_i2c_scl_set(0);
         os_delay_us(I2C_DELAY);        
+
+        return;
+};
+
+void ICACHE_FLASH_ATTR user_i2c_start_bit(void)
+{
+        // An I2C start bit begins with both SDA & SCL high. It then
+        // pulls SDA low while keeping SCL high
+        user_i2c_sda_set(1);
+        user_i2c_scl_set(1);
+        os_delay_us(I2C_DELAY);
+        user_i2c_sda_set(0);
+        os_delay_us(I2C_DELAY);
+        user_i2c_scl_set(0);
+
+        return;
+};
+
+void ICACHE_FLASH_ATTR user_i2c_stop_bit(void)
+{
+        // An I2C stop bit starts with SDA low and SCL HIGH. It then
+        // pulls SDA high while keeping SCL high
+        os_delay_us(I2C_DELAY);
+        user_i2c_scl_set(1);
+        os_delay_us(I2C_DELAY);
+        user_i2c_sda_set(1);
+        os_delay_us(I2C_DELAY);
 
         return;
 };

@@ -4,13 +4,17 @@
 
 #include <user_interface.h>
 #include <osapi.h>
+#include <gpio.h>
 #include "user_network.h"
 #include "user_task.h"
 #include "user_humidity.h"
+#include "user_i2c.h"
+#include "user_fan.h"
 
 // Function prototypes
 void ICACHE_FLASH_ATTR user_init(void);
 void ICACHE_FLASH_ATTR user_task_init(void);
+void ICACHE_FLASH_ATTR user_gpio_init(void);
 
 // User Task: user_init()
 // Desc: Initialization. ESP8266 hooks into this function after boot.
@@ -26,8 +30,8 @@ void ICACHE_FLASH_ATTR user_init(void)
 
         os_printf("UART speed set to 115200\r\n");
 
-        // Initialize I2C interface
-        user_i2c_init();
+        // Initialize GPIO interfaces
+        user_gpio_init();
 
         // Once the system has finished initializing,
         //      continue initializing user tasks
@@ -56,3 +60,45 @@ void ICACHE_FLASH_ATTR user_task_init(void)
                 CALL_ERROR(ERR_FATAL);
         }
 }
+
+void ICACHE_FLASH_ATTR user_gpio_init(void)
+{
+        // Disable GPIO interrupts during initialization
+        ETS_GPIO_INTR_DISABLE();
+
+        // Set pin functions to GPIO 
+        PIN_FUNC_SELECT(SDA_MUX, SDA_FUNC);
+        PIN_FUNC_SELECT(SCL_MUX, SCL_FUNC);
+        PIN_FUNC_SELECT(TRIAC_MUX, TRIAC_FUNC);
+        PIN_FUNC_SELECT(ZCD_MUX, ZCD_FUNC);
+
+        // Enable internal pullups on SDA/SCL
+        // PIN_PULLUP_EN(SDA_MUX);
+        // PIN_PULLUP_EN(SCL_MUX);
+
+        // Set to open-drain
+        GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
+        GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
+
+        // Enable pins
+        GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | SDA_BIT);
+        GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | SCL_BIT);
+        GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | TRIAC_BIT);
+        GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | ZCD_BIT);
+
+	// Initialize HW timer
+	hw_timer_init(FRC1_SOURCE, 1);
+
+	// Initialize ZCD
+	gpio_output_set(0, 0, 0, ZCD_BIT);     // Set ZCD pin as input
+        gpio_intr_handler_register(user_gpio_isr, 0);   // Register GPIO ISR
+        gpio_pin_intr_state_set(ZCD_BIT, GPIO_PIN_INTR_NEGEDGE);       // Falling edge triggers
+
+        // GPIO initialization
+        gpio_init();
+
+        // Re-enable GPIO interrupts
+        ETS_GPIO_INTR_ENABLE();
+
+        return;
+};

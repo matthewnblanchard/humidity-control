@@ -58,7 +58,6 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e);
 // Args:
 //      void *arg: pointer to the espconn which called this function
 void ICACHE_FLASH_ATTR user_front_connect_cb(void *arg);
-
 // Callback Function: user_front_recon_cb(void *arg, sint8 err)
 // Desc: Reconnect callback. This is called when an error occurs
 //      in the TCP connection
