@@ -19,7 +19,9 @@ void ICACHE_FLASH_ATTR udp_broadcast()
 	wifi_get_macaddr(STATION_IF, macaddr);
 	
 	espconn_send(&udp_broadcast_conn, buffer, os_strlen(buffer));	
-}	
+}
+
+
 void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg)
 {
         struct espconn *rec_conn = arg;         // Pull espconn from passed args
@@ -42,3 +44,4 @@ void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg)
         );
 	*/
 }
+

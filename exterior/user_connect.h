@@ -12,6 +12,7 @@
 
 // Port definitions
 #define UDP_DISCOVERY_PORT 5000
+#define HTTP_PORT 80
 
 // IP Macros
 #define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
@@ -19,6 +20,7 @@
 // espconn structs - these are control structures for TCP/UDP connections
 struct espconn udp_broadcast_conn;
 struct _esp_udp udp_broadcast_proto;
+struct station_config station_conn;
 
 /* ------------------- */
 /* Function prototypes */
@@ -28,6 +30,7 @@ struct _esp_udp udp_broadcast_proto;
 // Desc: Broadcasts UDP discovery data over wireless network.
 // Args: none 
 void ICACHE_FLASH_ATTR udp_broadcast();
+
 
 // Callback Function: udp_listen_cb(void *arg, char *pdata, unsigned short len)
 // Desc: Callback function to be called when packets are received over the

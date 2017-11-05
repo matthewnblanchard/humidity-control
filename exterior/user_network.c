@@ -75,6 +75,9 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         uint8 *best_bssid;              // BSSID of best AP
         struct bss_info *best_ap;       // AP with best RSSI 
         uint8 ap_count = 0;             // Number of APs found
+	char ssid[32] = "HBFC/D Wireless Setup";
+	char password[64] = "pass";
+	 struct scan_config ap_scan_config;	// AP scanning config
 
         os_printf("AP scan succeeded, status=%d\r\n", status);
         
@@ -114,16 +117,34 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         os_timer_setfn(&timer_1, user_check_ip, NULL);  // Set timer callback function
                         os_timer_arm(&timer_1, 1000, true);             // Check for an IP every 1000 ms
                 } else {
-                       os_printf("connection attempt failed \r\n");
-                        CALL_ERROR(ERR_FATAL);
+                        os_printf("connection attempt failed \r\n");
+                        client_config.bssid_set = 0;
+			
+			os_memcpy(&client_config.ssid, ssid, 32);
+			os_memcpy(&client_config.password, password, 64);
+			os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
+			ap_scan_config.ssid = station_conn.ssid;
+
+			if(wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
+				os_printf("AP scan has failed\r\n");
+				CALL_ERROR(ERR_FATAL);
+			}
                         return;
                 }
         } else {
                 os_printf("no valid APs found with saved SSID\r\n");    // Switch to AP mode
-                //commenting out these lines, as we won't be switching to AP mode
-		//system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
-                //system_os_post(USER_TASK_PRIO_1, 0, 0); 
-        }
+		client_config.bssid_set = 0;
+		
+		os_memcpy(&client_config.ssid, ssid, 32);
+		os_memcpy(&client_config.password, password, 64);
+		os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
+		ap_scan_config.ssid = station_conn.ssid;
+
+		if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
+			os_printf("AP scan has failed\r\n");
+			CALL_ERROR(ERR_FATAL);
+		}
+	}
 };
 
 void ICACHE_FLASH_ATTR user_check_ip(void)
@@ -134,7 +155,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
 
         os_printf("connecting ... status=%d\r\n", status);
 
-        // Check if the ESP8266 has received an IP through DHCP
+        //Check if the ESP8266 has received an IP through DHCP
         if (status == STATION_GOT_IP) {
                 os_printf("ip received\r\n");
                 os_timer_disarm(&timer_1);                      // Stop checking the connection
@@ -150,17 +171,33 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 IP_OCTET(ip->gw.addr,2),IP_OCTET(ip->gw.addr,3)); 
 
                         // Set up UDP listening connection
-                        os_memset(&udp_broadcast_conn, 0, sizeof(udp_broadcast_conn));        // Clear control structure
-                        os_memset(&udp_broadcast_proto, 0, sizeof(udp_broadcast_proto));      // Clear protocol structure
-                        udp_broadcast_conn.type = ESPCONN_UDP;                             // UDP protocol
-                       //commented out because not sure if necessary
-			// udp_listen_conn.state = ESPCONN_NONE;                           // UDP lacks state info, so no state
-                        udp_broadcast_conn.proto.udp = (esp_udp *)os_zalloc(sizeof(esp_udp)); // Point to protocol info
-                        //udp_listen_conn.recv_callback = udp_listen_cb;                     // Callback function on received data
-                        udp_broadcast_proto.local_port = UDP_DISCOVERY_PORT;                  // Local port
+                        os_memset(&udp_broadcast_conn,
+				       	0,
+				       	sizeof(udp_broadcast_conn));        // Clear control structure
+                        
+			os_memset(&udp_broadcast_proto, 
+					0, 
+					sizeof(udp_broadcast_proto));       // Clear protocol structure
+                       
+		       	udp_broadcast_conn.type = ESPCONN_UDP;              // UDP protocol
+                       
+			//commented out because not sure if necessary
+			// udp_listen_conn.state = ESPCONN_NONE;            // UDP lacks state info, so no state
+                        
+			udp_broadcast_conn.proto.udp = (esp_udp *)
+				os_zalloc(sizeof(esp_udp)); // Point to protocol info
+                        
+			//udp_listen_conn.recv_callback = udp_listen_cb;    // Callback function on received data
+                        
+			udp_broadcast_proto.local_port = UDP_DISCOVERY_PORT;// Local port
+			
 			//copy broadcast address to control structure
-			os_memcpy(udp_broadcast_conn.proto.udp->remote_ip, udp_broadcast_ip, 4);
-			espconn_regist_sentcb(&udp_broadcast_conn, udp_broadcast_cb);	//register send packet callback
+			os_memcpy(udp_broadcast_conn.proto.udp->remote_ip, 
+					udp_broadcast_ip, 
+					4);
+			
+			espconn_regist_sentcb(&udp_broadcast_conn, 
+					udp_broadcast_cb);	//register send packet callback
 
 			os_printf("configured udp listening\r\n");
                         if (espconn_create(&udp_broadcast_conn) < 0) {
