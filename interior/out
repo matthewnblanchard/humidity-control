@@ -1,0 +1,655 @@
+[!p[?3;4l[4l>[0m(B[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[43;1H[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H
+[0m(BWelcome to minicom 2.7
+
+OPTIONS: I18n 
+Compiled on Feb  7 2016, 13:37:27.
+Port /dev/ttyACM0, 22:45:21
+
+Press CTRL-A Z for help on special keys
+
+reading=8203, humidity=50, status=0
+intr_cnt=306
+pm open,type:2 0
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8167, humidity=49, status=0
+intr_cnt=456
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8155, humidity=49, status=0
+intr_cnt=606
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[?12l[?25h[?12l[?25h[0m(B[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8159, humidity=49, status=0
+intr_cnt=756
+reading=8295, humidity=50, status=0
+intr_cnt=906
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[?12l[?25h[?12l[?25h[0m(B[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8360, humidity=51, status=0
+intr_cnt=1056
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8291, humidity=50, status=0
+intr_cnt=1206
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8243, humidity=50, status=0
+intr_cnt=1356
+reading=8217, humidity=50, status=0
+intr_cnt=1506
+reading=8191, humidity=50, status=0
+intr_cnt=1656
+reading=8189, humidity=49, status=0
+intr_cnt=1806
+reading=8390, humidity=51, status=0
+intr_cnt=1956
+Fatal exception 0(IllegalInstructionCause):
+epc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32676, room 16 
+tail 4
+chksum 0xc1
+load 0x3ffe8000, len 1036, room 4 
+tail 8
+chksum 0x6f
+load 0x3ffe8410, len 5956, room 0 
+tail 4
+chksum 0x2d
+csum 0x2d
+Œãì‚nìã‚’rƒòn|ì[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œâs’lòŒ’ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œâs’lìlâ’Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-44
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1Hreading=8356, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=156[1;42r[42;1H
+[1;43r[42;1Hreading=8312, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=306[1;42r[42;1H
+[1;43r[42;1Hpm open,type:2 0[1;42r[42;1H
+[1;43r[42;1Hreading=8245, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=456[1;42r[42;1H
+[1;43r[42;1Hreading=8281, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=606[1;42r[42;1H
+[1;43r[42;1Hreading=8413, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=756[1;42r[42;1H
+[1;43r[42;1Hreading=8310, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=906[1;42r[42;1H
+[1;43r[42;1Hreading=8233, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1056[1;42r[42;1H
+[1;43r[42;1Hslave failed to receive address[1;42r[42;1H
+[1;43r[42;1Hreading=16373, humidity=99, status=3[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1206[1;42r[42;1H
+[1;43r[42;1HFatal exception 0(IllegalInstructionCause):[1;42r[42;1H
+[1;43r[42;1Hepc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1H ets Jan  8 2013,rst cause:2, boot mode:(3,6)[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1Hload 0x40100000, len 32676, room 16 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0xc1[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8000, len 1036, room 4 [1;42r[42;1H
+[1;43r[42;1Htail 8[1;42r[42;1H
+[1;43r[42;1Hchksum 0x6f[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8410, len 5956, room 0 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0x2d[1;42r[42;1H
+[1;43r[42;1Hcsum 0x2d[1;42r[42;1H
+[1;43r[42;1HŒãì‚nìã‚’sƒòn|ì[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œâs’lòŒ’ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œâs’lìlâ’Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-45
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1Hreading=8556, humidity=52, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=156[1;42r[42;1H
+[1;43r[42;1Hreading=8431, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=306[1;42r[42;1H
+[1;43r[42;1Hpm open,type:2 0[1;42r[42;1H
+[1;43r[42;1Hreading=8401, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=456[1;42r[42;1H
+[1;43r[42;1HFatal exception 0(IllegalInstructionCause):[1;42r[42;1H
+[1;43r[42;1Hepc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1H ets Jan  8 2013,rst cause:2, boot mode:(3,6)[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1Hload 0x40100000, len 32676, room 16 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0xc1[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8000, len 1036, room 4 [1;42r[42;1H
+[1;43r[42;1Htail 8[1;42r[42;1H
+[1;43r[42;1Hchksum 0x6f[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8410, len 5956, room 0 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0x2d[1;42r[42;1H
+[1;43r[42;1Hcsum 0x2d[1;42r[42;1H
+[1;43r[42;1HŒãì‚nìã‚’rƒòn|ì[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œâs’lòŒ’ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œâs’lìlâ’Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-49
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1Hreading=8441, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=156[1;42r[42;1H
+[1;43r[42;1Hreading=8384, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=306[1;42r[42;1H
+[1;43r[42;1H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[?12l[?25h[?12l[?25h[0m(B[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Bpm open,type:2 0
+reading=8318, humidity=50, status=0
+intr_cnt=456
+reading=8489, humidity=51, status=0
+intr_cnt=606
+Fatal exception 0(IllegalInstructionCause):
+epc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32676, room 16 
+tail 4
+chksum 0xc1
+load 0x3ffe8000, len 1036, room 4 
+tail 8
+chksum 0x6f
+load 0x3ffe8410, len 5956, room 0 
+tail 4
+chksum 0x2d
+csum 0x2d
+Œâì‚nìâ‚“s‚óo|ì[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œãs’lóŒ’ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œãr’lìlã’Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-48
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1Hreading=8439, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=156[1;42r[42;1H
+[1;43r[42;1Hreading=8348, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=306[1;42r[42;1H
+[1;43r[42;1Hpm open,type:2 0[1;42r[42;1H
+[1;43r[42;1Hreading=8243, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=456[1;42r[42;1H
+[1;43r[42;1H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[?12l[?25hreading=8662, humidity=52, status=0
+intr_cnt=606
+[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8804, humidity=53, status=0
+intr_cnt=756
+reading=8730, humidity=53, status=0
+intr_cnt=906
+reading=8829, humidity=53, status=0
+intr_cnt=1056
+Fatal exception 0(IllegalInstructionCause):
+epc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32676, room 16 
+tail 4
+chksum 0xc1
+load 0x3ffe8000, len 1036, room 4 
+tail 8
+chksum 0x6f
+load 0x3ffe8410, len 5956, room 0 
+tail 4
+chksum 0x2d
+csum 0x2d
+Œãì‚nìã‚’s‚òn|ì[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œâs’lòŒ’ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œâs’lìlâ’Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-46
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8732, humidity=53, status=0
+intr_cnt=156
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[?12l[?25h[?12l[?25h[0m(B[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[?12l[?25h[?12l[?25h[0m(B[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8538, humidity=52, status=0
+intr_cnt=306
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Bpm open,type:2 0
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8298, humidity=50, status=0
+intr_cnt=456
+reading=8175, humidity=49, status=0
+intr_cnt=606
+reading=8187, humidity=49, status=0
+intr_cnt=756
+reading=8263, humidity=50, status=0
+intr_cnt=906
+reading=8231, humidity=50, status=0
+intr_cnt=1056
+reading=8167, humidity=49, status=0
+intr_cnt=1206
+reading=8109, humidity=49, status=0
+intr_cnt=1356
+reading=8080, humidity=49, status=0
+intr_cnt=1506
+reading=8054, humidity=49, status=0
+intr_cnt=1656
+reading=8175, humidity=49, status=0
+intr_cnt=1806
+reading=8455, humidity=51, status=0
+intr_cnt=1956
+slave failed to initiate measurement
+reading=8652, humidity=52, status=0
+intr_cnt=2106
+reading=11489, humidity=70, status=1
+intr_cnt=2256
+slave failed to initiate measurement
+reading=10447, humidity=63, status=1
+intr_cnt=2406
+reading=16355, humidity=99, status=0
+intr_cnt=2556
+Fatal exception 0(IllegalInstructionCause):
+epc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32676, room 16 
+tail 4
+chksum 0xc1
+load 0x3ffe8000, len 1036, room 4 
+tail 8[1;42r[42;1H
+[1;43r[42;1Hchksum 0x6f[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8410, len 5956, room 0 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0x2d[1;42r[42;1H
+[1;43r[42;1Hcsum 0x2d[1;42r[42;1H
+[1;43r[42;1HŒâìƒoìâƒ“r‚óo|ì[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œãr“lóŒ“ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œãr“lìlã“Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-44
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1Hreading=8322, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=156[1;42r[42;1H
+[1;43r[42;1Hreading=8318, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=306[1;42r[42;1H
+[1;43r[42;1Hpm open,type:2 0[1;42r[42;1H
+[1;43r[42;1Hreading=8225, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=456[1;42r[42;1H
+[1;43r[42;1Hreading=8163, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=606[1;42r[42;1H
+[1;43r[42;1Hreading=8137, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=756[1;42r[42;1H
+[1;43r[42;1Hreading=8117, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=906[1;42r[42;1H
+[1;43r[42;1Hreading=8109, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1056[1;42r[42;1H
+[1;43r[42;1Hreading=8409, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1206[1;42r[42;1H
+[1;43r[42;1Hreading=8350, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1356[1;42r[42;1H
+[1;43r[42;1HFatal exception 0(IllegalInstructionCause):[1;42r[42;1H
+[1;43r[42;1Hepc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1H ets Jan  8 2013,rst cause:2, boot mode:(3,6)[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1Hload 0x40100000, len 32676, room 16 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0xc1[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8000, len 1036, room 4 [1;42r[42;1H
+[1;43r[42;1Htail 8[1;42r[42;1H
+[1;43r[42;1Hchksum 0x6f[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8410, len 5956, room 0 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0x2d[1;42r[42;1H
+[1;43r[42;1Hcsum 0x2d[1;42r[42;1H
+[1;43r[42;1HŒãì‚nìã‚’s‚óo|ì[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œãs’lóŒ’ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œãs’lìlã’Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-45
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1Hreading=8155, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=156[1;42r[42;1H
+[1;43r[42;1Hreading=8127, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=306[1;42r[42;1H
+[1;43r[42;1Hpm open,type:2 0[1;42r[42;1H
+[1;43r[42;1Hreading=8147, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=456[1;42r[42;1H
+[1;43r[42;1Hreading=8135, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=606[1;42r[42;1H
+[1;43r[42;1Hreading=8445, humidity=51, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=756[1;42r[42;1H
+[1;43r[42;1Hreading=8707, humidity=53, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=906[1;42r[42;1H
+[1;43r[42;1Hreading=8776, humidity=53, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1056[1;42r[42;1H
+[1;43r[42;1Hreading=8748, humidity=53, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1206[1;42r[42;1H
+[1;43r[42;1Hreading=8644, humidity=52, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1356[1;42r[42;1H
+[1;43r[42;1Hreading=8813, humidity=53, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1506[1;42r[42;1H
+[1;43r[42;1Hreading=8746, humidity=53, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1656[1;42r[42;1H
+[1;43r[42;1Hreading=9708, humidity=59, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1806[1;42r[42;1H
+[1;43r[42;1Hreading=8716, humidity=53, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1956[1;42r[42;1H
+[1;43r[42;1Hreading=8915, humidity=54, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=2106[1;42r[42;1H
+[1;43r[42;1HFatal exception 0(IllegalInstructionCause):[1;42r[42;1H
+[1;43r[42;1Hepc1=0x402137cc, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1H ets Jan  8 2013,rst cause:2, boot mode:(3,6)[1;42r[42;1H
+[1;43r[42;1H[1;42r[42;1H
+[1;43r[42;1Hload 0x40100000, len 32676, room 16 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0xc1[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8000, len 1036, room 4 [1;42r[42;1H
+[1;43r[42;1Htail 8[1;42r[42;1H
+[1;43r[42;1Hchksum 0x6f[1;42r[42;1H
+[1;43r[42;1Hload 0x3ffe8410, len 5956, room 0 [1;42r[42;1H
+[1;43r[42;1Htail 4[1;42r[42;1H
+[1;43r[42;1Hchksum 0x2d[1;42r[42;1H
+[1;43r[42;1Hcsum 0x2d[1;42r[42;1H
+[1;43r[42;1HŒãì‚nìã‚’rƒòn|ì[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Klll`Œâs’lòŒ’ŒlŒ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[Kl`Œâs’lìlâ’Œ[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[K[42;1H[K[41;1H[K[40;1H[K[39;1H[K[38;1H[K[37;1H[K[36;1H[K[35;1H[K[34;1H[K[33;1H[K[32;1H[K[31;1H[K[30;1H[K[29;1H[K[28;1H[K[27;1H[K[26;1H[K[25;1H[K[24;1H[K[23;1H[K[22;1H[K[21;1H[K[20;1H[K[19;1H[K[18;1H[K[17;1H[K[16;1H[K[15;1H[K[14;1H[K[13;1H[K[12;1H[K[11;1H[K[10;1H[K[9;1H[K[8;1H[K[7;1H[K[6;1H[K[5;1H[K[4;1H[K[3;1H[K[2;1H[K[1;1H[KªIQspeed set to 115200
+mode : softAP(5e:cf:7f:c3:33:74)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:c3:33:74)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-44
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+configured udp listening
+started listening
+zcd initialized
+fan Initialized
+humidity memory allocated
+commencing humidity readings[1;42r[42;1H
+[1;43r[42;1Hinitiazting webserver[1;42r[42;1H
+[1;43r[42;1Hreading=8259, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=156[1;42r[42;1H
+[1;43r[42;1Hreading=8141, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=306[1;42r[42;1H
+[1;43r[42;1Hpm open,type:2 0[1;42r[42;1H
+[1;43r[42;1Hreading=8084, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=456[1;42r[42;1H
+[1;43r[42;1Hreading=8137, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=606[1;42r[42;1H
+[1;43r[42;1Hreading=8300, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=756[1;42r[42;1H
+[1;43r[42;1Hreading=8189, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=906[1;42r[42;1H
+[1;43r[42;1Hreading=8113, humidity=49, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1056[1;42r[42;1H
+[1;43r[42;1Hreading=8344, humidity=50, status=0[1;42r[42;1H
+[1;43r[42;1Hintr_cnt=1206[1;42r[42;1H
+[1;43r[42;1H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[42;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Bslave failed to initiate measurement
+reading=9611, humidity=58, status=0
+intr_cnt=1356
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>[!p[?3;4l[4l>[?1h=[H[2J[0m(B[7m[43;1H[K[?12l[?25h[?25l                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.7 | VT102 | Offline | ttyACM0                                                                [?12l[?25h[1;1H[0m(Breading=8646, humidity=52, status=0
+intr_cnt=1506
+[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>

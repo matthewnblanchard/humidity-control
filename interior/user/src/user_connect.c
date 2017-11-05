@@ -190,8 +190,8 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                                 espconn_regist_recvcb(client_conn, user_ws_recv_cb);
 
                                 // Arm WebSocket update timer
-                                os_timer_setfn(&ws_timer, user_ws_update, client_conn);
-                                os_timer_arm(&ws_timer, WS_UPDATE_TIME, 1);
+                                //os_timer_setfn(&ws_timer, user_ws_update, client_conn);
+                                //os_timer_arm(&ws_timer, WS_UPDATE_TIME, 1);
                          
                         } else {
                                 os_printf("failed to create websocket response\r\n");

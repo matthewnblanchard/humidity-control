@@ -25,6 +25,7 @@
 #include "ets_sys.h"
 #include "os_type.h"
 #include "osapi.h"
+#include <user_interface.h>
 
 #define US_TO_RTC_TIMER_TICKS(t)          \
     ((t) ?                                   \
@@ -77,7 +78,7 @@ static void (* user_hw_timer_cb)(void) = NULL;
                         timer callback function,
 * Returns      : NONE
 *******************************************************************************/
-void ICACHE_FLASH_ATTR  hw_timer_set_func(void (* user_hw_timer_cb_set)(void))
+void ICACHE_FLASH_ATTR hw_timer_set_func(void (* user_hw_timer_cb_set)(void))
 {
     user_hw_timer_cb = user_hw_timer_cb_set;
 }
@@ -101,7 +102,7 @@ u8 req:
                         1,  autoload mode,
 * Returns      : NONE
 *******************************************************************************/
-void ICACHE_FLASH_ATTR hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req)
+void hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req)
 {
     if (req == 1) {
         RTC_REG_WRITE(FRC1_CTRL_ADDRESS,

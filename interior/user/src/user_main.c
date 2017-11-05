@@ -87,12 +87,14 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
         GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | ZCD_BIT);
 
 	// Initialize HW timer
-	hw_timer_init(FRC1_SOURCE, 1);
+	hw_timer_init(FRC1_SOURCE, 0);
+	hw_timer_set_func(user_fire_triac); 
+	
 
 	// Initialize ZCD
 	gpio_output_set(0, 0, 0, ZCD_BIT);     // Set ZCD pin as input
         gpio_intr_handler_register(user_gpio_isr, 0);   // Register GPIO ISR
-        gpio_pin_intr_state_set(ZCD_BIT, GPIO_PIN_INTR_NEGEDGE);       // Falling edge triggers
+        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_NEGEDGE);       // Falling edge triggers
 
         // GPIO initialization
         gpio_init();

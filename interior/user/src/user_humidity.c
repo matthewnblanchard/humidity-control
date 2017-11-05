@@ -44,13 +44,13 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         adj_humidity = ((float)humidity / (float)((1 << 14) - 2)) * 100;        // Calculate RH as defined by Honeywell
 
         os_printf("reading=%d, humidity=%d, status=%d\r\n", humidity, (uint32)adj_humidity, status);
-
+	os_printf("intr_cnt=%d\r\n", intr_cnt);
         // Store humidity. Rotate to bottom of buffer if full
         sensor_data_int[data_index_int] = adj_humidity;
         (data_index_int >= SENSOR_BUFFER_SIZE - 1) ? (data_index_int = 0) : (data_index_int++);         // Wrap around buffer if full
 
 	// Compare interior/exterior humidities
-	user_humidity_cmp();
+	//user_humidity_cmp();
 
         return;
 };

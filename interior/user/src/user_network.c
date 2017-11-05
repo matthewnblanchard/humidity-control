@@ -163,6 +163,10 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                         os_timer_arm(&timer_humidity, 3000, true);
                         os_printf("commencing humidity readings\r\n");
 
+			// Initialize HW timer for triac control	
+			//hw_timer_init(NMI_SOURCE, 0);
+			//hw_timer_set_func(user_fire_triac); 
+
                         // Initiate webserver
                         os_printf("initiazting webserver\r\n");
                         system_os_task(user_front_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
