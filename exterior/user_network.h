@@ -15,8 +15,19 @@
 //#include "user_captive.h"
 #include "user_task.h"
 
+//Port definitions
+#define HTTP_PORT 80
+
+
+
 // Global configurations (must be accessible from callback functions)
 struct station_config client_config;            // Station configuration
+
+//int_scan variable: determines where the code goes if an SSID was found
+//that the scan block was looking for.
+//0 = looking for flash SSID
+//1 = looking for interior SSID
+char int_scan;			
 
 // Software Timers
 os_timer_t timer_1;

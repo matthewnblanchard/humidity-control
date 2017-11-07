@@ -9,6 +9,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         struct user_data_station_config  saved_conn;    // Retrieved station config
         uint8 flash_result = 0;                         // Result of flash operation 
 
+	int_scan = 0;
         /* -------------- */
         /* TEMPORARY CODE */
         /* -------------- */
@@ -92,6 +93,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                                 best_rssi = scan_results->rssi;
                                 best_ap = scan_results;
                         }
+			os_printf("found AP: %s\r\n", scan_results->ssid);
                         scan_results = scan_results->next.stqe_next;            // Move to next found AP
                 }               
         }
@@ -120,11 +122,14 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         os_printf("connection attempt failed \r\n");
                         client_config.bssid_set = 0;
 			
+			//configs ap_scan_config for the interior SSID and password instead of
+			//flash stored SSID and password	
 			os_memcpy(&client_config.ssid, ssid, 32);
 			os_memcpy(&client_config.password, password, 64);
 			os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
 			ap_scan_config.ssid = station_conn.ssid;
-
+			
+			//starts a new scan
 			if(wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
 				os_printf("AP scan has failed\r\n");
 				CALL_ERROR(ERR_FATAL);
@@ -134,12 +139,17 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         } else {
                 os_printf("no valid APs found with saved SSID\r\n");    // Switch to AP mode
 		client_config.bssid_set = 0;
-		
+		//lets the scan function know it's looking for interior SSID
+		int_scan = 1;	
+
+		//configs ap_scan_config for the interior SSID and password instead of 
+		//flash stored SSID and password
 		os_memcpy(&client_config.ssid, ssid, 32);
 		os_memcpy(&client_config.password, password, 64);
 		os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
 		ap_scan_config.ssid = station_conn.ssid;
-
+		
+		//starts new scan
 		if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
 			os_printf("AP scan has failed\r\n");
 			CALL_ERROR(ERR_FATAL);
@@ -152,6 +162,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
         struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info));
 	const char udp_broadcast_ip[4] = {255,255,255,255};
         uint8 status = wifi_station_get_connect_status();       // Check connection status
+	//uint8 int_scan = 0;
 
         os_printf("connecting ... status=%d\r\n", status);
 
@@ -170,42 +181,49 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 IP_OCTET(ip->gw.addr,0),IP_OCTET(ip->gw.addr,1),
                                 IP_OCTET(ip->gw.addr,2),IP_OCTET(ip->gw.addr,3)); 
 
-                        // Set up UDP listening connection
-                        os_memset(&udp_broadcast_conn,
-				       	0,
-				       	sizeof(udp_broadcast_conn));        // Clear control structure
+                        if(int_scan == 0){
+				// Set up UDP listening connection
+                        	os_printf("Entering UDP block\r\n");
+				os_memset(&udp_broadcast_conn,
+					       	0,
+					       	sizeof(udp_broadcast_conn));        // Clear control structure
+                        	
+				os_memset(&udp_broadcast_proto, 
+						0, 
+						sizeof(udp_broadcast_proto));       // Clear protocol structure
+                       	
+		       		udp_broadcast_conn.type = ESPCONN_UDP;              // UDP protocol
+                       	
+				//commented out because not sure if necessary
+				// udp_listen_conn.state = ESPCONN_NONE;            // UDP lacks state info, so no state
                         
-			os_memset(&udp_broadcast_proto, 
-					0, 
-					sizeof(udp_broadcast_proto));       // Clear protocol structure
-                       
-		       	udp_broadcast_conn.type = ESPCONN_UDP;              // UDP protocol
-                       
-			//commented out because not sure if necessary
-			// udp_listen_conn.state = ESPCONN_NONE;            // UDP lacks state info, so no state
+				udp_broadcast_conn.proto.udp = (esp_udp *)
+					os_zalloc(sizeof(esp_udp)); // Point to protocol info
                         
-			udp_broadcast_conn.proto.udp = (esp_udp *)
-				os_zalloc(sizeof(esp_udp)); // Point to protocol info
+				//udp_listen_conn.recv_callback = udp_listen_cb;    // Callback function on received data
                         
-			//udp_listen_conn.recv_callback = udp_listen_cb;    // Callback function on received data
-                        
-			udp_broadcast_proto.local_port = UDP_DISCOVERY_PORT;// Local port
+				udp_broadcast_proto.local_port = UDP_DISCOVERY_PORT;// Local port
 			
-			//copy broadcast address to control structure
-			os_memcpy(udp_broadcast_conn.proto.udp->remote_ip, 
-					udp_broadcast_ip, 
-					4);
+				//copy broadcast address to control structure
+				os_memcpy(udp_broadcast_conn.proto.udp->remote_ip, 
+						udp_broadcast_ip, 
+						4);
 			
-			espconn_regist_sentcb(&udp_broadcast_conn, 
-					udp_broadcast_cb);	//register send packet callback
+				espconn_regist_sentcb(&udp_broadcast_conn, 
+						udp_broadcast_cb);	//register send packet callback
 
-			os_printf("configured udp listening\r\n");
-                        if (espconn_create(&udp_broadcast_conn) < 0) {
-                                os_printf("failed to start broadcasting\r\n");
-                        } else {
-                                os_printf("started broadcasting\r\n");
-				udp_broadcast(); //send udp data
-                        }  
+				os_printf("configured udp listening\r\n");
+                        	if (espconn_create(&udp_broadcast_conn) < 0) {
+                        	        os_printf("failed to start broadcasting\r\n");
+                        	} else {
+                        	        os_printf("started broadcasting\r\n");
+					udp_broadcast(); //send udp data
+                        	}
+			} else if( int_scan == 1){
+				//TCP connection stuff goes here
+				os_printf("Entering TCP block");
+				user_tcp_connect();
+			}	
                 } else {
                         os_printf("failed tp check ip\r\n");
                 }
