@@ -37,9 +37,9 @@ typedef enum {
     NMI_SOURCE = 1,
 } FRC1_TIMER_SOURCE_TYPE;
 
-void ICACHE_FLASH_ATTR hw_timer_arm (u32 val);
+void hw_timer_arm (u32 val);
 void ICACHE_FLASH_ATTR hw_timer_set_func(void (* user_hw_timer_cb_set)(void));
-void hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req);
+void ICACHE_FLASH_ATTR hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req);
 /* ---------------------------------- */
 
 // Interrupt Service Routine: user_gpio_isr(uint32 intr_mask, void *arg)
@@ -52,6 +52,6 @@ void user_gpio_isr(uint32 intr_mask, void *arg);
 // Callback Function: user_fire_triac(void)
 // Desc: Timer callback which fires the triac after
 //	the timer delay
-void ICACHE_FLASH_ATTR user_fire_triac(void);
+void user_fire_triac(void);
 
 #endif /* _USER_FAN_H */

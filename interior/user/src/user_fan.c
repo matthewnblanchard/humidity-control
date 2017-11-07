@@ -30,7 +30,7 @@ void user_gpio_isr(uint32 intr_mask, void *arg)
 		intr_cnt++;
 		// Arm the fan driving timer if necessary
 		if (drive_flag) {
-			hw_timer_arm(SPEED_DELAY(drive_rpm));
+			hw_timer_arm(SUPPLY_HALF_CYCLE);
 		}	
                 return;
 	};
