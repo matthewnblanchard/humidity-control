@@ -41,6 +41,24 @@ char *captive_page = {
         </html>"
 };
 
+// HTML for exterior system wait page
+char *wait_page = {
+	"HTTP/1.1 200 OK\r\n\
+	Content-type: text/html\r\n\r\n\
+	<html>\
+	<head><title>HBFC/D Wait</title></head>\
+	<body>\
+	<h>\
+		Humidity Based Fan Controller / Dehumidifer Wait Page<br>\
+	</h1>\
+	<p>\
+		The exterior sensor system has not yet connected. Please wait a few seconds\
+		and refresh this page\
+	</p>\
+	</body>\
+	</html>"
+};
+
 // HTML for form submission page
 char *submit_page = {
         "HTTP/1.1 200 OK\r\n\
@@ -55,6 +73,9 @@ char *submit_page = {
         </body>\
         </html>"
 };
+
+extern bool captive_ext_connect = 0;
+struct espconn *ext_conn = NULL;
 
 void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 {
@@ -128,6 +149,28 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
                 os_printf("failed to start tcp server, error=%d\r\n", result);
                 CALL_ERROR(ERR_FATAL);
         }
+
+        // Set up TCP server on port 4000
+        os_memset(&tcp_captive_ext_conn, 0, sizeof(tcp_captive_ext_conn));      // Clear connection settings
+        os_memset(&tcp_captive_ext_proto, 0, sizeof(tcp_captive_ext_proto));
+        tcp_captive_ext_proto.local_port = EXT_CONFIG_PORT;                     // Listen for HTTP traffic
+        tcp_captive_ext_conn.type = ESPCONN_TCP;                            	// TCP protocol
+        tcp_captive_ext_conn.state = ESPCONN_NONE;
+        tcp_captive_ext_conn.proto.tcp = &tcp_captive_ext_proto;
+
+        // Register callbacks for the TCP server
+        result = espconn_regist_connectcb(&tcp_captive_ext_conn, user_captive_ext_connect_cb);
+        if (result < 0) {
+                os_printf("failed to register connect callback, error=%d\r\n", result);
+                CALL_ERROR(ERR_FATAL);
+        }
+
+        // Start listening
+        result = espconn_accept(&tcp_captive_ext_conn);      
+        if (result < 0) {
+                os_printf("failed to start tcp server, error=%d\r\n", result);
+                CALL_ERROR(ERR_FATAL);
+        }
 };
 
 void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg)
@@ -162,6 +205,7 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         uint8 ssid_len;                                         // Length of the SSID
         char *pass;                                             // User sent password
         uint8 pass_len;                                         // Length of the password
+	char send_buf[256];					// Buffer to send to exterior system
 
         os_printf("received data from client\r\n");
         os_printf("data=%s\r\n", pusrdata);
@@ -169,9 +213,14 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         // Check if we recieved an HTTP GET request
         if (os_strncmp(pusrdata, "GET ", 4) == 0) {
                 os_printf("http GET request detected\r\n");
-
-                os_printf("sending captive portal\r\n");
-                espconn_send(client_conn, captive_page, os_strlen(captive_page)); 
+	
+		if (captive_ext_connect == 1) {
+                	os_printf("sending captive portal\r\n");
+                	espconn_send(client_conn, captive_page, os_strlen(captive_page)); 
+		} else {
+			os_printf("sending wait page\r\n");
+                	espconn_send(client_conn, wait_page, os_strlen(wait_page)); 
+		}
         }
 
         // Check if we received an HTTP POST request
@@ -216,7 +265,13 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
                         CALL_ERROR(ERR_FATAL);
                         return;
                 }
-                
+		
+		// Send credentials to the exterior system                
+        	os_memset(send_buf, 0, 256);      // Clear send buffer
+		os_sprintf(send_buf, "ssid=%s\r\npass=%s", ssid, pass);
+                espconn_send(ext_conn, send_buf, os_strlen(send_buf)); 
+
+
                 // Begin AP scan once again, with new credentials 
                 if (system_os_task(user_scan, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false) {
                         os_printf("failed to initialize user_scan task\r\n");
@@ -232,4 +287,40 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
 void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg)
 {
         os_printf("sent to client\r\n");
+};
+
+void ICACHE_FLASH_ATTR user_captive_ext_connect_cb(void *arg)
+{
+        os_printf("exterior connected to the system\r\n");
+        struct espconn *client_conn = arg;      // Grab connection control structure
+
+	captive_ext_connect = 1;
+	ext_conn = arg;
+
+        // Register callbacks for the connected exterior system
+        espconn_regist_recvcb(client_conn, user_captive_ext_recv_cb);
+        espconn_regist_reconcb(client_conn, user_captive_ext_recon_cb);
+        espconn_regist_disconcb(client_conn, user_captive_ext_discon_cb);
+        espconn_regist_sentcb(client_conn, user_captive_ext_sent_cb);
+};
+
+void ICACHE_FLASH_ATTR user_captive_ext_recon_cb(void *arg, sint8 err)
+{
+	os_printf("tcp connection error occured\r\n");
+};
+
+void ICACHE_FLASH_ATTR user_captive_ext_discon_cb(void *arg)
+{
+        os_printf("tcp connection disconnected\r\n");
+	captive_ext_connect = 0;
+};
+
+void ICACHE_FLASH_ATTR user_captive_ext_recv_cb(void *arg, char *pusrdata, unsigned short length)
+{
+	os_printf("received packet from ext system: %s\r\n", pusrdata);
+};
+
+void ICACHE_FLASH_ATTR user_captive_ext_sent_cb(void *arg)
+{
+	os_printf("sent packet to ext system\r\n");
 };

@@ -24,7 +24,7 @@ struct _esp_udp udp_broadcast_proto;
 struct espconn tcp_espconnect_conn;
 struct _esp_tcp tcp_espconnect_proto;
 
-// Discovery ino
+// Discovery info
 extern char * discovery_recv_key;
 extern uint16 discovery_recv_keylen;
 

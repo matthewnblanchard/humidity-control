@@ -72,10 +72,6 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
         PIN_FUNC_SELECT(TRIAC_MUX, TRIAC_FUNC);
         PIN_FUNC_SELECT(ZCD_MUX, ZCD_FUNC);
 
-        // Enable internal pullups on SDA/SCL
-        // PIN_PULLUP_EN(SDA_MUX);
-        // PIN_PULLUP_EN(SCL_MUX);
-
         // Set to open-drain
         GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
         GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
@@ -94,7 +90,7 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 	// Initialize ZCD
 	gpio_output_set(0, 0, 0, ZCD_BIT);     // Set ZCD pin as input
         gpio_intr_handler_register(user_gpio_isr, 0);   // Register GPIO ISR
-        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_NEGEDGE);       // Falling edge triggers
+        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);       // Falling edge triggers
 
         // GPIO initialization
         gpio_init();

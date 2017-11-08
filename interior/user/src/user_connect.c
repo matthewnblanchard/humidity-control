@@ -289,7 +289,7 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
                         for (i = 0; i < (length - mask_start + 4); i++) {
                                 pusrdata[mask_start + 4 + i] ^= mask[i % 4];
                         }
-                        os_printf("received masked packet=%s\r\n", &pusrdata[mask_start + 4]);
+                        //os_printf("received masked packet=%s\r\n", &pusrdata[mask_start + 4]);
                         break;
         }; 
         return;

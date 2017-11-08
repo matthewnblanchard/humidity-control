@@ -28,7 +28,7 @@
 #define ZCD_MUX         PERIPHS_IO_MUX_MTCK_U
 #define ZCD_FUNC        FUNC_GPIO13
 extern bool drive_flag;		// Flag to indicate if fan should be driven
-extern uint16 drive_rpm;	// Desired fan drive speed
+extern uint32 drive_delay;	// Triac delay in us
 extern uint16 intr_cnt;
 
 /* MISSING DECLARATIONS FROM HW_TIMER */
