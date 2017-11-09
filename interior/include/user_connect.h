@@ -12,7 +12,7 @@
 #include "mbedtls/base64.h"
 #include "user_task.h"
 #include "user_humidity.h"
-
+#include "user_fan.h"
 
 // Port definitions
 #define UDP_DISCOVERY_PORT 5000
@@ -106,5 +106,19 @@ void ICACHE_FLASH_ATTR user_ws_update(void *parg);
 //      uint8 *buf: Data buffer
 //      uint8 n: Number of bytes to invert
 void ICACHE_FLASH_ATTR user_endian_flip(uint8 *buf, uint8 n);
+
+// Application Function: user_ws_parse_data(uint8 *data, uint16 len)
+// Desc: Parses data received from the WebSocket and takes action accordingly
+// Args:
+//	uint8 *data: Received data
+//	uint16 len:  Length of data
+void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len);
+
+// Application Function: uint32 user_atoi(uint8 *str, uint16 len)
+// Desc: Converts an ASCII string to an integer
+// Args:
+//	uint8 *str:	String to be converted
+//	uint16 len:	Length of string
+uint32 ICACHE_FLASH_ATTR user_atoi(uint8 *str, uint16 len);
 
 #endif /* USER_CONNECT_H */

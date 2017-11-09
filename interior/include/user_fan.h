@@ -27,8 +27,8 @@
 #define ZCD_BIT         BIT13
 #define ZCD_MUX         PERIPHS_IO_MUX_MTCK_U
 #define ZCD_FUNC        FUNC_GPIO13
-extern bool drive_flag;		// Flag to indicate if fan should be driven
-extern uint32 drive_delay;	// Triac delay in us
+extern volatile bool drive_flag;		// Flag to indicate if fan should be driven
+extern volatile uint32 drive_delay;		// Triac delay in us
 extern uint16 intr_cnt;
 
 /* MISSING DECLARATIONS FROM HW_TIMER */

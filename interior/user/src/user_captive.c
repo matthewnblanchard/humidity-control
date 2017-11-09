@@ -214,13 +214,13 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         if (os_strncmp(pusrdata, "GET ", 4) == 0) {
                 os_printf("http GET request detected\r\n");
 	
-		if (captive_ext_connect == 1) {
+		//if (captive_ext_connect == 1) {
                 	os_printf("sending captive portal\r\n");
                 	espconn_send(client_conn, captive_page, os_strlen(captive_page)); 
-		} else {
-			os_printf("sending wait page\r\n");
-                	espconn_send(client_conn, wait_page, os_strlen(wait_page)); 
-		}
+		//} else {
+		//	os_printf("sending wait page\r\n");
+                //	espconn_send(client_conn, wait_page, os_strlen(wait_page)); 
+		//}
         }
 
         // Check if we received an HTTP POST request
@@ -267,9 +267,9 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
                 }
 		
 		// Send credentials to the exterior system                
-        	os_memset(send_buf, 0, 256);      // Clear send buffer
-		os_sprintf(send_buf, "ssid=%s\r\npass=%s", ssid, pass);
-                espconn_send(ext_conn, send_buf, os_strlen(send_buf)); 
+        	//os_memset(send_buf, 0, 256);      // Clear send buffer
+		//os_sprintf(send_buf, "ssid=%s\r\npass=%s", ssid, pass);
+                //espconn_send(ext_conn, send_buf, os_strlen(send_buf)); 
 
 
                 // Begin AP scan once again, with new credentials 

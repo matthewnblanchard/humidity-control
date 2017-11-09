@@ -15,11 +15,11 @@ char *front_page = {
                         function button_ws() {\
                                 ws = new WebSocket('ws://' + window.location.hostname + ':80/');\
                                 ws.binaryType = \"arraybuffer\";\
-                                console.log('WebSocket opened (hopefully)');\
+                                console.log('WebSocket opened');\
                                 ws.onopen = function(evt) {\
                                         console.log('WebSocket connected');\
                                         ws.send('Hello HBFC/D');\
-                                };\
+                              	};\
                                 ws.onmessage = function(evt) {\
                                         if(evt.data instanceof ArrayBuffer) {\
                                                 var buffer = evt.data;\
@@ -27,17 +27,28 @@ char *front_page = {
                                                 console.log(view.getFloat32(0));\
                                         };\
                                 };\
+				var ws_init = document.getElementById(\"ws_init\");\
+				ws_init.style.display = \"none\";\
+				var config = document.getElementById(\"config\");\
+				config.style.display = \"block\";\
                         };\
+			function config_submit() {\
+				var config_speed = document.getElementById(\"config_speed\");\
+				ws.send(\"speed=\" + config_speed.value + \",\");\
+				console.log(\"Sending configuration\");\
+			};\
                 </script>\
         <body>\
                 <h1>\
                         Humidity Based Fan Controller / Dehumidifer Monitoring & Control\
                 </h1>\
-                <button id=\"ws_start\" type=\"button\" onclick=\"button_ws();\">Start Websocket</button>\
-                <p>\
-                        Interior Humidity:<br>\
-                        <div id=\"interior_humidity\">No reading yet ...</div><br>\
-                </p>\
+		<div id=\"ws_init\" style=\"\">\
+                	<button id=\"ws_start\" type=\"button\" onclick=\"button_ws();\">Start Websocket</button>\
+		</div>\
+		<div id=\"config\" style=\"display:none\">\
+			<input id=\"config_speed\" type=\"number\" step=\"1\"><br>\
+			<button id=\"config_submit\" type=\"button\" onclick=\"config_submit();\">Modify Configuration</button><br>\
+		</div>\
         </body>\
         </html>"
 };
@@ -286,10 +297,11 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
                         os_strncpy(mask, &pusrdata[mask_start], 4); 
 
                         // Perform unmasking operation: each byte can be unmasked by XORing it with byte (i % 4) of the mask
-                        for (i = 0; i < (length - mask_start + 4); i++) {
+                        for (i = 0; i < (length - mask_start - 4); i++) {
                                 pusrdata[mask_start + 4 + i] ^= mask[i % 4];
                         }
-                        //os_printf("received masked packet=%s\r\n", &pusrdata[mask_start + 4]);
+                        os_printf("received masked packet=%s\r\n", &pusrdata[mask_start + 4]);
+			user_ws_parse_data(&pusrdata[mask_start + 4], length - mask_start - 4);
                         break;
         }; 
         return;
@@ -339,3 +351,51 @@ void ICACHE_FLASH_ATTR user_endian_flip(uint8 *buf, uint8 n)
 
         return;
 }
+
+void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
+{
+	uint8 *p1 = NULL;	// Char pointer 1, for data navigation
+	uint8 *p2 = NULL;	// Char pointer 2, for data navigation
+	uint32 speed = 0;	// Fan speed in RPM
+
+	// Search for each config element
+	p1 = (uint8 *)os_strstr(data, "speed=");		// Locate speed element
+	if (p1 != NULL) {
+		p1 += 6;					// Move to end of 6 char substr "speed="
+		p2 = (uint8 *)os_strstr(p1, ",");		// Find end of speed element value (CSV)
+		speed = user_atoi(p1, p2 - p1);			// Extract integer fan RPM
+	
+		speed > FAN_RPM_MAX ? (speed = 3100) : 0;	// Cut speed down to max if RPM is above maximum
+		drive_delay = SPEED_DELAY(speed);		// Modify triac delay 		
+		os_printf("set rpm to %d, delay=%d us\r\n", speed, drive_delay);
+	}
+
+	return;
+};
+
+uint32 ICACHE_FLASH_ATTR user_atoi(uint8 *str, uint16 len)
+{
+	uint32 val = 0;		// Converted value
+	uint32 mult = 1;	// Multiplier for each digit
+	sint8 i = 0;		// Loop index
+	uint8 c = 0;		// Extracted character
+	sint16 digit = 0;	// Converted digit 
+
+	// A 32 bit unsigned integer can hold at most 10 digits
+	if (len > 10) {
+		os_printf("atoi conversion error, input too large\r\n");
+		return 0;
+	}
+
+	// Convert each digit, working from the least significant
+	for (i = (len - 1); i >= 0; i--) {
+		digit = str[i] - 0x30;
+		if ((digit < 0) || (digit > 9)) {	// Stop converting if we find a non-digit
+			return val;
+		}
+		val += (digit * mult);
+		mult *= 10;	
+	}
+	
+	return val;
+};

@@ -3,9 +3,9 @@
 
 #include "user_fan.h"
 
-bool drive_flag = 1;
+volatile bool drive_flag = 1;
 uint16 intr_cnt = 0;
-uint16 drive_rpm = FAN_RPM_MAX;
+volatile uint32 drive_delay = 150;
 
 void ICACHE_FLASH_ATTR user_fan_init()
 {
@@ -30,7 +30,7 @@ void user_gpio_isr(uint32 intr_mask, void *arg)
 		intr_cnt++;
 		// Arm the fan driving timer if necessary
 		if (drive_flag) {
-			hw_timer_arm(SUPPLY_HALF_CYCLE / 2);
+			hw_timer_arm(drive_delay);
 		}	
                 return;
 	};
