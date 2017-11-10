@@ -20,7 +20,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
                 return;
         }
         struct user_data_station_config test_config = {
-                "TESTTTTTT",
+                "Soochboys",
                 "purplefinch654",
                 0x00
         };
@@ -76,12 +76,15 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         uint8 *best_bssid;              // BSSID of best AP
         struct bss_info *best_ap;       // AP with best RSSI 
         uint8 ap_count = 0;             // Number of APs found
-	char ssid[32] = "HBFC/D Wireless Setup";
-	char password[64] = "pass";
+	char ssid[32] = "Soochboys";
+	char password[64] = "purplefinch654";
 	 struct scan_config ap_scan_config;	// AP scanning config
 
-        os_printf("AP scan succeeded, status=%d\r\n", status);
-        
+        os_printf("AP scan concluded, status=%d\r\n", status);
+       	
+	if (int_scan == 1) {
+		os_printf("Searched for NOT flash AP\r\n");
+	}
         // Check AP info for valid APs
         if (status == OK) {
                 struct bss_info *scan_results = (struct bss_info *)arg;         // Copy BSS info from arguments
@@ -97,7 +100,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         scan_results = scan_results->next.stqe_next;            // Move to next found AP
                 }               
         }
-
+	os_printf("ap_count: %d\r\n", ap_count);
         // If an AP was found, connect to it
         if (ap_count != 0) {
                 best_bssid = best_ap->bssid;
@@ -127,7 +130,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 			os_memcpy(&client_config.ssid, ssid, 32);
 			os_memcpy(&client_config.password, password, 64);
 			os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
-			ap_scan_config.ssid = station_conn.ssid;
+			ap_scan_config.ssid = client_config.ssid;
 			
 			//starts a new scan
 			if(wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
@@ -147,9 +150,11 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 		os_memcpy(&client_config.ssid, ssid, 32);
 		os_memcpy(&client_config.password, password, 64);
 		os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
-		ap_scan_config.ssid = station_conn.ssid;
+		ap_scan_config.ssid = client_config.ssid;
 		
 		//starts new scan
+		os_printf("Starting a new scan\r\n");
+		os_printf("Scanning for SSID: %s\r\n", ap_scan_config.ssid);
 		if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
 			os_printf("AP scan has failed\r\n");
 			CALL_ERROR(ERR_FATAL);
@@ -162,7 +167,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
         struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info));
 	const char udp_broadcast_ip[4] = {255,255,255,255};
         uint8 status = wifi_station_get_connect_status();       // Check connection status
-	//uint8 int_scan = 0;
+	sint8 result = 0;
 
         os_printf("connecting ... status=%d\r\n", status);
 
@@ -213,7 +218,17 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
 						udp_broadcast_cb);	//register send packet callback
 
 				os_printf("configured udp listening\r\n");
-                        	if (espconn_create(&udp_broadcast_conn) < 0) {
+                        	result = espconn_create(&udp_broadcast_conn);
+				if (result < 0) {
+					if (result == ESPCONN_ISCONN){
+						os_printf("Connection is already established\r\n");
+					}
+					if (result == ESPCONN_MEM) {
+						os_printf("ESP is out of memory\r\n");
+					}
+					if (result == ESPCONN_ARG) {
+						os_printf("Illigal Argument\r\n");
+					}
                         	        os_printf("failed to start broadcasting\r\n");
                         	} else {
                         	        os_printf("started broadcasting\r\n");
@@ -221,7 +236,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                         	}
 			} else if( int_scan == 1){
 				//TCP connection stuff goes here
-				os_printf("Entering TCP block");
+				os_printf("Entering TCP block\r\n");
 				user_tcp_connect();
 			}	
                 } else {

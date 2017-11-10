@@ -13,6 +13,7 @@
 // Port definitions
 #define UDP_DISCOVERY_PORT 5000
 #define HTTP_PORT 80
+#define ESPCONNECT 4000
 
 // IP Macros
 #define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
@@ -24,6 +25,8 @@ struct espconn tcp_connect_conn;
 struct _esp_tcp tcp_connect_proto;
 struct station_config station_conn;
 
+int server_counter;
+
 /* ------------------- */
 /* Function prototypes */
 /* ------------------- */
@@ -33,11 +36,21 @@ struct station_config station_conn;
 // Args: none 
 void ICACHE_FLASH_ATTR udp_broadcast();
 
+// Task: user_tcp_accept();
+// Desc: Configures exterior system to host a TCP connection
+// Args: None
+void ICACHE_FLASH_ATTR user_tcp_accept();
 
 // Task: user_tcp_connect();
 // Desc: Configures system to establish TCP connection
 // Args: None
 void ICACHE_FLASH_ATTR user_tcp_connect();
+
+// Callback Function: tcp_timer_cb();
+// Desc: Called after 1s of timer while waiting for interior 
+// 	to connect to the exterior.
+// Args: None 
+void ICACHE_FLASH_ATTR tcp_timer_cb();
 
 // Callback Function: udp_listen_cb(void *arg, char *pdata, unsigned short len)
 // Desc: Callback function to be called when packets are received over the
