@@ -35,7 +35,7 @@ void ICACHE_FLASH_ATTR user_tcp_accept()
 	tcp_connect_conn.proto.tcp = &tcp_connect_proto;
 	
 	// Register Callbacks for the TCP server
-	result = espconn_regist_connectcb(&tcp_connect_conn, user_tcp_connect_cb);
+	result = espconn_regist_connectcb(&tcp_connect_conn, user_tcp_accept_cb);
 	if (result < 0) {
 		os_printf("failed to register tcp connection callback\r\n");
 		CALL_ERROR(ERR_FATAL);
@@ -55,18 +55,7 @@ void ICACHE_FLASH_ATTR user_tcp_accept()
 	os_timer_setfn(&timer_1, (os_timer_func_t *)tcp_timer_cb, NULL);
         os_timer_arm(&timer_1, 1000, 1);	
 	
-	/*os_printf("The Interior did not hear the broadcast\r\n");
-
-	//Go bad to looking for tcp configuration loop
-	if (system_os_task(user_scan, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false) {
-		os_printf("failed to initialize user_scan task\r\n");
-                CALL_ERROR(ERR_FATAL);
-        }
-
-        if (system_os_post(USER_TASK_PRIO_1, 1, 0) == false) {
-                os_printf("failed to call user_scan\r\n");
-                CALL_ERROR(ERR_FATAL);
-        }*/
+	os_printf("The Interior did not hear the broadcast\r\n");
 }
 
 void ICACHE_FLASH_ATTR user_tcp_connect()
@@ -142,7 +131,7 @@ void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_tcp_connect_cb(void *arg)
 {
-	os_printf("tcp connection establishedi\r\n");
+	os_printf("tcp connection established\r\n");
 	struct espconn *client_conn = arg;
 
 	os_timer_disarm(&timer_1);
@@ -152,6 +141,21 @@ void ICACHE_FLASH_ATTR user_tcp_connect_cb(void *arg)
 	espconn_regist_reconcb(client_conn, user_tcp_recon_cb);
 	espconn_regist_disconcb(client_conn, user_tcp_discon_cb);
 	espconn_regist_sentcb(client_conn, user_tcp_sent_cb);
+}
+
+void ICACHE_FLASH_ATTR usr_tcp_accept_cb(void *arg)
+{
+	os_printf("Connection made to exterior over port ESPCONN\r\n");
+	struct espconn *client_conn = arg;
+
+	os_timer_disarm(&timer_1);
+
+	// Register callbacks for the connected client
+	espconn_regist_recvcb(client_conn, user_tcp_accept_recv_cb);
+	espconn_regist_reconcb(client_conn, user_tcp_recon_cb);
+	espconn_regist_disconcb(client_conn, user_tcp_discon_cb);
+	espconn_regist_sentcb(client_conn, user_tcp_sent_cb);
+
 }
 
 void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned short length)
@@ -223,6 +227,33 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 		os_printf("failed to call user_scan\r\n");
 		CALL_ERROR(ERR_FATAL);
 	}
+}
+
+void ICACHE_FLASH_ATTR user_tcp_accept_recv_cb(void *arg, char *pusrdata, unsigned short length)
+{
+	struct espconn *client_conn = arg;	// Pull Client connection
+	char *p;				// Character pointer for manipulation
+	int *n;					// Integer pointer for manipulation
+	int delay;				// Client sent frequency data
+	uint8 delay_len;			// Length of delay data
+	
+	os_printf("received data from client\r\n");
+	os_printf("data=%s\r\n", pusrdata);
+
+	//Search for form data
+	p = (uint8 *)os_strstr(pusrdata, "sensor_read_delay=");
+	p = p1 + 18;
+	n = p;
+	delay = *n;
+
+	os_printf("delay read: %d\r\n", delay);
+
+	//////////////////////////////////
+	//				//
+	//  Work on Humidity Reading 	//
+	//  Block from here		//
+	//				//
+	//////////////////////////////////
 }
 
 void ICACHE_FLASH_ATTR user_tcp_recon_cb(void *arg, sint8 err)

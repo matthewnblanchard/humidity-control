@@ -68,13 +68,28 @@ void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg);
 // 	void *arg: pointer to the espconn which called this function
 void ICACHE_FLASH_ATTR user_tcp_connect_cb(void *arg);
 
+// Callback Function: user_tcp_accept_cb(void *arg);
+// Desc: Callback function to be called when  tcp connection is made over port
+// 	ESPCONNECT.
+// Args:
+// 	void *arg: pointer to the espconn which called this function
+void ICACHE_FLASH_ATTR user_tcp_accept_cb(void *arg);
+
 // Callback Function: user_tcp_recv_cb(void *arg, char *pusrdata, unsigned short length);
-// Desc: Data receipt callback. Called when the server a packet to the client
+// Desc: Data receipt callback. Called when the server sends a packet to the client
 // Args:
 // 	void *arg: pointer to the espconn which called this function
 // 	char *pusrdata: recieved client data
 // 	unsigned short length: length of user data
-void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned short lenght);
+void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned short length);
+
+// Callback Function: user_tcp_accept_recv_cb(void *arg, char *pusrdata, unsigned short length);
+// Desc: Data receipt callback (accept version). Called when the client sends a packet to the server
+// Args:
+// 	void *arg: pointer to the espconn which called this function
+// 	char *pusrdata: recieved client data
+// 	unsinged short length: length of the user data
+void ICACHE_FLASH_ATTR user_tcp_accept_recv_cb(void *arg, char *pusrdata, unsigned short length);
 
 // Callback Function: user_tcp_recon_cb(void *arg, sint8 err);
 // Desc: Reconnect callback. This is called when an error occurs in the TCP connection

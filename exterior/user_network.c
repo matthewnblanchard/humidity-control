@@ -9,7 +9,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         struct user_data_station_config  saved_conn;    // Retrieved station config
         uint8 flash_result = 0;                         // Result of flash operation 
 
-	int_scan = 0;
+	int_scan = 0;	// Indicates flash stored AP scan
         /* -------------- */
         /* TEMPORARY CODE */
         /* -------------- */
@@ -69,6 +69,31 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
                 return;
         }
 };
+
+void ICACHE_FLASH_ATTR user_scan_post(os_event_t *e)
+{
+	struct scan_config ap_scan_config;		// AP Scanning Config
+	struct user_data_station_config saved_conn;	// Retrieved station config
+	char ssid[32] = "HBFC/D Wireless Setup";
+	char pass[64] = "pass";
+
+	int_scan = 1;					// Indicates Interior AP Scan
+	os_printf("Entering Interior AP Scan block\r\n");
+
+	os_memcpy(client_config.ssid, ssid, 32);	
+	os_memcpy(client_config.pass, pass, 64);
+
+	client_config.bssid_set = 0;
+
+	os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
+	ap_scan_config.ssid = ssid;
+
+	os_printf("scanning for APs\r\n");
+	if (wifi_station_scan(&ap_scan_config, user_scan_done) != true){
+		os_printf("AP scan failed\r\n");
+		CALL_ERROR(ERR_FATAL);
+	}
+}
 
 static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 {

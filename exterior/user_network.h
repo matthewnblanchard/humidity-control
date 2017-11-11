@@ -44,6 +44,13 @@ os_timer_t timer_1;
 // Args: None
 void ICACHE_FLASH_ATTR user_scan(os_event_t *e);
 
+// User Task: user_scan_post(os_event_t *e);
+// Desc: Attempts to find an AP broadcasting the stored SSID and 
+// 	password for the interior system. If it finds one, attempts to 
+// 	connect. This function is called when returning from a failed 
+// 	TCP hosting.
+// Args: None
+void ICACHE_FLASH_ATTR user_scan_post(os_event_t *e);
 
 // Callback Function: user_scan_done(void *arg, STATUS status)
 // Desc: Callback once AP scan is complete. Interprets AP scan results
