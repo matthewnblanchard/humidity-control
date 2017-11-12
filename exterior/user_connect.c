@@ -5,19 +5,17 @@
 
 void ICACHE_FLASH_ATTR udp_broadcast()
 {
-	//Stuff will go here soon.
-	char buffer[40] = {"Test data"};
+	char buffer[40] = {"Test data"};	// Broadcasted data doesn't matter
 	char macaddr[6];
 	struct ip_info ipsend;
 	
 	//Finish UDP setup and send
 	const char udp_ip[4] = {255, 255, 255, 255};
-	//remote_ip needs to be reset everytime espconn_sent is called
+
+	// Reset appropriate parameters and send UDP broadcast packet
 	os_memcpy(udp_broadcast_conn.proto.udp->remote_ip, udp_ip, 4);
-	//remote_port needs to be reset everytime espconn_sent is called
 	udp_broadcast_conn.proto.udp->remote_port = UDP_DISCOVERY_PORT;	
 	wifi_get_macaddr(STATION_IF, macaddr);
-	//send UDP packet. Needs error handling.
 	espconn_send(&udp_broadcast_conn, buffer, os_strlen(buffer));
 }
 
@@ -96,7 +94,7 @@ void ICACHE_FLASH_ATTR tcp_timer_cb()
 	os_printf("Waiting for interior connection...\r\n");
 	os_printf("%d seconds spent waiting\r\n", server_counter);
 	if (server_counter > 30){
-		if (system_os_task(user_scan, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false){
+		if (system_os_task(user_scan_post, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false){
 			os_printf("failed to initialize user scan task\r\n");
 			CALL_ERROR(ERR_FATAL);
 		}
@@ -143,7 +141,7 @@ void ICACHE_FLASH_ATTR user_tcp_connect_cb(void *arg)
 	espconn_regist_sentcb(client_conn, user_tcp_sent_cb);
 }
 
-void ICACHE_FLASH_ATTR usr_tcp_accept_cb(void *arg)
+void ICACHE_FLASH_ATTR user_tcp_accept_cb(void *arg)
 {
 	os_printf("Connection made to exterior over port ESPCONN\r\n");
 	struct espconn *client_conn = arg;
@@ -216,6 +214,12 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 		return;
 	}
 	
+	os_printf("deleting tcp transmission...\r\n");
+	if (espconn_delete(&tcp_connect_conn) < 0) {
+		os_printf("failed to delete tcp transmission\r\n");
+		CALL_ERROR(ERR_FATAL);
+	}
+
 	os_printf("reentering AP scan");
 
 	if (system_os_task(user_scan, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false) {
@@ -237,23 +241,29 @@ void ICACHE_FLASH_ATTR user_tcp_accept_recv_cb(void *arg, char *pusrdata, unsign
 	int delay;				// Client sent frequency data
 	uint8 delay_len;			// Length of delay data
 	
+	//threshold_humidity = 10;
+
 	os_printf("received data from client\r\n");
 	os_printf("data=%s\r\n", pusrdata);
 
 	//Search for form data
 	p = (uint8 *)os_strstr(pusrdata, "sensor_read_delay=");
-	p = p1 + 18;
-	n = p;
+	p = p + 18;
+	/*n = p;
 	delay = *n;
 
 	os_printf("delay read: %d\r\n", delay);
+	*/
+	// Allocate memory for humidity sensor data buffer
+	sensor_data_ext = (float *)os_zalloc(SENSOR_BUFFER_SIZE * sizeof(float));
+	os_printf("humidity memory allocated\r\n");
+	
+	//os_printf("threshold humidity:%lf\r\n", threshold_humidity);
 
-	//////////////////////////////////
-	//				//
-	//  Work on Humidity Reading 	//
-	//  Block from here		//
-	//				//
-	//////////////////////////////////
+	// Register humidity reading timer
+	os_timer_setfn(&timer_humidity, (os_timer_func_t *)user_read_humidity, NULL);	
+	os_timer_arm(&timer_humidity, 3000, true);
+	os_printf("commencing humidity readings\r\n");
 }
 
 void ICACHE_FLASH_ATTR user_tcp_recon_cb(void *arg, sint8 err)

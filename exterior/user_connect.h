@@ -9,6 +9,7 @@
 #include <espconn.h>
 #include <osapi.h>
 #include "user_network.h"
+#include "user_humidity.h"
 
 // Port definitions
 #define UDP_DISCOVERY_PORT 5000

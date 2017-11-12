@@ -20,8 +20,8 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
                 return;
         }
         struct user_data_station_config test_config = {
-                "Soochboys",
-                "purplefinch654",
+                "TESTTTTT",
+                "password",
                 0x00
         };
         flash_result = spi_flash_write(
@@ -80,13 +80,12 @@ void ICACHE_FLASH_ATTR user_scan_post(os_event_t *e)
 	int_scan = 1;					// Indicates Interior AP Scan
 	os_printf("Entering Interior AP Scan block\r\n");
 
-	os_memcpy(client_config.ssid, ssid, 32);	
-	os_memcpy(client_config.pass, pass, 64);
-
+	os_memcpy(client_config.ssid, ssid, 32);	// Set new connection ssid
+	os_memcpy(client_config.password, pass, 64);	// Set new connection password
 	client_config.bssid_set = 0;
 
-	os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
-	ap_scan_config.ssid = ssid;
+	os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));	// Clear scan structure
+	ap_scan_config.ssid = ssid;				// Set scan ssid
 
 	os_printf("scanning for APs\r\n");
 	if (wifi_station_scan(&ap_scan_config, user_scan_done) != true){
@@ -101,23 +100,25 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         uint8 *best_bssid;              // BSSID of best AP
         struct bss_info *best_ap;       // AP with best RSSI 
         uint8 ap_count = 0;             // Number of APs found
-	char ssid[32] = "Soochboys";
-	char password[64] = "purplefinch654";
-	 struct scan_config ap_scan_config;	// AP scanning config
+	char ssid[32] = "HBFC/D Wireless Setup";
+	char password[64] = "pass";
+	struct scan_config ap_scan_config;	// AP scanning config
 
         os_printf("AP scan concluded, status=%d\r\n", status);
        	
-	if (int_scan == 1) {
-		os_printf("Searched for NOT flash AP\r\n");
+	if (int_scan == 0) {
+		os_printf("Searched for flash AP\r\n");
+	} else {
+		os_printf("Searched for interior AP\r\n");
 	}
         // Check AP info for valid APs
         if (status == OK) {
-                struct bss_info *scan_results = (struct bss_info *)arg;         // Copy BSS info from arguments
+                struct bss_info *scan_results = (struct bss_info *)arg;	// Copy BSS info from arguments
 
                 // Follow the queue of found APs to the end, comparing RSSI's for the best connection
                 while (scan_results != NULL) {                          
                         ap_count++;
-                        if (scan_results->rssi > best_rssi) {                   // Check if RSSI beats the old best
+                        if (scan_results->rssi > best_rssi) {		// Check if RSSI beats the old best
                                 best_rssi = scan_results->rssi;
                                 best_ap = scan_results;
                         }
@@ -135,7 +136,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         best_bssid[4],best_bssid[5]);
 
                 // Save wifi configurations
-                if (wifi_station_set_config(&client_config) == false) {          // Set client config (SSID/pass)
+                if (wifi_station_set_config(&client_config) == false) {	// Set client config (SSID/pass)
                         os_printf("station_config failed\r\n");
                         CALL_ERROR(ERR_FATAL);
                         return;
@@ -214,35 +215,31 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                         if(int_scan == 0){
 				// Set up UDP listening connection
                         	os_printf("Entering UDP block\r\n");
+
+				// Prepare control structures
 				os_memset(&udp_broadcast_conn,
 					       	0,
-					       	sizeof(udp_broadcast_conn));        // Clear control structure
-                        	
+					       	sizeof(udp_broadcast_conn));
 				os_memset(&udp_broadcast_proto, 
 						0, 
-						sizeof(udp_broadcast_proto));       // Clear protocol structure
-                       	
-		       		udp_broadcast_conn.type = ESPCONN_UDP;              // UDP protocol
-                       	
-				//commented out because not sure if necessary
-				// udp_listen_conn.state = ESPCONN_NONE;            // UDP lacks state info, so no state
-                        
-				udp_broadcast_conn.proto.udp = (esp_udp *)
-					os_zalloc(sizeof(esp_udp)); // Point to protocol info
-                        
-				//udp_listen_conn.recv_callback = udp_listen_cb;    // Callback function on received data
-                        
-				udp_broadcast_proto.local_port = UDP_DISCOVERY_PORT;// Local port
+						sizeof(udp_broadcast_proto));
+
+           			// Set the connection protocol, clear data, and set port
+		       		udp_broadcast_conn.type = ESPCONN_UDP;
+				udp_broadcast_conn.proto.udp = (esp_udp *)os_zalloc(sizeof(esp_udp));
+				udp_broadcast_proto.local_port = UDP_DISCOVERY_PORT;
 			
 				//copy broadcast address to control structure
 				os_memcpy(udp_broadcast_conn.proto.udp->remote_ip, 
 						udp_broadcast_ip, 
 						4);
-			
-				espconn_regist_sentcb(&udp_broadcast_conn, 
-						udp_broadcast_cb);	//register send packet callback
+				
+				// Register sent data callback function
+				espconn_regist_sentcb(&udp_broadcast_conn, udp_broadcast_cb);
 
 				os_printf("configured udp listening\r\n");
+
+				// Create UDP transmission, check for errors
                         	result = espconn_create(&udp_broadcast_conn);
 				if (result < 0) {
 					if (result == ESPCONN_ISCONN){
@@ -257,10 +254,12 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                         	        os_printf("failed to start broadcasting\r\n");
                         	} else {
                         	        os_printf("started broadcasting\r\n");
-					udp_broadcast(); //send udp data
+					// Send UDP packet and begin TCP connection 
+					// with interior as server.
+					udp_broadcast(); 
                         	}
 			} else if( int_scan == 1){
-				//TCP connection stuff goes here
+				// Begin TCP connection to interior as client
 				os_printf("Entering TCP block\r\n");
 				user_tcp_connect();
 			}	

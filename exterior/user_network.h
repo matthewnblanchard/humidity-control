@@ -12,8 +12,8 @@
 #include <mem.h>
 #include "user_flash.h"
 #include "user_connect.h"
-//#include "user_captive.h"
 #include "user_task.h"
+#include "user_humidity.h"
 
 //Port definitions
 #define HTTP_PORT 80

@@ -18,7 +18,7 @@ LDLIBS = -nostdlib -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -
 LDFLAGS = -Teagle.app.v6.ld
 
 TARGET = user_main
-OBJ = user_main.o user_connect.o user_network.o user_task.o
+OBJ = user_main.o user_connect.o user_network.o user_task.o user_humidity.o user_i2c.o
 
 user_main-0x00000.bin: $(TARGET)
 	esptool.py elf2image $^

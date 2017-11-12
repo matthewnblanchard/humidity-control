@@ -1,5 +1,18 @@
-pm open,type:2 0
-rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpåélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínríl`pÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíínrí`pÚn‡råúú‚‡Ïbn‚|åålåbåÚnnÓl`ênnélnréíínÇÇí`ríínÇÇí`å‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 3
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
+rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpÏélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínÇ‚l`pÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíínl`pÚn‡råúú‚‡Ïbn‚|ålbåÚnnÓl`ênnélnréíínlúlríínlúlå‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
 mode : softAP(5e:cf:7f:19:b0:c5)
 add if1
 dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
@@ -17,7 +30,7 @@ scandone
 AP scan concluded, status=0
 found AP: Soochboys
 ap_count: 1
-found 1 APs, best_rssi=-69
+found 1 APs, best_rssi=-59
 bssid=2c:30:33:7e:a6:7b
 attempting to connect ...
 scandone
@@ -25,7 +38,7 @@ state: 0 -> 2 (b0)
 state: 2 -> 3 (0)
 state: 3 -> 5 (10)
 add 0
-aid 11
+aid 3
 cnt 
 
 connected with Soochboys, channel 9
@@ -41,1451 +54,39 @@ Entering UDP block
 configured udp listening
 started broadcasting
 data sent
+deleting UDP transmission data
 Entered user_tcp_accept()
 Starting TCP server
-fuck her right in the pussy
+Entering timer loop
 The Interior did not hear the broadcast
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-Waiting for interior connection...
-1 seconds spent waiting
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-64
-bssid=2c:30:33:7e:a6:7b
-attempting to connect ...
-scandone
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-failed to start broadcasting
-pm open,type:2 0
-Waiting for interior connection...
-7 seconds spent waiting
-pm open,type:2 0
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpåélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínblúlpÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíín‚l`pÚn‡råúú‚‡Ïbn‚|ålåéébåÚnnÓl`ênnélnréíínlúlríínlúlå‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
-mode : softAP(5e:cf:7f:19:b0:c5)
-add if1
-dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
-bcn 100
-bcn 0
-del if1
-usl
-mode : sta(5c:cf:7f:19:b0:c5)
-add if0
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-55
-bssid=2c:30:33:7e:a6:7b
-attempting to connect ...
-scandone
-state: 0 -> 2 (b0)
-state: 2 -> 3 (0)
-state: 3 -> 5 (10)
-add 0
-aid 11
-cnt 
-
-connected with Soochboys, channel 9
-dhcp client start...
-connecting ... status=1
-ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
 Waiting for interior connection...
 1 seconds spent waiting
 Waiting for interior connection...
 2 seconds spent waiting
 Waiting for interior connection...
 3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-pm open,type:2 0
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-Waiting for interior connection...
-11 seconds spent waiting
-Waiting for interior connection...
-12 seconds spent waiting
-Waiting for interior connection...
-13 seconds spent waiting
-Waiting for interior connection...
-14 seconds spent waiting
-Waiting for interior connection...
-15 seconds spent waiting
-Waiting for interior connection...
-16 seconds spent waiting
-Waiting for interior connection...
-17 seconds spent waiting
-Waiting for interior connection...
-18 seconds spent waiting
-Waiting for interior connection...
-19 seconds spent waiting
-Waiting for interior connection...
-20 seconds spent waiting
-Waiting for interior connection...
-21 seconds spent waiting
-Waiting for interior connection...
-22 seconds spent waiting
-Waiting for interior connection...
-23 seconds spent waiting
-Waiting for interior connection...
-24 seconds spent waiting
-Waiting for interior connection...
-25 seconds spent waiting
-Waiting for interior connection...
-26 seconds spent waiting
-Waiting for interior connection...
-27 seconds spent waiting
-Waiting for interior connection...
-28 seconds spent waiting
-Waiting for interior connection...
-29 seconds spent waiting
-Waiting for interior connection...
-30 seconds spent waiting
-Waiting for interior connection...
-31 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-Waiting for interior connection...
-32 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=4
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-33 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-34 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-35 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-36 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-37 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-38 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-39 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-40 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-41 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-42 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-43 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-44 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-45 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-46 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-47 seconds spent waiting
-nnectin ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-tcp connection establishedWaiting for interior connection...
-3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-pm open,type:2 0
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-received data from client
-data=send
-
-Fatal exception 28(LoadProhibitedCause):
-epc1=0x4000e1e0, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000005, depc=0x00000000
-
- ets Jan  8 2013,rst cause:2, boot mode:(1,6)
-
-
- ets Jan  8 2013,rst cause:4, boot mode:(1,6)
-
-wdt reset
-rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpåélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínblúlpÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíín‚l`pÚn‡råúú‚‡Ïbn‚|ålåéébåÚnnÓl`ênnélnréíínlúlríínlúlå‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
-mode : softAP(5e:cf:7f:19:b0:c5)
-add if1
-dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
-bcn 100
-bcn 0
-del if1
-usl
-mode : sta(5c:cf:7f:19:b0:c5)
-add if0
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-64
-bssid=2c:30:33:7e:a6:7b
-attempting to connect ...
-scandone
-state: 0 -> 2 (b0)
-state: 2 -> 3 (0)
-state: 3 -> 5 (10)
-add 0
-aid 11
-cnt 
-
-connected with Soochboys, channel 9
-dhcp client start...
-connecting ... status=1
-ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-tcp connection establishedWaiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-pm open,type:2 0
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-Waiting for interior connection...
-11 seconds spent waiting
-Waiting for interior connection...
-12 seconds spent waiting
-Waiting for interior connection...
-13 seconds spent waiting
-tcp connection disconnected
-Waiting for interior connection...
-14 seconds spent waiting
-Waiting for interior connection...
-15 seconds spent waiting
-Waiting for interior connection...
-16 seconds spent waiting
-Waiting for interior connection...
-17 seconds spent waiting
-Waiting for interior connection...
-18 seconds spent waiting
-Waiting for interior connection...
-19 seconds spent waiting
-tcp connection establishedWaiting for interior connection...
-20 seconds spent waiting
-Waiting for interior connection...
-21 seconds spent waiting
-Waiting for interior connection...
-22 seconds spent waiting
-Waiting for interior connection...
-23 seconds spent waiting
-Waiting for interior connection...
-24 seconds spent waiting
-Waiting for interior connection...
-25 seconds spent waiting
-Waiting for interior connection...
-26 seconds spent waiting
-Waiting for interior connection...
-27 seconds spent waiting
-Waiting for interior connection...
-28 seconds spent waiting
-Waiting for interior connection...
-29 seconds spent waiting
-tcp connection disconnected
-Waiting for interior connection...
-30 seconds spent waiting
-Waiting for interior connection...
-31 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-Waiting for interior connection...
-32 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-33 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-34 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-35 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-Waiting for interior connection...
-36 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=1
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=1
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-scandone
-AP scan concluded, status=4
-Searched for NOT flash AP
-ap_count: 0
-no valid APs found with saved SSID
-Starting a new scan
-Scanning for SSID: Soochboys
-sl
-usl
-rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpåélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínblúlpÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíín‚l`pÚn‡råúú‚‡Ïbn‚|ålåéébåÚnnÓl`ênnélnréíínlúlríínlúlå‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
-mode : softAP(5e:cf:7f:19:b0:c5)
-add if1
-dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
-bcn 100
-bcn 0
-del if1
-usl
-mode : sta(5c:cf:7f:19:b0:c5)
-add if0
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-60
-bssid=2c:30:33:7e:a6:7b
-attempting to connect ...
-scandone
-state: 0 -> 2 (b0)
-state: 2 -> 3 (0)
-state: 3 -> 5 (10)
-add 0
-aid 11
-cnt 
-
-connected with Soochboys, channel 9
-dhcp client start...
-connecting ... status=1
-ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-tcp connection establishedpm open,type:2 0
-tcp connection disconnected
-tcp connection establishedreceived data from client
-data=
-
-Fatal exception 28(LoadProhibitedCause):
-epc1=0x4000e1e0, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000005, depc=0x00000000
-
- ets Jan  8 2013,rst cause:2, boot mode:(1,6)
-
-
- ets Jan  8 2013,rst cause:4, boot mode:(1,6)
-
-wdt reset
-rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpåélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínlélpÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíínbål`pÚn‡råúú‚‡Ïbn‚|ålåéébåÚnnÓl`ênnélnréíínrÇí`ríínrÇí`å‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
-mode : softAP(5e:cf:7f:19:b0:c5)
-add if1
-dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
-bcn 100
-bcn 0
-del if1
-usl
-mode : sta(5c:cf:7f:19:b0:c5)
-add if0
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-56
-bssid=2c:30:33:7e:a6:7b
-attempting to connect ...
-scandone
-state: 0 -> 2 (b0)
-state: 2 -> 3 (0)
-state: 3 -> 5 (10)
-add 0
-aid 11
-cnt 
-
-connected with Soochboys, channel 9
-dhcp client start...
-connecting ... status=1
-ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-pm open,type:2 0
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-Waiting for interior connection...
-11 seconds spent waiting
-Waiting for interior connection...
-12 seconds spent waiting
-Waiting for interior connection...
-13 seconds spent waiting
-Waiting for interior connection...
-14 seconds spent waiting
-Waiting for interior connection...
-15 seconds spent waiting
-tcp connection establishedreceived data from client
-data=ssid=Soochboys\r\npass=\r\n
-
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-55
-bssid=2c:30:33:7e:a6:7b
-sl
-attempting to connect ...
-usl
-scandone
-usl
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-failed to start broadcasting
-tcp connection disconnected
-rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbppÏélrlrl¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿¿ ¿connecting ... status=1
-scandone
-state: 0 -> 2 (b0)
-connecting ... status=1
-state: 2 -> 3 (0)
-state: 3 -> 5 (10)
-add 0
-aid 11
-cnt 
-
-connected with Soochboys, channel 9
-dhcp client start...
-connecting ... status=1
-ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-tcp connection establishedi
+Connection made to exterior over port ESPCONN
 received data from client
 data=ssid=Soochboys\r\npass=purplefinch654\r\n
 
-ssid read: Soochboys\r\npass=purplefinch654\r\n
-
-pass read: 1073674191
-Writing new data to flash
-reentering AP scanread user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
+humidity memory allocated
+commencing humidity readings
 pm open,type:2 0
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-55
-bssid=2c:30:33:7e:a6:7b
-sl
-attempting to connect ...
-usl
-scandone
-usl
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-failed to start broadcasting
-tcp connection disconnected
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-54
-bssid=2c:30:33:7e:a6:7b
-attempting to connect ...
-scandone
-state: 0 -> 2 (b0)
-state: 2 -> 3 (0)
-state: 3 -> 5 (10)
-add 0
-aid 11
-cnt 
 
-connected with Soochboys, channel 9
-dhcp client start...
-connecting ... status=1
-ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-tcp connection establishedi
-received data from client
-data=ssid=Soochboys\r\npass=purplefinch654\r\n
+ ets Jan  8 2013,rst cause:4, boot mode:(3,7)
 
-ssid read: Soochboys\r\npass=purplefinch654\r\n
-
-pass read: 1073674271
-Writing new data to flash
-reentering AP scanread user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-pm open,type:2 0
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-55
-bssid=2c:30:33:7e:a6:7b
-sl
-attempting to connect ...
-usl
-scandone
-usl
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-Connection is already established
-failed to start broadcasting
-tcp connection disconnected
-rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpÏélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínÚll`pÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíínÇl`pÚn‡råúú‚‡Ïbn‚|åÏåébåÚnnÓl`ênnélnréííníl`rííníl`å‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
+wdt reset
+load 0x40100000, len 32084, room 16 
+tail 4
+chksum 0xd6
+load 0x3ffe8000, len 892, room 4 
+tail 8
+chksum 0xa0
+load 0x3ffe8380, len 2900, room 0 
+tail 4
+chksum 0x8e
+csum 0x8e
+å‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
 mode : softAP(5e:cf:7f:19:b0:c5)
 add if1
 dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
@@ -1503,7 +104,7 @@ scandone
 AP scan concluded, status=0
 found AP: Soochboys
 ap_count: 1
-found 1 APs, best_rssi=-64
+found 1 APs, best_rssi=-55
 bssid=2c:30:33:7e:a6:7b
 attempting to connect ...
 scandone
@@ -1511,194 +112,13 @@ state: 0 -> 2 (b0)
 state: 2 -> 3 (0)
 state: 3 -> 5 (10)
 add 0
-aid 11
+aid 3
 cnt 
 
 connected with Soochboys, channel 9
 dhcp client start...
 connecting ... status=1
 ip:192.168.0.75,mask:255.255.255.0,gw:192.168.0.1
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-pm open,type:2 0
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-Waiting for interior connection...
-11 seconds spent waiting
-Waiting for interior connection...
-12 seconds spent waiting
-Waiting for interior connection...
-13 seconds spent waiting
-Waiting for interior connection...
-14 seconds spent waiting
-Waiting for interior connection...
-15 seconds spent waiting
-Waiting for interior connection...
-16 seconds spent waiting
-Waiting for interior connection...
-17 seconds spent waiting
-Waiting for interior connection...
-18 seconds spent waiting
-Waiting for interior connection...
-19 seconds spent waiting
-Waiting for interior connection...
-20 seconds spent waiting
-Waiting for interior connection...
-21 seconds spent waiting
-Waiting for interior connection...
-22 seconds spent waiting
-Waiting for interior connection...
-23 seconds spent waiting
-Waiting for interior connection...
-24 seconds spent waiting
-Waiting for interior connection...
-25 seconds spent waiting
-Waiting for interior connection...
-26 seconds spent waiting
-Waiting for interior connection...
-27 seconds spent waiting
-Waiting for interior connection...
-28 seconds spent waiting
-Waiting for interior connection...
-29 seconds spent waiting
-Waiting for interior connection...
-30 seconds spent waiting
-Waiting for interior connection...
-31 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-63
-bssid=2c:30:33:7e:a6:7b
-sl
-attempting to connect ...
-usl
-scandone
-usl
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-Connection is already established
-failed to start broadcastingEntered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-pm open,type:2 0
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-Waiting for interior connection...
-11 seconds spent waiting
-Waiting for interior connection...
-12 seconds spent waiting
-Waiting for interior connection...
-13 seconds spent waiting
-Waiting for interior connection...
-14 seconds spent waiting
-Waiting for interior connection...
-15 seconds spent waiting
-Waiting for interior connection...
-16 seconds spent waiting
-Waiting for interior connection...
-17 seconds spent waiting
-Waiting for interior connection...
-18 seconds spent waiting
-Waiting for interior connection...
-19 seconds spent waiting
-Waiting for interior connection...
-20 seconds spent waiting
-Waiting for interior connection...
-21 seconds spent waiting
-Waiting for interior connection...
-22 seconds spent waiting
-Waiting for interior connection...
-23 seconds spent waiting
-Waiting for interior connection...
-24 seconds spent waiting
-Waiting for interior connection...
-25 seconds spent waiting
-Waiting for interior connection...
-26 seconds spent waiting
-Waiting for interior connection...
-27 seconds spent waiting
-Waiting for interior connection...
-28 seconds spent waiting
-Waiting for interior connection...
-29 seconds spent waiting
-Waiting for interior connection...
-30 seconds spent waiting
-Waiting for interior connection...
-31 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
-scandone
-AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-60
-bssid=2c:30:33:7e:a6:7b
-sl
-attempting to connect ...
-usl
-scandone
-usl
 connecting ... status=5
 ip received
 ip=192.168.0.75
@@ -1712,114 +132,1347 @@ deleting UDP transmission data
 Entered user_tcp_accept()
 Starting TCP server
 Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
-Waiting for interior connection...
-11 seconds spent waiting
-Waiting for interior connection...
-12 seconds spent waiting
-Waiting for interior connection...
-13 seconds spent waiting
-Waiting for interior connection...
-14 seconds spent waiting
-Waiting for interior connection...
-15 seconds spent waiting
-Waiting for interior connection...
-16 seconds spent waiting
-Waiting for interior connection...
-17 seconds spent waiting
-Waiting for interior connection...
-18 seconds spent waiting
-Waiting for interior connection...
-19 seconds spent waiting
-Waiting for interior connection...
-20 seconds spent waiting
-Waiting for interior connection...
-21 seconds spent waiting
-Waiting for interior connection...
-22 seconds spent waiting
-Waiting for interior connection...
-23 seconds spent waiting
-Waiting for interior connection...
-24 seconds spent waiting
-Waiting for interior connection...
-25 seconds spent waiting
-Waiting for interior connection...
-26 seconds spent waiting
-Waiting for interior connection...
-27 seconds spent waiting
-Waiting for interior connection...
-28 seconds spent waiting
-Waiting for interior connection...
-29 seconds spent waiting
-Waiting for interior connection...
-30 seconds spent waiting
-Waiting for interior connection...
-31 seconds spent waiting
-read user_data, result=0
-read_ssid=Soochboys
-read_pass=purplefinch654
-scanning for APs
-sl
+The Interior did not hear the broadcast
 scandone
 AP scan concluded, status=0
-found AP: Soochboys
-ap_count: 1
-found 1 APs, best_rssi=-60
-bssid=2c:30:33:7e:a6:7b
-sl
-attempting to connect ...
-usl
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
 scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpÏélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínbll`pÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréíínåélpÚn‡råúú‚‡Ïbn‚|ålbåÚnnÓl`ênnélnréíínbúlríínbúlå‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
+mode : softAP(5e:cf:7f:19:b0:c5)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
 usl
-connecting ... status=5
-ip received
-ip=192.168.0.75
-netmask=255.255.255.0
-gw=192.168.0.1
-Entering UDP block
-configured udp listening
-started broadcasting
-data sent
-deleting UDP transmission data
-Entered user_tcp_accept()
-Starting TCP server
-Entering timer loop
-Waiting for interior connection...
-1 seconds spent waiting
-Waiting for interior connection...
-2 seconds spent waiting
-Waiting for interior connection...
-3 seconds spent waiting
-Waiting for interior connection...
-4 seconds spent waiting
-Waiting for interior connection...
-5 seconds spent waiting
-Waiting for interior connection...
-6 seconds spent waiting
-Waiting for interior connection...
-7 seconds spent waiting
-Waiting for interior connection...
-8 seconds spent waiting
-Waiting for interior connection...
-9 seconds spent waiting
-Waiting for interior connection...
-10 seconds spent waiting
+mode : sta(5c:cf:7f:19:b0:c5)
+add if0
+read user_data, result=0
+read_ssid=TESTTTTT
+read_pass=password
+scanning for APs
+scandone
+AP scan concluded, status=0
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for NOT flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+rllúû|ål‡|ålÏb|éÇÏíríbåbåÚnnûlnnú‚ÏbpåélrlrlpÚn‡Çlbn‚|ÏåébåÚnnÓlåél`ênnélnréíínÏl`pÚn‡råúú‚‡bn‚|låbåÚnnÓél`ênnl`nréííníl`pÚn‡råúú‚‡Ïbn‚|ållåébåÚnnÓl`ênnélnréíín‚í`ríín‚í`å‚ÏÇnÏírÇÚn|Ïllll`å‚rílålål`å‚rílÏlå™IQÅspeed set to 115200
+mode : softAP(5e:cf:7f:19:b0:c5)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:19:b0:c5)
+add if0
+read user_data, result=0
+read_ssid=TESTTTTT
+read_pass=password
+scanning for APs
+scandone
+AP scan concluded, status=0
+Searched for flash AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
+scandone
+AP scan concluded, status=0
+Searched for interior AP
+ap_count: 0
+no valid APs found with saved SSID
+Starting a new scan
+Scanning for SSID: HBFC/D Wireless Setup
