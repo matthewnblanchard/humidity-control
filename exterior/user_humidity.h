@@ -22,8 +22,6 @@
 float *sensor_data_ext;		// Exterior sensor buffer
 extern uint16 data_index_ext;	// Index of next available data slot
 
-// The system will not try to reduce the humidity below this
-extern float threshold_humidity;
 
 // Function Prototypes:
 //

@@ -36,6 +36,7 @@ os_event_t * user_msg_queue_2;
 
 // Timers
 os_timer_t timer_1;
+os_timer_t timer_2;
 os_timer_t timer_humidity;
 
 // User Task: user_task_error(os_event_t * e)

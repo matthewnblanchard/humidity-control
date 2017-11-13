@@ -20,8 +20,8 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
                 return;
         }
         struct user_data_station_config test_config = {
-                "TESTTTTT",
-                "password",
+                "Soochboys",
+                "purplefinch654",
                 0x00
         };
         flash_result = spi_flash_write(
@@ -260,7 +260,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                         	}
 			} else if( int_scan == 1){
 				// Begin TCP connection to interior as client
-				os_printf("Entering TCP block\r\n");
+				os_printf("Begin looking for interior TCP connection\r\n");
 				user_tcp_connect();
 			}	
                 } else {

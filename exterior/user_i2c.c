@@ -1,7 +1,7 @@
 // user_i2c.c
 // Authors: Christian Auspland & Matthew Blanchard
 
-#include <user_i2c.h>
+#include "user_i2c.h"
 
 // Static functions are not predefined to avoid flash issues
 // void user_i2c_sda_set(bool stat);
@@ -153,7 +153,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte)
 
 	// Write each bit from most significant to least
 	for (i = 0; i < 8; i++) {
-		user_i2c_write_byte((byte << i) & 0x80);
+		user_i2c_write_bit((byte << i) & 0x80);
 	}
 
 	// Read/return ACK/NACK
@@ -162,7 +162,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte)
 
 uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack)
 {
-	uint8 i = 0;	// Loop index
+	int8 i = 0;	// Loop index
 	uint8 byte = 0; // Read byte
 
 	user_i2c_sda_set(1);
@@ -174,7 +174,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack)
 
 	user_i2c_scl_set(0);
 	os_delay_us(I2C_DELAY);	
-
+	
 	// Send an ACK or NACK
 	user_i2c_send_ack(ack);
 

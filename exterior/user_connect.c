@@ -61,10 +61,15 @@ void ICACHE_FLASH_ATTR user_tcp_connect()
 	
 	sint8 result = 0;	// Function call return values
 	
+
 	// Set up TCP connection control structures
 	os_memset(&tcp_connect_conn, 0, sizeof(tcp_connect_conn));
 	os_memset(&tcp_connect_proto, 0, sizeof(tcp_connect_proto));
-	tcp_connect_proto.local_port = HTTP_PORT;
+	tcp_connect_proto.remote_port = ESPCONNECT;
+	tcp_connect_proto.remote_ip[0] = 192;
+	tcp_connect_proto.remote_ip[1] = 168;
+	tcp_connect_proto.remote_ip[2] = 0;
+	tcp_connect_proto.remote_ip[3] = 1;
 	tcp_connect_conn.type = ESPCONN_TCP;
 	tcp_connect_conn.state = ESPCONN_NONE;
 	tcp_connect_conn.proto.tcp = &tcp_connect_proto;
@@ -85,7 +90,7 @@ void ICACHE_FLASH_ATTR user_tcp_connect()
 		os_printf("failed to start tcp server, error=%d\r\n", result);
 		CALL_ERROR(ERR_FATAL);
 	}
-	os_printf("does it go here?");
+	os_printf("waiting for interior to open a tcp connection on port 4000...\r\n");
 }
 
 void ICACHE_FLASH_ATTR tcp_timer_cb()
@@ -132,7 +137,9 @@ void ICACHE_FLASH_ATTR user_tcp_connect_cb(void *arg)
 	os_printf("tcp connection established\r\n");
 	struct espconn *client_conn = arg;
 
-	os_timer_disarm(&timer_1);
+	os_timer_disarm(&timer_2);
+	os_timer_setfn(&timer_2, (os_timer_func_t *)acknowledge_tcp, NULL);
+	os_timer_arm(&timer_2, 1000, 1);
 
 	// Register callbacks for the connected client
 	espconn_regist_recvcb(client_conn, user_tcp_recv_cb);
@@ -158,6 +165,8 @@ void ICACHE_FLASH_ATTR user_tcp_accept_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
+
+	os_timer_disarm(&timer_1);
 	struct espconn *client_conn = arg;	// Pull client connection
 	sint8 flash_result = 0;			// Result of flash operation
 	char *p1;				// Char pointer for string manipulation
@@ -167,13 +176,19 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 	char *pass;				// User sent password
 	uint8 pass_len;				// Length of the password
 
-	os_printf("received data from client\r\n");
+	os_printf("received data from interior\r\n");
 	os_printf("data=%s\r\n", pusrdata);
 
 	// Search for form data
 	p1 = (uint8 *)os_strstr(pusrdata, "ssid=");	//Locate SSID
+	if (p1 == NULL) {
+		os_printf("Data received does not match the necessary format\r\n");
+		return;
+	}
+	os_timer_disarm(&timer_2);
+
 	p1 = p1 + 5;				// Move past "ssid=" to the actual ssid
-	p2 = (uint8 *)os_strstr(p1, "\r\n");	// Search for &, which separates values
+	p2 = (uint8 *)os_strstr(p1, "&");	// Search for &, which separates values
 	ssid_len = (uint8)((uint32)p2 - (uint32)p1);	//Calculate SSID length
 	ssid = p1;				// Save location of SSID
 	
@@ -281,3 +296,12 @@ void ICACHE_FLASH_ATTR user_tcp_sent_cb(void *arg)
 	os_printf("Data sent to server\r\n");
 }
 
+void ICACHE_FLASH_ATTR acknowledge_tcp(void)
+{
+	//char *message = "ack";
+	os_printf("sending acknowledge packet over tcp\r\n");
+	if (espconn_send(&tcp_connect_conn, "ack", 3) < 0) {
+		os_printf("Couldn't send acknowledgement packet\r\n");
+		CALL_ERROR(ERR_FATAL);
+	}
+}	

@@ -15,7 +15,7 @@
 // I2C pin definitions - THESE SHOULD NOT BE CHANGED
 #define SDA_PIN 4
 #define SDA_BIT BIT4
-#define SDA_MUX PERPHS_IO_MUX_GPIO4_U
+#define SDA_MUX PERIPHS_IO_MUX_GPIO4_U
 #define SDA_FUNC FUNC_GPIO4
 #define SCL_PIN 5
 #define SCL_BIT BIT5
@@ -31,7 +31,7 @@
 // 	None
 // Returns: 
 // 	Nothing
-void ICACHE_FLASH_ATTR user_i2c_start_bit();
+void ICACHE_FLASH_ATTR user_i2c_start_bit(void);
 
 // void ICACHE_FLASH_ATTR user_i2c_stop_bit(void);
 // Desc: Sends an I2C stop bit
@@ -39,7 +39,7 @@ void ICACHE_FLASH_ATTR user_i2c_start_bit();
 // 	None
 // Returns:
 // 	Nothing
-void ICACHE_FLASH_ATTR user_i2c_stop_bit();
+void ICACHE_FLASH_ATTR user_i2c_stop_bit(void);
 
 // uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 bit);
 // Desc:
@@ -50,7 +50,7 @@ void ICACHE_FLASH_ATTR user_i2c_stop_bit();
 // Return:
 // 	True, if a NACK was received
 // 	False, if an ACK was received
-uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 bit);
+uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte);
 
 // uint8 ICACHCE_FLASH_ATTR user_i2c_read_byte(uint8 byte);
 // Desc:
@@ -60,7 +60,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 bit);
 // 	uint9 ack: 0 to send an ACK, 1 to send a NACK
 // Returns:
 // 	The byte which was read
-uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 byte);
+uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack);
 
 // void ICACHE_FLASH_ATTR user_i2c_send_ack(uint9 ack_level);
 // Desc:

@@ -111,4 +111,11 @@ void ICACHE_FLASH_ATTR user_tcp_discon_cb(void *arg);
 // 	void *arg: pointer to the espconn which called this function
 void ICACHE_FLASH_ATTR user_tcp_sent_cb(void *arg);
 
+// Callback Function: acknowledge_tcp();
+// Desc: Periodically sends data over tcp so the connection doesn't
+// 	timeout and end the connection
+// Args:
+// 	None
+void ICACHE_FLASH_ATTR acknowledge_tcp(void);
+
 #endif /* USER_CONNECT_H */
