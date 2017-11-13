@@ -10,10 +10,9 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 	uint8 status = 0;		// Status read by humidity sensor
 	uint8 read_byte = 0;		// Byte read from the humidity sensor
 	uint16 humidity = 0;		// Humidity reading w/o calculations
-	float *hp;			// Pointer to humidity data
-	float adj_humidity = 0;		// Humidity reading after calculations
+	float adj_humidity = 0;	
+	float *hp;
 
-	os_printf("Entering humidity reading task\r\n");
 	// Wake up the sensor by sending a measurement request. This consists
 	// of the slaves address and a single 0 bit.
 	user_i2c_start_bit();
@@ -25,7 +24,6 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 
 	// The average measurement cycle takes 36.65ms. 100ms leaves a 
 	// good amount of leeway
-	os_delay_us(50000);
 	os_delay_us(50000);
 	os_delay_us(50000);
 	// Retrieve the data now that the measurement cycle has completed

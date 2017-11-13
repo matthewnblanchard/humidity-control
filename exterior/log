@@ -1,0 +1,300 @@
+scandone
+AP scan concluded, status=0
+Searched for flash AP
+found AP: Soochboys
+ap_count: 1
+found 1 APs, best_rssi=-47
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 3
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.74,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.74
+netmask=255.255.255.0
+gw=192.168.0.1
+Entering UDP block
+configured udp listening
+started broadcasting
+data sent
+deleting UDP transmission data
+Entered user_tcp_accept()
+Starting TCP server
+Entering timer loop
+The Interior did not hear the broadcast
+Waiting for interior connection...
+1 seconds spent waiting
+Waiting for interior connection...
+2 seconds spent waiting
+Connection made to exterior over port ESPCONN
+received data from client
+data=0
+
+humidity memory allocated
+commencing humidity readings
+pm open,type:2 0
+reading=5548, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5513, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5480, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5526, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5528, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5472, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5450, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5418, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5389, humidity=32, status=0
+Sending humidity data to interior
+adjusted humidity: 32
+Data sent to server
+reading=5412, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5616, humidity=34, status=0
+Sending humidity data to interior
+adjusted humidity: 34
+Data sent to server
+reading=5612, humidity=34, status=0
+Sending humidity data to interior
+adjusted humidity: 34
+Data sent to server
+reading=5538, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5890, humidity=35, status=0
+Sending humidity data to interior
+adjusted humidity: 35
+Data sent to server
+reading=5796, humidity=35, status=0
+Sending humidity data to interior
+adjusted humidity: 35
+Data sent to server
+reading=5659, humidity=34, status=0
+Sending humidity data to interior
+adjusted humidity: 34
+Data sent to server
+reading=5555, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5490, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5456, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5433, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5421, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5406, humidity=32, status=0
+Sending humidity data to interior
+adjusted humidity: 32
+Data sent to server
+reading=5402, humidity=32, status=0
+Sending humidity data to interior
+adjusted humidity: 32
+Data sent to server
+reading=5406, humidity=32, status=0
+Sending humidity data to interior
+adjusted humidity: 32
+Data sent to server
+reading=5404, humidity=32, status=0
+Sending humidity data to interior
+adjusted humidity: 32
+Data sent to server
+reading=5408, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5412, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5412, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5412, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5408, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5425, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5433, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5437, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5441, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5439, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5439, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5439, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5439, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5443, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5452, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5460, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5456, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5460, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5463, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5463, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5463, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5460, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5460, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5465, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5461, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5461, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5461, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5461, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5454, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5450, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5450, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5450, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5454, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5454, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5454, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5452, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5452, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server
+reading=5460, humidity=33, status=0
+Sending humidity data to interior
+adjusted humidity: 33
+Data sent to server

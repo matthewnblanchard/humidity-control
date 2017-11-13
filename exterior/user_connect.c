@@ -276,7 +276,7 @@ void ICACHE_FLASH_ATTR user_tcp_accept_recv_cb(void *arg, char *pusrdata, unsign
 	//os_printf("threshold humidity:%lf\r\n", threshold_humidity);
 
 	// Register humidity reading timer
-	os_timer_setfn(&timer_humidity, (os_timer_func_t *)user_read_humidity, NULL);	
+	os_timer_setfn(&timer_humidity, user_read_humidity, NULL);	
 	os_timer_arm(&timer_humidity, 3000, true);
 	os_printf("commencing humidity readings\r\n");
 }

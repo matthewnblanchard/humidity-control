@@ -21,7 +21,7 @@ static void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state)
 	}
 	
 	return;	
-}
+};
 
 // void user_i2c_scl_set(bool state);
 // Desc: Sets the SCL line to state (high or low);
@@ -40,7 +40,7 @@ static void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state)
 	}	
 
 	return;
-}
+};
 
 
 
@@ -56,7 +56,7 @@ static bool ICACHE_FLASH_ATTR user_i2c_scl_read(void)
 {
 	// Read and return SCL line
 	return GPIO_INPUT_GET(GPIO_ID_PIN(SCL_PIN));
-}
+};
 
 // bool user_i2c_sda_read(void);
 // Desc: Reads the SDA line
@@ -68,7 +68,7 @@ static bool ICACHE_FLASH_ATTR user_i2c_sda_read(void)
 {
 	// Read and return SDA line
 	return GPIO_INPUT_GET(GPIO_ID_PIN(SDA_PIN));
-}
+};
 
 // uint8 user_i2c_read_bit(void);
 // Desc:
@@ -94,7 +94,7 @@ static ICACHE_FLASH_ATTR uint8 user_i2c_read_bit(void)
 	os_delay_us(I2C_DELAY);
 
 	return bit;
-}
+};
 
 // void user_i2c_write_bit(uint8 bit);
 // Desc: 
@@ -115,7 +115,7 @@ static void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit)
 	os_delay_us(I2C_DELAY);
 
 	return;
-}
+};
 
 void ICACHE_FLASH_ATTR user_i2c_start_bit(void)
 {
@@ -129,7 +129,7 @@ void ICACHE_FLASH_ATTR user_i2c_start_bit(void)
 	user_i2c_scl_set(0);
 
 	return;
-}
+};
 
 void ICACHE_FLASH_ATTR user_i2c_stop_bit(void)
 {
@@ -142,7 +142,7 @@ void ICACHE_FLASH_ATTR user_i2c_stop_bit(void)
 	os_delay_us(I2C_DELAY);
 
 	return;
-}
+};
 
 
 uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte)
@@ -158,7 +158,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte)
 
 	// Read/return ACK/NACK
 	return user_i2c_recv_ack();
-}
+};
 
 uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack)
 {
@@ -179,7 +179,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack)
 	user_i2c_send_ack(ack);
 
 	return byte;
-}
+};
 
 void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level)
 {
@@ -202,7 +202,7 @@ void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level)
 	os_delay_us(I2C_DELAY);
 
 	return;
-}
+};
 
 uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void)
 {
@@ -227,4 +227,4 @@ uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void)
 	os_delay_us(I2C_DELAY);
 
 	return result;
-}
+};

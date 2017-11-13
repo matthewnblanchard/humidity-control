@@ -4,6 +4,7 @@
 
 #include <user_interface.h>
 #include <osapi.h>
+#include <gpio.h>
 #include "user_network.h"
 #include "user_task.h"
 #include "user_humidity.h"
