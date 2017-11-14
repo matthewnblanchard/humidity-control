@@ -34,9 +34,6 @@ struct _esp_tcp tcp_captive_proto;
 struct espconn tcp_captive_ext_conn;
 struct _esp_tcp tcp_captive_ext_proto;
 
-// Exterior connection status flag/pointer
-extern bool captive_ext_connect;
-
 // User Task: user_apmode_init()
 // Desc: Switches the ESP8266 to SoftAP mode, configures it to service connected clients
 //      and creates a captive portal for users to enter configuration data

@@ -9,13 +9,10 @@ volatile uint32 drive_delay = 150;
 
 void ICACHE_FLASH_ATTR user_fan_init()
 {
-	// Reset ZCD interrupt
-        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_NEGEDGE);       // Falling edge triggers
-
 	// Initialize ZCD
-	gpio_output_set(0, 0, 0, ZCD_BIT);     // Set ZCD pin as input
-        gpio_intr_handler_register(user_gpio_isr, 0);   // Register GPIO ISR
-        gpio_pin_intr_state_set(ZCD_BIT, GPIO_PIN_INTR_NEGEDGE);       // Falling edge triggers
+	gpio_output_set(0, 0, 0, ZCD_BIT);     				// Set ZCD pin as input
+        gpio_intr_handler_register(user_gpio_isr, 0);   		// Register GPIO ISR
+        gpio_pin_intr_state_set(ZCD_BIT, GPIO_PIN_INTR_NEGEDGE);        // Falling edge triggers
         os_printf("zcd initialized\r\n");
 
         return;        
@@ -23,15 +20,16 @@ void ICACHE_FLASH_ATTR user_fan_init()
 
 void user_gpio_isr(uint32 intr_mask, void *arg)
 {
-	gpio_intr_ack(intr_mask);
+	gpio_intr_ack(intr_mask);	// ACK interrupt
 
 	// Check if ZCD interrupt occured
 	if (intr_mask & (ZCD_BIT)) {
-		intr_cnt++;
+
 		// Arm the fan driving timer if necessary
 		if (drive_flag) {
 			hw_timer_arm(drive_delay);
-		}	
+		}
+	
                 return;
 	};
 };

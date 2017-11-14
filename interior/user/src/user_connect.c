@@ -7,8 +7,10 @@
 char *front_page = {
         "HTTP/1.1 200 OK\r\n\
         Content-type: text/html\r\n\r\n\
+	<!DOCTYPE html>\
         <html>\
         <head>\
+		<meta charset=\"UTF-8\"/>\
                 <title>HBFC/D Front Page</title>\
                 <script>\
                         var ws;\
@@ -24,8 +26,9 @@ char *front_page = {
                                         if(evt.data instanceof ArrayBuffer) {\
                                                 var buffer = evt.data;\
                                                 var view = new DataView(buffer);\
-                                                console.log(view.getFloat32(0));\
+                                                console.log(\"int=\", view.getFloat32(0, true), \" ext=\", view.getFloat32(1, true));\
                                         };\
+					ws.send(\"ack\");\
                                 };\
 				var ws_init = document.getElementById(\"ws_init\");\
 				ws_init.style.display = \"none\";\
@@ -63,7 +66,7 @@ char *ws_response = {
         "Connection: Upgrade\r\n"\
         "Sec-WebSocket-Accept: %s\r\n\r\n"
 };
-
+/*
 void ICACHE_FLASH_ATTR udp_listen_cb(void *arg, char *pdata, unsigned short len)
 {
         struct espconn *rec_conn = arg;         // Pull espconn from passed args
@@ -79,8 +82,13 @@ void ICACHE_FLASH_ATTR udp_listen_cb(void *arg, char *pdata, unsigned short len)
                 info->remote_ip[2],
                 info->remote_ip[3]
         );
-};
 
+	// Establish TCP connection to exterior
+	os_memset(&tcp_ext_conn, 0, sizeof(tcp_ext_conn));
+	os_memcpy(		
+
+};
+*/
 void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
 {
         sint8 result = 0;
@@ -201,8 +209,8 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                                 espconn_regist_recvcb(client_conn, user_ws_recv_cb);
 
                                 // Arm WebSocket update timer
-                                //os_timer_setfn(&ws_timer, user_ws_update, client_conn);
-                                //os_timer_arm(&ws_timer, WS_UPDATE_TIME, 1);
+                                os_timer_setfn(&ws_timer, user_ws_update, client_conn);
+                                os_timer_arm(&ws_timer, WS_UPDATE_TIME, 1);
                          
                         } else {
                                 os_printf("failed to create websocket response\r\n");
@@ -311,9 +319,8 @@ void ICACHE_FLASH_ATTR user_ws_update(void *parg)
 {
         sint8 result = 0;                       // Function result
         struct espconn *ws_conn = parg;         // Grab WebSocket connection
-        uint8 data[6];                          // Packet data
-        os_memset(&data, 0, 6);                  
-        float humidity_int = 0;                 // Interior humidity reading
+        uint8 data[10];                          // Packet data
+        os_memset(&data, 0, 10);                  
 
         // Contruct packet. See user_sw_recv_cb for information on WebSocket packet structure.
         //      Packets from the server should never be masked
@@ -321,18 +328,18 @@ void ICACHE_FLASH_ATTR user_ws_update(void *parg)
 
         // Contruct bytes 1 & 2
         data[0] = (0x80) | (0x02);     // Unfragmented, binary data 
-        data[1] = 0x04;                // Unmasked, payload length 4 bytes  
+        data[1] = 0x08;                // Unmasked, payload length 8 bytes  
         
         // Read humidity data
-        humidity_int = sensor_data_int[data_index_int == 0 ? SENSOR_BUFFER_SIZE : data_index_int - 1];
-        os_printf("sending humidity %d\n", (uint32)humidity_int);
+	os_memcpy(&data[2], &sensor_data_int, 4);
+	os_memcpy(&data[6], &sensor_data_ext, 4);
 
         // Organize payload in big endian format
-        os_memcpy(&data[2], &humidity_int, 4); 
-        user_endian_flip(&data[2], 4);  // Swap endianess
+//        user_endian_flip(&data[2], 8);  // Swap endianess
+//        user_endian_flip(&data[6], 4);  // Swap endianess
 
         // Send data to WebSocket
-        result = espconn_send(ws_conn, data, 6);
+        result = espconn_send(ws_conn, data, 10);
 
         return;
 };
@@ -350,7 +357,7 @@ void ICACHE_FLASH_ATTR user_endian_flip(uint8 *buf, uint8 n)
         };
 
         return;
-}
+};
 
 void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 {

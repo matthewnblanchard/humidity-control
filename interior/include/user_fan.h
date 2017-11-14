@@ -11,14 +11,17 @@
 #include <gpio.h>
 #include <eagle_soc.h>
 
-#define TRIAC_PULSE_PERIOD	100	// Pulse length in us for driving the triac
 // Fan supply definitions
-#define FAN_RPM_MAX		3100							// Exhaust fan maximum RPM
-#define SUPPLY_PERIOD 		16667 							// Fan supply period in us
-#define SUPPLY_HALF_CYCLE	SUPPLY_PERIOD / 2					// Fan supply half cycle period
-#define CALC_DELAY(X)		(SUPPLY_HALF_CYCLE * (FAN_RPM_MAX - X)) / FAN_RPM_MAX 	// Calculate delay required for RPM X
-#define SPEED_DELAY(X)		CALC_DELAY(X) > 150 ? CALC_DELAY(X) : 150		// Minimum delay of 150 us
+#define TRIAC_PULSE_PERIOD	100			// Pulse length in us for driving the triac
+#define FAN_RPM_MAX		3100			// Exhaust fan maximum RPM
+#define SUPPLY_PERIOD 		16667 			// Fan supply period in us
+#define SUPPLY_HALF_CYCLE	SUPPLY_PERIOD / 2	// Fan supply half cycle period
 
+// Macros to calculate TRIAC delay
+#define CALC_DELAY(X)		X //((-0.01541*(X)*(X)*(X)) + (0.02207*(X)*(X)) - (0.01175*(X)) + 0.006587)
+#define SPEED_DELAY(X)		X //CALC_DELAY((X)/FAN_RPM_MAX) > 150 ? CALC_DELAY((X)/FAN_RPM_MAX) : 150	// Minimum delay of 150 u
+
+// Fan/ZCD GPIO definitions
 #define TRIAC_PIN	12	// GPIO pin connected to the fan triac
 #define TRIAC_BIT       BIT12
 #define TRIAC_MUX       PERIPHS_IO_MUX_MTDI_U
@@ -27,9 +30,10 @@
 #define ZCD_BIT         BIT13
 #define ZCD_MUX         PERIPHS_IO_MUX_MTCK_U
 #define ZCD_FUNC        FUNC_GPIO13
+
+// Fan driving variables
 extern volatile bool drive_flag;		// Flag to indicate if fan should be driven
 extern volatile uint32 drive_delay;		// Triac delay in us
-extern uint16 intr_cnt;
 
 /* MISSING DECLARATIONS FROM HW_TIMER */
 typedef enum {
@@ -53,5 +57,9 @@ void user_gpio_isr(uint32 intr_mask, void *arg);
 // Desc: Timer callback which fires the triac after
 //	the timer delay
 void user_fire_triac(void);
+
+// Application Function: user_fan_init
+// Desc: Initializes the ZCD to begin running the fan
+void ICACHE_FLASH_ATTR user_fan_init(void);
 
 #endif /* _USER_FAN_H */

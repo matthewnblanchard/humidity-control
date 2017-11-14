@@ -38,8 +38,8 @@ void ICACHE_FLASH_ATTR user_init(void)
         system_init_done_cb(user_task_init);      
 }
 
-// Callback Function: user_task
-
+// Callback Function: user_task_init()
+// Desc: Initializes data structures for posting tasks to the system
 void ICACHE_FLASH_ATTR user_task_init(void)
 {
         // Allocate space for message queues
@@ -86,11 +86,10 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 	hw_timer_init(FRC1_SOURCE, 0);
 	hw_timer_set_func(user_fire_triac); 
 	
-
 	// Initialize ZCD
-	gpio_output_set(0, 0, 0, ZCD_BIT);     // Set ZCD pin as input
-        gpio_intr_handler_register(user_gpio_isr, 0);   // Register GPIO ISR
-        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);       // Falling edge triggers
+	gpio_output_set(0, 0, 0, ZCD_BIT);     					// Set ZCD pin as input
+        gpio_intr_handler_register(user_gpio_isr, 0);   			// Register GPIO ISR
+        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);   // Falling edge triggers
 
         // GPIO initialization
         gpio_init();

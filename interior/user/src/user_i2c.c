@@ -119,7 +119,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_write_byte(uint8 byte)
 
 uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack)
 {
-        int8 i = 0;    // Loop index
+        int8 i = 0;     // Loop index
         uint8 byte = 0; // Read byte
         
         user_i2c_sda_set(1);

@@ -1,7 +1,7 @@
 // user_network.h
 // Authors: Christian Auspland & Matthew Blanchard
-// Description: contains/manages Station Mode/SoftAP configurations for the ESP8266.
-//      Provides functionality to connect to a network:
+// Description: Contains/manages station mode configurations for the ESP8266.
+//      Provides functionality to connect to a network.
 
 #ifndef USER_NETWORK_H
 #define USER_NETWORK_H
@@ -16,17 +16,21 @@
 #include "user_task.h"
 #include "user_humidity.h"
 #include "user_fan.h"
+#include "user_exterior.h"
 
 // User Task signals
 #define SIG_CAPTIVE_DONE 1      // Sent to user_scan when the captive portal has received data.
                                 // Causes user_scan to disconnect and delete the captive portal
                                 // connection.
 
+#define SIG_EXT_ABORT 2
+
+
 // Global configurations (must be accessible from callback functions)
 struct station_config client_config;            // Station configuration
 
 // Software Timers
-os_timer_t timer_1;
+os_timer_t timer_ip;
 
 /* ------------------- */
 /* Function Prototypes */
@@ -35,7 +39,7 @@ os_timer_t timer_1;
 // User Task: user_scan(os_event_t *e)
 // Desc: Pulls SSID/pass from flash memory then attempts to find an AP
 //      broadcasting that SSID. If it finds one, attempts to connect.
-//      if it doesn't, switches to SoftAP mode to establish its own
+//      If it doesn't, switches to SoftAP mode to establish its own
 //      SSID, so that a user can connect and give it config
 // Args: None
 void ICACHE_FLASH_ATTR user_scan(os_event_t *e);

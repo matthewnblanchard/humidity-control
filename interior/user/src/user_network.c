@@ -22,7 +22,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
                 } else {
                         os_printf("captive portal terminated\r\n");
                 }
-        }
+	}
 
         // Set ESP8266 to station (client) mode
         wifi_set_opmode_current(STATION_MODE);
@@ -84,9 +84,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         if (ap_count != 0) {
                 best_bssid = best_ap->bssid;
                 os_printf("found %d APs, best_rssi=%d\r\n", ap_count, best_rssi);
-                os_printf("bssid=%x:%x:%x:%x:%x:%x\r\n",        // BSSI MAC in hex
-                        best_bssid[0],best_bssid[1],best_bssid[2],best_bssid[3],
-                        best_bssid[4],best_bssid[5]);
+                os_printf("bssid=%x:%x:%x:%x:%x:%x\r\n", MAC2STR(best_bssid));
 
                 // Connect
                 if (wifi_station_set_config(&client_config) == false) {          // Set client config (SSID/pass)
@@ -98,8 +96,8 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                 // Attempt to connect, check for obtained IP every second until an IP has been received
                 if (wifi_station_connect() == true) {
                         os_printf("attempting to connect ...\r\n");
-                        os_timer_setfn(&timer_1, user_check_ip, NULL);  // Set timer callback function
-                        os_timer_arm(&timer_1, 1000, true);             // Check for an IP every 1000 ms
+                        os_timer_setfn(&timer_ip, user_check_ip, NULL);  // Set timer callback function
+                        os_timer_arm(&timer_ip, 1000, true);             // Check for an IP every 1000 ms
                 } else {
                        os_printf("connection attempt failed \r\n");
                         CALL_ERROR(ERR_FATAL);
@@ -115,14 +113,15 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 void ICACHE_FLASH_ATTR user_check_ip(void)
 {
         struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info));
-        uint8 status = wifi_station_get_connect_status();       // Check connection status
 
+	// Check connection status
+        uint8 status = wifi_station_get_connect_status();
         os_printf("connecting ... status=%d\r\n", status);
 
         // Check if the ESP8266 has received an IP through DHCP
         if (status == STATION_GOT_IP) {
                 os_printf("ip received\r\n");
-                os_timer_disarm(&timer_1);                      // Stop checking the connection
+                os_timer_disarm(&timer_ip);                     // Stop checking the connection
                 if (wifi_get_ip_info(STATION_IF, ip) == true) { // Check ip info on station interface
                         os_printf("ip=%d.%d.%d.%d\r\n",
                                 IP_OCTET(ip->ip.addr,0),IP_OCTET(ip->ip.addr,1),
@@ -134,43 +133,8 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 IP_OCTET(ip->gw.addr,0),IP_OCTET(ip->gw.addr,1),
                                 IP_OCTET(ip->gw.addr,2),IP_OCTET(ip->gw.addr,3)); 
 
-                        // Set up UDP listening connection
-                        os_memset(&udp_listen_conn, 0, sizeof(udp_listen_conn));        // Clear control structure
-                        os_memset(&udp_listen_proto, 0, sizeof(udp_listen_proto));      // Clear protocol structure
-                        udp_listen_conn.type = ESPCONN_UDP;                             // UDP protocol
-                        udp_listen_conn.state = ESPCONN_NONE;                           // UDP lacks state info, so no state
-                        udp_listen_conn.proto.udp = &udp_listen_proto;                  // Point to protocol info
-                        udp_listen_conn.recv_callback = udp_listen_cb;                  // Callback function on received data
-                        udp_listen_proto.local_port = UDP_DISCOVERY_PORT;               // Local port
-                        os_printf("configured udp listening\r\n");
-                        if (espconn_create(&udp_listen_conn) < 0) {
-                                os_printf("failed to start listening\r\n");
-                        } else {
-                                os_printf("started listening\r\n");
-                        }
-
-			// Initialize the fan driving timer
-			user_fan_init();
-                        os_printf("fan Initialized\r\n");
-
-                        // Allocate memory for humidity sensor data buffers
-                        sensor_data_int = (float *)os_zalloc(SENSOR_BUFFER_SIZE * sizeof(float));
-			sensor_data_ext = (float *)os_zalloc(SENSOR_BUFFER_SIZE * sizeof(float));
-                        os_printf("humidity memory allocated\r\n");
-
-                        // Register humidity reading timer
-                        os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
-                        os_timer_arm(&timer_humidity, 3000, true);
-                        os_printf("commencing humidity readings\r\n");
-
-			// Initialize HW timer for triac control	
-			//hw_timer_init(NMI_SOURCE, 0);
-			//hw_timer_set_func(user_fire_triac); 
-
-                        // Initiate webserver
-                        os_printf("initiazting webserver\r\n");
-                        system_os_task(user_front_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
-                        system_os_post(USER_TASK_PRIO_1, 0, 0);
+                	system_os_task(user_broadcast_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+                	system_os_post(USER_TASK_PRIO_1, 0, 0); 
 
                 } else {
                         os_printf("failed tp check ip\r\n");

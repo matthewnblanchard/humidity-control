@@ -3,10 +3,11 @@
 
 #include "user_captive.h"
 
+// AP configuration
 struct softap_config ap_config = {      // SoftAP configuration
         "HBFC/D Wireless Setup",        // SSID
         "pass",                         // Password
-        22,                             // SSID length
+        21,                             // SSID length
         1,                              // Channel
         AUTH_OPEN,                      // Authentication mode
         false,                          // SSID hidden
@@ -74,7 +75,7 @@ char *submit_page = {
         </html>"
 };
 
-extern bool captive_ext_connect = 0;
+bool captive_ext_connect = 0;
 struct espconn *ext_conn = NULL;
 
 void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
@@ -153,7 +154,7 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         // Set up TCP server on port 4000
         os_memset(&tcp_captive_ext_conn, 0, sizeof(tcp_captive_ext_conn));      // Clear connection settings
         os_memset(&tcp_captive_ext_proto, 0, sizeof(tcp_captive_ext_proto));
-        tcp_captive_ext_proto.local_port = EXT_CONFIG_PORT;                     // Listen for HTTP traffic
+        tcp_captive_ext_proto.local_port = EXT_CONFIG_PORT;                     // Listen for TCP EXT_CONFIG_PORT traffic
         tcp_captive_ext_conn.type = ESPCONN_TCP;                            	// TCP protocol
         tcp_captive_ext_conn.state = ESPCONN_NONE;
         tcp_captive_ext_conn.proto.tcp = &tcp_captive_ext_proto;
@@ -197,7 +198,7 @@ void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
-        struct espconn *client_conn = arg;                     // Pull client connection
+        struct espconn *client_conn = arg;                      // Pull client connection
         sint8 flash_result = 0;                                 // Result of flash operation
         char *p1;                                               // Char pointer for string manipulations
         char *p2;                              
@@ -210,21 +211,25 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         os_printf("received data from client\r\n");
         os_printf("data=%s\r\n", pusrdata);
 
-        // Check if we recieved an HTTP GET request
+        // Check if an HTTP GET request was received
         if (os_strncmp(pusrdata, "GET ", 4) == 0) {
+
                 os_printf("http GET request detected\r\n");
 	
-		//if (captive_ext_connect == 1) {
+		// Send the configuration page only if the exterior system is connected,
+		// otherwise send the wait page
+		if (captive_ext_connect == 1) {
                 	os_printf("sending captive portal\r\n");
                 	espconn_send(client_conn, captive_page, os_strlen(captive_page)); 
-		//} else {
-		//	os_printf("sending wait page\r\n");
-                //	espconn_send(client_conn, wait_page, os_strlen(wait_page)); 
-		//}
+		} else {
+			os_printf("sending wait page\r\n");
+                	espconn_send(client_conn, wait_page, os_strlen(wait_page)); 
+		}
         }
 
         // Check if we received an HTTP POST request
         else if (os_strncmp(pusrdata, "POST ", 5) == 0) {
+
                 os_printf("user submitted config\r\n");
                 espconn_send(client_conn, submit_page, os_strlen(submit_page));
 
@@ -267,9 +272,9 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
                 }
 		
 		// Send credentials to the exterior system                
-        	//os_memset(send_buf, 0, 256);      // Clear send buffer
-		//os_sprintf(send_buf, "ssid=%s\r\npass=%s", ssid, pass);
-                //espconn_send(ext_conn, send_buf, os_strlen(send_buf)); 
+        	os_memset(send_buf, 0, 256);      // Clear send buffer
+		os_sprintf(send_buf, "ssid=%s&pass=%s", post_config.config.ssid, post_config.config.password);
+                espconn_send(ext_conn, send_buf, os_strlen(send_buf)); 
 
 
                 // Begin AP scan once again, with new credentials 
@@ -317,7 +322,12 @@ void ICACHE_FLASH_ATTR user_captive_ext_discon_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_captive_ext_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
+	struct espconn *conn = arg;
+
 	os_printf("received packet from ext system: %s\r\n", pusrdata);
+	
+	// Send ACK back
+        espconn_send(conn, "ack", 3); 
 };
 
 void ICACHE_FLASH_ATTR user_captive_ext_sent_cb(void *arg)
