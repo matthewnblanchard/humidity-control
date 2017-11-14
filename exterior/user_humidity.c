@@ -10,6 +10,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 	uint8 status = 0;		// Status read by humidity sensor
 	uint8 read_byte = 0;		// Byte read from the humidity sensor
 	uint16 humidity = 0;		// Humidity reading w/o calculations
+	char *test = "Test send data";
 	float adj_humidity = 0;	
 	float *hp;
 
@@ -59,9 +60,9 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 	hp = &adj_humidity;
 	
 	os_printf("Sending humidity data to interior\r\n");
-	os_printf("adjusted humidity: %d\r\n", (uint32)adj_humidity);	
+	os_printf("adjusted humidity: %d\r\n", (uint32)*hp);	
 	// Send newly read humidity data to the TCP connected system.
-	if (espconn_send(&tcp_connect_conn, (uint8 *)hp, sizeof(adj_humidity)) != 0) {
+	if (espconn_send(&tcp_connect_conn, (uint8 *)hp, sizeof(uint16)) != 0) {
 		os_printf("humidity data send failed\r\n");
 	}	
 }

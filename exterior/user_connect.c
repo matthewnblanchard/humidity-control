@@ -5,7 +5,8 @@
 
 void ICACHE_FLASH_ATTR udp_broadcast()
 {
-	char buffer[40] = {"Test data"};	// Broadcasted data doesn't matter
+	char buffer[40] = "Key=Hello Interior,ip=192.168.0.80";
+	
 	char macaddr[6];
 	struct ip_info ipsend;
 	
@@ -24,10 +25,18 @@ void ICACHE_FLASH_ATTR user_tcp_accept()
 	os_printf("Entered user_tcp_accept()\r\n");
 	server_counter = 0;
 	sint8 result = 0;
+
+	// Change UDP broadcast send callback function
+	espconn_regist_sentcb(&udp_broadcast_conn, udp_broadcast_cb_2);
+
 	//Prepare TCP server on port 4000
 	os_memset(&tcp_connect_conn, 0, sizeof(tcp_connect_conn));
 	os_memset(&tcp_connect_proto, 0, sizeof(tcp_connect_proto));
-	tcp_connect_proto.local_port = ESPCONNECT;
+	tcp_connect_proto.remote_port = ESPCONNECT_ACCEPT;
+	/*tcp_connect_proto.remote_ip[0] = 192;
+	tcp_connect_proto.remote_ip[1] = 168;
+	tcp_connect_proto.remote_ip[2] = 0;
+	tcp_connect_proto.remote_ip[3] = 1;*/
 	tcp_connect_conn.type = ESPCONN_TCP;
 	tcp_connect_conn.state = ESPCONN_NONE;
 	tcp_connect_conn.proto.tcp = &tcp_connect_proto;
@@ -95,10 +104,19 @@ void ICACHE_FLASH_ATTR user_tcp_connect()
 
 void ICACHE_FLASH_ATTR tcp_timer_cb()
 {
+	char buffer[40] = "Key=Hello Interior,ip=192.168.0.80";
+
 	server_counter++;
 	os_printf("Waiting for interior connection...\r\n");
-	os_printf("%d seconds spent waiting\r\n", server_counter);
-	if (server_counter > 30){
+	os_printf("Sending another UDP packet...\r\n");
+	espconn_send(&udp_broadcast_conn, buffer, os_strlen(buffer));
+	if (server_counter >= 60){
+	        os_printf("deleting UDP transmission data\r\n");
+	        if (espconn_delete(&udp_broadcast_conn) < 0) {
+        	        os_printf("Failed to delete UDP broadcast transmission\r\n");
+               		CALL_ERROR(ERR_FATAL);
+		}
+
 		if (system_os_task(user_scan_post, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false){
 			os_printf("failed to initialize user scan task\r\n");
 			CALL_ERROR(ERR_FATAL);
@@ -108,7 +126,8 @@ void ICACHE_FLASH_ATTR tcp_timer_cb()
 			CALL_ERROR(ERR_FATAL);
 		}
 		os_timer_disarm(&timer_1);
-	}	
+	}
+	os_printf("%d seconds spent waiting\r\n", server_counter);	
 }
 
 void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg)
@@ -118,18 +137,16 @@ void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg)
 
         os_printf("data sent\r\n");
 
-	os_printf("deleting UDP transmission data\r\n");
-	if (espconn_delete(&udp_broadcast_conn) < 0) {
-		os_printf("Failed to delete UDP broadcast transmission\r\n");
-		CALL_ERROR(ERR_FATAL);
-	}
-
-
 
 	os_timer_disarm(&timer_1);
 	os_timer_setfn(&timer_1, (os_timer_func_t *)user_tcp_accept, NULL);
 	os_timer_arm(&timer_1, 1000, 0);
 	
+}
+
+void ICACHE_FLASH_ATTR udp_broadcast_cb_2(void *arg)
+{
+	os_printf("data sent\r\n");
 }
 
 void ICACHE_FLASH_ATTR user_tcp_connect_cb(void *arg)
@@ -252,8 +269,8 @@ void ICACHE_FLASH_ATTR user_tcp_accept_recv_cb(void *arg, char *pusrdata, unsign
 {
 	struct espconn *client_conn = arg;	// Pull Client connection
 	char *p;				// Character pointer for manipulation
-	int *n;					// Integer pointer for manipulation
-	int delay;				// Client sent frequency data
+	uint8 *n;				// Integer pointer for manipulation
+	uint8 delay;				// Client sent frequency data
 	uint8 delay_len;			// Length of delay data
 	
 	//threshold_humidity = 10;
@@ -264,11 +281,10 @@ void ICACHE_FLASH_ATTR user_tcp_accept_recv_cb(void *arg, char *pusrdata, unsign
 	//Search for form data
 	p = (uint8 *)os_strstr(pusrdata, "sensor_read_delay=");
 	p = p + 18;
-	/*n = p;
-	delay = *n;
+	n = p;
+	//delay = *n;
 
-	os_printf("delay read: %d\r\n", delay);
-	*/
+	//os_printf("delay read: %d\r\n", delay);
 	// Allocate memory for humidity sensor data buffer
 	sensor_data_ext = (float *)os_zalloc(SENSOR_BUFFER_SIZE * sizeof(float));
 	os_printf("humidity memory allocated\r\n");

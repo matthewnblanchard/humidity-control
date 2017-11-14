@@ -15,6 +15,7 @@
 #define UDP_DISCOVERY_PORT 5000
 #define HTTP_PORT 80
 #define ESPCONNECT 4000
+#define ESPCONNECT_ACCEPT 6000
 
 // IP Macros
 #define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
@@ -61,6 +62,8 @@ void ICACHE_FLASH_ATTR tcp_timer_cb();
 //      char *pdata:            Packet data
 //      unsigned short len:     Data length
 void ICACHE_FLASH_ATTR udp_broadcast_cb(void *arg);
+
+void ICACHE_FLASH_ATTR udp_broadcast_cb_2(void *arg);
 
 // Callback Function: user_tcp_connect_cb(void *arg);
 // Desc: Callback function to be called when a tcp connection is made
