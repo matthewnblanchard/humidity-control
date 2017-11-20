@@ -71,6 +71,7 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
         PIN_FUNC_SELECT(SCL_MUX, SCL_FUNC);
         PIN_FUNC_SELECT(TRIAC_MUX, TRIAC_FUNC);
         PIN_FUNC_SELECT(ZCD_MUX, ZCD_FUNC);
+	PIN_FUNC_SELECT(TACH_MUX, TACH_FUNC);
 
         // Set to open-drain
         GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
@@ -81,6 +82,7 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
         GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | SCL_BIT);
         GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | TRIAC_BIT);
         GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | ZCD_BIT);
+        GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | TACH_BIT);
 
 	// Initialize HW timer
 	hw_timer_init(FRC1_SOURCE, 0);
@@ -89,7 +91,11 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 	// Initialize ZCD
 	gpio_output_set(0, 0, 0, ZCD_BIT);     					// Set ZCD pin as input
         gpio_intr_handler_register(user_gpio_isr, 0);   			// Register GPIO ISR
-        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);   // Falling edge triggers
+        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);   // Rising edge triggers
+
+	// Initialize tachometer interrupt
+	gpio_output_set(0, 0, 0, TACH_BIT);					// Set Tachometer as input
+        gpio_pin_intr_state_set(GPIO_ID_PIN(TACH_PIN), GPIO_PIN_INTR_POSEDGE);  // Rising edge triggers
 
         // GPIO initialization
         gpio_init();

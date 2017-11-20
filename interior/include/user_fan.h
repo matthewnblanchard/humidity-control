@@ -30,10 +30,24 @@
 #define ZCD_BIT         BIT13
 #define ZCD_MUX         PERIPHS_IO_MUX_MTCK_U
 #define ZCD_FUNC        FUNC_GPIO13
+#define TACH_PIN	14	// GPIO pin connected to the tachometer
+#define TACH_BIT	BIT14
+#define TACH_MUX	PERIPHS_IO_MUX_MTMS_U
+#define TACH_FUNC	FUNC_GPIO14
+
+// Tachometer definitions
+#define TACH_PERIOD 500		// Tach calculaiton period in ms
+#define TACH_BLADE_N 7 		// Number of fan blades with reflective tape (# of pulses per revolution)
+#define DEBOUNCE_CYCLES 50
 
 // Fan driving variables
 extern volatile bool drive_flag;		// Flag to indicate if fan should be driven
 extern volatile uint32 drive_delay;		// Triac delay in us
+extern volatile uint16 intr_cnt;
+extern volatile uint16 tach_cnt;
+extern volatile uint16 rpm;
+os_timer_t tach_t;
+os_timer_t debounce_t;
 
 /* MISSING DECLARATIONS FROM HW_TIMER */
 typedef enum {
@@ -61,5 +75,10 @@ void user_fire_triac(void);
 // Application Function: user_fan_init
 // Desc: Initializes the ZCD to begin running the fan
 void ICACHE_FLASH_ATTR user_fan_init(void);
+
+// Callback Function: user_tach_calc
+// Desc: Calculates the current fan RPM based on the number of
+//	tachometer pulses
+void ICACHE_FLASH_ATTR user_tach_calc(void);
 
 #endif /* _USER_FAN_H */

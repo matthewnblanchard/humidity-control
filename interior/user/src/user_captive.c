@@ -80,6 +80,14 @@ struct espconn *ext_conn = NULL;
 
 void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 {
+
+	// Terminate existing connections on fallback
+	if (e->sig == SIG_EXT_ABORT) {
+		espconn_disconnect(&tcp_espconnect_conn);
+		espconn_delete(&tcp_espconnect_conn);
+		espconn_delete(&udp_broadcast_conn);
+	}
+
         // DHCP lease range
         struct dhcps_lease ip_range;
         IP4_ADDR(&(ip_range.start_ip), 192, 168, 0, 2);     // Leases start at 192.168.0.2

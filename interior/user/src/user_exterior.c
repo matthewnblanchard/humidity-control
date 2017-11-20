@@ -7,6 +7,7 @@ char *discovery_recv_key = "Hello Interior";
 uint16 discovery_recv_keylen = 14;
 
 os_timer_t timer_exterior;	// Timer for waiting for exterior connection
+bool ext_conn_flag = false;	// Flag indicating if the exterior is connected
 
 void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e)
 {
@@ -16,6 +17,8 @@ void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e)
 	os_memset(&udp_broadcast_conn, 0, sizeof(udp_broadcast_conn));
 	os_memset(&udp_broadcast_proto, 0, sizeof(udp_broadcast_proto));
 	udp_broadcast_proto.local_port = BROADCAST_PORT;
+	udp_broadcast_proto.remote_port = BROADCAST_PORT;
+	os_memset(udp_broadcast_proto.remote_ip, 0xFF, 4);	// Global broadcast
 	udp_broadcast_conn.type = ESPCONN_UDP;
 	udp_broadcast_conn.proto.udp = &udp_broadcast_proto;
 	udp_broadcast_conn.recv_callback = user_broadcast_recv_cb;
@@ -43,23 +46,69 @@ void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e)
 
 void ICACHE_FLASH_ATTR user_broadcast_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
+	// Expecting discovery data in the format key=xxxxx,ip=xxxxxx	
 	struct espconn *client_conn = arg;	// Grab connection info
+	char *p1 = NULL;			// Data pointer 1 (for navigation)
+	char *p2 = NULL;			// Data pointer 2 (for navigation)
+	uint32 octet = 0;			// IP octet value
+	uint8 i = 0;				// Loop index
 
 	os_printf("recevied data (udp %d): data=%s\r\n)", BROADCAST_PORT, pusrdata);
 
 	// Check if the connecting client provided the discovery key
-	if (os_strncmp(pusrdata, discovery_recv_key, discovery_recv_keylen)) {
+	p1 = (uint8 *)os_strstr(pusrdata, discovery_recv_key);
+	if (p1 != NULL) {
+	
+		os_printf("Discovery key match detected, from ip=%d.%d.%d.%d\r\n",
+                	client_conn->proto.tcp->remote_ip[0],
+                	client_conn->proto.tcp->remote_ip[1],
+                	client_conn->proto.tcp->remote_ip[2],
+                	client_conn->proto.tcp->remote_ip[3]);
+
+		// Skip to end of key, then to start of IP    V
+		p1 += discovery_recv_keylen;  // key=xxxxxxxxx,ip=xxxxxxxx
+		p1 += 4;		      //                  ^
 		
-		// If the key matches, save IP and attempt to connect to the device on the EXTERIOR_PORT
-                os_memset(&tcp_espconnect_conn, 0, sizeof(tcp_espconnect_conn));
-                os_memset(&tcp_espconnect_proto, 0, sizeof(tcp_espconnect_proto));
+		if (ext_conn_flag == false) {
 
-                os_memcpy(tcp_espconnect_proto.remote_ip, client_conn->proto.udp->remote_ip, 4);
+			// Clear exterior TCP control structures in preparation for the new data
+               	 	os_memset(&tcp_espconnect_conn, 0, sizeof(tcp_espconnect_conn));
+                	os_memset(&tcp_espconnect_proto, 0, sizeof(tcp_espconnect_proto));
 
-		espconn_delete(&udp_broadcast_conn);
+			// Iterate through each octet and convert	
+			for (i = 0; i < 3; i++) {
 
-                system_os_task(user_espconnect_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
-                system_os_post(USER_TASK_PRIO_1, 0, 0);                
+				// Look for next decimal point
+				p2 = (uint8 *)os_strstr(p1, ".");
+			
+				// If a decimal point isn't found, the ip is malformed
+				if (p2 == NULL) {	
+					os_printf("received malformed discovery ip\r\n");
+					return;
+				}
+
+				// Convert and save octet
+				octet = user_atoi(p1, p2 - p1);
+				tcp_espconnect_proto.remote_ip[i] = octet;
+			
+				// Move first pointer up and repeat
+				p1 = p2;
+				p1++;		// Discard decimal point
+			}
+
+			// Convert the last octet
+			tcp_espconnect_proto.remote_ip[3] = user_atoi(p1, &pusrdata[length - 1] + 1 - p1); 
+	
+			os_printf("discovery ip=%d.%d.%d.%d\r\n",
+                		tcp_espconnect_proto.remote_ip[0],
+                		tcp_espconnect_proto.remote_ip[1],
+                		tcp_espconnect_proto.remote_ip[2],
+                		tcp_espconnect_proto.remote_ip[3]);
+
+			// Attempt to connect to the device on the EXTERIOR_PORT
+                	system_os_task(user_espconnect_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+                	system_os_post(USER_TASK_PRIO_1, 0, 0);    
+		}            
 	}
         
         return;
@@ -68,14 +117,24 @@ void ICACHE_FLASH_ATTR user_broadcast_recv_cb(void *arg, char *pusrdata, unsigne
 void ICACHE_FLASH_ATTR user_espconnect_init(os_event_t *e)
 {
         sint8 result = 0;
+
+	// Disarm the exterior wait timer
+	os_timer_disarm(&timer_exterior);
+	ext_conn_flag = true;
+
+	// Stop listening for broadcasts
+	espconn_delete(&udp_broadcast_conn);
         
         // Complete ESPCONNECT connection information, then connect.
+	tcp_espconnect_conn.type = ESPCONN_TCP;
         tcp_espconnect_proto.remote_port = ESP_CONNECT_PORT;
         tcp_espconnect_proto.local_port = ESP_CONNECT_PORT;
        	tcp_espconnect_conn.proto.tcp = &tcp_espconnect_proto;
 	
 	espconn_regist_connectcb(&tcp_espconnect_conn, user_espconnect_connect_cb);
-	espconn_connect(&tcp_espconnect_conn);
+	result = espconn_connect(&tcp_espconnect_conn);
+
+	os_printf("attempted to connect to exterior, result=%d\r\n", result);
 };
 
 void ICACHE_FLASH_ATTR user_espconnect_connect_cb(void *arg)
@@ -83,12 +142,6 @@ void ICACHE_FLASH_ATTR user_espconnect_connect_cb(void *arg)
         struct espconn *client_conn = arg;      // Retrieve connection structure
 
         os_printf("connected to exterior system\r\n");
-
-	// Disarm the exterior wait timer
-	os_timer_disarm(timer_exterior);
-
-	// Stop listening for broadcasts
-	//espconn_delete(udp_broadcast_conn);
 
         // Register callbacks for connected client
         espconn_regist_recvcb(client_conn, user_espconnect_recv_cb);
@@ -160,11 +213,13 @@ void ICACHE_FLASH_ATTR user_espconnect_discon_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_ext_notfound_cb(void)
 {
-	os_printf("Maximum exterior connection wait time elapsed\r\n");
+	if (ext_conn_flag == false) {
+		os_printf("Maximum exterior connection wait time elapsed\r\n");
 
-	// Switch to AP mode
-        system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
-        system_os_post(USER_TASK_PRIO_1, SIG_EXT_ABORT, 0);
+		// Switch to AP mode
+        	system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+        	system_os_post(USER_TASK_PRIO_1, SIG_EXT_ABORT, 0);
+	}
 
 	return; 
 };

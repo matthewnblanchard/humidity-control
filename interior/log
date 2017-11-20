@@ -1,0 +1,128 @@
+pm open,type:2 0
+sllœŸ|Œlà|Œlìc|‚ì“r’cŒcŒóonlnoœâìbpìlrlrlpònàƒlcoã|ìŒŒbŒònoïlŒl`nolns’“orc“`pònàrŒœœâàcoã|llpŒóonîl`nol`ns’“o’`pònàsŒœœãà€coã|ìpŸŒcŒònnïl`nolor’’oâl`r’“oâl`Œâìƒoì“rƒón|ìllll`Œãr“lŒlŒl`Œâr“lìlŒªIQspeed set to 115200
+mode : softAP(a2:20:a6:20:e2:59)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:20:e2:59)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-30
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.79,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.79
+netmask=255.255.255.0
+gw=192.168.0.1
+listening on udp 5000
+recevied data (udp 5000): data=Key=Hello Interior,ip=192.168.0.80
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.80
+recevied data (udp 5000): data=Key=Hello Interior,ip=192.168.0.80
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.80
+Fatal exception 29(StoreProhibitedCause):
+epc1=0x40100a2a, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,7)
+
+load 0x40100000, len 32660, room 16 
+tail 4
+chksum 0xcb
+load 0x3ffe8000, len 1052, room 4 
+tail 8
+chksum 0xaa
+load 0x3ffe8420, len 7172, room 0 
+tail 4
+chksum 0xf0
+csum 0xf0
+Œâìƒoì“r‚óo|ìllll`Œãr“lŒlŒl`Œãr“lìlŒªIQspeed set to 115200
+mode : softAP(a2:20:a6:20:e2:59)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:20:e2:59)
+add if0
+read user_data, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-32
+bssid=2c:30:33:7e:a6:7b
+attempting to connect ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.79,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=192.168.0.79
+netmask=255.255.255.0
+gw=192.168.0.1
+listening on udp 5000
+
+ ets Jan  8 2013,rst cause:4, boot mode:(3,7)
+
+wdt reset
+load 0x40100000, len 32760, room 16 
+tail 8
+chksum 0x66
+load 0x3ffe8000, len 1052, room 0 
+tail 12
+chksum 0xeb
+ho 0 tail 12 room 4
+load 0x3ffe8420, len 7236, room 12 
+tail 8
+chksum 0xa3
+csum 0xa3
+Œãì‚nì’sƒòn|ìllll`Œâs’lŒlŒl`Œâs’lìlŒªIQspeed set to 115200
+
+ ets Jan  8 2013,rst cause:4, boot mode:(3,7)
+
+wdt reset
+load 0x40100000, len 32760, room 16 
+tail 8
+chksum 0x66
+load 0x3ffe8000, len 1052, room 0 
+tail 12
+chksum 0xeb
+ho 0 tail 12 room 4
+load 0x3ffe8420, len 7236, room 12 
+tail 8
+chksum 0xa3
+csum 0xa3
+Œâìƒoì“r‚óo|ìllll`Œãr“lŒlŒl`Œãr“lìlŒªIQspeed set to 115200

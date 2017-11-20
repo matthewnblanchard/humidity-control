@@ -4,15 +4,18 @@
 #include "user_fan.h"
 
 volatile bool drive_flag = 1;
-uint16 intr_cnt = 0;
+volatile uint16 intr_cnt = 0;
 volatile uint32 drive_delay = 150;
+volatile uint16 tach_cnt = 0;
+volatile uint16 rpm = 0;
+volatile uint32 last_time = 0;
 
 void ICACHE_FLASH_ATTR user_fan_init()
 {
 	// Initialize ZCD
-	gpio_output_set(0, 0, 0, ZCD_BIT);     				// Set ZCD pin as input
-        gpio_intr_handler_register(user_gpio_isr, 0);   		// Register GPIO ISR
-        gpio_pin_intr_state_set(ZCD_BIT, GPIO_PIN_INTR_NEGEDGE);        // Falling edge triggers
+	gpio_output_set(0, 0, 0, ZCD_BIT);     					// Set ZCD pin as input
+        gpio_intr_handler_register(user_gpio_isr, 0);   			// Register GPIO ISR
+        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);   // Positive edge triggers
         os_printf("zcd initialized\r\n");
 
         return;        
@@ -22,16 +25,22 @@ void user_gpio_isr(uint32 intr_mask, void *arg)
 {
 	gpio_intr_ack(intr_mask);	// ACK interrupt
 
-	// Check if ZCD interrupt occured
-	if (intr_mask & (ZCD_BIT)) {
+	uint32 gpio_status = GPIO_REG_READ(GPIO_STATUS_ADDRESS);
 
-		// Arm the fan driving timer if necessary
-		if (drive_flag) {
-			hw_timer_arm(drive_delay);
-		}
-	
-                return;
+	// Check if ZCD interrupt occured
+	if ((gpio_status & (ZCD_BIT)) & drive_flag) {
+		hw_timer_arm(drive_delay);
 	};
+	if (gpio_status & (TACH_BIT)) {
+		uint32 cur_time = system_get_time();
+		if (cur_time - last_time > 100) {
+			tach_cnt++;
+			last_time = cur_time;
+		};
+	};
+
+	//GPIO_REG_WRITE(GPIO_STATUS_W1TC_ADDRESS, gpio_status);
+        return;
 };
 
 void user_fire_triac(void)
@@ -43,3 +52,14 @@ void user_fire_triac(void)
 
 	return;	
 };
+
+void ICACHE_FLASH_ATTR user_tach_calc(void)
+{
+	float freq = 0;
+	freq = ((float)tach_cnt * 1000) / TACH_PERIOD;
+	rpm = (freq * 60) / TACH_BLADE_N;
+	os_printf("tach_cnt=%d, rpm=%d, freq=%d\r\n", tach_cnt, rpm, (uint32)freq); 
+	tach_cnt = 0;
+	return;
+};
+

@@ -58,4 +58,10 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
 //      And moves forward when an IP is obtained.
 void ICACHE_FLASH_ATTR user_check_ip(void);
 
+// User Task: user_force_solo()
+// Desc: Forces the system to skip the exterior connection.
+//	FOR TESTING PURPOSES ONLY, the system will never
+//	receive exterior humidities
+void ICACHE_FLASH_ATTR user_force_solo(os_event_t *e);
+
 #endif /* USER_NETWORK_H */

@@ -13,11 +13,12 @@
 #include "user_humidity.h"
 #include "user_network.h"
 #include "user_fan.h"
+#include "user_connect.h"
 
 #define BROADCAST_PORT 5000
 #define ESP_CONNECT_PORT 6000
 #define EXT_PACKET_SIZE 4
-#define EXT_WAIT_TIME 10000
+#define EXT_WAIT_TIME 60000
 
 // UDP broadcast connections for discovery
 struct espconn udp_broadcast_conn;

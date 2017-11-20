@@ -133,7 +133,8 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                                 IP_OCTET(ip->gw.addr,0),IP_OCTET(ip->gw.addr,1),
                                 IP_OCTET(ip->gw.addr,2),IP_OCTET(ip->gw.addr,3)); 
 
-                	system_os_task(user_broadcast_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+                	system_os_task(user_force_solo, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+                	//system_os_task(user_broadcast_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
                 	system_os_post(USER_TASK_PRIO_1, 0, 0); 
 
                 } else {
@@ -141,4 +142,30 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                 }
         }
         os_free(ip);
+};
+
+void ICACHE_FLASH_ATTR user_force_solo(os_event_t *e)
+{
+	// Initialize the fan driving timer
+	user_fan_init();
+        os_printf("fan Initialized\r\n");
+
+        // Register humidity reading timer
+        os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
+        os_timer_arm(&timer_humidity, HUMIDITY_READ_INTERVAL, true);
+        os_printf("commencing humidity readings\r\n");
+
+        // Initiate webserver
+        os_printf("initiazting webserver\r\n");
+        system_os_task(user_front_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+        system_os_post(USER_TASK_PRIO_1, 0, 0);
+
+	// Initate tacometer
+	tach_cnt = 0;
+        os_timer_setfn(&tach_t, user_tach_calc, NULL);
+        os_timer_arm(&tach_t, TACH_PERIOD, true);
+        //os_timer_setfn(&debounce_t, user_smooth_tach, NULL);
+        //os_timer_arm(&debounce_t, 1, true);
+
+	return;
 };
