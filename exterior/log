@@ -1,0 +1,3999 @@
+Entered user_tcp_accept()
+Starting TCP server
+Entering timer loop
+The Interior did not hear the broadcast
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+1 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+2 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+3 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+4 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+5 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+6 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+7 seconds spent waiting
+pm open,type:2 0
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+8 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+9 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+10 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+11 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+12 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+13 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+14 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+15 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+16 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+17 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+18 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+19 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+20 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+21 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+22 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+23 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+24 seconds spent waiting
+Waiting for interior connection...
+Sending another UDP packet...
+data sent
+25 seconds spent waiting
+Connection made to exterior over port ESPCONN
+received data from client
+data=l
+
+humidity memory allocated
+commencing humidity readings
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
+slave failed to initiate measurement
+slave failed to receive address
+reading=16383, humidity=100, status=3
+Sending humidity data to interior
+adjusted humidity: 100
+Data sent to server
