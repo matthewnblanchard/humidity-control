@@ -7,7 +7,7 @@ CC = xtensa-lx106-elf-gcc
 # -mlongcalls : translate direct calls to indirect calls, unless it can
 #       be determined that the call is in range. Ensures calls to API
 #       functions (defined elswhere) work correctly
-CFLAGS = -I. -mlongcalls -DICACHE_FLASH
+CFLAGS = -I./include -mlongcalls -DICACHE_FLASH
 
 # === Linker Libraries === #
 # -nostdlib : disallow linker for searching the standard library for libraries. Only 
@@ -17,26 +17,33 @@ LDLIBS = -nostdlib -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -
 # === Linker Flags === #
 LDFLAGS = -Teagle.app.v6.ld
 
-TARGET = user_main
-OBJ = user_main.o user_connect.o user_network.o user_task.o user_humidity.o user_i2c.o
+BINDIR = user/bin
+OBJDIR = user/obj
+SRCDIR = user/src
 
-user_main-0x00000.bin: $(TARGET)
+OBJ = user_main.o user_connect.o user_network.o user_task.o user_humidity.o user_i2c.o
+OBJ := $(addprefix $(OBJDIR)/, $(OBJ))
+SRC = user_main.c user_connect.c user_network.c user_task.c user_humidity.c user_i2c.c
+SRC := $(addprefix $(SRCDIR)/, $(SRC))
+TARGET = $(BINDIR)/user_main
+
+$(BINDIR)/user_main-0x00000.bin: $(TARGET)
 	esptool.py elf2image $^
 
-user_main: $(OBJ)
+$(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) $^ $(LDFLAGS) $(LDLIBS) -o $(TARGET)
 
-%.0: %.c
-	$(CC) $(CFLAGS) $< $(LDFLAGS) $(LDLIBS)
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	$(CC) -c $(CFLAGS) $< $(LDFLAGS) $(LDLIBS) -o $@
 
-flash: user_main-0x00000.bin
-	esptool.py write_flash 0 user_main-0x00000.bin 0x10000 user_main-0x10000.bin
+flash: $(BINDIR)/user_main-0x00000.bin
+	esptool.py --port /dev/ttyACM0 write_flash 0 $(BINDIR)/user_main-0x00000.bin 0x10000 $(BINDIR)/user_main-0x10000.bin
 
-default: esp_init_data_default.bin
-	esptool.py write_flash 0x3FC000 esp_init_data_default.bin
+default: $(BINDIR)/esp_init_data_default.bin
+	esptool.py --port /dev/ttyACM0 write_flash 0x3FC000 $(BINDIR)/esp_init_data_default.bin
 
 erase:
-	esptool.py erase_flash
+	esptool.py --port /dev/ttyACM0 --baud 9600 erase_flash
 
 clean:
-	rm -f $(TARGET) $(OBJ) user_main-0x00000.bin user_main-0x10000.bin
+	rm -f $(TARGET) $(OBJ) $(BINDIR)/user_main-0x00000.bin $(BINDIR)/user_main-0x10000.bin
