@@ -32,7 +32,7 @@ void ICACHE_FLASH_ATTR user_tcp_accept()
 	//Prepare TCP server on port 4000
 	os_memset(&tcp_connect_conn, 0, sizeof(tcp_connect_conn));
 	os_memset(&tcp_connect_proto, 0, sizeof(tcp_connect_proto));
-	tcp_connect_proto.remote_port = ESPCONNECT_ACCEPT;
+	tcp_connect_proto.local_port = ESPCONNECT_ACCEPT;
 	/*tcp_connect_proto.remote_ip[0] = 192;
 	tcp_connect_proto.remote_ip[1] = 168;
 	tcp_connect_proto.remote_ip[2] = 0;
@@ -203,6 +203,7 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 		return;
 	}
 	os_timer_disarm(&timer_2);
+	os_printf("found good data\r\n");
 
 	p1 = p1 + 5;				// Move past "ssid=" to the actual ssid
 	p2 = (uint8 *)os_strstr(p1, "&");	// Search for &, which separates values

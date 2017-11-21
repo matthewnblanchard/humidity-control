@@ -64,7 +64,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 	// Send newly read humidity data to the TCP connected system.
 	if (espconn_send(&tcp_connect_conn, (uint8 *)hp, sizeof(uint16)) != 0) {
 		os_printf("humidity data send failed\r\n");
-	}	
+	}
 }
 
 
