@@ -105,14 +105,12 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
         result = espconn_regist_connectcb(&tcp_front_conn, user_front_connect_cb);
         if (result < 0) {
                 os_printf("failed to register connect callback, error=%d\r\n", result);
-                CALL_ERROR(ERR_FATAL);
         }
 
         // Start listening
         result = espconn_accept(&tcp_front_conn);      
         if (result < 0) {
                 os_printf("failed to start tcp server, error=%d\r\n", result);
-                CALL_ERROR(ERR_FATAL);
         }
 
         return;

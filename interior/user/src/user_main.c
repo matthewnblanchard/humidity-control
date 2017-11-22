@@ -5,21 +5,23 @@
 #include <user_interface.h>
 #include <osapi.h>
 #include <gpio.h>
-#include "user_network.h"
 #include "user_task.h"
+#include "user_network.h"
 #include "user_humidity.h"
 #include "user_i2c.h"
 #include "user_fan.h"
+#include "user_captive.h"
 
 // Function prototypes
-void ICACHE_FLASH_ATTR user_init(void);
-void ICACHE_FLASH_ATTR user_task_init(void);
-void ICACHE_FLASH_ATTR user_gpio_init(void);
+void ICACHE_FLASH_ATTR user_init(void);				// First step initialization function. Handoff from bootloader.
+void ICACHE_FLASH_ATTR user_task_init(void);			// Task initialization. Hands off to the control task.
+void ICACHE_FLASH_ATTR user_control_task(os_event_t *e);	// Main control task. Schedules all other user tasks.
+void ICACHE_FLASH_ATTR user_gpio_init(void);			// Performs GPIO initialization
 
 // User Task: user_init()
-// Desc: Initialization. ESP8266 hooks into this function after boot.
+// Desc: Initialization. The ESP8266 hooks into this function after boot.
 //      ICACHE_FLASH_ATTR flag causes the function to be saved to flash
-//      rather than IRAM, of which there is limited space.
+//      rather than IRAM, in which there is limited space.
 void ICACHE_FLASH_ATTR user_init(void)
 {
         os_printf("user code entered\r\n");
@@ -36,7 +38,7 @@ void ICACHE_FLASH_ATTR user_init(void)
         // Once the system has finished initializing,
         //      continue initializing user tasks
         system_init_done_cb(user_task_init);      
-}
+};
 
 // Callback Function: user_task_init()
 // Desc: Initializes data structures for posting tasks to the system
@@ -47,20 +49,160 @@ void ICACHE_FLASH_ATTR user_task_init(void)
         user_msg_queue_1 = (os_event_t *)os_malloc(sizeof(os_event_t) * MSG_QUEUE_LENGTH);
         user_msg_queue_2 = (os_event_t *)os_malloc(sizeof(os_event_t) * MSG_QUEUE_LENGTH);
 
-        // Register error task
-        system_os_task(user_task_error, USER_TASK_PRIO_2, user_msg_queue_2, MSG_QUEUE_LENGTH);
+        // Register control task and begin control
+        system_os_task(user_control_task, USER_TASK_PRIO_2, user_msg_queue_2, MSG_QUEUE_LENGTH);
+	TASK_RETURN(SIG_CONTROL, PAR_CONTROL_START);
 
-        // Register AP scanning task for station mode initialization, then handoff to it
-        if (system_os_task(user_scan, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false) {
-                os_printf("failed to initialize user_scan task\r\n");
-                CALL_ERROR(ERR_FATAL);
-        }
-        if (system_os_post(USER_TASK_PRIO_1, 0, 0) == false) {
-                os_printf("failed to call user_scan\r\n");
-                CALL_ERROR(ERR_FATAL);
-        }
-}
+	return;
+};
 
+// User Task: user_control_task(os_event_t *e)
+// Desc: Maximum priority control task which calls other tasks
+//	based on the results of previous tasks
+void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
+{
+	/* ==================== */
+	/* Master Control Block */
+	/* ==================== */
+	switch(e->sig | e->par) {
+
+		/* ----------------------- */
+		/* General Control Signals */
+		/* ----------------------- */
+
+		// Control entry point. The interior begins by scanning for AP's using the
+		// SSID/password it has saved in memory.
+		case SIG_CONTROL | PAR_CONTROL_START:
+			TASK_START(user_scan, 0, 0);
+			break;
+
+		// Deadloop of task calls while waiting for the system to restart
+		case SIG_CONTROL | PAR_CONTROL_ERR_DEADLOOP:
+			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_DEADLOOP);
+			break;
+
+		// Fatal error case. The control function calls itself with this sig/par
+		// if it is passed an error it cannot recover from. The system is restarted
+		// after a 5 second delay
+		case SIG_CONTROL | PAR_CONTROL_ERR_FATAL:
+			os_printf("rebooting system in 5 seconds\r\n");
+			os_timer_setfn(&timer_reboot, system_restart, NULL);
+			os_timer_arm(&timer_reboot, 5000, false);
+			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_DEADLOOP);
+			break;
+
+		/* ------------------- */
+		/* AP Scanning Signals */
+		/* ------------------- */
+
+		// Once the system has found and associated to an AP, it waits to receive an IP
+		// address
+		case SIG_AP_SCAN | PAR_AP_SCAN_CONNECTED:
+			os_timer_setfn(&timer_ipcheck, user_check_ip, NULL); // Check for an IP every second			
+			os_timer_arm(&timer_ipcheck, 1000, true);
+			break;    
+
+		// If the system does not find an AP with it's saved SSID/pass, it will enter
+		// AP mode and serve a configuration webpage, where a user can enter a new SSID/pass
+		case SIG_AP_SCAN | PAR_AP_SCAN_NOAP:
+			os_printf("switching to configuration mode\r\n");
+			TASK_START(user_apmode_init, 0, 0);
+			break;
+ 
+		// Error cases:
+		case SIG_AP_SCAN | PAR_AP_SCAN_FAILED_CONNECT:       // Failed to attempt to connect to an SSID   
+		case SIG_AP_SCAN | PAR_AP_SCAN_FAILED_CONFIG:        // Failed to configure station mode  
+		case SIG_AP_SCAN | PAR_AP_SCAN_FAILED_SCAN:          // Failed to begin AP scanning task 
+		case SIG_AP_SCAN | PAR_AP_SCAN_FLASH_FAILURE:        // Failed to read data from flash memory   
+		case SIG_AP_SCAN | PAR_AP_SCAN_STATION_MODE_FAILURE: // Failed to change the wifi mode to station
+			os_printf("RESPONSE: FATAL!\r\n");
+			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
+			break;
+			
+		/* ------------------ */
+		/* IP Waiting Signals */
+		/* ------------------ */
+		
+		// Once the system has obtained an IP, disable the IP checking timer and initialize the
+		// exterior connection configuration
+		case SIG_IP_WAIT | PAR_IP_WAIT_GOTIP:
+			os_timer_disarm(&timer_ipcheck);            
+			break;
+
+		// Error case. Failed to check IP info. In theory it's still there, so ignore this
+		case SIG_IP_WAIT | PAR_IP_WAIT_CHECK_FAILURE:
+			os_printf("RESPONSE: ignoring\r\n");
+			break; 
+
+		/* ------------ */
+		/* mDNS Signals */
+		/* ------------ */	
+		
+		// PLACEHOLDER
+		case SIG_MDNS | PAR_MDNS_CONFIG_COMPLETE:
+
+			break; 	
+
+		// Error cases:
+		case SIG_MDNS | PAR_MDNS_CHECK_FAILURE:
+			os_printf("RESPONSE: FATAL!\r\n"); 
+			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
+			break;	
+
+		/* --------------- */
+		/* AP Mode Signals */
+		/* --------------- */
+
+		// Once AP mode is configured and the system is serving the config webpage/listening for the exterior
+		// system, setup is complete. Control drops off and waits for notification from the aforementioned
+		// connections that either a user has entered an SSID/password or something has gone wrong.
+		case SIG_APMODE | PAR_APMODE_SETUP_COMPLETE:
+			os_printf("apmode setup completed\r\n");
+			break;
+
+		// Once the system has received/saved an SSID/pass from a user, continually attempt to send
+		// the credentials to the exterior system until acknowledgement is received from it.
+		case SIG_APMODE | PAR_APMODE_CONFIG_RECV:
+			os_printf("WiFi details obtained from user\r\n");
+			os_timer_setfn(&timer_extfwd, user_ext_send_cred, NULL);
+			os_timer_arm(&timer_extfwd, 1000, true);
+			break;	
+		
+		// Once the exterior has accepted wifi credentials, perform AP mode cleanup and switch back
+		// to station mode
+		case SIG_APMODE | PAR_APMODE_EXT_ACCEPT:
+			os_printf("exterior has accepted WiFi credentials\r\n");
+			os_timer_disarm(&timer_extfwd);
+			TASK_START(user_apmode_cleanup, 0, 0);
+			break;
+
+		// Once cleanup is complete, launch a new AP scan
+		case SIG_APMODE | PAR_APMODE_CLEANUP_COMPLETE:
+			os_printf("AP mode cleanup completed\r\n");
+			TASK_START(user_scan, 0, 0);
+			return;
+
+		// Error cases:
+		case SIG_APMODE | PAR_APMODE_SEND_FAILURE:		// Failed to send data to the exterior. Ignore, it will try again
+			os_printf("RESPONSE: ignoring\r\n");
+			break;
+		case SIG_APMODE | PAR_APMODE_FLASH_FAILURE:		// Failed to erase flash data
+		case SIG_APMODE | PAR_APMODE_EXT_INIT_FAILURE:		// Failed to open port to listen for exterior system
+		case SIG_APMODE | PAR_APMODE_WEB_INIT_FAILURE:		// Failed to open webserver
+		case SIG_APMODE | PAR_APMODE_DHCP_CONFIG_FAILURE:	// Failed to configure DHCP/IP settings
+		case SIG_APMODE | PAR_APMODE_MODE_CONFIG_FAILURE:	// Failed to configure AP mode
+		case SIG_APMODE | PAR_APMODE_AP_MODE_FAILURE:		// Failed to enter AP mode
+			os_printf("RESPONSE: FATAL!\r\n"); 
+			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
+			break;	
+
+		};	
+
+	return;
+};
+
+// Application Function: user_gpio_init(void)
+// Desc: Initializes the GPIO pins
 void ICACHE_FLASH_ATTR user_gpio_init(void)
 {
         // Disable GPIO interrupts during initialization
@@ -73,9 +215,13 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
         PIN_FUNC_SELECT(ZCD_MUX, ZCD_FUNC);
 	PIN_FUNC_SELECT(TACH_MUX, TACH_FUNC);
 
-        // Set to open-drain
-        GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
-        GPIO_REG_WRITE(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX)), GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
+        // Set I2C pins to open-drain
+        GPIO_REG_WRITE(
+		GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), 
+		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
+        GPIO_REG_WRITE(
+		GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX)), 
+		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
 
         // Enable pins
         GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | SDA_BIT);

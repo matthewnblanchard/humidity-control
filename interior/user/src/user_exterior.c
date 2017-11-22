@@ -9,6 +9,34 @@ uint16 discovery_recv_keylen = 14;
 os_timer_t timer_exterior;	// Timer for waiting for exterior connection
 bool ext_conn_flag = false;	// Flag indicating if the exterior is connected
 
+struct mdns_info mdns_config;	// mDNS configuration
+
+void ICACHE_FLASH_ATTR user_mdns_init(os_event_t *e)
+{
+	struct ip_info ip_config;
+	
+	if (wifi_get_ip_info(STATION_IF, &ip_config) == false) {
+		os_printf("ERROR: failed to check IP address\r\n");
+		TASK_RETURN(SIG_MDNS, PAR_MDNS_CHECK_FAILURE);
+		return;	
+	};
+
+	mdns_config.host_name = "hbfcd_interior";
+	mdns_config.ipAddr = ip_config.ip.addr;		// Current IP
+	mdns_config.server_name = "hbfcd_exterior";
+	mdns_config.server_port = MDNS_PORT;
+	mdns_config.txt_data[0] = "key = test";
+
+	espconn_mdns_init(&mdns_config);
+	os_printf("mDNS configuration completed\r\n");
+
+	espconn_mdns_enable();
+	os_printf("mDNS enabled\r\n");
+	TASK_RETURN(SIG_MDNS, PAR_MDNS_CONFIG_COMPLETE);	
+
+	return;	
+};
+
 void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e)
 {
 	sint8 result = 0;
@@ -27,7 +55,6 @@ void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e)
         result = espconn_create(&udp_broadcast_conn);
         if (result != 0) {
                 os_printf("failed to listen for broadcast, result=%d\r\n", result);
-		CALL_ERROR(ERR_FATAL);
 		return;
         } else {
                 os_printf("listening on udp %d\r\n", BROADCAST_PORT);
@@ -217,8 +244,8 @@ void ICACHE_FLASH_ATTR user_ext_notfound_cb(void)
 		os_printf("Maximum exterior connection wait time elapsed\r\n");
 
 		// Switch to AP mode
-        	system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
-        	system_os_post(USER_TASK_PRIO_1, SIG_EXT_ABORT, 0);
+        	//system_os_task(user_apmode_init, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);
+        	//system_os_post(USER_TASK_PRIO_1, SIG_EXT_ABORT, 0);
 	}
 
 	return; 

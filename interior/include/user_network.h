@@ -10,27 +10,12 @@
 #include <osapi.h>
 #include <spi_flash.h>
 #include <mem.h>
+#include <espconn.h>
 #include "user_flash.h"
-#include "user_connect.h"
-#include "user_captive.h"
 #include "user_task.h"
-#include "user_humidity.h"
-#include "user_fan.h"
-#include "user_exterior.h"
-
-// User Task signals
-#define SIG_CAPTIVE_DONE 1      // Sent to user_scan when the captive portal has received data.
-                                // Causes user_scan to disconnect and delete the captive portal
-                                // connection.
-
-#define SIG_EXT_ABORT 2
-
 
 // Global configurations (must be accessible from callback functions)
 struct station_config client_config;            // Station configuration
-
-// Software Timers
-os_timer_t timer_ip;
 
 /* ------------------- */
 /* Function Prototypes */
@@ -62,6 +47,6 @@ void ICACHE_FLASH_ATTR user_check_ip(void);
 // Desc: Forces the system to skip the exterior connection.
 //	FOR TESTING PURPOSES ONLY, the system will never
 //	receive exterior humidities
-void ICACHE_FLASH_ATTR user_force_solo(os_event_t *e);
+//void ICACHE_FLASH_ATTR user_force_solo(os_event_t *e);
 
 #endif /* USER_NETWORK_H */

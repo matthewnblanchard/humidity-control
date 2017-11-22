@@ -13,14 +13,10 @@
 #include <spi_flash.h>
 #include "user_task.h"
 #include "user_flash.h"
-#include "user_network.h"
 
 // Port definitions
 #define HTTP_PORT       80
 #define EXT_CONFIG_PORT 4000
-
-// IP Macros
-#define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
 
 // Task message queues
 os_event_t * ap_init_msg_queue;
@@ -106,5 +102,14 @@ void ICACHE_FLASH_ATTR user_captive_ext_recv_cb(void *arg, char *pusrdata, unsig
 // Args:
 //      void *arg: pointer to the espconn which called this function
 void ICACHE_FLASH_ATTR user_captive_ext_sent_cb(void *arg);
+
+// Callback Function: user_ext_send_cred(void)
+// Desc: Attempts to send WiFi credentials to the exterior system,
+//	if present
+void ICACHE_FLASH_ATTR user_ext_send_cred(void);
+
+// User Task: user_apmode_cleanup(os_event_t *e)
+// Desc: Performs cleanup from AP mode (disconnected tcp connections, etc)
+void ICACHE_FLASH_ATTR user_apmode_cleanup(os_event_t *e);
 
 #endif

@@ -15,6 +15,7 @@
 #include "user_fan.h"
 #include "user_connect.h"
 
+#define MDNS_PORT 5353
 #define BROADCAST_PORT 5000
 #define ESP_CONNECT_PORT 6000
 #define EXT_PACKET_SIZE 4
@@ -31,6 +32,10 @@ struct _esp_tcp tcp_espconnect_proto;
 // Discovery key info
 extern char * discovery_recv_key;
 extern uint16 discovery_recv_keylen;
+
+// User Task: user_mdns_init(os_event_t *e)
+// Desc: Initializes mDNS to discover the exterior system
+void ICACHE_FLASH_ATTR user_mdns_init(os_event_t *e);
 
 // User Task: user_broadcast_init(os_event_t *e)
 // Desc: Initializes the UDP broadcast connection for discovery of the

@@ -1,47 +1,96 @@
 // user_task.h
 // Authors: Christian Auspland & Matthew Blanchard
-// Desc: header file containing resources for user task book-keeping
-//      and timing
+// Description: Contains definitions for the the user task
+//	signals and parameters. These need to made available 
+//	to all other source files for proper communication with
+//	the main control task.
 
-#ifndef USER_TASK_H
-#define USER_TASK_H
-
-#include <user_interface.h>
-#include <osapi.h>
-
-#define MSG_QUEUE_LENGTH 4
-
-#define CALL_ERROR(X) system_os_post(USER_TASK_PRIO_2, X, 0)
-#define ERR_FATAL 0
-
-// Message Queues - The ESP8266 SDK prefers for programs to be executed via user
+// Tasks/Message Queues - The ESP8266 SDK prefers for programs to be executed via user
 //      tasks, which can be scheduled and interrupted according to their priorities.
 //      This ensures that the backend functions/interrupts which provide the wifi functionality
-//      get approproate time allocated to them. Tasks act similarly to functions, resting
+//      get appropriate time allocated to them. Tasks act similarly to functions, resting
 //      until a message is "posted" to them, which they can read for parameters and act
 //      accordingly. Messages are stored in message queues for reading.
 //
-//      There are three priorities are take in descending order (2 > 1 > 0). Only one task
+//      There are three priorities, numbered in descending order (2 > 1 > 0). Only one task
 //      of each priority may exist at given time, and once a new task is registered with a
-//      preexisting priority, the old task is overwritten. Our tasks priorities are defined
+//      preexisting priority, the old task is overwritten. Our task priorities are defined
 //      as follows:
 //              
-//              Level 2: Extremely important, time sensitive tasks, e.g. error handling
+//              Level 2: Extremely important, time sensitive tasks. This is reserved for the control task in user_main
 //              Level 1: Initialization/configuration tasks. These tasks must be completed
-//                      in order for the device to operate correctly
+//                      in order for the device to operate correctly. 
 //              Level 0: Low priority book-keeping/data collection tasks.
+
+// Message Queues
+#define MSG_QUEUE_LENGTH 4
 os_event_t * user_msg_queue_0;
 os_event_t * user_msg_queue_1;
 os_event_t * user_msg_queue_2;
 
 // Timers
+os_timer_t timer_reboot;
+os_timer_t timer_ipcheck;
+os_timer_t timer_extfwd;
+
 os_timer_t timer_1;
 os_timer_t timer_humidity;
 
-// User Task: user_task_error(os_event_t * e)
-// Desc: User task which is called when an error occurs. If recovery is possible,
-//      this task will handle recovery. If recovery is not possible, this task
-//      will call itself, forcing the user program to idle indefinetly until
-//      reset.
-void ICACHE_FLASH_ATTR user_task_error(os_event_t * e);
-#endif
+
+// Task Calling Macros
+#define TASK_RETURN(sig,par) 		system_os_post(USER_TASK_PRIO_2, (sig), (par))
+#define TASK_START(task,sig,par)	({\
+						system_os_task((task), USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);\
+						system_os_post(USER_TASK_PRIO_1, (sig), (par));\
+					})
+	
+/* --------------------------------------------------- */
+/* Control Signals/Parameters                          */
+/* --------------------------------------------------- */
+/* Signals/Parameters are designed to be combined into */
+/* 32-bit value for easy switch case statements. The   */
+/* signal occupies the upper 16-bits and the parameter */
+/* occupies the lower 16-bits. They can then be OR'd   */
+/* together to form a unique signal/parameter combo    */
+/* --------------------------------------------------- */
+
+
+// General control signals/parameters
+#define SIG_CONTROL				(uint32)(0x0000 << 16)
+#define PAR_CONTROL_START			(uint32)(0x0000)
+#define PAR_CONTROL_ERR_DEADLOOP		(uint32)(0xFFFE)
+#define PAR_CONTROL_ERR_FATAL			(uint32)(0xFFFF)
+
+// AP scanning signals/parameters
+#define SIG_AP_SCAN 				(uint32)(0x0001 << 16)
+#define PAR_AP_SCAN_CONNECTED			(uint32)(0x0000)
+#define PAR_AP_SCAN_NOAP			(uint32)(0x0001)
+#define PAR_AP_SCAN_FAILED_CONNECT		(uint32)(0xFFFB)
+#define PAR_AP_SCAN_FAILED_CONFIG		(uint32)(0xFFFC)
+#define PAR_AP_SCAN_FAILED_SCAN			(uint32)(0xFFFD)
+#define PAR_AP_SCAN_FLASH_FAILURE		(uint32)(0xFFFE)
+#define PAR_AP_SCAN_STATION_MODE_FAILURE 	(uint32)(0xFFFF)
+
+// IP wait signals
+#define SIG_IP_WAIT				(uint32)(0x0002 << 16)
+#define PAR_IP_WAIT_GOTIP			(uint32)(0x0000)
+#define PAR_IP_WAIT_CHECK_FAILURE		(uint32)(0xFFFF)
+
+// MDNS signals
+#define SIG_MDNS				(uint32)(0x0003 << 16)
+#define PAR_MDNS_CONFIG_COMPLETE		(uint32)(0x0000)
+#define PAR_MDNS_CHECK_FAILURE			(uint32)(0xFFFF)
+
+// AP Mode (Configuration Mode) signals
+#define SIG_APMODE				(uint32)(0x0100 << 16)
+#define PAR_APMODE_SETUP_COMPLETE		(uint32)(0x0000)
+#define PAR_APMODE_CONFIG_RECV			(uint32)(0x0001)
+#define PAR_APMODE_EXT_ACCEPT			(uint32)(0x0002)
+#define PAR_APMODE_CLEANUP_COMPLETE		(uint32)(0x0003)
+#define PAR_APMODE_SEND_FAILURE			(uint32)(0xFFF9)
+#define PAR_APMODE_FLASH_FAILURE		(uint32)(0xFFFA)
+#define PAR_APMODE_EXT_INIT_FAILURE		(uint32)(0xFFFB)
+#define PAR_APMODE_WEB_INIT_FAILURE		(uint32)(0xFFFC)
+#define PAR_APMODE_DHCP_CONFIG_FAILURE		(uint32)(0xFFFD)
+#define PAR_APMODE_MODE_CONFIG_FAILURE		(uint32)(0xFFFE) 
+#define PAR_APMODE_AP_MODE_FAILURE		(uint32)(0xFFFF) 
