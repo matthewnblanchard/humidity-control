@@ -166,6 +166,9 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 		return; 
         }
 
+	// Set TCP timeout interval to 1 second
+	espconn_regist_time(&tcp_captive_conn, 1, 0);
+
         // Set up TCP server on port 4000
         os_memset(&tcp_captive_ext_conn, 0, sizeof(tcp_captive_ext_conn));      // Clear connection settings
         os_memset(&tcp_captive_ext_proto, 0, sizeof(tcp_captive_ext_proto));
@@ -190,6 +193,9 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 		return; 
         }
 	
+	// Set TCP timeout interval to 30 minutes (1800 seconds)
+	espconn_regist_time(&tcp_captive_ext_conn, 1800, 0);
+
         TASK_RETURN(SIG_APMODE, PAR_APMODE_SETUP_COMPLETE);
 	return; 
 };
@@ -232,7 +238,7 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         uint8 ssid_len;                                         // Length of the SSID
         uint8 *pass;                                            // User sent password
         uint8 pass_len;                                         // Length of the password
-	uint8 send_buf[256];					// Buffer to send to exterior system
+	
 
         os_printf("received data from client\r\n");
         os_printf("data=%s\r\n", pusrdata);
@@ -256,6 +262,7 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         // Check if we received an HTTP POST request
         else if (os_strncmp(pusrdata, "POST ", 5) == 0) {
 
+		// Send submit page
                 os_printf("user submitted config\r\n");
                 espconn_send(client_conn, submit_page, os_strlen(submit_page));
 
@@ -305,6 +312,8 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
 void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg)
 {
         os_printf("sent data to client\r\n");
+
+	// Disconnect after webpage is sent
 };
 
 void ICACHE_FLASH_ATTR user_captive_ext_connect_cb(void *arg)
@@ -363,11 +372,17 @@ void ICACHE_FLASH_ATTR user_captive_ext_sent_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_ext_send_cred(void)
 {
-	char buf[256];					// Data to send to the exterior system
-        struct user_data_station_config saved_conn;     // Retrieved station config
+	uint8 buf[256];					// Data to send to the exterior system
+        struct user_data_station_config *saved_conn;    // Retrieved station config
 	uint8 flash_result = 0;				// Result of flash operation	
 	sint16 data_len = 0;				// Length of data. Negative indicates an error
 	sint8 send_result = 0;				// Result of data sending operating
+
+	saved_conn = os_zalloc(sizeof(struct user_data_station_config));
+	if (saved_conn == NULL) {
+		os_printf("ERROR: failed to allocate memory for flash read\r\n");
+		TASK_RETURN(SIG_APMODE, PAR_APMODE_FLASH_FAILURE);
+	}
 
 	// Check if the exterior system is available
 	if (!captive_ext_connect) {
@@ -377,25 +392,33 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void)
         // Pull station info (SSID/pass) from memory
         flash_result = spi_flash_read(
                 USER_DATA_START_ADDR, 
-                (uint32 *)&saved_conn, 
+                (uint32 *)saved_conn, 
                 sizeof(struct user_data_station_config)
         );
         if (flash_result != SPI_FLASH_RESULT_OK) {
                 os_printf("ERROR: flash read failed\r\n");
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_FLASH_FAILURE);
+		os_free(saved_conn);
                 return;
         }
+	os_printf("read from flash\r\n");
 
 	// Format SSID/Pass
-	data_len = os_sprintf(buf, "ssid=%s&pass=%s", saved_conn.config.ssid, saved_conn.config.password);	
+	data_len = os_sprintf(buf, "ssid=%s&pass=%s", saved_conn->config.ssid, saved_conn->config.password);	
+
+	os_printf("sprintf\r\n");
 	
 	// Send data to exterior system
         send_result = espconn_send(ext_conn, buf, data_len);
 	if (send_result != 0) {
 		os_printf("ERROR: failed to send data to exterior, code=%d\r\n", send_result);
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_SEND_FAILURE);
+		os_free(saved_conn);
+		return;
 	}; 
-
+	
+	os_printf("sent data\r\n");
+	os_free(saved_conn);
 	return;
 };
 
