@@ -12,7 +12,7 @@ CFLAGS = -I./include -mlongcalls -DICACHE_FLASH
 # === Linker Libraries === #
 # -nostdlib : disallow linker for searching the standard library for libraries. Only 
 #       explicitly specified library directories are allowed.
-LDLIBS = -nostdlib -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -lmbedtls -lc -Wl,--end-group -lgcc
+LDLIBS = -nostdlib -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -lc -Wl,--end-group -lgcc
 
 # === Linker Flags === #
 LDFLAGS = -Teagle.app.v6.ld -L./lib
@@ -21,9 +21,9 @@ BINDIR = user/bin
 OBJDIR = user/obj
 SRCDIR = user/src
 
-OBJ = user_main.o
+OBJ = user_main.o user_ap.o
 OBJ := $(addprefix $(OBJDIR)/, $(OBJ))
-SRC = user_main.c
+SRC = user_main.c user_ap.c
 SRC := $(addprefix $(SRCDIR)/, $(SRC))
 TARGET = $(BINDIR)/user_main
 
