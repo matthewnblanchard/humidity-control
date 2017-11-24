@@ -32,6 +32,7 @@ os_event_t * user_msg_queue_2;
 os_timer_t timer_reboot;
 os_timer_t timer_ipcheck;
 os_timer_t timer_extfwd;
+os_timer_t timer_extcon;
 
 os_timer_t timer_1;
 os_timer_t timer_humidity;
