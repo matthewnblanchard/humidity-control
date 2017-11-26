@@ -9,33 +9,24 @@
 #include <user_interface.h>
 #include <osapi.h>
 #include <espconn.h>
-#include "user_task.h"
 #include "user_humidity.h"
-#include "user_network.h"
-#include "user_fan.h"
+#include "user_task.h"
 #include "user_connect.h"
 
-#define MDNS_PORT 5353
+//#define MDNS_PORT 5353
 #define BROADCAST_PORT 5000
 #define ESP_CONNECT_PORT 6000
 #define EXT_PACKET_SIZE 4
 #define EXT_WAIT_TIME 60000
 
-// UDP broadcast connections for discovery
-struct espconn udp_broadcast_conn;
-struct _esp_udp udp_broadcast_proto;
-
-// TCP connections for interior - exterior connection
-struct espconn tcp_espconnect_conn;
-struct _esp_tcp tcp_espconnect_proto;
-
-// Discovery key info
-extern char * discovery_recv_key;
-extern uint16 discovery_recv_keylen;
-
 // User Task: user_mdns_init(os_event_t *e)
 // Desc: Initializes mDNS to discover the exterior system
-void ICACHE_FLASH_ATTR user_mdns_init(os_event_t *e);
+//void ICACHE_FLASH_ATTR user_mdns_init(os_event_t *e);
+
+// Callback Function: user_mdns_recv_cb(void *arg, char *pusrdata, unsigned short len)
+// Desc: Callback for when the systme receives an mDNS packet.
+//	responded to queries for its hostname
+//void ICACHE_FLASH_ATTR user_mdns_recv_cb(void *arg, char *pusrdata, unsigned short len);
 
 // User Task: user_broadcast_init(os_event_t *e)
 // Desc: Initializes the UDP broadcast connection for discovery of the
@@ -91,9 +82,9 @@ void ICACHE_FLASH_ATTR user_espconnect_recon_cb(void *arg, sint8 err);
 //      void *arg: Pointer to espconn
 void ICACHE_FLASH_ATTR user_espconnect_discon_cb(void *arg);
 
-// Callback Function: user_ext_notfound_cb(void)
+// Callback Function: user_ext_timeout(void)
 // Desc: Called when the exterior connection wait timer
 //	runs out. Switches back to configure mode
-void ICACHE_FLASH_ATTR user_ext_notfound_cb(void);
+void ICACHE_FLASH_ATTR user_ext_timeout(void);
 
 #endif /* _USER_EXTERIOR_H */

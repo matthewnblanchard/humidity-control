@@ -127,6 +127,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                 }
         }
         os_free(ip);
+	return;
 };
 
 /*

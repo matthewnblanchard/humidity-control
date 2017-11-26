@@ -77,10 +77,21 @@ os_timer_t timer_humidity;
 #define PAR_IP_WAIT_GOTIP			(uint32)(0x0000)
 #define PAR_IP_WAIT_CHECK_FAILURE		(uint32)(0xFFFF)
 
-// MDNS signals
+/*// MDNS signals
 #define SIG_MDNS				(uint32)(0x0003 << 16)
 #define PAR_MDNS_CONFIG_COMPLETE		(uint32)(0x0000)
-#define PAR_MDNS_CHECK_FAILURE			(uint32)(0xFFFF)
+#define PAR_MDNS_INIT_FAILURE			(uint32)(0xFFFF)
+*/
+
+// Discovery Signals
+#define SIG_DISCOVERY				(uint32)(0x0004 << 16)
+#define PAR_DISCOVERY_CONFIG_COMPLETE		(uint32)(0x0000)
+#define PAR_DISCOVERY_TIMEOUT			(uint32)(0x0001)
+#define PAR_DISCOVERY_FOUND			(uint32)(0x0002)
+#define PAR_DISCOVERY_CONNECTED			(uint32)(0x0003)
+#define PAR_DISCOVERY_CONN_FAILED		(uint32)(0xFFFD)
+#define PAR_DISCOVERY_MALFORMED			(uint32)(0xFFFE)
+#define PAR_DISCOVERY_LISTEN_FAILURE		(uint32)(0xFFFF)
 
 // AP Mode (Configuration Mode) signals
 #define SIG_APMODE				(uint32)(0x0100 << 16)

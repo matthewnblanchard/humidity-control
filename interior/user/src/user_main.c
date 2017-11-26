@@ -11,6 +11,7 @@
 #include "user_i2c.h"
 #include "user_fan.h"
 #include "user_captive.h"
+#include "user_exterior.h"
 
 // Function prototypes
 void ICACHE_FLASH_ATTR user_init(void);				// First step initialization function. Handoff from bootloader.
@@ -127,6 +128,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// exterior connection configuration
 		case SIG_IP_WAIT | PAR_IP_WAIT_GOTIP:
 			os_timer_disarm(&timer_ipcheck);            
+			TASK_START(user_broadcast_init, 0, 0);
 			break;
 
 		// Error case. Failed to check IP info. In theory it's still there, so ignore this
@@ -137,18 +139,59 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		/* ------------ */
 		/* mDNS Signals */
 		/* ------------ */	
-		
+		/*		
 		// PLACEHOLDER
 		case SIG_MDNS | PAR_MDNS_CONFIG_COMPLETE:
 
 			break; 	
 
 		// Error cases:
-		case SIG_MDNS | PAR_MDNS_CHECK_FAILURE:
+		case SIG_MDNS | PAR_MDNS_INIT_FAILURE:
 			os_printf("RESPONSE: FATAL!\r\n"); 
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break;	
+		*/
 
+		/* ----------------- */
+		/* Discovery Signals */
+		/* ----------------- */
+
+		// Once discovery via udp broadcast is configured, initialize a timeout timer,
+		// which will cause the system to fall back to configuration mode to re-sync
+		// with the exterior system if the exterior system fails to discover it
+		case SIG_DISCOVERY | PAR_DISCOVERY_CONFIG_COMPLETE:
+			os_timer_setfn(&timer_extcon, user_ext_timeout, NULL);	
+			os_timer_arm(&timer_extcon, EXT_WAIT_TIME, false);
+			break;    
+		
+		// If the discovery times out, go back to configuration mode
+		case SIG_DISCOVERY | PAR_DISCOVERY_TIMEOUT:
+			os_printf("switching to configuration mode\r\n");
+			TASK_START(user_apmode_init, 0, 0);
+			break;
+		
+		// If a discovery packet is received, proceed to connect to the found system
+		case SIG_DISCOVERY | PAR_DISCOVERY_FOUND:
+			os_timer_disarm(&timer_extcon);
+			TASK_START(user_espconnect_init, 0, 0);
+			break;
+
+		// Once the system is connected to the exterior, initialize the humidity readings
+		case SIG_DISCOVERY | PAR_DISCOVERY_CONNECTED:
+			/* PLACEHOLDER */
+			break;
+
+		// Error cases:
+		case SIG_DISCOVERY | PAR_DISCOVERY_CONN_FAILED:		// If the connection failed, begin the discovery process again
+			TASK_START(user_broadcast_init, 0, 0);
+			break;	
+		case SIG_DISCOVERY | PAR_DISCOVERY_MALFORMED:		// Received a malformed discovery packet. Keep going.
+			break;
+		case SIG_DISCOVERY | PAR_DISCOVERY_LISTEN_FAILURE:	// Failed to start listening for discovery packets
+			os_printf("RESPONSE: FATAL!\r\n");
+			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
+			break; 
+		
 		/* --------------- */
 		/* AP Mode Signals */
 		/* --------------- */
