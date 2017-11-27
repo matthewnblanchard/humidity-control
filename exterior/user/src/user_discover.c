@@ -24,12 +24,13 @@ void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e)
 	// Reset appropriate parameters and send UDP broadcast packet
 	os_memcpy(udp_broadcast_proto.remote_ip, udp_ip, 4);
 	udp_broadcast_proto.remote_port = UDP_DISCOVERY_PORT;
+	udp_broadcast_conn.type = ESPCONN_UDP;
 	udp_broadcast_conn.proto.udp = &udp_broadcast_proto;
 
 	// Open UDP connection
 	result = espconn_create(&udp_broadcast_conn);
 	if (result < 0 ) {
-		os_printf("ERROR: failed to open UDP broadcasts\r\n");
+		os_printf("ERROR %d: failed to open UDP broadcasts\r\n", result);
 		TASK_RETURN(SIG_DISCOVERY, PAR_DISCOVERY_OPEN_FAILURE);
 		return;
 	};
@@ -62,7 +63,7 @@ void ICACHE_FLASH_ATTR user_send_broadcast(void)
 	};
 
 	// Create UDP packet
-	packet_len = os_sprintf(packet_buf, discovery_packet, discovery_key, IP2STR(ip_config.ip.addr));
+	packet_len = os_sprintf(packet_buf, discovery_packet, discovery_key, IP2STR(&(ip_config.ip.addr)));
 
 	result = espconn_send(&udp_broadcast_conn, packet_buf, packet_len);
 	if (result < 0) {
