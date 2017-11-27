@@ -176,9 +176,12 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 			TASK_START(user_espconnect_init, 0, 0);
 			break;
 
-		// Once the system is connected to the exterior, initialize the humidity readings
+		// Once the system is connected to the exterior, initialize the humidity readings, then start the webserver
 		case SIG_DISCOVERY | PAR_DISCOVERY_CONNECTED:
-			/* PLACEHOLDER */
+			os_printf("Initiating humidity readings\r\n");
+			os_timer_setfn(&timer_humidity, user_read_humidity, NULL);	// Initialize humidity readings
+			os_timer_arm(&timer_humidity, HUMIDITY_READ_INTERVAL, true);
+			TASK_START(user_front_init, 0, 0);
 			break;
 
 		// Error cases:
@@ -188,6 +191,16 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		case SIG_DISCOVERY | PAR_DISCOVERY_MALFORMED:		// Received a malformed discovery packet. Keep going.
 			break;
 		case SIG_DISCOVERY | PAR_DISCOVERY_LISTEN_FAILURE:	// Failed to start listening for discovery packets
+			os_printf("RESPONSE: FATAL!\r\n");
+			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
+			break; 
+		
+		/* ----------------- */
+		/* Webserver Signals */
+		/* ----------------- */
+		
+		// Error cases:
+		case SIG_WEB | PAR_WEB_INIT_FAILURE:
 			os_printf("RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break; 

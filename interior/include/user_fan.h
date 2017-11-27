@@ -72,10 +72,6 @@ void user_gpio_isr(uint32 intr_mask, void *arg);
 //	the timer delay
 void user_fire_triac(void);
 
-// Application Function: user_fan_init
-// Desc: Initializes the ZCD to begin running the fan
-void ICACHE_FLASH_ATTR user_fan_init(void);
-
 // Callback Function: user_tach_calc
 // Desc: Calculates the current fan RPM based on the number of
 //	tachometer pulses

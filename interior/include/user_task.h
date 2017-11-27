@@ -33,8 +33,6 @@ os_timer_t timer_reboot;
 os_timer_t timer_ipcheck;
 os_timer_t timer_extfwd;
 os_timer_t timer_extcon;
-
-os_timer_t timer_1;
 os_timer_t timer_humidity;
 
 
@@ -92,6 +90,11 @@ os_timer_t timer_humidity;
 #define PAR_DISCOVERY_CONN_FAILED		(uint32)(0xFFFD)
 #define PAR_DISCOVERY_MALFORMED			(uint32)(0xFFFE)
 #define PAR_DISCOVERY_LISTEN_FAILURE		(uint32)(0xFFFF)
+
+// Webserver Signals
+#define SIG_WEB					(uint32)(0x0005 << 16)
+
+#define PAR_WEB_INIT_FAILURE			(uint32)(0xFFFF)
 
 // AP Mode (Configuration Mode) signals
 #define SIG_APMODE				(uint32)(0x0100 << 16)

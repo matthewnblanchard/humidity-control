@@ -66,6 +66,9 @@ char *ws_response = {
         "Connection: Upgrade\r\n"\
         "Sec-WebSocket-Accept: %s\r\n\r\n"
 };
+
+struct espconn *ws_conn = NULL;		// WebSocket control structure
+
 /*
 void ICACHE_FLASH_ATTR udp_listen_cb(void *arg, char *pdata, unsigned short len)
 {
@@ -104,13 +107,17 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
         // Register callbacks for the TCP server
         result = espconn_regist_connectcb(&tcp_front_conn, user_front_connect_cb);
         if (result < 0) {
-                os_printf("failed to register connect callback, error=%d\r\n", result);
+                os_printf("ERROR: failed to register connect callback, error=%d\r\n", result);
+		TASK_RETURN(SIG_WEB, PAR_WEB_INIT_FAILURE);
+		return;
         }
 
         // Start listening
         result = espconn_accept(&tcp_front_conn);      
         if (result < 0) {
-                os_printf("failed to start tcp server, error=%d\r\n", result);
+                os_printf("ERROR: failed to start tcp server, error=%d\r\n", result);
+		TASK_RETURN(SIG_WEB, PAR_WEB_INIT_FAILURE);
+		return;
         }
 
         return;
@@ -153,6 +160,7 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
         size_t olen = 0;                        // Base-64 econding length     
         uint8 response_buf[256];                // Buffer for HTTP response
         uint8 response_len = 0;                 // Length of HTTP response
+	sint8 result = 0;			// API call result
 
         os_printf("received data from client\r\n");
         os_printf("data=%s\r\n", pusrdata);
@@ -205,6 +213,12 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
 
                                 // The connection has upgraded to a WebSocket. Apply WebSocket callbacks for data transmission
                                 espconn_regist_recvcb(client_conn, user_ws_recv_cb);
+
+				// Upgrade the keep-alive time for the WebSocket to 30 minutes (1800 seconds)
+				result = espconn_regist_time(client_conn, 1800, true);
+				if (result < 0) {
+					os_printf("ERROR: failed to upgrade timeout interval for WebSocket\r\n");
+				}
 
                                 // Arm WebSocket update timer
                                 os_timer_setfn(&ws_timer, user_ws_update, client_conn);

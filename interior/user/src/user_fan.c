@@ -10,17 +10,6 @@ volatile uint16 tach_cnt = 0;
 volatile uint16 rpm = 0;
 volatile uint32 last_time = 0;
 
-void ICACHE_FLASH_ATTR user_fan_init()
-{
-	// Initialize ZCD
-	gpio_output_set(0, 0, 0, ZCD_BIT);     					// Set ZCD pin as input
-        gpio_intr_handler_register(user_gpio_isr, 0);   			// Register GPIO ISR
-        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);   // Positive edge triggers
-        os_printf("zcd initialized\r\n");
-
-        return;        
-};
-
 void user_gpio_isr(uint32 intr_mask, void *arg)
 {
 	gpio_intr_ack(intr_mask);	// ACK interrupt
