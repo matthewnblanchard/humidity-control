@@ -612,3 +612,4763 @@ ip received
 Starting TCP server
 Connection made to exterior over port ESPCONN
 interior connectedpm open,type:2 0
+
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 1
+
+connected with HBFC/D Wireless Setup, channel 1
+dhcp client start...
+cnt 
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.2,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+tcp connection established
+rlœØrßŒcân€àŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnä„;ònÄ’Üäb#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀä‚lŒ8ŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀ’Ü;pònàÃÜàrÇâÜ€pp’Ü<ÄÃ€8ŒònnîÄÈrÜ#‚n€rnr’ß;ÄÀ?àŒrpònàÃÜàrÇâÜìÇ8p’Ü<ÄÄŒ8ŒònnîÄÀrœ#‚nÀ;nr’ß;„À?âÜ;rßÛ’n€àbÜ’`ŒâÜì8‚nÀä>rœØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+connected to interior
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 1
+
+connected with HBFC/D Wireless Setup, channel 1
+dhcp client start...
+cnt 
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.2,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+tcp connection established
+pm open,type:2 0
+received data from interior
+data=ssid=Soochboys&pass=purplefinch654
+ssid read: Soochboys&pass=purplefinch654
+pass read: 1073673156
+Writing new data to flash
+re-entering AP scan
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+state: 5 -> 0 (0)
+rm 0
+pm close 7
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-39
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+Starting TCP server
+Connection made to exterior over port ESPCONN
+interior connectedpm open,type:2 0
+
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+rlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnä„;ònÄ’Üäbç$‰rrpònàƒÜà‚ÇÀl€€€bÀnâãn€ä‚lŒ8ŒònnîÄÁŒl`Ü#‚nÀ{nr’ß;ÄÀ’Ü;pònàÃÜ€àrÇâÜ€pp’Ü<„Ã€8ŒònnîÄÈrÜ#‚nÀrnr’ß;ÄÀ?àŒrpònàÃÜ€àrÇâÜìÇ8p’Ü<ÄÄŒxŒònnîÄÀrÜ#‚nÀ{nr’ß;ÄÀ?âÜ;rßÛ’nÀàbÜ’`Œâœì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+connected to interior
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+ürlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``rlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``pònàÃÜ€à‚‡Àl€€€b€nâãnÀä‚lŒxŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀ?’Ü;ˆpònàÃÜàr‡âœ€pp’Ü<ÄÃ€8ŒònnîÄÈrÜ#‚n€rnr’Ÿ;„À?àŒrpònàƒÜàrÇâœì‡8p’Ü<ÄÄŒ8ŒònnîÄÀrÜ#‚nÀ;nr’ß;ÄÀ?âÜ;rßÛ’nÀàbÜ’`Œâœìx‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+connected to interior
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+
+bcn_timout,ap_probe_send_start
+ap_probe_send over, rest wifi status to disassoc
+state: 5 -> 0 (1)
+rm 0
+pm close 7
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 1
+
+connected with HBFC/D Wireless Setup, channel 1
+dhcp client start...
+cnt 
+ip:192.168.0.2,mask:255.255.255.0,gw:192.168.0.1
+pm open,type:2 0
+
+rlœØrŸŒ#ânÀˆàŒ‚ìpŒ|‚Ÿì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbcl``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀä‚lŒ8ŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀ?’œ;pònàÃÜàrÇâÜ€pp’Ü<ÄÃ€8ŒònnîÄÈrÜ!‚nÀrnr’ß;ÄÀ?àŒrpònàÃÜ€àrÇâœìÇ8p’œ<ÄÄŒ8ŒònnîÄÀrÜ#‚nÀ;nr’ß;ÄÀ?âÜ;ˆrßÛ’nÀàbÜ’`ŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+connected to interior
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 1
+
+connected with HBFC/D Wireless Setup, channel 1
+dhcp client start...
+cnt 
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.2,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+tcp connection established
+pm open,type:2 0
+received data from interior
+data=ssid=Soochboys&pass=purplefinch654
+ssid read: Soochboys&pass=purplefinch654
+pass read: 1073673156
+Writing new data to flash
+state: 5 -> 0 (0)
+rm 0
+pm close 7
+re-entering AP scan
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-41
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+Starting TCP server
+Connection made to exterior over port ESPCONN
+interior connectedpm open,type:2 0
+
+connected to interior
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+rlœ˜rßŒcânÀˆàŒ‚ìpŒ|‚ßìx’ŸÇ’œäŒpònnä„;ònÄ’Üäb#l``pònàÃÜà‚ÇÀl€€€bÀnâãnÀä‚lŒ8ŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;„À?’Ü;pònàÃÜ€àrÇâÜ€pp’Ü<ÄÃ€8ŒònnîÄÈrÜ#‚nÀrnr’ß;ÄÀ?àŒrpònàÃÜàrÇâÜìÇ8p’œ<ÄÄŒ8ŒònnîÄÀrÜ#‚n€;nr’ß;ÄÀ?âÜ;ˆrßÛ’n€àbÜ’`ŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+connected to interior
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+rlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;òn„’œäbç$	rrpònàƒÜà‚ÇÀl€€€bÀnâãnÀä‚lŒxŒònnîÄÁŒl`œ#‚n€{nr’ß;„À?’Ü;pònàƒÜàrÇâÜ€pp’Ü<„Ã€8ŒònnîÄÈrÜ#‚nÀrnr’ß;ÄÀ?àŒrpònàÃÜ€àrÇâÜìÇ8p’Ü<„ÄŒxŒònnîÄÀrÜ#‚nÀ;nr’ß;ÄÀâÜ;ˆrŸÛ’nÀàbœ’`ŒâÜìx‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+connected to interior
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=1
+connecting ... status=1
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 1
+
+connected with HBFC/D Wireless Setup, channel 1
+dhcp client start...
+cnt 
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.2,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+tcp connection established
+pm open,type:2 0
+received data from interior
+data=ssid=Soochboys&pass=purplefinch654
+ssid read: Soochboys&pass=purplefinch654
+pass read: 1073673156
+Writing new data to flash
+re-entering AP scan
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+state: 5 -> 0 (0)
+rm 0
+pm close 7
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-41
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+Starting TCP server
+Connection made to exterior over port ESPCONN
+interior connectedpm open,type:2 0
+
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+connecting ... status=3
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+connecting ... status=3
+scandone
+no HBFC/D Wireless Setup found, reconnect after 1s
+reconnect
+connecting ... status=3
+connecting ... status=3
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 1
+
+connected with HBFC/D Wireless Setup, channel 1
+dhcp client start...
+cnt 
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.2,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’œäbç$‰rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀä‚lŒ8ŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀ?’Ü;ˆpònàƒÜàrÇâÜ€pp’Ü<ÄÃ€8ŒònnîÄÈrÜ#‚nÀrnr’ß;ÄÀ?àŒrpònàÃÜ€àrÇâÜìÇ8p’Ü<ÄÄŒxŒònnîÄÀrÜ#‚nÀ;nr’Ÿ;ÄÀ?âœ;rßÛ’n€àbÜ’`ŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-38
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+Starting TCP server
+pm open,type:2 0
+discovery timed out
+espconn_tcp_delete 1, 6000
+ap_loss
+state: 5 -> 0 (0)
+rm 0
+pm close 7
+reconnect
+scandone
+connected to interior
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 1
+
+connected with HBFC/D Wireless Setup, channel 1
+dhcp client start...
+cnt 
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.2,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+tcp connection established
+pm open,type:2 0
+received data from interior
+data=ssid=Soochboys&pass=purplefinch654
+ssid read: Soochboys&pass=purplefinch654
+pass read: 1073673156
+Writing new data to flash
+re-entering AP scan
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+state: 5 -> 0 (0)
+rm 0
+pm close 7
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-41
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+Starting TCP server
+Connection made to exterior over port ESPCONN
+interior connectedpm open,type:2 0

@@ -164,10 +164,18 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 			os_timer_arm(&timer_extcon, EXT_WAIT_TIME, false);
 			break;    
 		
-		// If the discovery times out, go back to configuration mode
+		// If the discovery times out, clear the config and reboot to get back to config mode
 		case SIG_DISCOVERY | PAR_DISCOVERY_TIMEOUT:
-			os_printf("switching to configuration mode\r\n");
-			TASK_START(user_apmode_init, 0, 0);
+			os_printf("Erasing config\r\n");
+
+                	sint8 flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
+                	if (flash_result != SPI_FLASH_RESULT_OK) {
+                        	os_printf("ERROR: flash erase failed\r\n");
+				TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
+                        	break;
+                	}
+
+			system_restart();
 			break;
 		
 		// If a discovery packet is received, proceed to connect to the found system

@@ -17,7 +17,7 @@
 #define BROADCAST_PORT 5000
 #define ESP_CONNECT_PORT 6000
 #define EXT_PACKET_SIZE 4
-#define EXT_WAIT_TIME 60000
+#define EXT_WAIT_TIME 10000
 
 // User Task: user_mdns_init(os_event_t *e)
 // Desc: Initializes mDNS to discover the exterior system

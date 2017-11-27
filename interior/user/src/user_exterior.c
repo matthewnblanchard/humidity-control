@@ -316,6 +316,9 @@ void ICACHE_FLASH_ATTR user_ext_timeout(void)
 		// Stop listening for broadcasts
 		espconn_delete(&udp_broadcast_conn);
 
+		// Disconnect from AP
+		wifi_station_disconnect();
+
 		TASK_RETURN(SIG_DISCOVERY, PAR_DISCOVERY_TIMEOUT);
 	}
 
