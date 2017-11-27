@@ -189,6 +189,9 @@ void ICACHE_FLASH_ATTR user_config_cleanup(os_event_t *e)
 	// Disconnect/delete config mode connections
 	espconn_disconnect(&tcp_connect_conn);
 	espconn_delete(&tcp_connect_conn);
+
+	// Diconnect from HBFC/D Wireless Config network
+	wifi_station_disconnect();
 	
 	TASK_RETURN(SIG_CONFIG, PAR_CONFIG_CLEANUP_COMPLETE);
 	return;

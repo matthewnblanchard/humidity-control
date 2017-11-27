@@ -9,6 +9,10 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         struct user_data_station_config saved_conn;     // Retrieved station config
         uint8 flash_result = 0;                         // Result of flash operation 
 
+	// Clear structures
+	os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
+	os_memset(&saved_conn, 0, sizeof(saved_conn));
+
         // Set ESP8266 to station (client) mode
         if (wifi_set_opmode_current(STATION_MODE) != true) {
 		os_printf("ERROR: failed to set wifi mode to station\r\n");
@@ -33,6 +37,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         os_printf("read_pass=%s\r\n", saved_conn.config.password);
      
         // Save retrieved station configuration for later use 
+	os_memset(&client_config, 0, sizeof(client_config));
         client_config = saved_conn.config;
 
         // Check for AP's broadcasting the saved SSID

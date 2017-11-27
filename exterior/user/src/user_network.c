@@ -9,6 +9,10 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         struct user_data_station_config saved_conn;     // Retrieved station config
         uint8 flash_result = 0;                         // Result of flash operation 
 
+	// Clear out structures initially
+	os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
+	os_memset(&saved_conn, 0, sizeof(saved_conn));
+
         // Set ESP8266 to station (client) mode
         if (wifi_set_opmode_current(STATION_MODE) != true) {
 		os_printf("ERROR: failed to set wifi mode to station\r\n");
@@ -33,6 +37,7 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         os_printf("read_pass=%s\r\n", saved_conn.config.password);
      
         // Save retrieved station configuration for later use 
+	os_memset(&client_config, 0, sizeof(client_config));
         client_config = saved_conn.config;
 
         // Check for AP's broadcasting the saved SSID
@@ -55,7 +60,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         os_printf("AP scan succeeded, status=%d\r\n", status);
         
         // Check AP info for valid APs
-//        if (status == OK) {
+        if (status == OK) {
                 struct bss_info *scan_results = (struct bss_info *)arg;         // Copy BSS info from arguments
 
                 // Follow the queue of found APs to the end, comparing RSSI's for the best connection
@@ -67,7 +72,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         }
                         scan_results = scan_results->next.stqe_next;            // Move to next found AP
                 }               
-  //      }
+  	}
 
         // If an AP was found, connect to it
         if (ap_count != 0) {
