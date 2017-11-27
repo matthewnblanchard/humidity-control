@@ -44,7 +44,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         adj_humidity = ((float)humidity / (float)((1 << 14) - 2)) * 100;        // Calculate RH as defined by Honeywell
 
         os_printf("reading=%d, humidity=%d, status=%d\r\n", humidity, (uint32)adj_humidity, status);
-	os_printf("zcd intr_cnt=%d, drive_flag=%d\r\n", intr_cnt, drive_flag);
+	os_printf("drive_flag=%d\r\n", drive_flag);
 
         // Store humidity.
         sensor_data_int = adj_humidity;
