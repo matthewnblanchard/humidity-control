@@ -4,7 +4,7 @@
 #include "user_humidity.h"
 
 uint16 data_index_ext = 0;
-
+/*
 void ICACHE_FLASH_ATTR user_read_humidity(void)
 {
 	uint8 status = 0;		// Status read by humidity sensor
@@ -66,5 +66,5 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 		os_printf("humidity data send failed\r\n");
 	}
 }
-
+*/
 

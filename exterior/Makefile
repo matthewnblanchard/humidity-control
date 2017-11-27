@@ -21,9 +21,9 @@ BINDIR = user/bin
 OBJDIR = user/obj
 SRCDIR = user/src
 
-OBJ = user_main.o user_connect.o user_network.o user_task.o user_humidity.o user_i2c.o
+OBJ = user_main.o user_connect.o user_network.o user_humidity.o user_i2c.o user_discover.o user_captive.o
 OBJ := $(addprefix $(OBJDIR)/, $(OBJ))
-SRC = user_main.c user_connect.c user_network.c user_task.c user_humidity.c user_i2c.c
+SRC = user_main.c user_connect.c user_network.c user_humidity.c user_i2c.c user_discover.h user_captive.h
 SRC := $(addprefix $(SRCDIR)/, $(SRC))
 TARGET = $(BINDIR)/user_main
 
@@ -37,13 +37,13 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) -c $(CFLAGS) $< $(LDFLAGS) $(LDLIBS) -o $@
 
 flash: $(BINDIR)/user_main-0x00000.bin
-	esptool.py --port /dev/ttyACM0 write_flash 0 $(BINDIR)/user_main-0x00000.bin 0x10000 $(BINDIR)/user_main-0x10000.bin
+	esptool.py --port /dev/ttyUSB0 write_flash 0 $(BINDIR)/user_main-0x00000.bin 0x10000 $(BINDIR)/user_main-0x10000.bin
 
 default: $(BINDIR)/esp_init_data_default.bin
-	esptool.py --port /dev/ttyACM0 write_flash 0x3FC000 $(BINDIR)/esp_init_data_default.bin
+	esptool.py --port /dev/ttyUSB0 write_flash 0x3FC000 $(BINDIR)/esp_init_data_default.bin
 
 erase:
-	esptool.py --port /dev/ttyACM0 --baud 9600 erase_flash
+	esptool.py --port /dev/ttyUSB0 --baud 9600 erase_flash
 
 clean:
 	rm -f $(TARGET) $(OBJ) $(BINDIR)/user_main-0x00000.bin $(BINDIR)/user_main-0x10000.bin
