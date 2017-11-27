@@ -3,8 +3,6 @@
 
 #include "user_network.h"
 
-struct mdns_info mdns_config;
-
 void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
 {
         struct scan_config ap_scan_config;              // AP scanning config
@@ -157,15 +155,3 @@ void ICACHE_FLASH_ATTR user_force_solo(os_event_t *e)
 	return;
 };
 */
-
-void ICACHE_FLASH_ATTR user_mdns_setup(void)
-{
-	struct ip_info ip_config;
-
-	os_memset(&mdns_config, 0, sizeof(mdns_config));	// Clear mDNS config
-
-	wifi_get_ip_info(STATION_IF, &ip_config);		// Gather current ip info
-
-	mdns_config.host_name = "esp-interior"; 		// Set hostname
-	mdns_config.ipAddr = ip_config.ip.addr;			// Save current IP	
-};

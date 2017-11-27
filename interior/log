@@ -1,0 +1,311 @@
+brlœØrßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’œäŒpònnäÄ;ònÄ’œäbŽ#l``pònàÃÜà‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$Œl`8`rn|’’nÀàlŽ;`ònÀžnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnrŽ’Ÿ;„À?’rpònàÃÜ€àrÇâÜŽÄpp’Ü<„ßŒŽÇŒŽ8ŒònnîÄðrÜ#‚nÀ$ŽŒl`¸`rn|’’nÀà‡àl`¸Ž’ß;ÄÀ?€rŒâÜì8‚nÀä>rœØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+user disconnected
+read from flash
+sprintf
+sent data
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+exterior disconnected
+AP mode cleanup completed
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+pm open,type:2 0
+Maximum exterior connection wait time elapsed
+switching to configuration mode
+state: 5 -> 0 (0)
+rm 0
+pm close 7
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.0.1,mask:255.255.255.240,gw:192.168.0.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+brlœØrŸŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßìx’ßÇ’ÜäŒpònnä„;ònÄ’ÜäbŽ#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãn€äŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$ŽŒl`8`rn|’’nÀàlŽ;`ònÀŽžnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀŽrnrŽ’ß;ÄÀ?’rpònàƒÜàr‡âÜŽÄpp’Ü<ÄßŒŽÇŒŽ8ŒònnîÄðrÜ#‚nÀ$Œl`¸`rn|’’nÀàÇàl`8Ž’ß;ÄÀ?€rŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâœçÙ8‚ìò!0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+read from flash
+sprintf
+sent data
+user disconnected
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+exterior disconnected
+AP mode cleanup completed
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-40
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 8
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+pm open,type:2 0
+brlœØrßŒ#ân€àŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’ÜäbŽ#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`œ#‚nÀ$ŽŒl`8`rn|’’nÀŽàlŽ;`ònÀžnÜÄÃŒŒ|~ònîÄÈl`nnàÃÜ€àrÇâœ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀŽrnrŽ’Ÿ;„À’rpònàÃÜàrÇâÜŽÄpp’Ü<ÄßŒŽÇŒŽxŒònnîÄðrÜ#‚nÀ$ŽŒl`¸`rn|’’nÀàÇàl`¸Ž’ß;ÄÀ?€rŒâœì8‚nÀä>rœØònãb‚‚lrŒâÜçÉ8‚Œò!€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+exterior connection error, code=-8
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+exterior connection error, code=-8
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+

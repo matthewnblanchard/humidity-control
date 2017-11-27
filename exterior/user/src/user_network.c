@@ -36,7 +36,6 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         client_config = saved_conn.config;
 
         // Check for AP's broadcasting the saved SSID
-        os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));  // Clear scan config
         ap_scan_config.ssid = saved_conn.config.ssid;           // Scan based on SSID only
         os_printf("scanning for APs ...\r\n");
         if (wifi_station_scan(&ap_scan_config, user_scan_done) != true) {
@@ -56,7 +55,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
         os_printf("AP scan succeeded, status=%d\r\n", status);
         
         // Check AP info for valid APs
-        if (status == OK) {
+//        if (status == OK) {
                 struct bss_info *scan_results = (struct bss_info *)arg;         // Copy BSS info from arguments
 
                 // Follow the queue of found APs to the end, comparing RSSI's for the best connection
@@ -68,7 +67,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
                         }
                         scan_results = scan_results->next.stqe_next;            // Move to next found AP
                 }               
-        }
+  //      }
 
         // If an AP was found, connect to it
         if (ap_count != 0) {
@@ -111,7 +110,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
         if (status == STATION_GOT_IP) {
                 os_printf("ip received\r\n");
 		TASK_RETURN(SIG_IP_WAIT, PAR_IP_WAIT_GOTIP);
-                if (wifi_get_ip_info(STATION_IF, ip) == true) { // Check ip info on station interface
+                /*if (wifi_get_ip_info(STATION_IF, ip) == true) { // Check ip info on station interface
                         os_printf("ip=%d.%d.%d.%d\r\n", IP2STR(ip->ip.addr));
                         os_printf("netmask=%d.%d.%d.%d\r\n", IP2STR(ip->ip.addr));
                         os_printf("gw=%d.%d.%d.%d\r\n", IP2STR(ip->ip.addr));
@@ -119,7 +118,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                 } else {
                         os_printf("ERROR: failed to check ip\r\n");
 			TASK_RETURN(SIG_IP_WAIT, PAR_IP_WAIT_CHECK_FAILURE);
-                }
+                }*/
         }
         os_free(ip);
 	return;

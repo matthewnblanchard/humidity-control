@@ -5,9 +5,9 @@
 
 // AP configuration
 struct softap_config ap_config = {      // SoftAP configuration
-        "HBFC/D Test Network",          // SSID
+        "hbfcd_test",                   // SSID
         "pass",                         // Password
-        19,                             // SSID length
+        10,                             // SSID length
         1,                              // Channel
         AUTH_OPEN,                      // Authentication mode
         false,                          // SSID hidden
