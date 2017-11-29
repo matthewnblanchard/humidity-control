@@ -3,6 +3,9 @@
 
 #include <user_i2c.h>
 
+static uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void);
+static void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level);
+
 static void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state)
 {
         // To drive the line low, pull the pin low (low output)
@@ -138,7 +141,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack)
         return byte;
 };
 
-void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level)
+static void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level)
 {
         // To send an ACK, bring SDA low and pulse the clock.
         // To send a NACK, bring SDA high and pulse the clock
@@ -161,7 +164,7 @@ void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level)
         return;
 };
 
-uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void)
+static uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void)
 {
         // To check for an ACK, bring SDA high, pulse the clock,
         // then check to see if the slave has brought SDA low
@@ -170,18 +173,18 @@ uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void)
 
         user_i2c_sda_set(1);
         os_delay_us(I2C_DELAY);
-        user_i2c_scl_set(0);
-        os_delay_us(I2C_DELAY);
+        //user_i2c_scl_set(0);
+        //os_delay_us(I2C_DELAY);
         user_i2c_scl_set(1);
         os_delay_us(I2C_DELAY);
 
         result = user_i2c_sda_read();
 
-        os_delay_us(I2C_DELAY);
+        //os_delay_us(I2C_DELAY);
         user_i2c_scl_set(0);
         os_delay_us(I2C_DELAY);
-        user_i2c_sda_set(0);
-        os_delay_us(I2C_DELAY);
+        //user_i2c_sda_set(0);
+        //os_delay_us(I2C_DELAY);
 
         return result;
 }

@@ -14,11 +14,16 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         uint16 humidity = 0;            // Humidity reading w/o calculations
         float adj_humidity = 0;         // Humidity reading after calculations
 
+	ETS_GPIO_INTR_DISABLE();
+
         // Wake up the sensor by sending a measurement request. This consists of the slave's address
         // and a single 0 bit. 
         user_i2c_start_bit();
-        if (user_i2c_write_byte((SENSOR_ADDR << 1) | 0x00) == 1) {
-                os_printf("slave failed to initiate measurement\r\n");      
+        if (user_i2c_write_byte((SENSOR_ADDR << 1) & 0xFE) == 1) {
+                os_printf("slave failed to initiate measurement\r\n");
+        	user_i2c_stop_bit();
+		ETS_GPIO_INTR_ENABLE();
+		return;
         };
         user_i2c_stop_bit();
 
@@ -30,7 +35,10 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         // Retrieve the data now that the measurement cycle has completed
         user_i2c_start_bit();
         if (user_i2c_write_byte((SENSOR_ADDR << 1) | 0x01) == 1) {
-                os_printf("slave failed to receive address\r\n");      
+                os_printf("slave failed to receive address\r\n");
+        	user_i2c_stop_bit();
+		ETS_GPIO_INTR_ENABLE();
+		return;      
         };
 
         read_byte = user_i2c_read_byte(0);               // Read upper byte
@@ -40,6 +48,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         read_byte = user_i2c_read_byte(1);               // Read lower byte
         user_i2c_stop_bit();
         humidity |= read_byte;                           // Lower byte is lower 8 bits of humidity
+
+	ETS_GPIO_INTR_ENABLE();
 
         adj_humidity = ((float)humidity / (float)((1 << 14) - 2)) * 100;        // Calculate RH as defined by Honeywell
 

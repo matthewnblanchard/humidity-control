@@ -281,10 +281,10 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 
         // Set I2C pins to open-drain
         GPIO_REG_WRITE(
-		GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), 
+		GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_PIN)), 
 		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
         GPIO_REG_WRITE(
-		GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX)), 
+		GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_PIN)), 
 		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
 
         // Enable pins
@@ -309,6 +309,10 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 
         // GPIO initialization
         gpio_init();
+
+	// Start I2C pins high
+        gpio_output_set(SDA_BIT, 0, SDA_BIT, 0);
+       	gpio_output_set(SCL_BIT, 0, SCL_BIT, 0);
 
         // Re-enable GPIO interrupts
         ETS_GPIO_INTR_ENABLE();

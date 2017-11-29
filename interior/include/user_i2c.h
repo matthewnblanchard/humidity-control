@@ -23,7 +23,7 @@
 #define SCL_FUNC FUNC_GPIO5
 
 // Delay time in microseconds
-#define I2C_DELAY 3
+#define I2C_DELAY 2
 
 // Application Function: user_i2c_sda_set(bool state);
 // Desc: Sets the SDA line to state (high or low)
@@ -98,7 +98,7 @@ uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack);
 //      of '0' indicates an ACK, and '1' indicates an ACK
 // Args:
 //      uint8 ack_level: Ack level (ACK/NACK)
-void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level);
+//void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level);
 
 // Application Function: user_i2c_recv_ack(void)
 // Desc:
@@ -106,7 +106,7 @@ void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level);
 // Returns:
 //      0, if an ACK was received
 //      1, if a NACK was received
-uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void);
+//uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void);
 
 #endif
 
