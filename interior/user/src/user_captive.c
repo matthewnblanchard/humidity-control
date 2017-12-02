@@ -15,8 +15,14 @@ struct softap_config ap_config = {      // SoftAP configuration
         1000                            // Beacon broadcast interval
 };
 
+// espconn structs - Connection control structures
+struct espconn tcp_captive_conn;
+struct _esp_tcp tcp_captive_proto;
+struct espconn tcp_captive_ext_conn;
+struct _esp_tcp tcp_captive_ext_proto;
+
 // HTML for captive portal webpage
-char *captive_page = {
+const char const *captive_page = {
         "HTTP/1.1 200 OK\r\n\
         Content-type: text/html\r\n\r\n\
         <html>\
@@ -43,7 +49,7 @@ char *captive_page = {
 };
 
 // HTML for exterior system wait page
-char *wait_page = {
+const char const *wait_page = {
 	"HTTP/1.1 200 OK\r\n\
 	Content-type: text/html\r\n\r\n\
 	<html>\
@@ -61,7 +67,7 @@ char *wait_page = {
 };
 
 // HTML for form submission page
-char *submit_page = {
+const char const *submit_page = {
         "HTTP/1.1 200 OK\r\n\
         Content-type: text/html\r\n\r\n\
         <html>\
@@ -78,15 +84,21 @@ char *submit_page = {
 bool captive_ext_connect = 0;
 struct espconn *ext_conn = NULL;
 
+// Static function prototypes
+static void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg);
+static void ICACHE_FLASH_ATTR user_captive_recon_cb(void *arg, sint8 err);
+static void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg);
+static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length);
+static void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg);
+static void ICACHE_FLASH_ATTR user_captive_ext_connect_cb(void *arg);
+static void ICACHE_FLASH_ATTR user_captive_ext_recon_cb(void *arg, sint8 err);
+static void ICACHE_FLASH_ATTR user_captive_ext_discon_cb(void *arg);
+static void ICACHE_FLASH_ATTR user_captive_ext_recv_cb(void *arg, char *pusrdata, unsigned short length);
+static void ICACHE_FLASH_ATTR user_captive_ext_sent_cb(void *arg);
+
+
 void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 {
-	// Terminate existing connections on fallback
-	//if (e->sig == SIG_EXT_ABORT) {
-	//	espconn_disconnect(&tcp_espconnect_conn);
-	//	espconn_delete(&tcp_espconnect_conn);
-	//	espconn_delete(&udp_broadcast_conn);
-	//}
-
         // DHCP lease range
         struct dhcps_lease ip_range;
         IP4_ADDR(&(ip_range.start_ip), 192, 168, 0, 2);     // Leases start at 192.168.0.2
@@ -102,42 +114,42 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 
         // Set ESP8266 to AP mode
         if (wifi_set_opmode_current(SOFTAP_MODE) == false) {
-                os_printf("ERROR: failed to set WiFi mode to AP\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to set WiFi mode to AP\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_AP_MODE_FAILURE);
 		return; 
         }
 
         // Configure AP settings (SSID/pass, etc)
         if (wifi_softap_set_config_current(&ap_config) == false) {
-                os_printf("ERROR: softap config failed\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: softap config failed\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_MODE_CONFIG_FAILURE);
 		return; 
         }
 
         // Stop DHCP service for configuration
         if (wifi_softap_dhcps_stop() == false) {
-                os_printf("ERROR: failed to stop DHCP service\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to stop DHCP service\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
 		return; 
         }
 
         // Set SoftAP IP info
         if (wifi_set_ip_info(SOFTAP_IF, &ip_config) == false) {
-                os_printf("ERROR: ip info configuration failed\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: ip info configuration failed\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
 		return; 
         }
 
         // Set DHCP lease range
         if (wifi_softap_set_dhcps_lease(&ip_range) == false) {
-                os_printf("ERROR: failed to set dhcp lease range\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to set dhcp lease range\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
 		return; 
         }
 
         // Start DHCP service
         if (wifi_softap_dhcps_start() == false) {
-                os_printf("ERROR: failed to start dhcp service\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to start dhcp service\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
 		return; 
         }
@@ -153,7 +165,7 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         // Register callbacks for the TCP server
         result = espconn_regist_connectcb(&tcp_captive_conn, user_captive_connect_cb);
         if (result < 0) {
-                os_printf("ERROR: failed to register connect callback, error=%d\r\n", result);
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to register connect callback, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_WEB_INIT_FAILURE);
 		return; 
         }
@@ -161,7 +173,7 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         // Start listening
         result = espconn_accept(&tcp_captive_conn);      
         if (result < 0) {
-                os_printf("ERROR: failed to start tcp server, error=%d\r\n", result);
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to start tcp server, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_WEB_INIT_FAILURE);
 		return; 
         }
@@ -180,7 +192,7 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         // Register callbacks for the TCP server
         result = espconn_regist_connectcb(&tcp_captive_ext_conn, user_captive_ext_connect_cb);
         if (result < 0) {
-                os_printf("failed to register connect callback, error=%d\r\n", result);
+                PRINT_DEBUG(DEBUG_ERR, "failed to register connect callback, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_EXT_INIT_FAILURE);
 		return; 
         }
@@ -188,7 +200,7 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         // Start listening
         result = espconn_accept(&tcp_captive_ext_conn);      
         if (result < 0) {
-                os_printf("failed to start tcp server, error=%d\r\n", result);
+                PRINT_DEBUG(DEBUG_ERR, "failed to start tcp server, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_EXT_INIT_FAILURE);
 		return; 
         }
@@ -200,10 +212,11 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
 	return; 
 };
 
-void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg)
+static void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg)
 {
-        os_printf("client connected to the captive portal\r\n");
         struct espconn *client_conn = arg;      // Grab connection control structure
+
+        PRINT_DEBUG(DEBUG_LOW, "client connected to the captive portal\r\n");
 
         // Register callbacks for the connected client
         espconn_regist_recvcb(client_conn, user_captive_recv_cb);
@@ -211,24 +224,22 @@ void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg)
         espconn_regist_disconcb(client_conn, user_captive_discon_cb);
         espconn_regist_sentcb(client_conn, user_captive_sent_cb);
 
-	// Enable keep-alive
-	espconn_set_opt(client_conn, ESPCONN_KEEPALIVE);		
-
 	return;
 };
         
-void ICACHE_FLASH_ATTR user_captive_recon_cb(void *arg, sint8 err)
+static void ICACHE_FLASH_ATTR user_captive_recon_cb(void *arg, sint8 err)
 {
-        os_printf("user connection error: %d\r\n", err);
+        PRINT_DEBUG(DEBUG_ERR, "user connection error, code=%d\r\n", err);
 	return;
 };
 
-void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg)
+static void ICACHE_FLASH_ATTR user_captive_discon_cb(void *arg)
 {
-        os_printf("user disconnected\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "user disconnected\r\n");
+	return;
 };
 
-void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length)
+static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
         struct espconn *client_conn = arg;                      // Pull client connection
         sint8 flash_result = 0;                                 // Result of flash operation
@@ -240,22 +251,22 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         uint8 pass_len;                                         // Length of the password
 	
 
-        os_printf("received data from client\r\n");
-        os_printf("data=%s\r\n", pusrdata);
+        PRINT_DEBUG(DEBUG_LOW, "received data from client\r\n");
+        PRINT_DEBUG(DEBUG_HIGH, "data=%s\r\n", pusrdata);
 
         // Check if an HTTP GET request was received
         if (os_strncmp(pusrdata, "GET ", 4) == 0) {
 
-                os_printf("http GET request detected\r\n");
+                PRINT_DEBUG(DEBUG_HIGH, "http GET request detected\r\n");
 	
 		// Send the configuration page only if the exterior system is connected,
 		// otherwise send the wait page
-		if (captive_ext_connect == 1) {
-                	os_printf("sending captive portal\r\n");
-                	espconn_send(client_conn, captive_page, os_strlen(captive_page)); 
+		if (captive_ext_connect == true) {
+                	PRINT_DEBUG(DEBUG_LOW, "sending captive portal\r\n");
+                	espconn_send(client_conn, (uint8 *)captive_page, os_strlen(captive_page)); 
 		} else {
-			os_printf("sending wait page\r\n");
-                	espconn_send(client_conn, wait_page, os_strlen(wait_page)); 
+			PRINT_DEBUG(DEBUG_LOW, "sending wait page\r\n");
+                	espconn_send(client_conn, (uint8 *)wait_page, os_strlen(wait_page)); 
 		}
         }
 
@@ -263,8 +274,8 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         else if (os_strncmp(pusrdata, "POST ", 5) == 0) {
 
 		// Send submit page
-                os_printf("user submitted config\r\n");
-                espconn_send(client_conn, submit_page, os_strlen(submit_page));
+                PRINT_DEBUG(DEBUG_LOW, "user submitted config\r\n");
+                espconn_send(client_conn, (uint8 *)submit_page, os_strlen(submit_page));
 
                 // Search for form data
                 p1 = (char *)os_strstr(pusrdata, "ssid=");      // Locate SSID
@@ -285,21 +296,16 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
                 post_config.config.ssid[ssid_len] = '\0';       // Append null terminators
                 post_config.config.password[pass_len] = '\0';
 
-                flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
+                flash_result = FLASH_ERASE(USER_DATA_START_SECT);
                 if (flash_result != SPI_FLASH_RESULT_OK) {
-                        os_printf("ERROR: flash erase failed\r\n");
+                        PRINT_DEBUG(DEBUG_ERR, "ERROR: flash erase failed\r\n");
                         TASK_RETURN(SIG_APMODE, PAR_APMODE_FLASH_FAILURE);
                         return;
                 }
 
-                flash_result = spi_flash_write(
-                        USER_DATA_START_ADDR,
-                        (uint32 *)&post_config,
-                        sizeof(struct user_data_station_config)
-                );
-
+                flash_result = FLASH_WRITE(USER_DATA_START_ADDR, &post_config);
                 if (flash_result != SPI_FLASH_RESULT_OK) {
-                        os_printf("ERROR: flash write failed\r\n");
+                        PRINT_DEBUG(DEBUG_ERR, "ERROR: flash write failed\r\n");
                         TASK_RETURN(SIG_APMODE, PAR_APMODE_FLASH_FAILURE);
                         return;
                 }
@@ -309,20 +315,18 @@ void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, unsigned 
         } 
 };
 
-void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg)
+static void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg)
 {
-        os_printf("sent data to client\r\n");
-
-	// Disconnect after webpage is sent
+        PRINT_DEBUG(DEBUG_LOW, "sent data to client\r\n");
 };
 
-void ICACHE_FLASH_ATTR user_captive_ext_connect_cb(void *arg)
+static void ICACHE_FLASH_ATTR user_captive_ext_connect_cb(void *arg)
 {
-        os_printf("exterior connected to the system\r\n");
         struct espconn *client_conn = arg;      // Grab connection control structure
-
 	captive_ext_connect = 1;
 	ext_conn = arg;
+
+        PRINT_DEBUG(DEBUG_LOW, "exterior connected to the system\r\n");
 
         // Register callbacks for the connected exterior system
         espconn_regist_recvcb(client_conn, user_captive_ext_recv_cb);
@@ -330,44 +334,41 @@ void ICACHE_FLASH_ATTR user_captive_ext_connect_cb(void *arg)
         espconn_regist_disconcb(client_conn, user_captive_ext_discon_cb);
         espconn_regist_sentcb(client_conn, user_captive_ext_sent_cb);
 
-	// Enable keep-alive
-	espconn_set_opt(client_conn, ESPCONN_KEEPALIVE);		
+	return;
+};
+
+static void ICACHE_FLASH_ATTR user_captive_ext_recon_cb(void *arg, sint8 err)
+{
+	PRINT_DEBUG(DEBUG_ERR, "exterior connection error, code=%d\r\n", err);
 
 	return;
 };
 
-void ICACHE_FLASH_ATTR user_captive_ext_recon_cb(void *arg, sint8 err)
+static void ICACHE_FLASH_ATTR user_captive_ext_discon_cb(void *arg)
 {
-	os_printf("exterior connection error, code=%d\r\n", err);
-
-	return;
-};
-
-void ICACHE_FLASH_ATTR user_captive_ext_discon_cb(void *arg)
-{
-        os_printf("exterior disconnected\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "exterior disconnected\r\n");
 	captive_ext_connect = 0;
 	ext_conn = NULL;
 };
 
-void ICACHE_FLASH_ATTR user_captive_ext_recv_cb(void *arg, char *pusrdata, unsigned short length)
+static void ICACHE_FLASH_ATTR user_captive_ext_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
 	struct espconn *conn = arg;
 
-	os_printf("received packet from exterior system: %s\r\n", pusrdata);
+	PRINT_DEBUG(DEBUG_HIGH, "received packet from exterior system: %s\r\n", pusrdata);
 
 	// Check if it's an accept packet from the exterior system, indicating it has received and
 	// accepted WiFi configuration data
-	if (os_strstr(pusrdata, "accept") != NULL) {
+	if (os_strstr(pusrdata, "accept")) {
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_EXT_ACCEPT);
 	};	
 	
 	return;
 };
 
-void ICACHE_FLASH_ATTR user_captive_ext_sent_cb(void *arg)
+static void ICACHE_FLASH_ATTR user_captive_ext_sent_cb(void *arg)
 {
-	os_printf("sent packet to exterior system\r\n");
+	PRINT_DEBUG(DEBUG_LOW, "sent packet to exterior system\r\n");
 };
 
 void ICACHE_FLASH_ATTR user_ext_send_cred(void)
@@ -376,11 +377,11 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void)
         struct user_data_station_config *saved_conn;    // Retrieved station config
 	uint8 flash_result = 0;				// Result of flash operation	
 	sint16 data_len = 0;				// Length of data. Negative indicates an error
-	sint8 send_result = 0;				// Result of data sending operating
+	sint8 send_result = 0;				// Result of data sending operation
 
-	saved_conn = os_zalloc(sizeof(struct user_data_station_config));
+	saved_conn = (struct user_data_station_config *)os_zalloc(sizeof(struct user_data_station_config));
 	if (saved_conn == NULL) {
-		os_printf("ERROR: failed to allocate memory for flash read\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to allocate memory for flash read\r\n");
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_FLASH_FAILURE);
 	}
 
@@ -390,34 +391,27 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void)
 	}	
 
         // Pull station info (SSID/pass) from memory
-        flash_result = spi_flash_read(
-                USER_DATA_START_ADDR, 
-                (uint32 *)saved_conn, 
-                sizeof(struct user_data_station_config)
-        );
+        flash_result = FLASH_READ(USER_DATA_START_ADDR, saved_conn);
         if (flash_result != SPI_FLASH_RESULT_OK) {
-                os_printf("ERROR: flash read failed\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: flash read failed\r\n");
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_FLASH_FAILURE);
 		os_free(saved_conn);
                 return;
         }
-	os_printf("read from flash\r\n");
 
 	// Format SSID/Pass
 	data_len = os_sprintf(buf, "ssid=%s&pass=%s", saved_conn->config.ssid, saved_conn->config.password);	
-
-	os_printf("sprintf\r\n");
 	
 	// Send data to exterior system
         send_result = espconn_send(ext_conn, buf, data_len);
 	if (send_result != 0) {
-		os_printf("ERROR: failed to send data to exterior, code=%d\r\n", send_result);
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to send data to exterior, code=%d\r\n", send_result);
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_SEND_FAILURE);
 		os_free(saved_conn);
 		return;
 	}; 
 	
-	os_printf("sent data\r\n");
+	PRINT_DEBUG(DEBUG_LOW, "sent data\r\n");
 	os_free(saved_conn);
 	return;
 };

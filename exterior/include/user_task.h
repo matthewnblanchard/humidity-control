@@ -33,6 +33,7 @@ os_timer_t timer_reboot;
 os_timer_t timer_assoc;
 os_timer_t timer_ipcheck;
 os_timer_t timer_intcon;
+os_timer_t timer_humidity;
 
 // Task Calling Macros
 #define TASK_RETURN(sig,par) 		system_os_post(USER_TASK_PRIO_2, (sig), (par))

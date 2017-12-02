@@ -10,6 +10,7 @@
 #include <osapi.h>
 #include <gpio.h>
 #include <eagle_soc.h>
+#include "user_task.h"
 
 // Fan supply definitions
 #define TRIAC_PULSE_PERIOD	100			// Pulse length in us for driving the triac
@@ -21,7 +22,7 @@
 #define CALC_DELAY(X)		X //((-0.01541*(X)*(X)*(X)) + (0.02207*(X)*(X)) - (0.01175*(X)) + 0.006587)
 #define SPEED_DELAY(X)		X //CALC_DELAY((X)/FAN_RPM_MAX) > 150 ? CALC_DELAY((X)/FAN_RPM_MAX) : 150	// Minimum delay of 150 u
 
-// Fan/ZCD GPIO definitions
+// Fan/ZCD GPIO definitions - DO NOT CHANGE THESE
 #define TRIAC_PIN	12	// GPIO pin connected to the fan triac
 #define TRIAC_BIT       BIT12
 #define TRIAC_MUX       PERIPHS_IO_MUX_MTDI_U
@@ -38,16 +39,16 @@
 // Tachometer definitions
 #define TACH_PERIOD 500		// Tach calculaiton period in ms
 #define TACH_BLADE_N 7 		// Number of fan blades with reflective tape (# of pulses per revolution)
-#define DEBOUNCE_CYCLES 50
+#define DEBOUNCE_TIME 100	// Debouncing period in us
+#define FEEDBACK_GAIN 1		// The RPM error is multiplied by this to arrive at the triac delay adjustment
 
 // Fan driving variables
 extern volatile bool drive_flag;		// Flag to indicate if fan should be driven
-extern volatile uint32 drive_delay;		// Triac delay in us
-extern volatile uint16 intr_cnt;
-extern volatile uint16 tach_cnt;
-extern volatile uint16 rpm;
-os_timer_t tach_t;
-os_timer_t debounce_t;
+extern volatile uint16 desired_rpm;		// Desired RPM of the fan
+extern volatile uint16 measured_rpm;		// Measured RPM of the fan
+
+// Timers
+os_timer_t tach_t;	// Tachometer calculation timer
 
 /* MISSING DECLARATIONS FROM HW_TIMER */
 typedef enum {
@@ -65,16 +66,26 @@ void ICACHE_FLASH_ATTR hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req)
 // Args:
 //	uint32 intr_mask: Interrupt flag mask
 //	void *arg:	Arguments
+// Returns:
+//	Nothing 
 void user_gpio_isr(uint32 intr_mask, void *arg);
 
 // Callback Function: user_fire_triac(void)
 // Desc: Timer callback which fires the triac after
 //	the timer delay
+// Args:
+//	Nothing
+// Returns:
+//	Nothing
 void user_fire_triac(void);
 
 // Callback Function: user_tach_calc
 // Desc: Calculates the current fan RPM based on the number of
 //	tachometer pulses
-void ICACHE_FLASH_ATTR user_tach_calc(void);
+// Args:
+//	Nothing
+// Returns:
+//	Nothing
+// static void ICACHE_FLASH_ATTR user_tach_calc(void);
 
-#endif /* _USER_FAN_H */
+#endif

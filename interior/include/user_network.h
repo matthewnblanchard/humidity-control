@@ -3,8 +3,8 @@
 // Description: Contains/manages station mode configurations for the ESP8266.
 //      Provides functionality to connect to a network.
 
-#ifndef USER_NETWORK_H
-#define USER_NETWORK_H
+#ifndef _USER_NETWORK_H
+#define _USER_NETWORK_H
 
 #include <user_interface.h>
 #include <osapi.h>
@@ -14,39 +14,37 @@
 #include "user_flash.h"
 #include "user_task.h"
 
-// Global configurations (must be accessible from callback functions)
-struct station_config client_config;            // Station configuration
-
 /* ------------------- */
 /* Function Prototypes */
 /* ------------------- */
 
 // User Task: user_scan(os_event_t *e)
 // Desc: Pulls SSID/pass from flash memory then attempts to find an AP
-//      broadcasting that SSID. If it finds one, attempts to connect.
-//      If it doesn't, switches to SoftAP mode to establish its own
-//      SSID, so that a user can connect and give it config
-// Args: None
+//      broadcasting that SSID.
+// Args: 
+//	os_event_t *e: Pointer to OS event data
+// Return:
+//	Nothing
 void ICACHE_FLASH_ATTR user_scan(os_event_t *e);
 
 // Callback Function: user_scan_done(void *arg, STATUS status)
 // Desc: Callback once AP scan is complete. Interprets AP scan results
-//      and connects/sets up SoftAP accordingly
+//      and connects if an AP is found, or switches to config mode if not
 // Args:
 //      void *arg: Information on AP's found by wifi_station_scan
-//      STATUS status:  get status
-static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
+//      STATUS status: Status of AP scan results (validity)
+// Return:
+//	Nothing
+// static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
 
 
-// Callback Function: user_check_ip()
+// Callback Function: void user_check_ip(void)
 // Desc: Called every 1000ms to check if the ESP8266 has received an IP. Disarms timer
 //      And moves forward when an IP is obtained.
+// Args:
+//	None
+// Return:
+//	Nothing
 void ICACHE_FLASH_ATTR user_check_ip(void);
 
-// User Task: user_force_solo()
-// Desc: Forces the system to skip the exterior connection.
-//	FOR TESTING PURPOSES ONLY, the system will never
-//	receive exterior humidities
-//void ICACHE_FLASH_ATTR user_force_solo(os_event_t *e);
-
-#endif /* USER_NETWORK_H */
+#endif

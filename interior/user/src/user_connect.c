@@ -4,7 +4,7 @@
 #include "user_connect.h"
 
 // HTML for front end webpage
-char *front_page = {
+const char const *front_page = {
         "HTTP/1.1 200 OK\r\n\
         Content-type: text/html\r\n\r\n\
 	<!DOCTYPE html>\
@@ -69,29 +69,15 @@ char *ws_response = {
 
 struct espconn *ws_conn = NULL;		// WebSocket control structure
 
-/*
-void ICACHE_FLASH_ATTR udp_listen_cb(void *arg, char *pdata, unsigned short len)
-{
-        struct espconn *rec_conn = arg;         // Pull espconn from passed args
-        remot_info *info = NULL;                // Connection info
+// espconn structs - these are control structures for TCP/UDP connections
+struct espconn tcp_ext_conn;
+struct _esp_tcp tcp_ext_proto;
+struct espconn tcp_front_conn;
+struct _esp_tcp tcp_front_proto;
 
-        os_printf("received data\r\n");
+// WebSocket update timer
+os_timer_t ws_timer;
 
-        // Get connection info, print source IP
-        espconn_get_connection_info(rec_conn, &info, 0);
-        os_printf("src_ip=%d.%d.%d.%d\r\n",
-                info->remote_ip[0],
-                info->remote_ip[1],
-                info->remote_ip[2],
-                info->remote_ip[3]
-        );
-
-	// Establish TCP connection to exterior
-	os_memset(&tcp_ext_conn, 0, sizeof(tcp_ext_conn));
-	os_memcpy(		
-
-};
-*/
 void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
 {
         sint8 result = 0;
@@ -107,7 +93,7 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
         // Register callbacks for the TCP server
         result = espconn_regist_connectcb(&tcp_front_conn, user_front_connect_cb);
         if (result < 0) {
-                os_printf("ERROR: failed to register connect callback, error=%d\r\n", result);
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to register connect callback, error=%d\r\n", result);
 		TASK_RETURN(SIG_WEB, PAR_WEB_INIT_FAILURE);
 		return;
         }
@@ -115,7 +101,7 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
         // Start listening
         result = espconn_accept(&tcp_front_conn);      
         if (result < 0) {
-                os_printf("ERROR: failed to start tcp server, error=%d\r\n", result);
+                PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to start tcp server, error=%d\r\n", result);
 		TASK_RETURN(SIG_WEB, PAR_WEB_INIT_FAILURE);
 		return;
         }
@@ -125,7 +111,7 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
 
 void ICACHE_FLASH_ATTR user_front_connect_cb(void *arg)
 {
-        os_printf("client connected to webserver front end\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "client connected to webserver front end\r\n");
         struct espconn *client_conn = arg;       
 
         // Register callbacks for the connected client
@@ -139,12 +125,14 @@ void ICACHE_FLASH_ATTR user_front_connect_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_front_recon_cb(void *arg, sint8 err)
 {
-        os_printf("tcp connection error occured\r\n");
+        PRINT_DEBUG(DEBUG_ERR, "tcp connection error occured\r\n");
+	return;
 };
 
 void ICACHE_FLASH_ATTR user_front_discon_cb(void *arg)
 {
-        os_printf("tcp connection disconnected\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "tcp connection disconnected\r\n");
+	return;
 };
 
 void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned short length)
@@ -162,43 +150,43 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
         uint8 response_len = 0;                 // Length of HTTP response
 	sint8 result = 0;			// API call result
 
-        os_printf("received data from client\r\n");
-        os_printf("data=%s\r\n", pusrdata);
+        PRINT_DEBUG(DEBUG_LOW, "received data from client\r\n");
+        PRINT_DEBUG(DEBUG_HIGH, "data=%s\r\n", pusrdata);
 
         
         // Check if we recieved an HTTP GET request
         if (os_strncmp(pusrdata, "GET ", 4) == 0) {
-                os_printf("http GET request detected\r\n");
+                PRINT_DEBUG(DEBUG_HIGH, "http GET request detected\r\n");
 
                 // Check if the request is for a web socket
-                if (os_strstr(pusrdata, ws_header) != NULL) {
+                if (os_strstr(pusrdata, ws_header)) {
 
                         // Get the secure key from the client data
                         p1 = (uint8 *)os_strstr(pusrdata, ws_key);      // Navigate to key line
                         p1 += os_strlen(ws_key);                        // Move to beginning of the actual key portion of the key line
                         p2 = (uint8 *)os_strstr(p1, "\r\n");            // Navigate to end of key
                         key_len = p2 - p1;
-                        os_printf("found key of length %d\r\n", key_len);
+                        PRINT_DEBUG(DEBUG_HIGH, "found key of length %d\r\n", key_len);
 
                         // Concatenate the secure key with the GUID for WebSockets
                         if ((key_len + guid_len) < 64) {
                                 os_memcpy(key, p1, key_len);                            // First half = client key
                                 os_memcpy(&key[key_len], ws_guid, guid_len);            // Second half = GUID        
-                                os_printf("concat_key=%s\r\n", key);    
+                                PRINT_DEBUG(DEBUG_HIGH, "concat_key=%s\r\n", key);    
                         } else {
-                                os_printf("failed to create websocket response\r\n");
+                                PRINT_DEBUG(DEBUG_ERR, "failed to create websocket response\r\n");
                                 return;
                         } 
 
                         // Calculate SHA-1 Hash
                         os_memset(sha1_sum, 0, 20);
                         mbedtls_sha1(key, guid_len + key_len, sha1_sum);    
-                        os_printf("sha1_hash=%s\r\n", sha1_sum);
-                        int i = 0;
+                        PRINT_DEBUG(DEBUG_HIGH, "sha1_hash=%s\r\n", sha1_sum);
+                        uint16 i = 0;
                         for (i = 0; i < 20; i++){
-                                os_printf("%x:", sha1_sum[i]);
+                                PRINT_DEBUG(DEBUG_HIGH, "%x:", sha1_sum[i]);
                         }
-                        os_printf("\r\n");
+                        PRINT_DEBUG(DEBUG_HIGH, "\r\n");
 
                         // Encode SHA-1 Hash in base 64
                         mbedtls_base64_encode(NULL, 0, &olen, sha1_sum, 20);                                    // Buffer length needed for Base64 encoding -> olen
@@ -206,10 +194,10 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                        
                                 // Form WebSocket request response & send
                                 sha1_key[olen] = '\0'; 
-                                os_printf("base64=%s\r\n", sha1_key);
+                                PRINT_DEBUG(DEBUG_HIGH, "base64=%s\r\n", sha1_key);
                                 response_len = os_sprintf(response_buf, ws_response, sha1_key); 
                                 espconn_send(client_conn, response_buf, response_len);
-                                os_printf("sent=%s\r\n", response_buf);                         
+                                PRINT_DEBUG(DEBUG_HIGH, "sent=%s\r\n", response_buf);                         
 
                                 // The connection has upgraded to a WebSocket. Apply WebSocket callbacks for data transmission
                                 espconn_regist_recvcb(client_conn, user_ws_recv_cb);
@@ -217,7 +205,7 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
 				// Upgrade the keep-alive time for the WebSocket to 30 minutes (1800 seconds)
 				result = espconn_regist_time(client_conn, 1800, true);
 				if (result < 0) {
-					os_printf("ERROR: failed to upgrade timeout interval for WebSocket\r\n");
+					PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to upgrade timeout interval for WebSocket\r\n");
 				}
 
                                 // Arm WebSocket update timer
@@ -225,14 +213,14 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                                 os_timer_arm(&ws_timer, WS_UPDATE_TIME, 1);
                          
                         } else {
-                                os_printf("failed to create websocket response\r\n");
+                                PRINT_DEBUG(DEBUG_ERR, "failed to create websocket response\r\n");
                                 return;
                         }
 
                 // The request is ordinary
                 } else {
-                        os_printf("sending front page\r\n");
-                        espconn_send(client_conn, front_page, os_strlen(front_page)); 
+                        PRINT_DEBUG(DEBUG_LOW, "sending front page\r\n");
+                        espconn_send(client_conn, (uint8 *)front_page, os_strlen(front_page)); 
                 }
         }
 
@@ -241,7 +229,7 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
 
 void ICACHE_FLASH_ATTR user_front_sent_cb(void *arg)
 {
-        os_printf("sent to client\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "sent to client\r\n");
 };
 
 void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short length)
@@ -283,7 +271,7 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
   
         // The smallest possible packet (Opcode and payload length with no mask or payload)      
         if (length < 2) {
-                os_printf("received malformed ws packet\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "received malformed ws packet\r\n");
                 return;
         }
 
@@ -385,8 +373,8 @@ void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 		speed = user_atoi(p1, p2 - p1);			// Extract integer fan RPM
 	
 		speed > FAN_RPM_MAX ? (speed = 3100) : 0;	// Cut speed down to max if RPM is above maximum
-		drive_delay = SPEED_DELAY(speed);		// Modify triac delay 		
-		os_printf("set rpm to %d, delay=%d us\r\n", speed, drive_delay);
+		//drive_delay = SPEED_DELAY(speed);		// Modify triac delay 		
+		//os_printf("set rpm to %d, delay=%d us\r\n", speed, drive_delay);
 	}
 
 	return;

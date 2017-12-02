@@ -21,31 +21,11 @@
 // IP Macros
 #define IP_OCTET(ip, oct) (ip >> (8 * oct)) % 256
 
-// espconn structs - these are control structures for TCP/UDP connections
-struct espconn udp_listen_conn;
-struct _esp_udp udp_listen_proto;
-struct espconn tcp_ext_conn;
-struct _esp_tcp tcp_ext_proto;
-struct espconn tcp_front_conn;
-struct _esp_tcp tcp_front_proto;
-
-// WebSocket update timer
-os_timer_t ws_timer;
 #define WS_UPDATE_TIME 1500      // Update interval for the WebSocket in milliseconds
 
 /* ------------------- */
 /* Function prototypes */
 /* ------------------- */
-
-
-// Callback Function: udp_listen_cb(void *arg, char *pdata, unsigned short len)
-// Desc: Callback function to be called when packets are received over the
-//      UDP discovery port. NEED MORE INFO HERE
-// Args:
-//      void *arg:              Passed espconn struct for the triggering connection
-//      char *pdata:            Packet data
-//      unsigned short len:     Data length
-//void ICACHE_FLASH_ATTR udp_listen_cb(void *arg, char *pdata, unsigned short len);
 
 // User Task: void user_front_init(os_event_t *e)
 // Desc: Prepares the ESP8266 for HTTP connections to the user webpage front end

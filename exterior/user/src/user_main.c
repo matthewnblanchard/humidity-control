@@ -177,7 +177,10 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 					
 		// Once the interior is connected to the exterior, initialize the humidity readings
 		case SIG_DISCOVERY | PAR_DISCOVERY_CONNECTED:
-			os_printf("interior connected");
+			os_printf("interior connected\r\n");
+			os_printf("starting humidity readings\r\n");
+			os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
+			os_timer_arm(&timer_humidity, HUMIDITY_READ_INTERVAL, true);
 			break;
 
 		// Error cases:
@@ -251,10 +254,10 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 
         // Set I2C pins to open-drain
         GPIO_REG_WRITE(
-		GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX)), 
+		GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_PIN)), 
 		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
         GPIO_REG_WRITE(
-		GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX)), 
+		GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_PIN)), 
 		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
 
         // Enable pins

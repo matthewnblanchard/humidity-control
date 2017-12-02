@@ -15863,3 +15863,57 @@ reading=5036, humidity=30, status=0
 drive_flag=0
 reading=5048, humidity=30, status=0
 drive_flag=0
+
+rlœØrŸŒ#ânÀˆàŒ‚ìpŒ|‚Ÿì8’ßÇ’œäŒpònnä„;ònÄ’Üäb#l``pònàƒÜà‚‡Àl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?à;pònàÃÜ€àrÇâÜÄpp’œ<ÄßìØpŒònnîÄğrÜ#‚n€$Œl`8`rn|’’nÀàìrrßÛ’nÀàìrŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-38
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+attempted to connect to exterior, result=0
+connected to exterior system
+Initiating humidity readings
+pm open,type:2 0
+reading=5256, humidity=32, status=0
+drive_flag=1
+reading=5252, humidity=32, status=0
+drive_flag=0
+reading=5252, humidity=32, status=0
+drive_flag=0

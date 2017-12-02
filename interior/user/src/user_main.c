@@ -25,13 +25,13 @@ void ICACHE_FLASH_ATTR user_gpio_init(void);			// Performs GPIO initialization
 //      rather than IRAM, in which there is limited space.
 void ICACHE_FLASH_ATTR user_init(void)
 {
-        os_printf("user code entered\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "user code entered\r\n");
 
         // Set baud rate of UART0 to 115200 for serial debugging 
         // (default is nonstandard 74880) 
         uart_div_modify(0, UART_CLK_FREQ / 115200);
 
-        os_printf("UART speed set to 115200\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "UART speed set to 115200\r\n");
 
         // Initialize GPIO interfaces
         user_gpio_init();
@@ -86,7 +86,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// if it is passed an error it cannot recover from. The system is restarted
 		// after a 5 second delay
 		case SIG_CONTROL | PAR_CONTROL_ERR_FATAL:
-			os_printf("rebooting system in 5 seconds\r\n");
+			PRINT_DEBUG(DEBUG_LOW, os_printf("rebooting system in 5 seconds\r\n"));
 			os_timer_setfn(&timer_reboot, system_restart, NULL);
 			os_timer_arm(&timer_reboot, 5000, false);
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_DEADLOOP);
@@ -99,14 +99,15 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// Once the system has found and associated to an AP, it waits to receive an IP
 		// address
 		case SIG_AP_SCAN | PAR_AP_SCAN_CONNECTED:
-			os_timer_setfn(&timer_ipcheck, user_check_ip, NULL); // Check for an IP every second			
+			PRINT_DEBUG(DEBUG_LOW, "waiting for IP ...\r\n");
+			os_timer_setfn(&timer_ipcheck, user_check_ip, NULL); 	// Check for an IP every second			
 			os_timer_arm(&timer_ipcheck, 1000, true);
 			break;    
 
 		// If the system does not find an AP with it's saved SSID/pass, it will enter
 		// AP mode and serve a configuration webpage, where a user can enter a new SSID/pass
 		case SIG_AP_SCAN | PAR_AP_SCAN_NOAP:
-			os_printf("switching to configuration mode\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "switching to configuration mode\r\n");
 			TASK_START(user_apmode_init, 0, 0);
 			break;
  
@@ -116,7 +117,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		case SIG_AP_SCAN | PAR_AP_SCAN_FAILED_SCAN:          // Failed to begin AP scanning task 
 		case SIG_AP_SCAN | PAR_AP_SCAN_FLASH_FAILURE:        // Failed to read data from flash memory   
 		case SIG_AP_SCAN | PAR_AP_SCAN_STATION_MODE_FAILURE: // Failed to change the wifi mode to station
-			os_printf("RESPONSE: FATAL!\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break;
 			
@@ -133,7 +134,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 
 		// Error case. Failed to check IP info. In theory it's still there, so ignore this
 		case SIG_IP_WAIT | PAR_IP_WAIT_CHECK_FAILURE:
-			os_printf("RESPONSE: ignoring\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: ignoring\r\n");
 			break; 
 
 		/* ------------ */
@@ -166,11 +167,11 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		
 		// If the discovery times out, clear the config and reboot to get back to config mode
 		case SIG_DISCOVERY | PAR_DISCOVERY_TIMEOUT:
-			os_printf("Erasing config\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "erasing config\r\n");
 
-                	sint8 flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
+                	sint8 flash_result = FLASH_ERASE(USER_DATA_START_SECT);
                 	if (flash_result != SPI_FLASH_RESULT_OK) {
-                        	os_printf("ERROR: flash erase failed\r\n");
+                        	PRINT_DEBUG(DEBUG_ERR, "ERROR: flash erase failed\r\n");
 				TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
                         	break;
                 	}
@@ -186,8 +187,8 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 
 		// Once the system is connected to the exterior, initialize the humidity readings, then start the webserver
 		case SIG_DISCOVERY | PAR_DISCOVERY_CONNECTED:
-			os_printf("Initiating humidity readings\r\n");
-			os_timer_setfn(&timer_humidity, user_read_humidity, NULL);	// Initialize humidity readings
+			PRINT_DEBUG(DEBUG_LOW, "initiating humidity readings\r\n");
+			os_timer_setfn(&timer_humidity, user_read_humidity, NULL);		// Initialize humidity readings
 			os_timer_arm(&timer_humidity, HUMIDITY_READ_INTERVAL, true);
 			TASK_START(user_front_init, 0, 0);
 			break;
@@ -199,7 +200,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		case SIG_DISCOVERY | PAR_DISCOVERY_MALFORMED:		// Received a malformed discovery packet. Keep going.
 			break;
 		case SIG_DISCOVERY | PAR_DISCOVERY_LISTEN_FAILURE:	// Failed to start listening for discovery packets
-			os_printf("RESPONSE: FATAL!\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break; 
 		
@@ -209,7 +210,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		
 		// Error cases:
 		case SIG_WEB | PAR_WEB_INIT_FAILURE:
-			os_printf("RESPONSE: FATAL!\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break; 
 		
@@ -221,13 +222,13 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// system, setup is complete. Control drops off and waits for notification from the aforementioned
 		// connections that either a user has entered an SSID/password or something has gone wrong.
 		case SIG_APMODE | PAR_APMODE_SETUP_COMPLETE:
-			os_printf("apmode setup completed\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "apmode setup completed\r\n");
 			break;
 
 		// Once the system has received/saved an SSID/pass from a user, continually attempt to send
 		// the credentials to the exterior system until acknowledgement is received from it.
 		case SIG_APMODE | PAR_APMODE_CONFIG_RECV:
-			os_printf("WiFi details obtained from user\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "WiFi details obtained from user\r\n");
 			os_timer_setfn(&timer_extfwd, user_ext_send_cred, NULL);
 			os_timer_arm(&timer_extfwd, 1000, true);
 			break;	
@@ -235,20 +236,20 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// Once the exterior has accepted wifi credentials, perform AP mode cleanup and switch back
 		// to station mode
 		case SIG_APMODE | PAR_APMODE_EXT_ACCEPT:
-			os_printf("exterior has accepted WiFi credentials\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "exterior has accepted WiFi credentials\r\n");
 			os_timer_disarm(&timer_extfwd);
 			TASK_START(user_apmode_cleanup, 0, 0);
 			break;
 
 		// Once cleanup is complete, launch a new AP scan
 		case SIG_APMODE | PAR_APMODE_CLEANUP_COMPLETE:
-			os_printf("AP mode cleanup completed\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "AP mode cleanup completed\r\n");
 			TASK_START(user_scan, 0, 0);
 			return;
 
 		// Error cases:
 		case SIG_APMODE | PAR_APMODE_SEND_FAILURE:		// Failed to send data to the exterior. Ignore, it will try again
-			os_printf("RESPONSE: ignoring\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: ignoring\r\n");
 			break;
 		case SIG_APMODE | PAR_APMODE_FLASH_FAILURE:		// Failed to erase flash data
 		case SIG_APMODE | PAR_APMODE_EXT_INIT_FAILURE:		// Failed to open port to listen for exterior system
@@ -256,7 +257,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		case SIG_APMODE | PAR_APMODE_DHCP_CONFIG_FAILURE:	// Failed to configure DHCP/IP settings
 		case SIG_APMODE | PAR_APMODE_MODE_CONFIG_FAILURE:	// Failed to configure AP mode
 		case SIG_APMODE | PAR_APMODE_AP_MODE_FAILURE:		// Failed to enter AP mode
-			os_printf("RESPONSE: FATAL!\r\n"); 
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: FATAL!\r\n"); 
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break;	
 

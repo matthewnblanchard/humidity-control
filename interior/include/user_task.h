@@ -22,6 +22,9 @@
 //                      in order for the device to operate correctly. 
 //              Level 0: Low priority book-keeping/data collection tasks.
 
+#ifndef _USER_TASK_H
+#define _USER_TASK_H
+
 // Message Queues
 #define MSG_QUEUE_LENGTH 4
 os_event_t * user_msg_queue_0;
@@ -42,6 +45,21 @@ os_timer_t timer_humidity;
 						system_os_task((task), USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH);\
 						system_os_post(USER_TASK_PRIO_1, (sig), (par));\
 					})
+
+// Debug Message Macos/Defines:
+enum {
+	DEBUG_NONE = 0,			// No messages are printed over serial
+	DEBUG_ERR,			// Only error messages are printed over serial
+	DEBUG_LOW,			// Only flow control related messages and error messages are printed over serial
+	DEBUG_HIGH			// Data/variables are printed over serial in addition to flow control messages
+};
+#define DEBUG_LEVEL DEBUG_HIGH
+#define PRINT_DEBUG(level, ...) ({\
+	if ((level) <= DEBUG_LEVEL) {\
+		os_printf(__VA_ARGS__);\
+	};\
+})
+			
 	
 /* --------------------------------------------------- */
 /* Control Signals/Parameters                          */
@@ -109,3 +127,5 @@ os_timer_t timer_humidity;
 #define PAR_APMODE_DHCP_CONFIG_FAILURE		(uint32)(0xFFFD)
 #define PAR_APMODE_MODE_CONFIG_FAILURE		(uint32)(0xFFFE) 
 #define PAR_APMODE_AP_MODE_FAILURE		(uint32)(0xFFFF) 
+
+#endif
