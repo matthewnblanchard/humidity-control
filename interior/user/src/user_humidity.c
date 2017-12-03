@@ -74,11 +74,14 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 	// Compare interior/exterior humidities
 	user_humidity_cmp();
 
+	os_printf("ext_humidity=%d\r\n", (uint32)sensor_data_ext);
+	
         return;
 };
 
 void ICACHE_FLASH_ATTR user_humidity_cmp(void)
 {
+
 	// Don't try to push the humidity below the threshold
 	if (sensor_data_int <= threshold_humidity) {
 		drive_flag = false;

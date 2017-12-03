@@ -14,6 +14,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         uint16 humidity = 0;            // Humidity reading w/o calculations
         float adj_humidity = 0;         // Humidity reading after calculations
 
+	os_printf("reading humidity\r\nn");
+
 	ETS_GPIO_INTR_DISABLE();
 
         // Wake up the sensor by sending a measurement request. This consists of the slave's address
@@ -26,6 +28,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 		return;
         };
         user_i2c_stop_bit();
+
+	os_printf("sent measure request\r\n");
 
         // The average measurement cycle takes 36.65ms. 100ms leaves a good amount
         // of leeway
@@ -41,6 +45,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 		return;      
         };
 
+
         read_byte = user_i2c_read_byte(0);               // Read upper byte
         status = read_byte >> 6;                         // Upper two bits are status
         humidity |= ((read_byte  & 0b00111111) << 8);    // Remainder of byte is upper 6 bits of humidity
@@ -48,6 +53,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         read_byte = user_i2c_read_byte(1);               // Read lower byte
         user_i2c_stop_bit();
         humidity |= read_byte;                           // Lower byte is lower 8 bits of humidity
+
+	os_printf("re-enabling interrupts\r\n");
 
 	ETS_GPIO_INTR_ENABLE();
 
@@ -57,6 +64,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 
         // Store humidity.
         sensor_data_ext = adj_humidity;
+
+	TASK_RETURN(SIG_HUMIDITY, PAR_HUMIDITY_READ_DONE);	
 
         return;
 };

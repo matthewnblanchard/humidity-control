@@ -62,4 +62,12 @@ void ICACHE_FLASH_ATTR user_tcp_sent_cb(void *arg);
 // Desc: Cleans up the interior connections if it fails to connect
 void ICACHE_FLASH_ATTR user_int_connect_cleanup(os_event_t *e);
 
+// User Task: user_int_send_data(os_event_t *e)
+// Desc: Sends humidity data to the interior 
+// Args:
+//	os_event_t *e: Point to OS event data
+// Return:
+//	Nothing
+void ICACHE_FLASH_ATTR user_int_send_data(os_event_t *e);
+
 #endif /* USER_CONNECT_H */

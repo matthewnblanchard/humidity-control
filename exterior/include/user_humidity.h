@@ -10,6 +10,7 @@
 #include <gpio.h>
 #include <osapi.h>
 #include "user_i2c.h"
+#include "user_task.h"
 
 // I2C address of the HIH8121 humidity sensor
 #define SENSOR_ADDR     0x27

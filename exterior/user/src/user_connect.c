@@ -7,6 +7,8 @@
 struct espconn tcp_connect_conn;
 struct _esp_tcp tcp_connect_proto;
 
+static struct espconn *int_con = NULL;		// Connection to interior system
+
 struct station_config station_conn;
 
 void ICACHE_FLASH_ATTR user_int_connect_init(os_event_t *e)
@@ -60,6 +62,8 @@ void ICACHE_FLASH_ATTR user_int_connect_cb(void *arg)
 	os_printf("Connection made to exterior over port ESPCONN\r\n");
 	struct espconn *client_conn = arg;
 
+	int_con = arg;	// Save the connection
+
 	// Register callbacks for the connected client
 	//espconn_regist_recvcb(client_conn, user_tcp_accept_recv_cb);
 	espconn_regist_reconcb(client_conn, user_tcp_recon_cb);
@@ -110,6 +114,7 @@ void ICACHE_FLASH_ATTR user_tcp_recon_cb(void *arg, sint8 err)
 void ICACHE_FLASH_ATTR user_tcp_discon_cb(void *arg)
 {
 	os_printf("tcp connection disconnected\r\n");
+	int_con = NULL;
 }
 
 void ICACHE_FLASH_ATTR user_tcp_sent_cb(void *arg)
@@ -124,4 +129,20 @@ void ICACHE_FLASH_ATTR user_int_connect_cleanup(os_event_t *e)
 	espconn_delete(&tcp_connect_conn);
 
 	TASK_RETURN(SIG_DISCOVERY, PAR_DISCOVERY_INT_CLEANUP);
+};
+
+void ICACHE_FLASH_ATTR user_int_send_data(os_event_t *e)
+{
+	uint8 send_buf[4];	// Buffer to send to interior
+	sint8 result = 0;	// Send operation result	
+
+	// Copy the exterior humidity into the buffer
+	os_memcpy(send_buf, (uint8 *)&sensor_data_ext, 4);
+
+	// Send the data
+	result = espconn_send(int_con, send_buf, 4);
+	if (result < 0) {
+		PRINT_DEBUG(DEBUG_ERR, "failed to send RH to interior, code=%d\r\n", result);
+	}
+	return;
 };

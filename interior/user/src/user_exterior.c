@@ -257,24 +257,29 @@ void ICACHE_FLASH_ATTR user_espconnect_connect_cb(void *arg)
 void ICACHE_FLASH_ATTR user_espconnect_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
 	struct espconn *ext_conn = arg;	// Grab control structure
-	
-        float humidity_ext = 0;         // Exterior humidity
+	float *humidity_ext = (float *)os_zalloc(sizeof(float));         // Exterior humidity
+
+	PRINT_DEBUG(DEBUG_HIGH, "received from exterior: data=%s\r\n", pusrdata);
 
         // Check packet size. If it's less than EXT_PACKET_SIZE then the packet must be malformed, discard
         if (length != EXT_PACKET_SIZE) {
                 PRINT_DEBUG(DEBUG_ERR, "received malformed exterior packet\r\n");
+		os_free(humidity_ext);
                 return;
         }
 
         // Retreive exterior humidity from packet
-        os_memcpy(&humidity_ext, pusrdata[0], 4);
+        os_memcpy(humidity_ext, &pusrdata[0], 4);
 
         // Store the exterior humidity
-        sensor_data_ext = humidity_ext;
+        sensor_data_ext = *humidity_ext;
+	
+	PRINT_DEBUG(DEBUG_HIGH, "received humidity=%d from exterior\r\n", (uint32)humidity_ext);
 
 	// Send an ACK to the exterior system
-        espconn_send(ext_conn, "ack", 3); 
+        // espconn_send(ext_conn, "ack", 3); 
 
+	os_free(humidity_ext);
         return;
 };
 

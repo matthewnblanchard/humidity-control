@@ -22454,3 +22454,5107 @@ reading=5492, humidity=33, status=0
 reading=5492, humidity=33, status=0
 reading=5496, humidity=33, status=0
 reading=5498, humidity=33, status=0
+rlœØrßŒ#ân€àŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrrlœØrßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrrlœØrßŒ#ân€àŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrrlœØrßŒcân€àŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜà‚‡Àl€€€bÀnâãnÀäŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$Œl`¸`rn|’’nÀŽàbÜ’`¹~ÄÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnrŽ’ß;ÄÀ?žìrpònàÃÜ€àrÇâÜŽ„pp’Ü<ÄßìŽØpŒònnîÄðrÜ#‚nÀ$Œl`8`rn|’’nÀàÇÀl`8Ž’ß;ÄÀ€rŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$Œl`¸`rn|’’nÀàbÜ’`¹~ÄÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àr‡âÜ€pp’œ<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnrŽ’ß;ÄÀ?žìrpònàÃÜàrÇâÜŽÄpp’Ü<ÄßìŽØpŒònnîÄðrÜ#‚n€$Œl`¸`rn|’’nÀàÇÀl`¸Ž’ß;ÄÀ?€rŒâœì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+rlœØrßŒ#ânÀàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;òn„’ÜäbŽ#l``nnàÃÜà‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽxŒònnîÄÁŒŽl`Ü#‚nÀ$ŽŒl`¸`rn|’’nÀŽàbÜ’`¹~ÄÀœ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀŽrnrŽ’ß;ÄÀ?žìrpònàÃÜ€àrÇâœŽÄpp’Ü<ÄßìŽØpŒònnîÄðrÜ#‚nÀ$ŽŒl`8`rn|’’nÀàÇÀl`¸Ž’ß;ÄÀ€rŒâœì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’ÜäbŽ#l``nnàÃÜà‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚n€$Œl`8`rn|’’nÀŽàbÜ’`¹~ÄÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àr‡âÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnrŽ’ß;ÄÀ?žìrpònàƒÜàrÇâÜŽÄpp’Ü<ÄßìŽØpŒònnîÄðrÜ#‚nÀ$Œl`¸`rn|’’nÀŽàÇÀl`¸Ž’ß;„À?€rŒâÜìx‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœ˜rßŒ#ânÀàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàƒÜà‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$ŽŒl`¸`rn|’’nÀàbœ’`¹~ÄÀœ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀŽrnrŽ’ß;ÄÀ?žìrpònàÃÜ€àrÇâÜŽÄpp’œ<„ßìŽØpŒònnîÄðrœ#‚nÀ$ŽŒl`¸`rn|’’nÀŽàÇÀl`8Ž’ß;ÄÀ?€rŒâœì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+max connection!
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœØrßŒcânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜälpònnäÄ;ònÄ’Üäbà$	rrpònàƒÜà‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$ŽŒl`¸`rn|’’nÀŽàbÜ’`¹~„ÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnrŽ’Ÿ;ÄÀ?žìrpònàƒÜàrÇâÜŽÄpp’Ü<ÄßìŽ˜pŒònnîÄðrÜ#‚n€$Œl`¸`rn|’’nÀàÇÀl`8Ž’ß;ÄÀ?€rŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜälpònnäÄ;ònÄ’Üäbà$	rrpònàÃÜà‚‡Àl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$Œl`¸`rn|’’nÀàbÜ’`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnrŽ’ß;ÄÀ?žìrpònàÃÜ€àrÇâÜŽÄpp’Ü<ÄßìŽØpŒònnîÄðrÜ#‚n€$Œl`¸`rn|’’nÀàÇÀl`8Ž’ß;„À?€rŒâÜì8‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+user disconnected
+sent data
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5961, humidity=36, status=0
+Fatal exception 28(LoadProhibitedCause):
+epc1=0x4000dfc8, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000028, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:1, boot mode:(3,0)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0xbb
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x73
+load 0x3ffe8420, len 7748, room 8 
+tail 12
+chksum 0x00
+csum 0x00
+ŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâœçÙ8‚ìò!0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5965, humidity=36, status=0
+reading=5965, humidity=36, status=0
+pm open,type:2 0
+reading=5969, humidity=36, status=0
+reading=5969, humidity=36, status=0
+brlœØrßŒ#ânÀàŒ‚ìpŒ<Ž‚ßìx’ßÇ’ÜäŒpònnäÄ;ònÄ’ÜäbŽ#l``nnàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚n€$Œl`8`rn|’’nÀŽàòÇÃl`9~ÄÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àrÇâœ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`œ#‚nÀrnrŽ’ß;ÄÀ?žl8rpònàÃÜàrÇâÜŽ„pp’œ<ÄßìŽÜŽ8ŒònnîÄðrÜ#‚nÀ$ŽŒl`¸`rn|’’nÀà’Ç’`¸Ž’ß;ÄÀ?’œ;ŒâÜì8‚nÀä¾rœØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+sent data
+user disconnected
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+sent packet to exterior system
+received packet from exterior system: accept
+exterior disconnected
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+espconn_tcp_delete 1, 4000
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5783, humidity=35, status=0
+ext_humidity=0
+Fatal exception 28(LoadProhibitedCause):
+epc1=0x4000dfc8, epc2=0x00000000, epc3=0x00000000, excvaddr=0x000000d4, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,7)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0x71
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x7a
+load 0x3ffe8420, len 7764, room 8 
+tail 12
+chksum 0x5d
+csum 0x5d
+Œâœìx‚n€ä>rœØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-43
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5791, humidity=35, status=0
+ext_humidity=0
+óreading=5783, humidity=35, status=0
+ext_humidity=0
+reading=5774, humidity=35, status=0
+ext_humidity=0
+reading=5766, humidity=35, status=0
+ext_humidity=0
+reading=5766, humidity=35, status=0
+ext_humidity=0
+reading=5758, humidity=35, status=0
+ext_humidity=0
+reading=5758, humidity=35, status=0
+ext_humidity=0
+
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’œäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$ŽŒl`¸`rn|’’nÀàòÇÃl`¹~ÄÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚n€rnrŽ’ß;ÄÀ?žl8rpònàÃÜ€àrÇâÜŽÄpp’Ü<ÄßìŽÜŽ8ŒònnîÄðrÜ#‚nÀ$ŽŒl`¸`rn|’’nÀŽà’Ç’`¸Ž’ß;ÄÀ?’œ;ŒâÜì8‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-43
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+exterior system disconnected
+reading=5969, humidity=36, status=0
+ext_humidity=0
+pm open,type:2 0
+reading=5932, humidity=36, status=0
+ext_humidity=0
+reading=5903, humidity=36, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=6154, humidity=37, status=0
+ext_humidity=0
+reading=6463, humidity=39, status=0
+ext_humidity=0
+reading=6766, humidity=41, status=0
+ext_humidity=0
+reading=6405, humidity=39, status=0
+ext_humidity=0
+reading=6159, humidity=37, status=0
+ext_humidity=0
+reading=6023, humidity=36, status=0
+ext_humidity=0
+reading=5936, humidity=36, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5812, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5795, humidity=35, status=0
+ext_humidity=0
+reading=5791, humidity=35, status=0
+ext_humidity=0
+reading=5795, humidity=35, status=0
+ext_humidity=0
+reading=5783, humidity=35, status=0
+ext_humidity=0
+reading=5952, humidity=36, status=0
+ext_humidity=0
+reading=5899, humidity=36, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5783, humidity=35, status=0
+ext_humidity=0
+reading=5750, humidity=35, status=0
+ext_humidity=0
+reading=5741, humidity=35, status=0
+ext_humidity=0
+reading=5762, humidity=35, status=0
+ext_humidity=0
+reading=5981, humidity=36, status=0
+ext_humidity=0
+reading=6006, humidity=36, status=0
+ext_humidity=0
+reading=5944, humidity=36, status=0
+ext_humidity=0
+reading=5907, humidity=36, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5816, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5890, humidity=35, status=0
+ext_humidity=0
+reading=6010, humidity=36, status=0
+ext_humidity=0
+reading=6027, humidity=36, status=0
+ext_humidity=0
+reading=5994, humidity=36, status=0
+ext_humidity=0
+reading=5944, humidity=36, status=0
+ext_humidity=0
+reading=5894, humidity=35, status=0
+ext_humidity=0
+reading=5985, humidity=36, status=0
+ext_humidity=0
+reading=6056, humidity=36, status=0
+ext_humidity=0
+reading=6138, humidity=37, status=0
+ext_humidity=0
+reading=6241, humidity=38, status=0
+ext_humidity=0
+reading=6373, humidity=38, status=0
+ext_humidity=0
+reading=6249, humidity=38, status=0
+ext_humidity=0
+reading=6130, humidity=37, status=0
+ext_humidity=0
+reading=6039, humidity=36, status=0
+ext_humidity=0
+reading=5956, humidity=36, status=0
+ext_humidity=0
+reading=5903, humidity=36, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=5808, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5812, humidity=35, status=0
+ext_humidity=0
+reading=5795, humidity=35, status=0
+ext_humidity=0
+reading=5783, humidity=35, status=0
+ext_humidity=0
+reading=5774, humidity=35, status=0
+ext_humidity=0
+reading=5770, humidity=35, status=0
+ext_humidity=0
+reading=5762, humidity=35, status=0
+ext_humidity=0
+reading=5758, humidity=35, status=0
+ext_humidity=0
+reading=5754, humidity=35, status=0
+ext_humidity=0
+reading=5758, humidity=35, status=0
+ext_humidity=0
+reading=5758, humidity=35, status=0
+ext_humidity=0
+reading=5952, humidity=36, status=0
+ext_humidity=0
+reading=6056, humidity=36, status=0
+ext_humidity=0
+reading=6089, humidity=37, status=0
+ext_humidity=0
+reading=6023, humidity=36, status=0
+ext_humidity=0
+reading=5977, humidity=36, status=0
+ext_humidity=0
+reading=5928, humidity=36, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5832, humidity=35, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=5816, humidity=35, status=0
+ext_humidity=0
+reading=5812, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5795, humidity=35, status=0
+ext_humidity=0
+reading=5791, humidity=35, status=0
+ext_humidity=0
+reading=5783, humidity=35, status=0
+ext_humidity=0
+reading=5779, humidity=35, status=0
+ext_humidity=0
+reading=5783, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=6072, humidity=37, status=0
+ext_humidity=0
+reading=6047, humidity=36, status=0
+ext_humidity=0
+reading=6056, humidity=36, status=0
+ext_humidity=0
+reading=6031, humidity=36, status=0
+ext_humidity=0
+reading=5998, humidity=36, status=0
+ext_humidity=0
+reading=5965, humidity=36, status=0
+ext_humidity=0
+reading=5936, humidity=36, status=0
+ext_humidity=0
+reading=5928, humidity=36, status=0
+ext_humidity=0
+reading=5907, humidity=36, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5832, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5816, humidity=35, status=0
+ext_humidity=0
+reading=5808, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=5812, humidity=35, status=0
+ext_humidity=0
+reading=5808, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5803, humidity=35, status=0
+ext_humidity=0
+reading=5808, humidity=35, status=0
+ext_humidity=0
+reading=5812, humidity=35, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5890, humidity=35, status=0
+ext_humidity=0
+reading=5890, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5890, humidity=35, status=0
+ext_humidity=0
+reading=5899, humidity=36, status=0
+ext_humidity=0
+reading=5899, humidity=36, status=0
+ext_humidity=0
+reading=5899, humidity=36, status=0
+ext_humidity=0
+reading=5894, humidity=35, status=0
+ext_humidity=0
+reading=5894, humidity=35, status=0
+ext_humidity=0
+reading=5903, humidity=36, status=0
+ext_humidity=0
+reading=5911, humidity=36, status=0
+ext_humidity=0
+reading=5907, humidity=36, status=0
+ext_humidity=0
+reading=5894, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5832, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=5816, humidity=35, status=0
+ext_humidity=0
+reading=5812, humidity=35, status=0
+ext_humidity=0
+reading=5808, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5795, humidity=35, status=0
+ext_humidity=0
+reading=5795, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=5812, humidity=35, status=0
+ext_humidity=0
+reading=5820, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5828, humidity=35, status=0
+ext_humidity=0
+reading=5832, humidity=35, status=0
+ext_humidity=0
+reading=5832, humidity=35, status=0
+ext_humidity=0
+reading=5832, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5837, humidity=35, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=6018, humidity=36, status=0
+ext_humidity=0
+reading=6229, humidity=38, status=0
+ext_humidity=0
+reading=6262, humidity=38, status=0
+ext_humidity=0
+reading=6150, humidity=37, status=0
+ext_humidity=0
+reading=6056, humidity=36, status=0
+ext_humidity=0
+reading=5977, humidity=36, status=0
+ext_humidity=0
+reading=5940, humidity=36, status=0
+ext_humidity=0
+reading=5919, humidity=36, status=0
+ext_humidity=0
+reading=5915, humidity=36, status=0
+ext_humidity=0
+reading=5903, humidity=36, status=0
+ext_humidity=0
+reading=5894, humidity=35, status=0
+ext_humidity=0
+reading=5886, humidity=35, status=0
+ext_humidity=0
+reading=5878, humidity=35, status=0
+ext_humidity=0
+reading=5874, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5865, humidity=35, status=0
+ext_humidity=0
+reading=5861, humidity=35, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5845, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5849, humidity=35, status=0
+ext_humidity=0
+reading=5841, humidity=35, status=0
+ext_humidity=0
+reading=5969, humidity=36, status=0
+ext_humidity=0
+reading=6126, humidity=37, status=0
+ext_humidity=0
+reading=6121, humidity=37, status=0
+ext_humidity=0
+reading=6405, humidity=39, status=0
+ext_humidity=0
+reading=6532, humidity=39, status=0
+ext_humidity=0
+reading=6725, humidity=41, status=0
+ext_humidity=0
+reading=6606, humidity=40, status=0
+ext_humidity=0
+reading=6618, humidity=40, status=0
+ext_humidity=0
+reading=6778, humidity=41, status=0
+ext_humidity=0
+reading=6807, humidity=41, status=0
+ext_humidity=0
+reading=6961, humidity=42, status=0
+ext_humidity=0
+reading=6892, humidity=42, status=0
+ext_humidity=0
+reading=6668, humidity=40, status=0
+ext_humidity=0
+reading=6647, humidity=40, status=0
+ext_humidity=0
+reading=6798, humidity=41, status=0
+ext_humidity=0
+reading=6835, humidity=41, status=0
+ext_humidity=0
+reading=6872, humidity=41, status=0
+ext_humidity=0
+reading=6737, humidity=41, status=0
+ext_humidity=0
+reading=6528, humidity=39, status=0
+ext_humidity=0
+reading=6327, humidity=38, status=0
+ext_humidity=0
+reading=6315, humidity=38, status=0
+ext_humidity=0
+reading=6224, humidity=37, status=0
+ext_humidity=0
+reading=6080, humidity=37, status=0
+ext_humidity=0
+reading=6014, humidity=36, status=0
+ext_humidity=0
+reading=5936, humidity=36, status=0
+ext_humidity=0
+reading=5882, humidity=35, status=0
+ext_humidity=0
+reading=5857, humidity=35, status=0
+ext_humidity=0
+reading=5870, humidity=35, status=0
+ext_humidity=0
+reading=5998, humidity=36, status=0
+ext_humidity=0
+reading=5990, humidity=36, status=0
+ext_humidity=0
+reading=5948, humidity=36, status=0
+ext_humidity=0
+reading=5899, humidity=36, status=0
+ext_humidity=0
+reading=5853, humidity=35, status=0
+ext_humidity=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+reading=5799, humidity=35, status=0
+ext_humidity=0
+reading=6101, humidity=37, status=0
+ext_humidity=0
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìŽÜŽ8ŒònnîÄÁŒŽl`œ#‚nÀ$Œl`¸`rn|’’nÀŽàòÇÃl`9~ÄÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚n€rnrŽ’ß;„À?žl8rpònàÃÜ€àrÇâÜŽ„pp’Ü<„ßìŽÜŽ8ŒònnîÄðrÜ#‚nÀ$ŽŒl`8`rn|’’nÀà’Ç’`¸Ž’ß;ÄÀ?’œ;ŒâÜì8‚n€ä>rœØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-44
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=6105, humidity=37, status=0
+ext_humidity=0
+Fatal exception 28(LoadProhibitedCause):
+epc1=0x4000dfc8, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000008, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0x71
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x7a
+load 0x3ffe8420, len 7764, room 8 
+tail 12
+chksum 0x5d
+csum 0x5d
+ŒâÜì8‚n€ä>rœØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-46
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+pm open,type:2 0
+
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàƒÜà‚ÇÀl€€€bÀnâãnÀäŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$ŽŒl`¸`rn|’’nÀŽàòÇÃl`¹~ÄÀœ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`œ#‚nÀrnrŽ’Ÿ;ÄÀ?žl8rpònàÃÜ€àr‡âœŽÄpp’Ü<ÄßìŽÜŽxŒònnîÄðrÜ#‚nÀ$ŽŒl`¸`rn|’’nÀŽà’Ç’`¸Ž’ß;ÄÀ?’œ;ŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+user disconnected
+sent data
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+brlœØrßŒ#ânÀàŒ‚ìpŒ<Ž‚Ÿì8’ßÇ’ÜäŒpònnäÄ;ònÄ’œäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìŽÜŽxŒònnîÄÁŒŽl`Ü#‚nÀ$ŽŒl`8`rn|’’nÀŽàò‡Ãl`¹~ÄÀÜ#‚nÀ$ŽŒŒònnîÄÈl`nnàÃÜ€àr‡âÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀŽrnrŽ’ß;ÄÀ?žlxrpònàÃÜàrÇâÜŽÄpp’Ü<ÄßìŽœŽ8ŒònnîÄðrÜ#‚nÀ$Œl`¸`rn|’’nÀŽà’Ç’`¸Ž’ß;ÄÀ?’œ;ŒâÜì8‚nÀä¾rœØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+sent data
+user disconnected
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-43
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 9
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5795, humidity=35, status=0
+ext_humidity=0
+Fatal exception 28(LoadProhibitedCause):
+epc1=0x4000df94, epc2=0x00000000, epc3=0x00000000, excvaddr=0x0000008c, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0x71
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x7a
+load 0x3ffe8420, len 7764, room 8 
+tail 12
+chksum 0x5d
+csum 0x5d
+ŒâÜìx‚n€ä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 9
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+ópm open,type:2 0
+rlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<Ž‚Ÿì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$Œl`¸`rn|’’nÀŽàbÇÛl`9~„ÀÜ#‚n€$ŒŒònnîÄØl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnrŽ’ß;ÄÀ?€lœ;pònàÃÜ€àrÇâÜŽÄpp’Ü<ÄßìŽÜŽ8ŒònnîÄðrÜ#‚nÀ$ŽŒl`8`rn|’’nÀàb‡ãl`¸Ž’ß;ÄÀ?ŒlrŒâÜìx‚n€ä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-36
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 9
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=6553, humidity=40, status=0
+ext_humidity=0
+Fatal exception 28(LoadProhibitedCause):
+epc1=0x4000dfc8, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000010, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0x25
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x0e
+load 0x3ffe8420, len 7764, room 8 
+tail 12
+chksum 0x29
+csum 0x29
+ŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-44
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 9
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+órlœØrßŒcânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’œäŒpònnäÄ;ònÄ’ÜäbŽ#l``nnàƒÜà‚ÇÀl€€€bÀnâãnÀäŽŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$Œl`¸`rn|’’nÀàòÇ’`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀŽrnrŽ’Ÿ;ÄÀ?bÇ;ˆpònàÃÜ€àrÇâÜŽÄpp’Ü<Äß‚ŒpŒònnîÄðrÜ#‚nÀ$Œl`¸`rn|’’nÀŽàÇÀl`8Ž’ß;ÄÀ?€rŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâœçÉ8‚Œò±€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+óadd 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+rlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<Ž‚ßì8’ßÇ’œäŒpònnäÄ;ònÄ’Üäbç$	rrpònàƒÜà‚ÇÀl€€€bÀnâãnÀäŒìŽÜŽ8ŒònnîÄÁŒŽl`Ü#‚nÀ$Œl`8`rn|’’nÀŽàòÇ’`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀŽrnrŽ’ß;ÄÀbÇ;pònàÃÜàrÇâÜŽÄpp’Ü<Äß‚ŒpŒònnîÄðrÜ#‚nÀ$ŽŒl`¸`rn|’’nÀŽà‡Àl`¸Ž’ß;ÄÀ?€rŒâÜìx‚n€ä>rÜØònãb‚‚lrŒâœçÉ8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+user disconnected
+sent data
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-43
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 9
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5733, humidity=34, status=0
+ext_humidity=0
+received from exterior: data=n·B
+received humidity=1073679496 from exterior
+pm open,type:2 0
+reading=5704, humidity=34, status=0
+ext_humidity=35
+received from exterior: data=¨B
+received humidity=1073679496 from exterior
+reading=5671, humidity=34, status=0
+ext_humidity=35
+received from exterior: data=cYB
+received humidity=1073679496 from exterior
+reading=5650, humidity=34, status=0
+ext_humidity=35
+received from exterior: data=ŸâB
+received humidity=1073679496 from exterior
+reading=5638, humidity=34, status=0
+ext_humidity=34
+received from exterior: data= B
+received humidity=1073679496 from exterior
+reading=5629, humidity=34, status=0
+ext_humidity=35
+received from exterior: data=å—B
+received humidity=1073679496 from exterior
+reading=5625, humidity=34, status=0
+ext_humidity=35
+received from exterior: data=çÉB
+received humidity=1073679496 from exterior
+reading=5629, humidity=34, status=0
+ext_humidity=35
+received from exterior: data=æ°B
+received humidity=1073679496 from exterior
+reading=5621, humidity=34, status=0
+ext_humidity=35
+received from exterior: data=½B
+received humidity=1073679496 from exterior
+reading=5621, humidity=34, status=0
+ext_humidity=34
+received from exterior: data=NÏ	B
+received humidity=1073679496 from exterior
+reading=5621, humidity=34, status=0
+ext_humidity=34
+received from exterior: data=DŠB
+received humidity=1073679496 from exterior
+reading=5617, humidity=34, status=0
+ext_humidity=34
+received from exterior: data=@B
+received humidity=1073679496 from exterior
+reading=5634, humidity=34, status=0
+ext_humidity=34
+received from exterior: data=®ÖB
+received humidity=1073679496 from exterior

@@ -131,6 +131,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// Once the system has obtained an IP, disable the IP checking timer and initialize the
 		// exterior connection configuration
 		case SIG_IP_WAIT | PAR_IP_WAIT_GOTIP:
+			os_printf("gotip\r\n");
 			os_timer_disarm(&timer_ipcheck);
 			if (config_mode) {
 				TASK_START(user_config_connect_init, 0, 0);
@@ -165,14 +166,16 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		case SIG_DISCOVERY | PAR_DISCOVERY_TIMEOUT:
 			os_printf("discovery timed out\r\n");
 			config_mode = true;
-			os_timer_disarm(&timer_intcon);
 			TASK_START(user_int_connect_cleanup, 0, 0);
 			break;
 		case SIG_DISCOVERY | PAR_DISCOVERY_INT_CLEANUP:
+			os_timer_disarm(&timer_intcon);
 			TASK_START(user_broadcast_stop, 0, 0);
 			break;
 		case SIG_DISCOVERY | PAR_DISCOVERY_BROADCAST_CLEANUP:
-			TASK_START(user_config_assoc_init, 0, 0);
+			if (config_mode == true) {
+				TASK_START(user_config_assoc_init, 0, 0);
+			}
 			break;
 					
 		// Once the interior is connected to the exterior, initialize the humidity readings
@@ -181,6 +184,9 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 			os_printf("starting humidity readings\r\n");
 			os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
 			os_timer_arm(&timer_humidity, HUMIDITY_READ_INTERVAL, true);
+
+			os_timer_disarm(&timer_intcon);
+			TASK_START(user_broadcast_stop, 0, 0);
 			break;
 
 		// Error cases:
@@ -192,6 +198,15 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 			os_printf("RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break; 
+		
+		/* ---------------- */
+		/* Humidity Signals */
+		/* ---------------- */
+		
+		// After each humidity reading, send the data on to the interior
+		case SIG_HUMIDITY | PAR_HUMIDITY_READ_DONE:
+			TASK_START(user_int_send_data, 0, 0);
+			break;
 
 		/* ------------------- */
 		/* Config Mode Signals */
@@ -255,10 +270,10 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
         // Set I2C pins to open-drain
         GPIO_REG_WRITE(
 		GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_PIN)), 
-		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
+		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SDA_PIN))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
         GPIO_REG_WRITE(
 		GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_PIN)), 
-		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_MUX))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
+		GPIO_REG_READ(GPIO_PIN_ADDR(GPIO_ID_PIN(SCL_PIN))) | GPIO_PIN_PAD_DRIVER_SET(GPIO_PAD_DRIVER_ENABLE));
 
         // Enable pins
         GPIO_REG_WRITE(GPIO_ENABLE_ADDRESS, GPIO_REG_READ(GPIO_ENABLE_ADDRESS) | SDA_BIT);

@@ -9,6 +9,7 @@
 #include <user_interface.h>
 #include <osapi.h>
 #include <espconn.h>
+#include <mem.h>
 #include "user_humidity.h"
 #include "user_task.h"
 #include "user_connect.h"

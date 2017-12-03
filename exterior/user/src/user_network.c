@@ -105,7 +105,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 
 void ICACHE_FLASH_ATTR user_check_ip(void)
 {
-        struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info));
+        // struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info));
 
 	// Check connection status
         uint8 status = wifi_station_get_connect_status();
@@ -125,6 +125,6 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
 			TASK_RETURN(SIG_IP_WAIT, PAR_IP_WAIT_CHECK_FAILURE);
                 }*/
         }
-        os_free(ip);
+        //os_free(ip);
 	return;
 };
