@@ -15917,3 +15917,6540 @@ reading=5252, humidity=32, status=0
 drive_flag=0
 reading=5252, humidity=32, status=0
 drive_flag=0
+óadd 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+rlœØrßŒ#ân€àŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;òn„’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀà‚Ü’`9~„ÀÜ#‚n€$ŒŒònnîÄÈl`nnàÃÜ€àrÇâœ€pp’œ<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?‚Ü;ˆpònàƒÜàr‡âÜ„pp’Ü<ÄßìÃŒxŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’n€à‚ÇÜl`¸’ß;ÄÀ?Œ;ŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET /favicon.ico HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+user disconnected
+sent data
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.0.1,mask:255.255.255.240,gw:192.168.0.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+exterior connected to the system
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+sent data
+user disconnected
+sent packet to exterior system
+received packet from exterior system: accept
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿpÿ?
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿpÿ?
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.0.1,mask:255.255.255.240,gw:192.168.0.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+órlœØrßŒcânÀàŒ‚ìpŒ|‚Ÿìx’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’n€à‚œ’`9~„ÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’œ<„Ã’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?‚Ü;ˆpònàÃÜàrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà‚ÇÜl`8’ß;ÄÀ?Œ;ŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+user disconnected
+sent data
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ°Úÿ?
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ°Úÿ?
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.0.1,mask:255.255.255.240,gw:192.168.0.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 44:03:2c:7e:c8:90 join, AID = 1
+add 2
+aid 2
+station: a0:20:a6:23:6f:81 join, AID = 2
+exterior connected to the system
+bexterior connected to the system
+rlœ˜rŸŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’œäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`9~ÄÀÜ#‚n€$ŒŒònnîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;pònàÃÜàrÇâœ„pp’œ<„ßìƒŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâÜì8‚nÀä¾rœØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜà‚ÇÀl€€€b€nâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àr‡âÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?‡;pònàÃÜàrÇâÜÄpp’Ü<„ßìÃŒxŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`¸’ß;„À’lxrŒâÜì8‚n€ä>rœØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+exterior connected to the system
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+sent data
+user disconnected
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+exterior disconnected
+espconn_tcp_delete 1, 80
+espconn_tcp_delete 1, 4000
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-34
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßìx’ßÇ’ÜälpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâœ€pp’Ü<„Ã’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;„À‡;pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¸’ß;„À?’l8rŒâÜì8‚nÀä¾rœØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-40
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ|‚ßì8’ßÇ’œäŒpònnäÄ;ònÄ’Üäbã$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàƒÜàr‡âÜÄpp’Ü<ÄßìÃŒxŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâœì8‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcprlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnä„;ònÄ’Üäbã$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãn€äŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrœÇl`9~ÄÀœ#‚n€$ŒŒònnîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;„À?Ç;pònàÃÜàrÇâœÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrœ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+rlœØrßŒ#ânÀàŒ‚ìpŒ|‚ßì8’ßÇ’ÜäŒpònnäÄ;òn„’Üäbã$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`œ#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚Ÿì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbã$‰rrpònàƒÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßìx’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbà$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àr‡âÜ€pp’œ<ÄÃ’ŒpŒònnîÄÁŒl`œ#‚nÀrnr’Ÿ;ÄÀ?Ç;ˆpònàÃÜàrÇâœÄpp’Ü<ÄßìÃŒxŒònnîÄğrÜ#‚n€$Œl`8`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâÜì8‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâœçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-37
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting rlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;òn„’Üäbã$‰rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;pònàÃÜàrÇâœÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâœì8‚nÀä¾rÜØònãb‚‚lrŒâœçÉ8‚Œò±€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-34
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 8
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœØrßŒcân€àŒ‚ìpŒ<‚ßì8’ßÇ’ÜälpònnäÄ;òn„’œäbã$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãn€äŒìœxŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’Ÿ;„À‡;pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’‡’`¸’ß;ÄÀ?’l8rŒâœì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(62:01:94:36:f7:db)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(60:01:94:36:f7:db)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-38
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.84,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.81.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.81
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœØrŸŒcân€àŒ‚ìpŒ|‚ßì8’ßÇ’œälpònnäÄ;ònÄ’Üäbà$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀÄàìØpŒònnîÄÁŒl`Ü#‚n€{nr’ß;ÄÀ?‚Ü;ˆpònàÃÜàrÇâÜ€pp’Ü<ÄÄàpŒònnîÄÈrÜ#‚nÀ;nr’ß;„À?rÜ;pònàÃÜàrÇâÜŒ8’pp’Ü<ÄÃlÄlÄbÀÄ>~ònîÄÈrÜ#‚nÀrnr’ß;ÄÀ?Œœ;rŸÛ’nÀà‚‡’`rşrlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrbrlœØrßŒ#ân€àŒ‚ìpŒ<‚ßìx’ßÇ’ÜäŒpònnäÄ;òn„’Üäbç$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’n€àrÜÇl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜ€àr‡âœÄpp’œ<„ßìÃŒxŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâÜì8‚nÀä>rœØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+brlœØrŸŒ#ânÀˆàŒ‚ìpŒ|‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜà‚‡Àl€€€bÀnâãnÀäŒìœ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<„Ã’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`8’ß;ÄÀ?’lxrŒâÜì8‚n€ä>rÜØònãb‚‚lrŒâœçÉ8‚Œò1€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜxŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’n€àrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâœ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀÇ;ˆpònàÃÜ€àr‡âÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrœ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâœì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`œ#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜàrÇâÜÄpp’œ<„ßìƒŒ8ŒònnîÄğrœ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâÜìx‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâœçÙ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``nnàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?‡;pònàÃÜàrÇâÜÄpp’Ü<ÄßìÃŒxŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+óadd 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+exterior connected to the system
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnä„;òn„’Üäbç$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜàrÇâœ„pp’œ<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’lxrŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+user disconnected
+sent data
+sent packet to exterior system
+received packet from exterior system: accept
+exterior disconnected
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+espconn_tcp_delete 1, 4000
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-36
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßìx’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’Ÿ;ÄÀ‡;pònàƒÜàrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’‡’`8’ß;ÄÀ?’l8rŒâœì8‚nÀä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-40
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+brlœ˜rŸŒcânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``nnàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜàrÇâÜÄpp’Ü<ÄßìÃŒxŒònnîÄğrœ#‚n€$Œl`¸`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâÜì8‚nÀä>rœØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+err already associed!
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’Üälpònnä„;ònÄ’Üäbà$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`œ#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâœ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚n€rnr’ß;ÄÀ?Ç;pònàÃÜ€àr‡âÜÄpp’Ü<„ßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+brlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’Ÿ;ÄÀ?Ç;ˆpònàƒÜàrÇâÜÄpp’œ<ÄßìƒŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+station: a0:20:a6:23:6f:81 leave, AID = 1
+rm 1
+add 1
+aid 1
+station: a0:20:a6:23:6f:81 join, AID = 1
+bexterior connected to the system
+rlœØrßŒ#ân€àŒ‚ìpŒ|‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜàrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò!€rŒâœçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+user disconnected
+sent data
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+add 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+exterior connection error, code=-9
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+exterior connected to the system
+sent data
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-44
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+state: 5 -> 2 (2a0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœØrŸŒ#ânÀàŒ‚ìpŒ<‚ßìx’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãn€äŒìÜxŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;pònàÃÜàrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâœì8‚nÀä>rœØònãb‚‚lrŒâœçÉ8‚Œò±€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-36
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+badd 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+user disconnected
+sent data
+sent packet to exterior system
+received packet from exterior system: accept
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+exterior disconnected
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+espconn_tcp_delete 1, 4000
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-38
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 8
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœ˜rŸŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàƒÜàrÇâœ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?‡;pònàÃÜ€àr‡âÜÄpp’Ü<ÄßìÃŒxŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà’Ç’`¸’Ÿ;„À?’lxrŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâœçÙ8‚Œò!€rŒâœçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-37
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 8
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ|‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbcl``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàrÜÇl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàr‡âœ€pp’œ<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;„À?Ç;pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`8’ß;ÄÀ?’l8rŒâÜì8‚nÀä>rœØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-30
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+
+ ets Jan  8 2013,rst cause:4, boot mode:(3,7)
+
+wdt reset
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0xc3
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0xd1
+load 0x3ffe8420, len 7716, room 8 
+tail 12
+chksum 0x5a
+csum 0x5a
+ŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-34
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’œäŒpònnä„;ònÄ’œäbç$	rrpònàÃÜ€à‚‡Àl€€€b€nâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàrÜÇl`¹~„ÀÜ#‚n€$ŒŒònnîÄÈl`nnàÃÜàrÇâœ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;pònàÃÜàrÇâÜÄpp’Ü<„ßìÃŒ8ŒònnîÄğrœ#‚n€$Œl`¸`rn|’’nÀà’Ç’`¸’ß;ÄÀ?’l8rŒâœì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-31
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=0, humidity=0, status=0
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+brlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ŸÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚‡Àl€€€bÀnâãnÀäŒìœ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàòÇ’`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚n€rnr’ß;„À?Œœ;pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàÜÜl`¸’ß;„À?âÇ;ˆŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâœçÉ8‚Œò±€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-32
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+pm open,type:2 0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+exterior system disconnected
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+órlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’œäŒpònnä„;òn„’Üäbç$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìœxŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?’;pònàƒÜàrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀà‚Ü’`8’ß;ÄÀ?âÜ;Œâœìx‚nÀä>rÜØònãb‚‚lrŒâœçÉ8‚Œò±€rŒâÜçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-30
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+pm open,type:2 0
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=6060, humidity=36, status=0
+reading=6029, humidity=36, status=0
+reading=6045, humidity=36, status=0
+reading=6083, humidity=37, status=0
+reading=6079, humidity=37, status=0
+reading=6049, humidity=36, status=0
+reading=6010, humidity=36, status=0
+reading=5993, humidity=36, status=0
+bslave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+rlœØrŸŒ#ânÀàŒ‚ìpŒ<‚ßì8’ŸÇ’ÜäŒpònnä„;òn„’œäbç$rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀà‚ÜØl`9~„ÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâœ€pp’œ<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?‚œ;pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàŒ{rßÛ’nÀàŒ;ŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-30
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+slave failed to initiate measurement
+slave failed to initiate measurement
+pm open,type:2 0
+slave failed to initiate measurement
+slave failed to initiate measurement
+reading=5804, humidity=35, status=0
+reading=6154, humidity=37, status=0
+reading=6033, humidity=36, status=0
+reading=5935, humidity=36, status=0
+reading=5870, humidity=35, status=0
+reading=5833, humidity=35, status=0
+reading=5821, humidity=35, status=0
+reading=6890, humidity=42, status=0
+reading=6824, humidity=41, status=0
+reading=6473, humidity=39, status=0
+reading=6226, humidity=38, status=0
+reading=6056, humidity=36, status=0
+reading=5955, humidity=36, status=0
+reading=6204, humidity=37, status=0
+reading=6309, humidity=38, status=0
+exterior system disconnected
+reading=6102, humidity=37, status=0
+reading=5951, humidity=36, status=0
+reading=5897, humidity=35, status=0
+reading=5892, humidity=35, status=0
+reading=5862, humidity=35, status=0
+reading=5821, humidity=35, status=0
+reading=5804, humidity=35, status=0
+reading=5791, humidity=35, status=0
+reading=5783, humidity=35, status=0
+reading=5787, humidity=35, status=0
+reading=5787, humidity=35, status=0
+reading=5787, humidity=35, status=0
+reading=5779, humidity=35, status=0
+reading=5774, humidity=35, status=0
+reading=5766, humidity=35, status=0
+reading=5766, humidity=35, status=0
+reading=5770, humidity=35, status=0
+reading=5768, humidity=35, status=0
+reading=5774, humidity=35, status=0
+reading=5783, humidity=35, status=0
+reading=5789, humidity=35, status=0
+reading=5796, humidity=35, status=0
+reading=5800, humidity=35, status=0
+reading=5811, humidity=35, status=0
+reading=5811, humidity=35, status=0
+reading=5821, humidity=35, status=0
+brlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜxŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀà’Ç’`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<„Ã’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?’;pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀà‚Ü’`8’ß;ÄÀ?âÜ;ŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-35
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5995, humidity=36, status=0
+pm open,type:2 0
+reading=6002, humidity=36, status=0
+reading=5995, humidity=36, status=0
+reading=5982, humidity=36, status=0
+reading=5978, humidity=36, status=0
+reading=6027, humidity=36, status=0
+reading=6064, humidity=37, status=0
+reading=6140, humidity=37, status=0
+reading=6436, humidity=39, status=0
+reading=6369, humidity=38, status=0
+reading=6219, humidity=37, status=0
+reading=6102, humidity=37, status=0
+reading=6018, humidity=36, status=0
+reading=5970, humidity=36, status=0
+reading=5937, humidity=36, status=0
+reading=5917, humidity=36, status=0
+reading=5907, humidity=36, status=0
+reading=5907, humidity=36, status=0
+reading=5903, humidity=36, status=0
+exterior system disconnected
+reading=5890, humidity=35, status=0
+reading=5878, humidity=35, status=0
+reading=6016, humidity=36, status=0
+reading=5991, humidity=36, status=0
+reading=5939, humidity=36, status=0
+reading=5911, humidity=36, status=0
+reading=5894, humidity=35, status=0
+reading=5886, humidity=35, status=0
+reading=5878, humidity=35, status=0
+reading=5874, humidity=35, status=0
+reading=5876, humidity=35, status=0
+reading=5880, humidity=35, status=0
+reading=5884, humidity=35, status=0
+reading=5886, humidity=35, status=0
+reading=5901, humidity=36, status=0
+reading=5905, humidity=36, status=0
+reading=5905, humidity=36, status=0
+reading=5905, humidity=36, status=0
+reading=6088, humidity=37, status=0
+reading=6234, humidity=38, status=0
+reading=6192, humidity=37, status=0
+reading=6221, humidity=37, status=0
+reading=6204, humidity=37, status=0
+reading=6142, humidity=37, status=0
+reading=6083, humidity=37, status=0
+reading=6037, humidity=36, status=0
+reading=6001, humidity=36, status=0
+reading=5976, humidity=36, status=0
+reading=5968, humidity=36, status=0
+reading=5957, humidity=36, status=0
+reading=5960, humidity=36, status=0
+reading=5966, humidity=36, status=0
+reading=5970, humidity=36, status=0
+reading=5957, humidity=36, status=0
+reading=5947, humidity=36, status=0
+reading=5968, humidity=36, status=0
+reading=6001, humidity=36, status=0
+reading=6523, humidity=39, status=0
+reading=6538, humidity=39, status=0
+reading=6378, humidity=38, status=0
+reading=6221, humidity=37, status=0
+reading=6123, humidity=37, status=0
+reading=6139, humidity=37, status=0
+reading=6702, humidity=40, status=0
+reading=6700, humidity=40, status=0
+reading=6473, humidity=39, status=0
+reading=6608, humidity=40, status=0
+reading=6905, humidity=42, status=0
+reading=6632, humidity=40, status=0
+reading=6488, humidity=39, status=0
+reading=6336, humidity=38, status=0
+reading=6190, humidity=37, status=0
+reading=6123, humidity=37, status=0
+reading=6127, humidity=37, status=0
+reading=6137, humidity=37, status=0
+reading=6135, humidity=37, status=0
+reading=6051, humidity=36, status=0
+reading=6023, humidity=36, status=0
+reading=6043, humidity=36, status=0
+reading=5995, humidity=36, status=0
+reading=5974, humidity=36, status=0
+reading=5953, humidity=36, status=0
+reading=5937, humidity=36, status=0
+reading=6071, humidity=37, status=0
+reading=6120, humidity=37, status=0
+reading=6062, humidity=37, status=0
+reading=6018, humidity=36, status=0
+reading=5968, humidity=36, status=0
+reading=5947, humidity=36, status=0
+reading=5923, humidity=36, status=0
+reading=5892, humidity=35, status=0
+reading=5876, humidity=35, status=0
+reading=5878, humidity=35, status=0
+reading=5905, humidity=36, status=0
+reading=6070, humidity=37, status=0
+reading=6077, humidity=37, status=0
+reading=6070, humidity=37, status=0
+reading=6394, humidity=39, status=0
+reading=6598, humidity=40, status=0
+reading=6828, humidity=41, status=0
+reading=6625, humidity=40, status=0
+reading=6319, humidity=38, status=0
+reading=6479, humidity=39, status=0
+reading=6319, humidity=38, status=0
+reading=6169, humidity=37, status=0
+reading=6062, humidity=37, status=0
+reading=6002, humidity=36, status=0
+brlœØrßŒcânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbcl``pònàÃÜà‚‡Àl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀà’ÇÛl`9~ÄÀÜ#‚n€$ŒŒònnîÄÈl`nnàÃÜ€àr‡âÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?{pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìÃŒ8ŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàbÜ’`¸’ß;ÄÀ?âÜ;ŒâÜìx‚n€ä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+sent data
+user disconnected
+ERROR: failed to send data to exterior, code=-7
+RESPONSE: ignoring
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-33
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 8
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5945, humidity=36, status=0
+reading=5945, humidity=36, status=0
+pm open,type:2 0
+reading=5949, humidity=36, status=0
+reading=6051, humidity=36, status=0
+reading=6208, humidity=37, status=0
+reading=6161, humidity=37, status=0
+reading=6116, humidity=37, status=0
+reading=6085, humidity=37, status=0
+reading=6062, humidity=37, status=0
+reading=6307, humidity=38, status=0
+reading=7054, humidity=43, status=0
+reading=7326, humidity=44, status=0
+reading=7396, humidity=45, status=0
+reading=7091, humidity=43, status=0
+reading=6762, humidity=41, status=0
+reading=6491, humidity=39, status=0
+reading=6292, humidity=38, status=0
+reading=6171, humidity=37, status=0
+reading=6092, humidity=37, status=0
+exterior system disconnected
+reading=6041, humidity=36, status=0
+reading=5995, humidity=36, status=0
+reading=5970, humidity=36, status=0
+reading=5953, humidity=36, status=0
+reading=5939, humidity=36, status=0
+reading=5935, humidity=36, status=0
+reading=5935, humidity=36, status=0
+reading=5935, humidity=36, status=0
+reading=6146, humidity=37, status=0
+×øşÿûG0@ûwç‡Àûç×Àğ€ÿg€&»ü¿çÀ˜Ç@8¥ÂÀ€»Gaûø÷; €òçğçqàconnecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+slave failed to initiate measurement
+pm open,type:2 0
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+exterior system disconnected
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+reading=0, humidity=0, status=0
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+reading=5743, humidity=35, status=0
+reading=5766, humidity=35, status=0
+reading=5858, humidity=35, status=0
+reading=6154, humidity=37, status=0
+reading=6448, humidity=39, status=0
+reading=6715, humidity=40, status=0
+reading=6542, humidity=39, status=0
+reading=6382, humidity=38, status=0
+reading=6355, humidity=38, status=0
+reading=6499, humidity=39, status=0
+reading=6665, humidity=40, status=0
+reading=6596, humidity=40, status=0
+reading=7424, humidity=45, status=0
+reading=7293, humidity=44, status=0
+reading=7591, humidity=46, status=0
+reading=7326, humidity=44, status=0
+reading=6608, humidity=40, status=0
+reading=6146, humidity=37, status=0
+reading=6626, humidity=40, status=0
+reading=6922, humidity=42, status=0
+reading=7054, humidity=43, status=0
+reading=6900, humidity=42, status=0
+reading=6614, humidity=40, status=0
+reading=6578, humidity=40, status=0
+reading=7126, humidity=43, status=0
+reading=6824, humidity=41, status=0
+reading=6958, humidity=42, status=0
+reading=6930, humidity=42, status=0
+reading=6922, humidity=42, status=0
+reading=6769, humidity=41, status=0
+reading=6491, humidity=39, status=0
+reading=6763, humidity=41, status=0
+reading=6775, humidity=41, status=0
+reading=6721, humidity=41, status=0
+reading=6548, humidity=39, status=0
+reading=6100, humidity=37, status=0
+reading=5974, humidity=36, status=0
+reading=5878, humidity=35, status=0
+reading=5735, humidity=35, status=0
+reading=5617, humidity=34, status=0
+reading=5554, humidity=33, status=0
+reading=5513, humidity=33, status=0
+reading=5490, humidity=33, status=0
+reading=5465, humidity=33, status=0
+reading=5455, humidity=33, status=0
+reading=5437, humidity=33, status=0
+reading=5435, humidity=33, status=0
+reading=5529, humidity=33, status=0
+reading=5514, humidity=33, status=0
+reading=5486, humidity=33, status=0
+reading=5545, humidity=33, status=0
+reading=5725, humidity=34, status=0
+reading=5609, humidity=34, status=0
+reading=5531, humidity=33, status=0
+reading=5588, humidity=34, status=0
+reading=5815, humidity=35, status=0
+reading=5715, humidity=34, status=0
+reading=5640, humidity=34, status=0
+reading=5613, humidity=34, status=0
+reading=5568, humidity=33, status=0
+reading=5664, humidity=34, status=0
+reading=5953, humidity=36, status=0
+reading=6131, humidity=37, status=0
+reading=6008, humidity=36, status=0
+reading=5860, humidity=35, status=0
+reading=5748, humidity=35, status=0
+reading=6473, humidity=39, status=0
+reading=6244, humidity=38, status=0
+reading=5964, humidity=36, status=0
+reading=5804, humidity=35, status=0
+reading=5680, humidity=34, status=0
+reading=6497, humidity=39, status=0
+reading=7091, humidity=43, status=0
+reading=6596, humidity=40, status=0
+reading=6488, humidity=39, status=0
+reading=6660, humidity=40, status=0
+reading=7012, humidity=42, status=0
+reading=7134, humidity=43, status=0
+reading=7159, humidity=43, status=0
+reading=6749, humidity=41, status=0
+reading=6700, humidity=40, status=0
+reading=6828, humidity=41, status=0
+reading=6505, humidity=39, status=0
+reading=6056, humidity=36, status=0
+reading=5829, humidity=35, status=0
+reading=5722, humidity=34, status=0
+reading=5650, humidity=34, status=0
+reading=5560, humidity=33, status=0
+reading=5486, humidity=33, status=0
+reading=5433, humidity=33, status=0
+reading=6090, humidity=37, status=0
+reading=6907, humidity=42, status=0
+reading=7549, humidity=46, status=0
+reading=7595, humidity=46, status=0
+reading=7328, humidity=44, status=0
+reading=7243, humidity=44, status=0
+reading=7348, humidity=44, status=0
+reading=7110, humidity=43, status=0
+reading=6592, humidity=40, status=0
+reading=7305, humidity=44, status=0
+reading=7412, humidity=45, status=0
+reading=7250, humidity=44, status=0
+reading=7266, humidity=44, status=0
+reading=6673, humidity=40, status=0
+reading=6689, humidity=40, status=0
+reading=6561, humidity=40, status=0
+reading=6820, humidity=41, status=0
+reading=6920, humidity=42, status=0
+reading=6338, humidity=38, status=0
+reading=6888, humidity=42, status=0
+reading=6434, humidity=39, status=0
+reading=5897, humidity=35, status=0
+reading=5602, humidity=34, status=0
+reading=5441, humidity=33, status=0
+reading=5357, humidity=32, status=0
+reading=5320, humidity=32, status=0
+reading=5311, humidity=32, status=0
+reading=5313, humidity=32, status=0
+reading=5423, humidity=33, status=0
+reading=5472, humidity=33, status=0
+reading=5414, humidity=33, status=0
+reading=5361, humidity=32, status=0
+reading=5334, humidity=32, status=0
+reading=5349, humidity=32, status=0
+reading=5340, humidity=32, status=0
+reading=5332, humidity=32, status=0
+reading=5328, humidity=32, status=0
+reading=5336, humidity=32, status=0
+reading=5905, humidity=36, status=0
+reading=5750, humidity=35, status=0
+reading=5925, humidity=36, status=0
+reading=6552, humidity=39, status=0
+reading=6503, humidity=39, status=0
+reading=6336, humidity=38, status=0
+reading=6303, humidity=38, status=0
+reading=5925, humidity=36, status=0
+reading=5758, humidity=35, status=0
+reading=5604, humidity=34, status=0
+reading=5527, humidity=33, status=0
+reading=6167, humidity=37, status=0
+reading=6479, humidity=39, status=0
+reading=6183, humidity=37, status=0
+reading=5796, humidity=35, status=0
+reading=5785, humidity=35, status=0
+reading=5688, humidity=34, status=0
+reading=5566, humidity=33, status=0
+reading=6321, humidity=38, status=0
+reading=7151, humidity=43, status=0
+reading=7200, humidity=43, status=0
+reading=6548, humidity=39, status=0
+reading=5980, humidity=36, status=0
+reading=5644, humidity=34, status=0
+reading=5535, humidity=33, status=0
+reading=5463, humidity=33, status=0
+reading=5666, humidity=34, status=0
+reading=6499, humidity=39, status=0
+reading=6552, humidity=39, status=0
+reading=6053, humidity=36, status=0
+reading=5840, humidity=35, status=0
+reading=5670, humidity=34, status=0
+reading=5564, humidity=33, status=0
+reading=5962, humidity=36, status=0
+reading=6208, humidity=37, status=0
+reading=6006, humidity=36, status=0
+Fatal exception 9(LoadStoreAlignmentCause):
+epc1=0x40220b00, epc2=0x00000000, epc3=0x00000000, excvaddr=0x0000000a, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:1, boot mode:(3,7)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0x55
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x34
+load 0x3ffe8420, len 7716, room 8 
+tail 12
+chksum 0xbf
+csum 0xbf
+ŒâÜì8‚nÀä>rœØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-34
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 4
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+pm open,type:2 0
+maximum exterior connection wait time elapsed
+erasing config
+state: 5 -> 0 (0)
+rm 0
+pm close 7
+del if0
+usl
+del if0
+usl
+
+ ets Jan  8 2013,rst cause:1, boot mode:(3,7)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0x55
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x34
+load 0x3ffe8420, len 7716, room 8 
+tail 12
+chksum 0xbf
+csum 0xbf
+ŒâÜìx‚n€ä>rœØònãb‚‚lrŒâœçÉ8‚Œò1€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+add 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+sent data
+user disconnected
+sent packet to exterior system
+received packet from exterior system: accept
+exterior disconnected
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+espconn_tcp_delete 1, 4000
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-31
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 8
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+reading=5393, humidity=32, status=0
+reading=5404, humidity=32, status=0
+pm open,type:2 0
+reading=5412, humidity=33, status=0
+reading=5423, humidity=33, status=0
+reading=5437, humidity=33, status=0
+reading=5453, humidity=33, status=0
+reading=5461, humidity=33, status=0
+reading=5465, humidity=33, status=0
+reading=5474, humidity=33, status=0
+reading=5482, humidity=33, status=0
+reading=5490, humidity=33, status=0
+reading=5492, humidity=33, status=0
+reading=5492, humidity=33, status=0
+reading=5496, humidity=33, status=0
+reading=5498, humidity=33, status=0

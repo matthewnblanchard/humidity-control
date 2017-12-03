@@ -38,7 +38,7 @@
 // FLASH_WRITE: Writes *src_addr to the 4KB flash sector at address flash_addr. Returns the status
 //	of the operation
 #define FLASH_WRITE(flash_addr, src_addr) ({\
-	spi_flash_read(\
+	spi_flash_write(\
 		(flash_addr),\
 		(uint32 *)(src_addr),\
 		sizeof(*(src_addr))\

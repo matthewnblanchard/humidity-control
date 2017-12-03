@@ -3,8 +3,8 @@
 // Desc: Contains software i2c functions & definitions. The ESP8266 lacks i2c
 //      hardware, "bit-banging: is necessary
 
-#ifndef _USER_I2C_H
-#define _USER_I2C_H
+#ifndef USER_I2C_H
+#define USER_I2C_H
 
 #include <user_interface.h>
 #include <osapi.h>
@@ -29,67 +29,47 @@
 // Desc: Sets the SDA line to state (high or low)
 // Args:
 //      bool state: The desired state for SDA
-// Return:
-//	Nothing
-// static inline void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state);
+// static void ICACHE_FLASH_ATTR user_i2c_sda_set(bool state);
 
 // Application Function: user_i2c_scl_set(bool state);
 // Desc: Sets the SCL line to state (high or low)
 // Args:
 //      bool state: The desired state for SCL
-// Return:
-//	Nothing
-// static inline void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state);
-
-// Application Function: user_i2c_scl_read(void);
-// Desc: Reads the SCL line
-// Args:
-//	None
-// Returns:
-//      SCL line state
-// static inline bool ICACHE_FLASH_ATTR user_i2c_scl_read(void);
-
-// Application Function: user_i2c_sda_read(void);
-// Desc: Reads the SDA line
-// Args:
-//	None
-// Returns:
-//      SDA line state
-// static inline bool ICACHE_FLASH_ATTR user_i2c_sda_read(void);
+// static void ICACHE_FLASH_ATTR user_i2c_scl_set(bool state);
 
 // Application Function: user_i2c_start_bit(void);
 // Desc: Sends an I2C start bit
-// Args:
-//	None
-// Returns:
-//	Nothing
 void ICACHE_FLASH_ATTR user_i2c_start_bit(void);
 
 // Application Function: user_i2c_stop_bit(void);
 // Desc: Sends an I2C stop bit
-// Args:
-//	None
-// Returns:
-//	Nothing
 void ICACHE_FLASH_ATTR user_i2c_stop_bit(void);
+
+// Application Function: user_i2c_scl_read(void);
+// Desc: Reads the SCL line
+// Returns:
+//      SCL line state
+// static bool ICACHE_FLASH_ATTR user_i2c_scl_read(void);
+
+// Application Function: user_i2c_sda_read(void);
+// Desc: Reads the SDA line
+// Returns:
+//      SDA line state
+// static bool ICACHE_FLASH_ATTR user_i2c_sda_read(void);
 
 // Application Function: user_i2c_read_bit(void);
 // Desc:
 //      Reads a single bit from the slave device
-// Args:
-//	Nothing
 // Returns:
 //      The bit which was read
-// static inline ICACHE_FLASH_ATTR uint8 user_i2c_read_bit(void);
+// static ICACHE_FLASH_ATTR uint8 user_i2c_read_bit(void);
 
 // Application Function: user_i2c_write_bit(uint8 bit);
 // Desc:
 //      Writes a single bit to the slave device
 // Args:
 //      uint8 bit: Bit to be written
-// Returns:
-//	Nothing
-// static inline void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit);
+// static void ICACHE_FLASH_ATTR user_i2c_write_bit(uint8 bit);
 
 // Application Function: user_i2c_write_byte(uint8 byte);
 // Desc:
@@ -118,19 +98,15 @@ uint8 ICACHE_FLASH_ATTR user_i2c_read_byte(uint8 ack);
 //      of '0' indicates an ACK, and '1' indicates an ACK
 // Args:
 //      uint8 ack_level: Ack level (ACK/NACK)
-// Return:
-//	Nothing 
-// static inline void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level);
+//void ICACHE_FLASH_ATTR user_i2c_send_ack(uint8 ack_level);
 
 // Application Function: user_i2c_recv_ack(void)
 // Desc:
 //      Checks for an ACK/NACK from the slave device
-// Args:
-//	None 
 // Returns:
 //      0, if an ACK was received
 //      1, if a NACK was received
-// uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void);
+//uint8 ICACHE_FLASH_ATTR user_i2c_recv_ack(void);
 
 #endif
 
