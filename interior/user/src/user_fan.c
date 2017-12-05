@@ -7,32 +7,48 @@
 volatile bool drive_flag = 1;				// True if the fan should be driven
 volatile uint32 drive_delay = SUPPLY_HALF_CYCLE / 2;	// Delay on triac pulse in us
 volatile uint16 tach_cnt = 0;				// Count of tachometer pulses
-volatile uint32 last_time = 0;				// Time-keeping var for software debouncing
+//volatile uint32 last_time = 0;				// Time-keeping var for software debouncing
 volatile uint16 desired_rpm = 2900;			// The desired RPM of the fan
 volatile uint16 measured_rpm = 0;			// RPM measured by tachometer
+volatile uint32 int_cnt = 0;
 
-// Static function prototypes
-static void ICACHE_FLASH_ATTR user_tach_calc(void);
+void ICACHE_FLASH_ATTR user_fan_init(os_event_t *e)
+{
+	// Set GPIO ISR
+	gpio_intr_handler_register(user_gpio_isr, 0);
+
+	// Set up ZCD pin for interrupts
+	gpio_output_set(0, 0, 0, ZCD_BIT);
+	gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);
+
+	// Set up TACH pin for interrupts
+	gpio_output_set(0, 0, 0, TACH_BIT);
+	gpio_pin_intr_state_set(GPIO_ID_PIN(TACH_PIN), GPIO_PIN_INTR_POSEDGE);
+
+	return;
+
+};
 
 void user_gpio_isr(uint32 intr_mask, void *arg)
 {
-	gpio_intr_ack(intr_mask);					// ACK interrupt
-
-	uint32 gpio_status = GPIO_REG_READ(GPIO_STATUS_ADDRESS);	// Check which GPIO(s) have an interrupt queued
-
+//	uint32 gpio_status = GPIO_REG_READ(GPIO_STATUS_ADDRESS);	// Check which GPIO(s) have an interrupt queued
+	static uint32 last_time = 0;
+	gpio_intr_ack(intr_mask);
 	// Check if a ZCD interrupt occured
-	if ((gpio_status & (ZCD_BIT)) & drive_flag) {			// Pulse the triac with appropriate delay if drive flag is set
+	if ((intr_mask & (ZCD_BIT)) && drive_flag) {			// Pulse the triac with appropriate delay if drive flag is set
 		hw_timer_arm(drive_delay);
 	};
 
 	// Check if a tachometer interrupt occured
-	if (gpio_status & (TACH_BIT)) {
+	if (intr_mask & (TACH_BIT)) {
 		uint32 cur_time = system_get_time();	// Use the system time register for software debouncing
 		if (cur_time - last_time > 100) {
 			tach_cnt++;
 			last_time = cur_time;
 		};
 	};
+
+//	GPIO_REG_WRITE(GPIO_STATUS_W1TC_ADDRESS, gpio_status);
 
         return;
 };
@@ -56,7 +72,7 @@ void ICACHE_FLASH_ATTR user_tach_calc(void)
 	// Calculate RPM
 	freq = ((float)tach_cnt * 1000) / TACH_PERIOD;	// Convert to pulses/second
 	measured_rpm = (freq * 60) / TACH_BLADE_N;	// Convert to rotations per minute
-	PRINT_DEBUG(DEBUG_HIGH, "tach_cnt=%d, rpm=%d, freq=%d\r\n", tach_cnt, measured_rpm, (uint32)freq); 
+	PRINT_DEBUG(DEBUG_HIGH, "int_cnt=%d, tach_cnt=%d, rpm=%d, freq=%d\r\n",int_cnt, tach_cnt, measured_rpm, (uint32)freq); 
 
 	// Adjust delay based on read RPM. If the RPM is too high, fire the triac later.
 	// If it is too low, fire the triac sooner. Delay change is proportional to RPM difference

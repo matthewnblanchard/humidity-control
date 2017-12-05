@@ -37,7 +37,7 @@ os_timer_t timer_ipcheck;
 os_timer_t timer_extfwd;
 os_timer_t timer_extcon;
 os_timer_t timer_humidity;
-
+os_timer_t timer_tachometer;
 
 // Task Calling Macros
 #define TASK_RETURN(sig,par) 		system_os_post(USER_TASK_PRIO_2, (sig), (par))

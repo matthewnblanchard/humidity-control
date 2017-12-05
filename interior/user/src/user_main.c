@@ -185,11 +185,13 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 			TASK_START(user_espconnect_init, 0, 0);
 			break;
 
-		// Once the system is connected to the exterior, initialize the humidity readings, then start the webserver
+		// Once the system is connected to the exterior, initialize the humidity readings and tachometer, then start the webserver
 		case SIG_DISCOVERY | PAR_DISCOVERY_CONNECTED:
 			PRINT_DEBUG(DEBUG_LOW, "initiating humidity readings\r\n");
 			os_timer_setfn(&timer_humidity, user_read_humidity, NULL);		// Initialize humidity readings
 			os_timer_arm(&timer_humidity, HUMIDITY_READ_INTERVAL, true);
+			os_timer_setfn(&timer_tachometer, user_tach_calc, NULL);		// Initialize tachometer readings
+			os_timer_arm(&timer_tachometer, TACH_PERIOD, true);
 			TASK_START(user_front_init, 0, 0);
 			break;
 
@@ -302,7 +304,7 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 	// Initialize ZCD
 	gpio_output_set(0, 0, 0, ZCD_BIT);     					// Set ZCD pin as input
         gpio_intr_handler_register(user_gpio_isr, 0);   			// Register GPIO ISR
-        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);   // Rising edge triggers
+        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_NEGEDGE);   // Rising edge triggers
 
 	// Initialize tachometer interrupt
 	gpio_output_set(0, 0, 0, TACH_BIT);					// Set Tachometer as input

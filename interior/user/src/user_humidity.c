@@ -27,6 +27,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
                 PRINT_DEBUG(DEBUG_ERR, "slave failed to initiate measurement\r\n");
         	user_i2c_stop_bit();
 		ETS_GPIO_INTR_ENABLE();
+		gpio_intr_handler_register(user_gpio_isr, 0);
 		return;
         };
         user_i2c_stop_bit();
@@ -45,7 +46,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         if (user_i2c_write_byte((SENSOR_ADDR << 1) | 0x01) == 1) {
                 PRINT_DEBUG(DEBUG_ERR, "slave failed to receive address\r\n");
         	user_i2c_stop_bit();
-		// ETS_GPIO_INTR_ENABLE();
+		ETS_GPIO_INTR_ENABLE();
+		gpio_intr_handler_register(user_gpio_isr, 0);
 		return;      
         };
 
@@ -58,6 +60,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         humidity |= read_byte;                           // Lower byte is lower 8 bits of humidity
 
 	ETS_GPIO_INTR_ENABLE();
+	gpio_intr_handler_register(user_gpio_isr, 0);
 
 	// The formula for the conversion from the received integer "humidity count" to a floating point %RH is as follows:
 	//        Humidity Count
@@ -75,7 +78,6 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 	user_humidity_cmp();
 
 	os_printf("ext_humidity=%d\r\n", (uint32)sensor_data_ext);
-	
         return;
 };
 

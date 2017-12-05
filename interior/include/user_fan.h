@@ -61,6 +61,14 @@ void ICACHE_FLASH_ATTR hw_timer_set_func(void (* user_hw_timer_cb_set)(void));
 void ICACHE_FLASH_ATTR hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req);
 /* ---------------------------------- */
 
+// User Task: user_fan_init(os_event_t *e)
+// Desc: Initializes the GPIO ISR's required to operate the fan
+// Args:
+//	os_event_t *e: Pointer to OS event data
+// Return:
+//	Nothing
+void ICACHE_FLASH_ATTR user_fan_init(os_event_t *e);
+
 // Interrupt Service Routine: user_gpio_isr(uint32 intr_mask, void *arg)
 // Desc: ISR called when a GPIO interrupt happens
 // Args:
@@ -86,6 +94,6 @@ void user_fire_triac(void);
 //	Nothing
 // Returns:
 //	Nothing
-// static void ICACHE_FLASH_ATTR user_tach_calc(void);
+void ICACHE_FLASH_ATTR user_tach_calc(void);
 
 #endif
