@@ -57481,3 +57481,4344 @@ int_cnt=179154, tach_cnt=32, rpm=548, freq=64
 int_cnt=179394, tach_cnt=32, rpm=548, freq=64
 int_cnt=179634, tach_cnt=31, rpm=531, freq=62
 int_cnt=179843, tach_cnt=29, rpm=497, freq=58
+bint_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+pm open,type:2 0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5808, humidity=35, status=0
+ext_humidity=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5803, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5799, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5799, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5795, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=55, rpm=942, freq=110
+int_cnt=0, tach_cnt=6, rpm=102, freq=12
+reading=5795, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=1, rpm=17, freq=2
+int_cnt=0, tach_cnt=4, rpm=68, freq=8
+int_cnt=0, tach_cnt=17, rpm=291, freq=34
+int_cnt=0, tach_cnt=35, rpm=600, freq=70
+int_cnt=0, tach_cnt=15, rpm=257, freq=30
+reading=5795, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5803, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5816, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=14, rpm=240, freq=28
+int_cnt=0, tach_cnt=29, rpm=497, freq=58
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5824, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=10, rpm=171, freq=20
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+Ûrlúòrﬂåc‚nÄ‡åÇÏpå|éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏéé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;Ñ¿?l`nn‡√‹‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíü;ƒ¿?êlrpÚn‡√‹‡r«‚úéƒppíú<ÑﬂÏé‡påÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿rá;rﬂ€ín¿é‡‚ú«l`å‚‹Ï8Çn¿‰>r‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚‹ÁI8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 12
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+pm open,type:2 0
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5824, humidity=35, status=0
+ext_humidity=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5820, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+reading=5820, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5812, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+reading=5808, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5808, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=4, rpm=68, freq=8
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+reading=5803, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5803, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+reading=5808, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5803, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5795, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5795, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5812, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+int_cnt=0, tach_cnt=8, rpm=137, freq=16
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5816, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=1, rpm=17, freq=2
+reading=5812, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5812, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=4, rpm=68, freq=8
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5816, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=4, rpm=68, freq=8
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=13, rpm=222, freq=26
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+reading=5824, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+int_cnt=0, tach_cnt=13, rpm=222, freq=26
+reading=5828, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=12, rpm=205, freq=24
+int_cnt=0, tach_cnt=8, rpm=137, freq=16
+int_cnt=0, tach_cnt=8, rpm=137, freq=16
+reading=5828, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=6, rpm=102, freq=12
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=6, rpm=102, freq=12
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5820, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+int_cnt=0, tach_cnt=1, rpm=17, freq=2
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+reading=5820, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=8, rpm=137, freq=16
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5812, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+int_cnt=0, tach_cnt=6, rpm=102, freq=12
+int_cnt=0, tach_cnt=8, rpm=137, freq=16
+reading=5808, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=13, rpm=222, freq=26
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5808, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+reading=5803, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+received humidity=36 from exterior
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+int_cnt=0, tach_cnt=4, rpm=68, freq=8
+int_cnt=0, tach_cnt=6, rpm=102, freq=12
+reading=5803, humidity=35, status=0
+ext_humidity=36
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5783, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=11, rpm=188, freq=22
+int_cnt=0, tach_cnt=11, rpm=188, freq=22
+int_cnt=0, tach_cnt=9, rpm=154, freq=18
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+int_cnt=0, tach_cnt=6, rpm=102, freq=12
+reading=5770, humidity=35, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+slave failed to initiate measurement
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+slave failed to initiate measurement
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=7711, humidity=47, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=2, rpm=34, freq=4
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=7864, humidity=48, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=7811, humidity=47, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+slave failed to initiate measurement
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=9193, humidity=56, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=9464, humidity=57, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=9445, humidity=57, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=4, rpm=68, freq=8
+reading=9256, humidity=56, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=7, rpm=120, freq=14
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=6, rpm=102, freq=12
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+int_cnt=0, tach_cnt=4, rpm=68, freq=8
+int_cnt=0, tach_cnt=5, rpm=85, freq=10
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=9059, humidity=55, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=9000, humidity=54, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=12, rpm=205, freq=24
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=8936, humidity=54, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=8452, humidity=51, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=3, rpm=51, freq=6
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=6704, humidity=40, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5952, humidity=36, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+received humidity=35 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=1, rpm=17, freq=2
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+reading=5638, humidity=34, status=0
+ext_humidity=35
+int_cnt=0, tach_cnt=0, rpm=0, freq=0
+brlúÿrﬂå#‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏéÄpåÚnnÓƒ¡åél`ê‹#Çn¿$éål`∏`rn|íín¿é‡í«í`9~ƒ¿ê‹#Çn¿$ååÚnnÓƒ»l`nn‡√‹Ä‡r«‚‹Äppí‹<Ñ√íåpåÚnnÓƒ¡ål`ê‹#Çn¿érnréíﬂ;ƒ¿?‚«;pÚn‡√‹‡r«‚‹éƒppí‹<ƒﬂÏé‡påÚnnÓƒrê‹#Çn¿$éål`8`rn|íín¿é‡í‹`∏éíﬂ;ƒ¿?íú;å‚‹Ï8Çn¿‰>r‹ÿÚn„bÇÇlrå‚‹Á…8ÇåÚ1Ärå‚‹Á…8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-46
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 14
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=1559, gstatus=0, gintr=2000
+int_cnt=1639, gstatus=0, gintr=2000
+int_cnt=2694, gstatus=2000, gintr=6000
+int_cnt=2771, gstatus=2000, gintr=6000
+int_cnt=2844, gstatus=2000, gintr=6000
+reading=6130, humidity=37, status=0
+ext_humidity=0
+int_cnt=2926, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+pm open,type:2 0
+int_cnt=3006, gstatus=2000, gintr=6000
+int_cnt=3088, gstatus=2000, gintr=6000
+int_cnt=3166, gstatus=2000, gintr=6000
+int_cnt=3237, gstatus=2000, gintr=6000
+int_cnt=3309, gstatus=2000, gintr=6000
+reading=6146, humidity=37, status=0
+ext_humidity=37
+int_cnt=3368, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=3449, gstatus=2000, gintr=6000
+int_cnt=3528, gstatus=2000, gintr=6000
+int_cnt=3609, gstatus=2000, gintr=6000
+int_cnt=3688, gstatus=2000, gintr=6000
+int_cnt=3764, gstatus=2000, gintr=6000
+reading=6142, humidity=37, status=0
+ext_humidity=37
+int_cnt=3832, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=3917, gstatus=2000, gintr=6000
+int_cnt=4005, gstatus=2000, gintr=6000
+int_cnt=4086, gstatus=2000, gintr=6000
+int_cnt=4170, gstatus=2000, gintr=6000
+int_cnt=4457, gstatus=2000, gintr=6000
+reading=6134, humidity=37, status=0
+ext_humidity=37
+int_cnt=4523, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=4605, gstatus=2000, gintr=6000
+int_cnt=4676, gstatus=2000, gintr=6000
+int_cnt=4749, gstatus=2000, gintr=6000
+int_cnt=4830, gstatus=2000, gintr=6000
+int_cnt=4915, gstatus=2000, gintr=6000
+reading=6117, humidity=37, status=0
+ext_humidity=37
+int_cnt=4990, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=5077, gstatus=2000, gintr=6000
+int_cnt=5154, gstatus=2000, gintr=6000
+int_cnt=5242, gstatus=2000, gintr=6000
+int_cnt=5322, gstatus=2000, gintr=6000
+int_cnt=5408, gstatus=2000, gintr=6000
+reading=6130, humidity=37, status=0
+ext_humidity=37
+int_cnt=5474, gstatus=2000, gintr=6000
+received humidity=38 from exterior
+int_cnt=5553, gstatus=2000, gintr=6000
+int_cnt=5645, gstatus=2000, gintr=6000
+int_cnt=5743, gstatus=2000, gintr=6000
+int_cnt=5832, gstatus=2000, gintr=6000
+int_cnt=5914, gstatus=2000, gintr=6000
+reading=6142, humidity=37, status=0
+ext_humidity=38
+int_cnt=5986, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=6071, gstatus=2000, gintr=6000
+int_cnt=6162, gstatus=2000, gintr=6000
+int_cnt=6250, gstatus=2000, gintr=6000
+int_cnt=6341, gstatus=2000, gintr=6000
+int_cnt=6429, gstatus=2000, gintr=6000
+reading=6138, humidity=37, status=0
+ext_humidity=37
+int_cnt=6499, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=6580, gstatus=2000, gintr=6000
+int_cnt=6668, gstatus=2000, gintr=6000
+int_cnt=6756, gstatus=2000, gintr=6000
+int_cnt=6848, gstatus=2000, gintr=6000
+int_cnt=7159, gstatus=2000, gintr=6000
+reading=6126, humidity=37, status=0
+ext_humidity=37
+int_cnt=7244, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=7344, gstatus=2000, gintr=6000
+int_cnt=7434, gstatus=2000, gintr=6000
+int_cnt=7525, gstatus=2000, gintr=6000
+int_cnt=7613, gstatus=2000, gintr=6000
+int_cnt=7710, gstatus=2000, gintr=6000
+reading=6126, humidity=37, status=0
+ext_humidity=37
+int_cnt=7785, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=7884, gstatus=2000, gintr=6000
+int_cnt=7982, gstatus=2000, gintr=6000
+int_cnt=8079, gstatus=2000, gintr=6000
+int_cnt=8164, gstatus=2000, gintr=6000
+int_cnt=8253, gstatus=2000, gintr=6000
+reading=6134, humidity=37, status=0
+ext_humidity=37
+int_cnt=8322, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=8549, gstatus=2000, gintr=6000
+int_cnt=8842, gstatus=2000, gintr=6000
+int_cnt=9187, gstatus=2000, gintr=6000
+int_cnt=9517, gstatus=2000, gintr=6000
+int_cnt=9904, gstatus=2000, gintr=6000
+reading=6204, humidity=37, status=0
+ext_humidity=37
+int_cnt=10151, gstatus=2000, gintr=6000
+received humidity=37 from exterior
+int_cnt=10483, gstatus=2000, gintr=6000
+int_cnt=10860, gstatus=2000, gintr=6000
+int_cnt=11224, gstatus=2000, gintr=6000
+int_cnt=11704, gstatus=6000, gintr=6000
+int_cnt=12076, gstatus=6000, gintr=6000
+reading=6253, humidity=38, status=0
+ext_humidity=37
+int_cnt=12351, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=12723, gstatus=6000, gintr=6000
+int_cnt=13082, gstatus=6000, gintr=6000
+int_cnt=13451, gstatus=6000, gintr=6000
+int_cnt=13791, gstatus=6000, gintr=6000
+int_cnt=14138, gstatus=6000, gintr=6000
+reading=6294, humidity=38, status=0
+ext_humidity=38
+int_cnt=14398, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=14757, gstatus=6000, gintr=6000
+int_cnt=15084, gstatus=6000, gintr=6000
+int_cnt=15410, gstatus=6000, gintr=6000
+int_cnt=15745, gstatus=6000, gintr=6000
+int_cnt=16085, gstatus=6000, gintr=6000
+reading=6315, humidity=38, status=0
+ext_humidity=38
+int_cnt=16373, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=16754, gstatus=6000, gintr=6000
+int_cnt=17061, gstatus=6000, gintr=6000
+int_cnt=17339, gstatus=6000, gintr=6000
+int_cnt=17583, gstatus=6000, gintr=6000
+int_cnt=17840, gstatus=6000, gintr=6000
+reading=6266, humidity=38, status=0
+ext_humidity=38
+int_cnt=17916, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=18003, gstatus=6000, gintr=6000
+int_cnt=18082, gstatus=6000, gintr=6000
+int_cnt=18156, gstatus=6000, gintr=6000
+int_cnt=18237, gstatus=6000, gintr=6000
+int_cnt=18316, gstatus=6000, gintr=6000
+reading=6229, humidity=38, status=0
+ext_humidity=38
+int_cnt=18380, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=18461, gstatus=6000, gintr=6000
+int_cnt=18544, gstatus=6000, gintr=6000
+int_cnt=18625, gstatus=6000, gintr=6000
+int_cnt=18709, gstatus=6000, gintr=6000
+int_cnt=18789, gstatus=6000, gintr=6000
+reading=6368, humidity=38, status=0
+ext_humidity=38
+int_cnt=18854, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=18931, gstatus=6000, gintr=6000
+int_cnt=19015, gstatus=6000, gintr=6000
+int_cnt=20155, gstatus=6000, gintr=6000
+int_cnt=20238, gstatus=6000, gintr=6000
+int_cnt=20316, gstatus=6000, gintr=6000
+reading=6438, humidity=39, status=0
+ext_humidity=38
+int_cnt=20380, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=20459, gstatus=6000, gintr=6000
+int_cnt=20531, gstatus=6000, gintr=6000
+int_cnt=20608, gstatus=6000, gintr=6000
+int_cnt=20686, gstatus=6000, gintr=6000
+int_cnt=20762, gstatus=6000, gintr=6000
+reading=6385, humidity=38, status=0
+ext_humidity=38
+int_cnt=20822, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=20899, gstatus=6000, gintr=6000
+int_cnt=20981, gstatus=6000, gintr=6000
+int_cnt=21068, gstatus=6000, gintr=6000
+int_cnt=21155, gstatus=6000, gintr=6000
+int_cnt=21240, gstatus=6000, gintr=6000
+reading=6331, humidity=38, status=0
+ext_humidity=38
+int_cnt=21306, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=21385, gstatus=6000, gintr=6000
+int_cnt=21464, gstatus=6000, gintr=6000
+int_cnt=21544, gstatus=6000, gintr=6000
+int_cnt=21627, gstatus=6000, gintr=6000
+int_cnt=21707, gstatus=6000, gintr=6000
+reading=6286, humidity=38, status=0
+ext_humidity=38
+int_cnt=21764, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=21843, gstatus=6000, gintr=6000
+int_cnt=21918, gstatus=6000, gintr=6000
+int_cnt=22004, gstatus=6000, gintr=6000
+int_cnt=22079, gstatus=6000, gintr=6000
+int_cnt=22463, gstatus=6000, gintr=6000
+reading=6253, humidity=38, status=0
+ext_humidity=38
+int_cnt=22530, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=22614, gstatus=6000, gintr=6000
+int_cnt=22696, gstatus=6000, gintr=6000
+int_cnt=22777, gstatus=6000, gintr=6000
+int_cnt=22858, gstatus=6000, gintr=6000
+int_cnt=22934, gstatus=6000, gintr=6000
+reading=6233, humidity=38, status=0
+ext_humidity=38
+int_cnt=22998, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=23081, gstatus=6000, gintr=6000
+int_cnt=23166, gstatus=6000, gintr=6000
+int_cnt=23247, gstatus=6000, gintr=6000
+int_cnt=23326, gstatus=6000, gintr=6000
+int_cnt=23403, gstatus=6000, gintr=6000
+reading=6212, humidity=37, status=0
+ext_humidity=38
+int_cnt=23467, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=23545, gstatus=6000, gintr=6000
+int_cnt=23630, gstatus=6000, gintr=6000
+int_cnt=23722, gstatus=6000, gintr=6000
+int_cnt=23806, gstatus=6000, gintr=6000
+int_cnt=23893, gstatus=6000, gintr=6000
+reading=6208, humidity=37, status=0
+ext_humidity=38
+int_cnt=23959, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=24333, gstatus=6000, gintr=6000
+int_cnt=24411, gstatus=6000, gintr=6000
+int_cnt=24499, gstatus=6000, gintr=6000
+int_cnt=24578, gstatus=6000, gintr=6000
+int_cnt=24660, gstatus=6000, gintr=6000
+reading=6200, humidity=37, status=0
+ext_humidity=38
+int_cnt=24726, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=24807, gstatus=6000, gintr=6000
+int_cnt=24892, gstatus=6000, gintr=6000
+int_cnt=24978, gstatus=6000, gintr=6000
+int_cnt=25057, gstatus=6000, gintr=6000
+int_cnt=25135, gstatus=6000, gintr=6000
+reading=6196, humidity=37, status=0
+ext_humidity=38
+int_cnt=25193, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=25278, gstatus=6000, gintr=6000
+int_cnt=25356, gstatus=6000, gintr=6000
+int_cnt=25438, gstatus=6000, gintr=6000
+int_cnt=25517, gstatus=6000, gintr=6000
+int_cnt=25599, gstatus=6000, gintr=6000
+reading=6196, humidity=37, status=0
+ext_humidity=38
+int_cnt=25784, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=25863, gstatus=6000, gintr=6000
+int_cnt=25944, gstatus=6000, gintr=6000
+int_cnt=26027, gstatus=6000, gintr=6000
+int_cnt=26104, gstatus=6000, gintr=6000
+int_cnt=26184, gstatus=6000, gintr=6000
+reading=6187, humidity=37, status=0
+ext_humidity=38
+int_cnt=26247, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=26334, gstatus=6000, gintr=6000
+int_cnt=26416, gstatus=6000, gintr=6000
+int_cnt=26495, gstatus=6000, gintr=6000
+int_cnt=26583, gstatus=6000, gintr=6000
+int_cnt=26665, gstatus=6000, gintr=6000
+reading=6192, humidity=37, status=0
+ext_humidity=38
+int_cnt=26727, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=26810, gstatus=6000, gintr=6000
+int_cnt=26885, gstatus=6000, gintr=6000
+int_cnt=26968, gstatus=6000, gintr=6000
+int_cnt=27052, gstatus=6000, gintr=6000
+int_cnt=27139, gstatus=6000, gintr=6000
+reading=6192, humidity=37, status=0
+ext_humidity=38
+int_cnt=27206, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=27291, gstatus=6000, gintr=6000
+int_cnt=27378, gstatus=6000, gintr=6000
+int_cnt=27461, gstatus=6000, gintr=6000
+int_cnt=27547, gstatus=6000, gintr=6000
+int_cnt=27625, gstatus=6000, gintr=6000
+reading=6187, humidity=37, status=0
+ext_humidity=38
+int_cnt=27699, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=27771, gstatus=6000, gintr=6000
+int_cnt=27851, gstatus=6000, gintr=6000
+int_cnt=28125, gstatus=6000, gintr=6000
+int_cnt=28203, gstatus=6000, gintr=6000
+int_cnt=28281, gstatus=6000, gintr=6000
+reading=6175, humidity=37, status=0
+ext_humidity=38
+int_cnt=28346, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=28428, gstatus=6000, gintr=6000
+int_cnt=28520, gstatus=6000, gintr=6000
+int_cnt=28606, gstatus=6000, gintr=6000
+int_cnt=28689, gstatus=6000, gintr=6000
+int_cnt=28769, gstatus=6000, gintr=6000
+reading=6171, humidity=37, status=0
+ext_humidity=38
+int_cnt=28831, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=29127, gstatus=6000, gintr=6000
+int_cnt=29205, gstatus=6000, gintr=6000
+int_cnt=29284, gstatus=6000, gintr=6000
+int_cnt=29367, gstatus=6000, gintr=6000
+int_cnt=29443, gstatus=6000, gintr=6000
+reading=6171, humidity=37, status=0
+ext_humidity=38
+int_cnt=29503, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=29579, gstatus=6000, gintr=6000
+int_cnt=29663, gstatus=6000, gintr=6000
+int_cnt=29749, gstatus=6000, gintr=6000
+int_cnt=29830, gstatus=6000, gintr=6000
+int_cnt=29914, gstatus=6000, gintr=6000
+reading=6154, humidity=37, status=0
+ext_humidity=38
+int_cnt=29985, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=30063, gstatus=6000, gintr=6000
+int_cnt=30139, gstatus=6000, gintr=6000
+int_cnt=30222, gstatus=6000, gintr=6000
+int_cnt=30297, gstatus=6000, gintr=6000
+int_cnt=30379, gstatus=6000, gintr=6000
+reading=6150, humidity=37, status=0
+ext_humidity=38
+int_cnt=30445, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=30534, gstatus=6000, gintr=6000
+int_cnt=30621, gstatus=6000, gintr=6000
+int_cnt=30705, gstatus=6000, gintr=6000
+int_cnt=30788, gstatus=6000, gintr=6000
+int_cnt=30865, gstatus=6000, gintr=6000
+reading=6150, humidity=37, status=0
+ext_humidity=38
+int_cnt=30932, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=31016, gstatus=6000, gintr=6000
+int_cnt=31102, gstatus=6000, gintr=6000
+int_cnt=31181, gstatus=6000, gintr=6000
+int_cnt=31551, gstatus=6000, gintr=6000
+int_cnt=31629, gstatus=6000, gintr=6000
+reading=6150, humidity=37, status=0
+ext_humidity=38
+int_cnt=31695, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=31777, gstatus=6000, gintr=6000
+int_cnt=31861, gstatus=6000, gintr=6000
+int_cnt=31942, gstatus=6000, gintr=6000
+int_cnt=32020, gstatus=6000, gintr=6000
+int_cnt=32103, gstatus=6000, gintr=6000
+reading=6154, humidity=37, status=0
+ext_humidity=38
+int_cnt=32175, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=32255, gstatus=6000, gintr=6000
+int_cnt=32568, gstatus=6000, gintr=6000
+int_cnt=32651, gstatus=6000, gintr=6000
+int_cnt=32726, gstatus=6000, gintr=6000
+int_cnt=32808, gstatus=6000, gintr=6000
+reading=6159, humidity=37, status=0
+ext_humidity=38
+int_cnt=32873, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=32955, gstatus=6000, gintr=6000
+int_cnt=33035, gstatus=6000, gintr=6000
+int_cnt=33115, gstatus=6000, gintr=6000
+int_cnt=33195, gstatus=6000, gintr=6000
+int_cnt=33276, gstatus=6000, gintr=6000
+reading=6167, humidity=37, status=0
+ext_humidity=38
+int_cnt=33341, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=33429, gstatus=6000, gintr=6000
+int_cnt=33517, gstatus=6000, gintr=6000
+int_cnt=33597, gstatus=6000, gintr=6000
+int_cnt=33681, gstatus=6000, gintr=6000
+int_cnt=33768, gstatus=6000, gintr=6000
+reading=6175, humidity=37, status=0
+ext_humidity=38
+int_cnt=33836, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=33931, gstatus=6000, gintr=6000
+int_cnt=34012, gstatus=6000, gintr=6000
+int_cnt=34090, gstatus=6000, gintr=6000
+int_cnt=34165, gstatus=6000, gintr=6000
+int_cnt=34239, gstatus=6000, gintr=6000
+reading=6179, humidity=37, status=0
+ext_humidity=38
+int_cnt=34301, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=34382, gstatus=6000, gintr=6000
+int_cnt=34465, gstatus=6000, gintr=6000
+int_cnt=34543, gstatus=6000, gintr=6000
+int_cnt=34617, gstatus=6000, gintr=6000
+int_cnt=35179, gstatus=6000, gintr=6000
+reading=6179, humidity=37, status=0
+ext_humidity=38
+int_cnt=35238, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=35314, gstatus=6000, gintr=6000
+int_cnt=35392, gstatus=6000, gintr=6000
+int_cnt=35472, gstatus=6000, gintr=6000
+int_cnt=35549, gstatus=6000, gintr=6000
+int_cnt=35621, gstatus=6000, gintr=6000
+reading=6175, humidity=37, status=0
+ext_humidity=38
+int_cnt=35683, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=35760, gstatus=6000, gintr=6000
+int_cnt=35837, gstatus=6000, gintr=6000
+int_cnt=35910, gstatus=6000, gintr=6000
+int_cnt=35986, gstatus=6000, gintr=6000
+int_cnt=36057, gstatus=6000, gintr=6000
+reading=6175, humidity=37, status=0
+ext_humidity=38
+int_cnt=36114, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=36190, gstatus=6000, gintr=6000
+int_cnt=36261, gstatus=6000, gintr=6000
+int_cnt=36340, gstatus=6000, gintr=6000
+int_cnt=36422, gstatus=6000, gintr=6000
+int_cnt=36501, gstatus=6000, gintr=6000
+reading=6183, humidity=37, status=0
+ext_humidity=38
+int_cnt=36561, gstatus=6000, gintr=6000
+received humidity=38 from exterior
+int_cnt=36971, gstatus=6000, gintr=6000
+Ûpm open,type:2 0
+rlúÿrﬂå#‚nÄ‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹Ä‡Ç«¿lÄÄÄbÄn‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?êú;pÚn‡√‹Ä‡r«‚úÄppí‹<ƒ√íåpåÚnnÓƒ»rê‹#ÇnÄrnréíﬂ;ƒ¿?«;àpÚn‡√‹Ä‡r«‚‹éƒppí‹<ƒﬂÏé‡påÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?úlrrﬂ€ín¿é‡‚«„l`å‚‹Ï8Çn¿‰>r‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ±Ärå‚úÁ…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-49
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 14
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6684, humidity=40, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+pm open,type:2 0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6643, humidity=40, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6663, humidity=40, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6483, humidity=39, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+slave failed to initiate measurement
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+slave failed to initiate measurement
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+slave failed to initiate measurement
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+slave failed to initiate measurement
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+rlúòrﬂå#‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;ÚnÑíú‰bé#l``pÚn‡√‹Ä‡Çá¿lÄÄÄb¿n‚„nÄ‰åÏééxåÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?êú;pÚn‡É‹‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíﬂ;ƒ¿«;pÚn‡√‹Ä‡r«‚‹éƒppí‹<ƒﬂÏé‡påÚnnÓƒ¿rê‹#ÇnÄé;nréíﬂ;ƒ¿?úlrrﬂ€ín¿é‡‚«„l`å‚úÏxÇn¿‰ær‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚‹Á…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-52
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 14
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6405, humidity=39, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6154, humidity=37, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+pm open,type:2 0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6047, humidity=36, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6405, humidity=39, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6986, humidity=42, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7193, humidity=43, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7177, humidity=43, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7404, humidity=45, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+rlúÿrﬂå#‚n¿‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bé#l``pÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?êú;pÚn‡É‹‡r«‚‹Äppíú<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíﬂ;ƒ¿?«;pÚn‡√‹Ä‡r«‚‹éƒppí‹<ƒﬂÏé‡påÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?úlrrﬂ€ín¿é‡‚«„l`å‚‹Ï8Çn¿‰>r‹ÿÚn„bÇÇlrå‚‹Á…8ÇåÚ1Ärå‚úÁ…8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-46
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 14
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6274, humidity=38, status=0
+ext_humidity=0
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6138, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+pm open,type:2 0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6192, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6614, humidity=40, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6986, humidity=42, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7031, humidity=42, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6998, humidity=42, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6925, humidity=42, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6864, humidity=41, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6941, humidity=42, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7027, humidity=42, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7006, humidity=42, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6929, humidity=42, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6961, humidity=42, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6860, humidity=41, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7006, humidity=42, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7108, humidity=43, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6819, humidity=41, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=39 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7096, humidity=43, status=0
+ext_humidity=39
+int_cnt=0, gstatus=0, gintr=0
+received humidity=43 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7630, humidity=46, status=0
+ext_humidity=43
+int_cnt=0, gstatus=0, gintr=0
+received humidity=47 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=7246, humidity=44, status=0
+ext_humidity=47
+int_cnt=0, gstatus=0, gintr=0
+received humidity=46 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6900, humidity=42, status=0
+ext_humidity=46
+int_cnt=0, gstatus=0, gintr=0
+received humidity=43 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=6672, humidity=40, status=0
+ext_humidity=43
+int_cnt=0, gstatus=0, gintr=0
+received humidity=42 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=9291, humidity=56, status=0
+ext_humidity=42
+int_cnt=0, gstatus=0, gintr=0
+received humidity=41 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=10811, humidity=65, status=0
+ext_humidity=41
+int_cnt=0, gstatus=0, gintr=0
+received humidity=40 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=11643, humidity=71, status=0
+ext_humidity=40
+int_cnt=0, gstatus=0, gintr=0
+received humidity=39 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=12179, humidity=74, status=0
+ext_humidity=39
+int_cnt=0, gstatus=0, gintr=0
+received humidity=39 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=12269, humidity=74, status=0
+ext_humidity=39
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=12220, humidity=74, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=11859, humidity=72, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=11658, humidity=71, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=11290, humidity=68, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=11110, humidity=67, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=10364, humidity=63, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=10093, humidity=61, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=9816, humidity=59, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=9758, humidity=59, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=38 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=9644, humidity=58, status=0
+ext_humidity=38
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=9492, humidity=57, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+reading=9004, humidity=54, status=0
+ext_humidity=37
+int_cnt=0, gstatus=0, gintr=0
+received humidity=37 from exterior
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+int_cnt=0, gstatus=0, gintr=0
+Ûpm open,type:2 0
+rlúÿrﬂåc‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;ÚnÑí‹‰bé#l``pÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?ålrpÚn‡√‹Ä‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿rnréíﬂ;ƒ¿?ílrpÚn‡√‹‡r«‚‹éƒppí‹<ƒﬂåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿úlrrü€ín¿é‡‚«√l`å‚‹Ï8Çn¿‰>rúÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚úÁ…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-45
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 14
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+reading=5791, humidity=35, status=0
+ext_humidity=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+received humidity=37 from exterior
+pm open,type:2 0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+reading=5948, humidity=36, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1317, boundl=0, boundh=8333
+reading=7513, humidity=45, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=4, rpm=68, freq=8, drive_flag=1, drive_delay=5501, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=4, rpm=68, freq=8, drive_flag=1, drive_delay=2669, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=28, rpm=480, freq=56, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=22, rpm=377, freq=44, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+reading=9165, humidity=55, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=5518, boundl=1367, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=2703, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=26, rpm=445, freq=52, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=21, rpm=360, freq=42, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=5518, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=9, rpm=154, freq=18, drive_flag=1, drive_delay=2772, boundl=1367, boundh=8333
+reading=10023, humidity=61, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=19, rpm=325, freq=38, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=16, rpm=274, freq=32, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2737, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=27, rpm=462, freq=54, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=20, rpm=342, freq=40, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+reading=10395, humidity=63, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2737, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=29, rpm=497, freq=58, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=21, rpm=360, freq=42, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=5518, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=2703, boundl=1367, boundh=8333
+reading=10557, humidity=64, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=19, rpm=325, freq=38, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=16, rpm=274, freq=32, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=5518, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2720, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=28, rpm=480, freq=56, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=21, rpm=360, freq=42, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+reading=10588, humidity=64, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=2720, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=27, rpm=462, freq=54, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=20, rpm=342, freq=40, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2737, boundl=1367, boundh=8333
+reading=10634, humidity=64, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=20, rpm=342, freq=40, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=20, rpm=342, freq=40, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2737, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=29, rpm=497, freq=58, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=27, rpm=462, freq=54, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+reading=10684, humidity=65, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=7, rpm=120, freq=14, drive_flag=1, drive_delay=2755, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=30, rpm=514, freq=60, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=21, rpm=360, freq=42, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=5518, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2720, boundl=1367, boundh=8333
+reading=10503, humidity=64, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=19, rpm=325, freq=38, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=16, rpm=274, freq=32, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=5518, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2720, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=28, rpm=480, freq=56, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=19, rpm=325, freq=38, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+reading=10426, humidity=63, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=5518, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=2703, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=28, rpm=480, freq=56, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=20, rpm=342, freq=40, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=4, rpm=68, freq=8, drive_flag=1, drive_delay=5501, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=2686, boundl=1367, boundh=8333
+reading=10326, humidity=63, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=18, rpm=308, freq=36, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=16, rpm=274, freq=32, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=7, rpm=120, freq=14, drive_flag=1, drive_delay=2755, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=27, rpm=462, freq=54, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=21, rpm=360, freq=42, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+reading=10217, humidity=62, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=9, rpm=154, freq=18, drive_flag=1, drive_delay=2789, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=30, rpm=514, freq=60, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=23, rpm=394, freq=46, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=8, rpm=137, freq=16, drive_flag=1, drive_delay=2772, boundl=1367, boundh=8333
+reading=10097, humidity=61, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=18, rpm=308, freq=36, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=19, rpm=325, freq=38, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=8, rpm=137, freq=16, drive_flag=1, drive_delay=2772, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=29, rpm=497, freq=58, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=20, rpm=342, freq=40, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+reading=9968, humidity=60, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=7, rpm=120, freq=14, drive_flag=1, drive_delay=2755, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=28, rpm=480, freq=56, drive_flag=1, drive_delay=1367, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=22, rpm=377, freq=44, drive_flag=1, drive_delay=8333, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=5535, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=1, drive_delay=2737, boundl=1367, boundh=8333
+
+reading=5517, humidity=33, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+reading=5521, humidity=33, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+reading=5542, humidity=33, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=5467, boundl=1367, boundh=8333
+received humidity=37 from exterior
+Ûrlúÿrﬂå#‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$	rrpÚn‡É‹‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?ÇlrpÚn‡É‹‡r«‚úÄppíú<Ñ√íåpåÚnnÓƒ»rêú#ÇnÄrnréíﬂ;ƒ¿?‡rpÚn‡É‹‡r«‚‹éƒppí‹<ƒﬂåpåÚnnÓƒ¿rêú#Çn¿é;nréíü;ƒ¿?l`∏éíﬂ;ƒ¿?l`å‚‹Ï8Çn¿‰ær‹ÿÚn„bÇÇlrå‚úÁ…8ÇåÚ±Ärå‚‹ÁI8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-46
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 14
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=6, rpm=102, freq=12, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+reading=6121, humidity=37, status=0
+ext_humidity=0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+received humidity=37 from exterior
+pm open,type:2 0
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1368, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=2, rpm=34, freq=4, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6072, humidity=37, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=7246, humidity=44, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=2, rpm=34, freq=4, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=2, rpm=34, freq=4, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=4, rpm=68, freq=8, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=2, rpm=34, freq=4, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+reading=9228, humidity=56, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=4, rpm=68, freq=8, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=4, rpm=68, freq=8, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=2, rpm=34, freq=4, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+reading=10364, humidity=63, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=2, rpm=34, freq=4, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+reading=10949, humidity=66, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=4, rpm=68, freq=8, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=2, rpm=34, freq=4, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+reading=11305, humidity=69, status=0
+ext_humidity=37
+int_cnt=0, tach_cnt=3, rpm=51, freq=6, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+received humidity=37 from exterior
+int_cnt=0, tach_cnt=5, rpm=85, freq=10, drive_flag=1, drive_delay=50, boundl=50, boundh=8333
+Ûrlúÿrüå#‚n¿à‡åÇÏpå<éÇﬂÏxíﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?ÇlrpÚn‡√‹Ä‡r«‚úÄppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿rnréíﬂ;ƒ¿‡rpÚn‡√‹Ä‡r«‚‹éÑppí‹<ƒﬂåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?l`∏éíﬂ;ƒ¿l`å‚‹Ï8Çn¿‰ærúÿÚn„bÇÇlrå‚úÁ…8ÇåÚ±Ärå‚‹ÁI8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-49
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 14
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=1283, boundl=0, boundh=8333
+pm open,type:2 0
+reading=6220, humidity=37, status=0
+ext_humidity=0
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1283, boundl=0, boundh=8333
+reading=6212, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1283, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6204, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6204, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6200, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6196, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6179, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=7452, humidity=45, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=28, rpm=120, freq=14, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=8901, humidity=54, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=56, rpm=240, freq=28, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=9965, humidity=60, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=59, rpm=252, freq=29, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=70, rpm=300, freq=35, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=10746, humidity=65, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=64, rpm=274, freq=32, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=10042, humidity=61, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=67, rpm=287, freq=33, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=64, rpm=274, freq=32, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=8627, humidity=52, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=76, rpm=325, freq=38, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=7654, humidity=46, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=73, rpm=312, freq=36, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=88, rpm=377, freq=44, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=7075, humidity=43, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=81, rpm=347, freq=40, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=6704, humidity=40, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=77, rpm=330, freq=38, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=81, rpm=347, freq=40, drive_flag=1, drive_delay=0, boundl=0, boundh=8333
+reading=6487, humidity=39, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=78, rpm=334, freq=39, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6364, humidity=38, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=55, rpm=235, freq=27, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=34, rpm=145, freq=17, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6294, humidity=38, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=14, rpm=60, freq=7, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6257, humidity=38, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6224, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6200, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=0, boundl=0, boundh=8333
+reading=6187, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+brlúÿrﬂå#‚nÄ‡åÇÏpå<éÇüÏ8íﬂ«íú‰åpÚnn‰Ñ;Únƒí‹‰bÁ$ârrpÚn‡É‹‡Ç«¿lÄÄÄbÄn‚„n¿‰éåÏééxåÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?l`nn‡√‹‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíﬂ;Ñ¿?Älé;pÚn‡√‹Ä‡rá‚‹éƒppí‹<ƒﬂÇåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿‚«;àrﬂ€ínÄ‡Çú‹l`å‚‹Ï8ÇnÄ‰>rúÿÚn„bÇÇlrå‚‹Á…8ÇåÚ±Ärå‚‹ÁI8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+read_pass=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 44:03:2c:7e:c8:90 join, AID = 1
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET /favicon.ico HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+rlúÿrﬂå#‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰Ñ;Únƒíú‰bÁ$ârrpÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏéé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?l`nn‡√‹‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿rnréíﬂ;ƒ¿?Älé{pÚn‡√‹Ä‡r«‚‹éƒppí‹<ƒﬂÇåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?‚«;àrﬂ€ín¿é‡Ç‹‹l`å‚‹ÏxÇn¿‰ær‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚‹Á…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+read_pass=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 44:03:2c:7e:c8:90 join, AID = 1
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending wait page
+sent data to client
+user disconnected
+rlúÿrﬂå#‚n¿‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏéé8åÚnnÓƒ¡åél`êú#Çn¿é{nréíﬂ;ƒ¿?l`nn‡√‹Ä‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíﬂ;ƒ¿Älé;pÚn‡√‹‡r«‚‹éƒppí‹<ƒﬂÇåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?‚«;àrﬂ€ín¿é‡Ç‹‹l`å‚‹Ï8Çn¿‰ær‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚úÁ…8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+read_pass=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 44:03:2c:7e:c8:90 join, AID = 1
+add 2
+aid 2
+station: 5c:cf:7f:57:3e:5d join, AID = 2
+exterior connected to the system
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+sent data to client
+WiFi details obtained from user
+sent data
+user disconnected
+exterior connection error, code=-9
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+ERROR: failed to send data to exterior, code=-12
+RESPONSE: ignoring
+rlúÿrﬂå#‚nÄ‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$	rrpÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?l`nn‡√‹‡rá‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿rnréíﬂ;ƒ¿?Älé;pÚn‡√‹Ä‡r«‚‹éÑppí‹<ƒﬂÇåpåÚnnÓƒ¿rêú#ÇnÄé;nréíﬂ;ƒ¿‚á;rﬂ€ín¿é‡Ç‹‹l`å‚‹Ï8Çn¿‰ær‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚úÁ…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+reading=6299, humidity=38, status=0
+ext_humidity=0
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+pm open,type:2 0
+reading=6315, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=5, rpm=21, freq=2, drive_flag=0, drive_delay=4166
+reading=6373, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+reading=6405, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=73, rpm=312, freq=36, drive_flag=0, drive_delay=4166
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=610, rpm=2614, freq=305, drive_flag=0, drive_delay=4280
+reading=6422, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=254, rpm=1088, freq=127, drive_flag=0, drive_delay=2868
+reading=6418, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+reading=6430, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+reading=6442, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+reading=6455, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+reading=6455, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=5, rpm=21, freq=2, drive_flag=0, drive_delay=2868
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+reading=6479, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=2868
+reading=7112, humidity=43, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=1, drive_delay=2868
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=357, rpm=1530, freq=178, drive_flag=1, drive_delay=1898
+reading=7763, humidity=47, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=524, rpm=2245, freq=262, drive_flag=1, drive_delay=1643
+reading=8104, humidity=49, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=150, rpm=642, freq=75, drive_flag=1, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=14, rpm=60, freq=7, drive_flag=1, drive_delay=500
+reading=8432, humidity=51, status=0
+ext_humidity=41
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=11, rpm=47, freq=5, drive_flag=1, drive_delay=500
+reading=7836, humidity=47, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=12, rpm=51, freq=6, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=12, rpm=51, freq=6, drive_flag=1, drive_delay=500
+reading=7270, humidity=44, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=15, rpm=64, freq=7, drive_flag=1, drive_delay=500
+reading=6913, humidity=42, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=12, rpm=51, freq=6, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+reading=6700, humidity=40, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+reading=6549, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=12, rpm=51, freq=6, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=500
+reading=6455, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6409, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6405, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6397, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6397, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6401, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6405, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=5, rpm=21, freq=2, drive_flag=0, drive_delay=500
+reading=6409, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6414, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+rlúòrﬂå#‚n¿‡åÇÏpå<éÇﬂÏ8íü«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$	rrpÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?l`nn‡√‹Ä‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿rnréíﬂ;ƒ¿Älé;pÚn‡√‹‡r«‚úéƒppí‹<ƒﬂÇåpåÚnnÓƒ¿rê‹#Çn¿é{nréíﬂ;ƒ¿?‚«;àrﬂ€ín¿é‡Ç‹‹l`å‚‹Ï8Çn¿‰>rúÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚úÁ…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-44
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+pm open,type:2 0
+reading=6414, humidity=39, status=0
+ext_humidity=0
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+reading=6389, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=8, rpm=34, freq=4, drive_flag=0, drive_delay=4166
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+reading=6459, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+reading=8766, humidity=53, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=1, drive_delay=4166
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=126, rpm=540, freq=63, drive_flag=1, drive_delay=2206
+reading=10124, humidity=61, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=492, rpm=2108, freq=246, drive_flag=1, drive_delay=1814
+reading=10800, humidity=65, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=515, rpm=2207, freq=257, drive_flag=1, drive_delay=1521
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=182, rpm=780, freq=91, drive_flag=1, drive_delay=500
+reading=10692, humidity=65, status=0
+ext_humidity=40
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=12, rpm=51, freq=6, drive_flag=1, drive_delay=500
+reading=8952, humidity=54, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=16, rpm=68, freq=8, drive_flag=1, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=14, rpm=60, freq=7, drive_flag=1, drive_delay=500
+reading=7892, humidity=48, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=11, rpm=47, freq=5, drive_flag=1, drive_delay=500
+reading=7270, humidity=44, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=16, rpm=68, freq=8, drive_flag=1, drive_delay=500
+reading=6925, humidity=42, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=10, rpm=42, freq=5, drive_flag=1, drive_delay=500
+reading=6696, humidity=40, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=0, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=500
+reading=6553, humidity=40, status=0
+ext_humidity=41
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=16, rpm=68, freq=8, drive_flag=0, drive_delay=500
+reading=6471, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=8, rpm=34, freq=4, drive_flag=0, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6434, humidity=39, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=500
+reading=6409, humidity=39, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6393, humidity=39, status=0
+ext_humidity=41
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6377, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6397, humidity=39, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=9, rpm=38, freq=4, drive_flag=0, drive_delay=500
+reading=6434, humidity=39, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6434, humidity=39, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=398, rpm=1705, freq=199, drive_flag=0, drive_delay=500
+reading=6409, humidity=39, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=300, rpm=1285, freq=150, drive_flag=0, drive_delay=500
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6385, humidity=38, status=0
+ext_humidity=41
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6356, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6336, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6327, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6331, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6323, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0
+int_cnt=0, tach_cnt=16, rpm=68, freq=8, drive_flag=1, drive_delay=500
+reading=10267, humidity=62, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=11, rpm=47, freq=5, drive_flag=1, drive_delay=500
+reading=8710, humidity=53, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=14, rpm=60, freq=7, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=16, rpm=68, freq=8, drive_flag=1, drive_delay=500
+reading=7755, humidity=47, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=16, rpm=68, freq=8, drive_flag=1, drive_delay=500
+reading=7161, humidity=43, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=11, rpm=47, freq=5, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=14, rpm=60, freq=7, drive_flag=1, drive_delay=500
+reading=6798, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=14, rpm=60, freq=7, drive_flag=1, drive_delay=500
+reading=6582, humidity=40, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=18, rpm=77, freq=9, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=500
+reading=6455, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6749, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+reading=9011, humidity=55, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+reading=10865, humidity=66, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+reading=11669, humidity=71, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=15, rpm=64, freq=7, drive_flag=1, drive_delay=500
+reading=11768, humidity=71, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=17, rpm=72, freq=8, drive_flag=1, drive_delay=500
+reading=11847, humidity=72, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+reading=11563, humidity=70, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=13, rpm=55, freq=6, drive_flag=1, drive_delay=500
+reading=10062, humidity=61, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=15, rpm=64, freq=7, drive_flag=1, drive_delay=500
+reading=8308, humidity=50, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=15, rpm=64, freq=7, drive_flag=1, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=11, rpm=47, freq=5, drive_flag=1, drive_delay=500
+reading=7384, humidity=45, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=14, rpm=60, freq=7, drive_flag=1, drive_delay=500
+brlúÿrﬂå#‚nÄ‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰Ñ;Únƒíú‰bÁ$ârrpÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?l`nn‡√‹Ä‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíﬂ;ƒ¿?Älé{pÚn‡√‹Ä‡r«‚úéƒppí‹<ƒﬂÇåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?‚«;rﬂ€ín¿‡Ç‹‹l`å‚‹Ï8Çn¿‰ær‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚‹Á…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-47
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=4166
+reading=6573, humidity=40, status=0
+ext_humidity=0
+received humidity=41 from exterior
+pm open,type:2 0
+int_cnt=0, tach_cnt=26, rpm=111, freq=13, drive_flag=1, drive_delay=4166
+reading=6557, humidity=40, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=252, rpm=1080, freq=126, drive_flag=0, drive_delay=4166
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=322, rpm=1380, freq=161, drive_flag=0, drive_delay=4166
+reading=6557, humidity=40, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=229, rpm=981, freq=114, drive_flag=0, drive_delay=4166
+reading=6582, humidity=40, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=177, rpm=758, freq=88, drive_flag=0, drive_delay=4166
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=143, rpm=612, freq=71, drive_flag=0, drive_delay=4166
+reading=9019, humidity=55, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=139, rpm=595, freq=69, drive_flag=1, drive_delay=2261
+reading=11926, humidity=72, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=484, rpm=2074, freq=242, drive_flag=1, drive_delay=2261
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=682, rpm=2922, freq=341, drive_flag=1, drive_delay=2261
+reading=13467, humidity=82, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=655, rpm=2807, freq=327, drive_flag=1, drive_delay=2261
+reading=14439, humidity=88, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=661, rpm=2832, freq=330, drive_flag=1, drive_delay=2593
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=677, rpm=2901, freq=338, drive_flag=1, drive_delay=2994
+reading=15021, humidity=91, status=0
+ext_humidity=41
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=625, rpm=2678, freq=312, drive_flag=1, drive_delay=2994
+reading=15270, humidity=93, status=0
+ext_humidity=41
+int_cnt=0, tach_cnt=625, rpm=2678, freq=312, drive_flag=1, drive_delay=3172
+received humidity=41 from exterior
+int_cnt=0, tach_cnt=636, rpm=2725, freq=318, drive_flag=1, drive_delay=3397
+reading=15415, humidity=94, status=0
+ext_humidity=41
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3397
+reading=15472, humidity=94, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3374
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=601, rpm=2575, freq=300, drive_flag=1, drive_delay=3449
+reading=15454, humidity=94, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=566, rpm=2425, freq=283, drive_flag=1, drive_delay=3449
+reading=15398, humidity=93, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=569, rpm=2438, freq=284, drive_flag=1, drive_delay=3387
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=595, rpm=2550, freq=297, drive_flag=1, drive_delay=3387
+reading=15060, humidity=91, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=570, rpm=2442, freq=285, drive_flag=1, drive_delay=3387
+reading=14490, humidity=88, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3364
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=600, rpm=2571, freq=300, drive_flag=1, drive_delay=3435
+reading=14063, humidity=85, status=0
+ext_humidity=40
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=560, rpm=2400, freq=280, drive_flag=1, drive_delay=3435
+reading=13294, humidity=81, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=562, rpm=2408, freq=281, drive_flag=1, drive_delay=3343
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=594, rpm=2545, freq=297, drive_flag=1, drive_delay=3343
+reading=12977, humidity=79, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=572, rpm=2451, freq=286, drive_flag=1, drive_delay=3294
+reading=12958, humidity=79, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3292
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=607, rpm=2601, freq=303, drive_flag=1, drive_delay=3292
+reading=12906, humidity=78, status=0
+ext_humidity=40
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3292
+reading=12504, humidity=76, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=585, rpm=2507, freq=292, drive_flag=1, drive_delay=3299
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=605, rpm=2592, freq=302, drive_flag=1, drive_delay=3391
+reading=12220, humidity=74, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=568, rpm=2434, freq=284, drive_flag=1, drive_delay=3391
+reading=11911, humidity=72, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=568, rpm=2434, freq=284, drive_flag=1, drive_delay=3325
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=601, rpm=2575, freq=300, drive_flag=1, drive_delay=3325
+reading=11836, humidity=72, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3302
+reading=11707, humidity=71, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=590, rpm=2528, freq=295, drive_flag=1, drive_delay=3330
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=611, rpm=2618, freq=305, drive_flag=1, drive_delay=3448
+reading=11960, humidity=73, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=567, rpm=2430, freq=283, drive_flag=1, drive_delay=3448
+reading=12478, humidity=76, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=565, rpm=2421, freq=282, drive_flag=1, drive_delay=3369
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3384
+reading=12795, humidity=78, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=560, rpm=2400, freq=280, drive_flag=1, drive_delay=3384
+reading=12995, humidity=79, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=566, rpm=2425, freq=283, drive_flag=1, drive_delay=3309
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=599, rpm=2567, freq=299, drive_flag=1, drive_delay=3309
+reading=13003, humidity=79, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3286
+reading=12616, humidity=77, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3284
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=605, rpm=2592, freq=302, drive_flag=1, drive_delay=3376
+reading=12534, humidity=76, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=568, rpm=2434, freq=284, drive_flag=1, drive_delay=3376
+reading=12437, humidity=75, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=568, rpm=2434, freq=284, drive_flag=1, drive_delay=3310
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=596, rpm=2554, freq=298, drive_flag=1, drive_delay=3310
+reading=12370, humidity=75, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=571, rpm=2447, freq=285, drive_flag=1, drive_delay=3310
+reading=11624, humidity=70, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=577, rpm=2472, freq=288, drive_flag=1, drive_delay=3282
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=600, rpm=2571, freq=300, drive_flag=1, drive_delay=3353
+reading=11114, humidity=67, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=567, rpm=2430, freq=283, drive_flag=1, drive_delay=3353
+reading=10708, humidity=65, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=567, rpm=2430, freq=283, drive_flag=1, drive_delay=3283
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=597, rpm=2558, freq=298, drive_flag=1, drive_delay=3283
+reading=10318, humidity=62, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=575, rpm=2464, freq=287, drive_flag=1, drive_delay=3247
+reading=10147, humidity=61, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3258
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=603, rpm=2584, freq=301, drive_flag=1, drive_delay=3342
+reading=10050, humidity=61, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=569, rpm=2438, freq=284, drive_flag=1, drive_delay=3342
+reading=9543, humidity=58, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3319
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=602, rpm=2580, freq=301, drive_flag=1, drive_delay=3319
+reading=9691, humidity=59, status=0
+ext_humidity=38
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=573, rpm=2455, freq=286, drive_flag=1, drive_delay=3319
+reading=9672, humidity=59, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=589, rpm=2524, freq=294, drive_flag=1, drive_delay=3343
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=613, rpm=2627, freq=306, drive_flag=1, drive_delay=3343
+reading=9609, humidity=58, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3343
+reading=9750, humidity=59, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3358
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=603, rpm=2584, freq=301, drive_flag=1, drive_delay=3442
+reading=9707, humidity=59, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=559, rpm=2395, freq=279, drive_flag=1, drive_delay=3442
+reading=9527, humidity=58, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=556, rpm=2382, freq=278, drive_flag=1, drive_delay=3324
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3324
+reading=9460, humidity=57, status=0
+ext_humidity=39
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=569, rpm=2438, freq=284, drive_flag=1, drive_delay=3262
+reading=9730, humidity=59, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3247
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=612, rpm=2622, freq=306, drive_flag=1, drive_delay=3247
+reading=9511, humidity=58, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=585, rpm=2507, freq=292, drive_flag=1, drive_delay=3247
+reading=9484, humidity=57, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=592, rpm=2537, freq=296, drive_flag=1, drive_delay=3284
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=607, rpm=2601, freq=303, drive_flag=1, drive_delay=3385
+reading=9276, humidity=56, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=564, rpm=2417, freq=282, drive_flag=1, drive_delay=3385
+reading=9264, humidity=56, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=565, rpm=2421, freq=282, drive_flag=1, drive_delay=3306
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=592, rpm=2537, freq=296, drive_flag=1, drive_delay=3306
+reading=9437, humidity=57, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=571, rpm=2447, freq=285, drive_flag=1, drive_delay=3253
+reading=9244, humidity=56, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3251
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=608, rpm=2605, freq=304, drive_flag=1, drive_delay=3251
+reading=9699, humidity=59, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=579, rpm=2481, freq=289, drive_flag=1, drive_delay=3251
+reading=9276, humidity=56, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3249
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=607, rpm=2601, freq=303, drive_flag=1, drive_delay=3249
+reading=7355, humidity=44, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=576, rpm=2468, freq=288, drive_flag=1, drive_delay=3249
+reading=6237, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=0, drive_delay=3239
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=649, rpm=2781, freq=324, drive_flag=0, drive_delay=3239
+reading=5733, humidity=34, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=433, rpm=1855, freq=216, drive_flag=0, drive_delay=3239
+reading=5526, humidity=33, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=305, rpm=1307, freq=152, drive_flag=0, drive_delay=3239
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=238, rpm=1020, freq=119, drive_flag=0, drive_delay=3239
+reading=5434, humidity=33, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=174, rpm=745, freq=87, drive_flag=0, drive_delay=3239
+reading=5401, humidity=32, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=135, rpm=578, freq=67, drive_flag=0, drive_delay=3239
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=108, rpm=462, freq=54, drive_flag=0, drive_delay=3239
+reading=5397, humidity=32, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=77, rpm=330, freq=38, drive_flag=0, drive_delay=3239
+reading=5397, humidity=32, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=53, rpm=227, freq=26, drive_flag=0, drive_delay=3239
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=31, rpm=132, freq=15, drive_flag=0, drive_delay=3239
+reading=5397, humidity=32, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=8, rpm=34, freq=4, drive_flag=0, drive_delay=3239
+reading=5409, humidity=33, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3239
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3239
+reading=5409, humidity=33, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3239
+reading=5417, humidity=33, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=3239
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3239
+reading=5417, humidity=33, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=7, rpm=30, freq=3, drive_flag=0, drive_delay=3239
+reading=6643, humidity=40, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=1, drive_delay=3239
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=282, rpm=1208, freq=141, drive_flag=1, drive_delay=3239
+reading=8116, humidity=49, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=546, rpm=2340, freq=273, drive_flag=1, drive_delay=3239
+reading=9201, humidity=56, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=556, rpm=2382, freq=278, drive_flag=1, drive_delay=3121
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=621, rpm=2661, freq=310, drive_flag=1, drive_delay=3121
+reading=10209, humidity=62, status=0
+ext_humidity=38
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=601, rpm=2575, freq=300, drive_flag=1, drive_delay=3196
+reading=10715, humidity=65, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=601, rpm=2575, freq=300, drive_flag=1, drive_delay=3271
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=609, rpm=2610, freq=304, drive_flag=1, drive_delay=3381
+reading=11206, humidity=68, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=564, rpm=2417, freq=282, drive_flag=1, drive_delay=3381
+reading=10062, humidity=61, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=560, rpm=2400, freq=280, drive_flag=1, drive_delay=3281
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=598, rpm=2562, freq=299, drive_flag=1, drive_delay=3281
+reading=7840, humidity=47, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3258
+reading=6582, humidity=40, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=589, rpm=2524, freq=294, drive_flag=1, drive_delay=3282
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=605, rpm=2592, freq=302, drive_flag=1, drive_delay=3374
+reading=5952, humidity=36, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=0, drive_delay=3376
+reading=5567, humidity=33, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=555, rpm=2378, freq=277, drive_flag=0, drive_delay=3376
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=368, rpm=1577, freq=184, drive_flag=0, drive_delay=3376
+reading=5392, humidity=32, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=256, rpm=1097, freq=128, drive_flag=0, drive_delay=3376
+reading=5309, humidity=32, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=199, rpm=852, freq=99, drive_flag=0, drive_delay=3376
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=161, rpm=690, freq=80, drive_flag=0, drive_delay=3376
+reading=5251, humidity=32, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=119, rpm=510, freq=59, drive_flag=0, drive_delay=3376
+reading=5230, humidity=31, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=90, rpm=385, freq=45, drive_flag=0, drive_delay=3376
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=68, rpm=291, freq=34, drive_flag=0, drive_delay=3376
+reading=5251, humidity=32, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=42, rpm=180, freq=21, drive_flag=0, drive_delay=3376
+reading=5309, humidity=32, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=20, rpm=85, freq=10, drive_flag=0, drive_delay=3376
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=3376
+reading=5338, humidity=32, status=0
+ext_humidity=38
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5367, humidity=32, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=3376
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5359, humidity=32, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5322, humidity=32, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5288, humidity=32, status=0
+ext_humidity=39
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5301, humidity=32, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5359, humidity=32, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=10, rpm=42, freq=5, drive_flag=0, drive_delay=3376
+reading=5372, humidity=32, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5417, humidity=33, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5438, humidity=33, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=3376
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5405, humidity=32, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5392, humidity=32, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5413, humidity=33, status=0
+ext_humidity=39
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5442, humidity=33, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5476, humidity=33, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5513, humidity=33, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=3376
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5563, humidity=33, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5588, humidity=34, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=10, rpm=42, freq=5, drive_flag=0, drive_delay=3376
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5604, humidity=34, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5617, humidity=34, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+reading=5650, humidity=34, status=0
+ext_humidity=38
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3376
+Ûrlúÿrﬂå#‚n¿‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;ÚnÑí‹‰bÁ$ârrpÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?Ú«;àpÚn‡√‹‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíﬂ;ƒ¿?b‹;pÚn‡É‹‡r«‚‹éƒppí‹<ƒﬂÇåpåÚnnÓƒ¿rê‹#Çn¿é{nréíﬂ;Ñ¿?årrü€ín¿‡b«‡l`å‚‹Ï8Çn¿‰ær‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚‹ÁI8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-43
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=4166
+pm open,type:2 0
+reading=6089, humidity=37, status=0
+ext_humidity=0
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+reading=6080, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=4166
+reading=6807, humidity=41, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=34, rpm=145, freq=17, drive_flag=1, drive_delay=4166
+reading=9051, humidity=55, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=278, rpm=1187, freq=138, drive_flag=1, drive_delay=4166
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=512, rpm=2194, freq=256, drive_flag=1, drive_delay=4166
+reading=10368, humidity=63, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=618, rpm=2648, freq=309, drive_flag=1, drive_delay=4166
+reading=11350, humidity=69, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=520, rpm=2228, freq=260, drive_flag=1, drive_delay=4166
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=464, rpm=1988, freq=232, drive_flag=1, drive_delay=4166
+reading=11677, humidity=71, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=473, rpm=2027, freq=236, drive_flag=1, drive_delay=3693
+reading=11847, humidity=72, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=498, rpm=2134, freq=249, drive_flag=1, drive_delay=3693
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=552, rpm=2365, freq=276, drive_flag=1, drive_delay=3693
+reading=11760, humidity=71, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=574, rpm=2460, freq=287, drive_flag=1, drive_delay=3653
+reading=11034, humidity=67, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=1, drive_delay=3655
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=588, rpm=2520, freq=294, drive_flag=1, drive_delay=3675
+reading=10704, humidity=65, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=588, rpm=2520, freq=294, drive_flag=1, drive_delay=3695
+reading=10236, humidity=62, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=585, rpm=2507, freq=292, drive_flag=1, drive_delay=3702
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3713
+reading=10163, humidity=62, status=0
+ext_humidity=40
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3698
+reading=9507, humidity=58, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=574, rpm=2460, freq=287, drive_flag=1, drive_delay=3658
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3643
+reading=9193, humidity=56, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3654
+reading=8960, humidity=54, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=589, rpm=2524, freq=294, drive_flag=1, drive_delay=3678
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3693
+reading=8718, humidity=53, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=577, rpm=2472, freq=288, drive_flag=1, drive_delay=3665
+reading=8643, humidity=52, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=577, rpm=2472, freq=288, drive_flag=1, drive_delay=3637
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3635
+reading=8128, humidity=49, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=590, rpm=2528, freq=295, drive_flag=1, drive_delay=3663
+reading=6884, humidity=42, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3678
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=579, rpm=2477, freq=289, drive_flag=1, drive_delay=3655
+reading=6253, humidity=38, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=596, rpm=2554, freq=298, drive_flag=0, drive_delay=3709
+reading=5923, humidity=36, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=609, rpm=2610, freq=304, drive_flag=0, drive_delay=3819
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=397, rpm=1701, freq=198, drive_flag=0, drive_delay=3819
+reading=5770, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=286, rpm=1225, freq=143, drive_flag=0, drive_delay=3819
+reading=5692, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=218, rpm=934, freq=109, drive_flag=0, drive_delay=3819
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=169, rpm=724, freq=84, drive_flag=0, drive_delay=3819
+reading=5646, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=132, rpm=565, freq=66, drive_flag=0, drive_delay=3819
+reading=5592, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=101, rpm=432, freq=50, drive_flag=0, drive_delay=3819
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=74, rpm=317, freq=37, drive_flag=0, drive_delay=3819
+reading=5559, humidity=33, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=51, rpm=218, freq=25, drive_flag=0, drive_delay=3819
+reading=5559, humidity=33, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=25, rpm=107, freq=12, drive_flag=0, drive_delay=3819
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=5, rpm=21, freq=2, drive_flag=0, drive_delay=3819
+reading=5584, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3819
+reading=5588, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=6, rpm=25, freq=3, drive_flag=0, drive_delay=3819
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3819
+reading=5600, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=3819
+reading=5617, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=76, rpm=325, freq=38, drive_flag=0, drive_delay=3819
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=149, rpm=638, freq=74, drive_flag=0, drive_delay=1957
+reading=5634, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=15, rpm=64, freq=7, drive_flag=0, drive_delay=1957
+reading=5642, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5675, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5679, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=47, rpm=201, freq=23, drive_flag=0, drive_delay=1957
+reading=5675, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=5679, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5679, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=5700, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5696, humidity=34, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5708, humidity=34, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5741, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5745, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5737, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5745, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=8, rpm=34, freq=4, drive_flag=0, drive_delay=1957
+reading=5741, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5750, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5770, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5795, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5820, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5845, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=1957
+reading=5832, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=0, drive_delay=1957
+reading=5808, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5791, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=0, drive_delay=1957
+reading=5812, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5845, humidity=35, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5894, humidity=35, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5936, humidity=36, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5952, humidity=36, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5956, humidity=36, status=0
+ext_humidity=39
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5952, humidity=36, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=5973, humidity=36, status=0
+ext_humidity=38
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6002, humidity=36, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6018, humidity=36, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6031, humidity=36, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6027, humidity=36, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=6039, humidity=36, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6047, humidity=36, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6064, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6101, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6146, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6171, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=8, rpm=34, freq=4, drive_flag=0, drive_delay=1957
+reading=6175, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6171, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=5, rpm=21, freq=2, drive_flag=0, drive_delay=1957
+reading=6179, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6204, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6204, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6196, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6196, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6200, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6208, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=6, rpm=25, freq=3, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6216, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6212, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6208, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6204, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6196, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=6187, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6167, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6192, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6208, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6249, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=0, drive_delay=1957
+reading=6257, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6286, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6311, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6319, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=8, rpm=34, freq=4, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6307, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6266, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6241, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6224, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6192, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6163, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6134, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6138, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6130, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6138, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=6142, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6134, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=40, rpm=171, freq=20, drive_flag=0, drive_delay=1957
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=85, rpm=364, freq=42, drive_flag=0, drive_delay=1957
+reading=6130, humidity=37, status=0
+ext_humidity=38
+received humidity=38 from exterior
+int_cnt=0, tach_cnt=91, rpm=390, freq=45, drive_flag=0, drive_delay=1957
+reading=6134, humidity=37, status=0
+ext_humidity=38
+int_cnt=0, tach_cnt=12, rpm=51, freq=6, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6163, humidity=37, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6220, humidity=37, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6270, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6299, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=9, rpm=38, freq=4, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=0, drive_delay=1957
+reading=6307, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6319, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=1957
+reading=6336, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6323, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6303, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6319, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6315, humidity=38, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6356, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=9, rpm=38, freq=4, drive_flag=0, drive_delay=1957
+reading=6377, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6373, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6385, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=6364, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6360, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6360, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=6373, humidity=38, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6389, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=6, rpm=25, freq=3, drive_flag=0, drive_delay=1957
+reading=6442, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6455, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6455, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6463, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=5, rpm=21, freq=2, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6492, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=1957
+reading=6512, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6504, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6492, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=7, rpm=30, freq=3, drive_flag=0, drive_delay=1957
+reading=6492, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6487, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+reading=6467, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6446, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6438, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6418, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=11, rpm=47, freq=5, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=1, rpm=4, freq=0, drive_flag=0, drive_delay=1957
+reading=6389, humidity=39, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6414, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6438, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6459, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6455, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6455, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6463, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6446, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+reading=6418, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=10, rpm=42, freq=5, drive_flag=0, drive_delay=1957
+reading=6381, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=1957
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=170, rpm=728, freq=85, drive_flag=0, drive_delay=500
+reading=6348, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6336, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6340, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6340, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6356, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6401, humidity=39, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=9, rpm=38, freq=4, drive_flag=0, drive_delay=500
+reading=6414, humidity=39, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6430, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6450, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=3, rpm=12, freq=1, drive_flag=0, drive_delay=500
+reading=6455, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6442, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6414, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6418, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6422, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6409, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=10, rpm=42, freq=5, drive_flag=0, drive_delay=500
+reading=6397, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=42, rpm=180, freq=21, drive_flag=0, drive_delay=500
+reading=6377, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=614, rpm=2627, freq=306, drive_flag=0, drive_delay=500
+reading=6356, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=939, rpm=4024, freq=469, drive_flag=0, drive_delay=500
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6348, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6385, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6434, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6479, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=500
+reading=6487, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6467, humidity=39, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=500
+reading=6442, humidity=39, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6385, humidity=38, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6331, humidity=38, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+reading=6294, humidity=38, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=0, rpm=0, freq=0, drive_flag=0, drive_delay=500
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=2, rpm=8, freq=1, drive_flag=0, drive_delay=500
+reading=6315, humidity=38, status=0
+ext_humidity=39

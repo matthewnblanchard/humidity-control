@@ -304,7 +304,7 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 	// Initialize ZCD
 	gpio_output_set(0, 0, 0, ZCD_BIT);     					// Set ZCD pin as input
         gpio_intr_handler_register(user_gpio_isr, 0);   			// Register GPIO ISR
-        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_NEGEDGE);   // Rising edge triggers
+        gpio_pin_intr_state_set(GPIO_ID_PIN(ZCD_PIN), GPIO_PIN_INTR_POSEDGE);   // Rising edge triggers
 
 	// Initialize tachometer interrupt
 	gpio_output_set(0, 0, 0, TACH_BIT);					// Set Tachometer as input
@@ -319,6 +319,8 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 
         // Re-enable GPIO interrupts
         ETS_GPIO_INTR_ENABLE();
+        gpio_intr_handler_register(user_gpio_isr, 0);   			// Register GPIO ISR
+
 
         return;
 };

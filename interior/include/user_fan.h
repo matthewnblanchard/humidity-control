@@ -15,12 +15,15 @@
 // Fan supply definitions
 #define TRIAC_PULSE_PERIOD	100			// Pulse length in us for driving the triac
 #define FAN_RPM_MAX		3100			// Exhaust fan maximum RPM
+#define FAN_RPM_MIN		500			// Exhaust fan maximum RPM
 #define SUPPLY_PERIOD 		16667 			// Fan supply period in us
 #define SUPPLY_HALF_CYCLE	SUPPLY_PERIOD / 2	// Fan supply half cycle period
 
 // Macros to calculate TRIAC delay
 #define CALC_DELAY(X)		X //((-0.01541*(X)*(X)*(X)) + (0.02207*(X)*(X)) - (0.01175*(X)) + 0.006587)
 #define SPEED_DELAY(X)		X //CALC_DELAY((X)/FAN_RPM_MAX) > 150 ? CALC_DELAY((X)/FAN_RPM_MAX) : 150	// Minimum delay of 150 u
+#define DELAY_BOUNDL		500
+#define DELAY_BOUNDH		SUPPLY_HALF_CYCLE - 300
 
 // Fan/ZCD GPIO definitions - DO NOT CHANGE THESE
 #define TRIAC_PIN	12	// GPIO pin connected to the fan triac
@@ -37,15 +40,15 @@
 #define TACH_FUNC	FUNC_GPIO14
 
 // Tachometer definitions
-#define TACH_PERIOD 500		// Tach calculaiton period in ms
+#define TACH_PERIOD 2000	// Tach calculaiton period in ms
 #define TACH_BLADE_N 7 		// Number of fan blades with reflective tape (# of pulses per revolution)
 #define DEBOUNCE_TIME 100	// Debouncing period in us
 #define FEEDBACK_GAIN 1		// The RPM error is multiplied by this to arrive at the triac delay adjustment
 
 // Fan driving variables
 extern volatile bool drive_flag;		// Flag to indicate if fan should be driven
-extern volatile uint16 desired_rpm;		// Desired RPM of the fan
-extern volatile uint16 measured_rpm;		// Measured RPM of the fan
+extern volatile sint32 desired_rpm;		// Desired RPM of the fan
+extern volatile sint32 measured_rpm;		// Measured RPM of the fan
 
 // Timers
 os_timer_t tach_t;	// Tachometer calculation timer

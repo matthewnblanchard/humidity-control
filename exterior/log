@@ -88885,3 +88885,579 @@ nsent measure request
 re-enabling interrupts
 reading=5713, humidity=34, status=0
 Data sent to server
+
+pm open,type:2 0
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5897, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5892, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5886, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5901, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5933, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5972, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5976, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5976, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5972, humidity=36, status=0
+Data sent to server
+
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5907, humidity=36, status=0
+failed to send RH to interior, code=-7
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5903, humidity=36, status=0
+failed to send RH to interior, code=-7
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5894, humidity=35, status=0
+failed to send RH to interior, code=-7
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5901, humidity=36, status=0
+failed to send RH to interior, code=-7
+tcp connection error occured
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5899, humidity=36, status=0
+failed to send RH to interior, code=-12
+rlœØrßŒ#ân€àŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbà$‰rrpònàÃÜà‚ÇÀl€€€bÀnâãn€ä‚lŒ8ŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀ?âlœ;pònàÃÜ€àrÇâÜ€pp’Ü<ÄÃ€8ŒònnîÄÈrœ#‚nÀrnr’Ÿ;ÄÀ?€ŒrpònàÃÜ€àrÇâÜìÇ8p’Ü<ÄÄì€pŒònnîÄÀrÜ#‚nÀ{nr’ß;ÄÀŒlrrßÛ’nÀàbÇÃl`ŒâÜìx‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(5e:cf:7f:57:3e:5d)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(5c:cf:7f:57:3e:5d)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-43
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.85,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+gotip
+Starting TCP server
+Connection made to exterior over port ESPCONN
+interior connected
+starting humidity readings
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5892, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5894, humidity=35, status=0
+Data sent to server
+pm open,type:2 0
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5888, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5897, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5903, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5903, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5903, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5913, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5909, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5901, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5921, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5949, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5955, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5945, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5932, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5925, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5957, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5964, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5960, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5939, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5932, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5937, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5930, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5915, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5907, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5907, humidity=36, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5882, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5856, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5848, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5860, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5862, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5865, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5860, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5848, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5844, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5848, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5860, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5870, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5874, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5874, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5878, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5882, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5886, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5890, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5888, humidity=35, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=5886, humidity=35, status=0
+
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6882, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6890, humidity=42, status=0
+Data sent to server
+pm open,type:2 0
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6900, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6898, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6890, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6894, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6898, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6900, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6900, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6894, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6894, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6890, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6882, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6878, humidity=41, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6853, humidity=41, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6845, humidity=41, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6857, humidity=41, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6866, humidity=41, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6886, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6886, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6882, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6882, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6892, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6900, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6952, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6952, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6967, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6974, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6994, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7010, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6998, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6990, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6994, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7002, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7018, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7037, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7027, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7027, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7029, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7018, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6982, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6965, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6970, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=7010, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6986, humidity=42, status=0
+Data sent to server
+reading humidity
+nsent measure request
+re-enabling interrupts
+reading=6974, humidity=42, status=0
+
