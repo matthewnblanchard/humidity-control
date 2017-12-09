@@ -249,7 +249,9 @@ static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, un
         uint8 ssid_len;                                         // Length of the SSID
         uint8 *pass;                                            // User sent password
         uint8 pass_len;                                         // Length of the password
-	
+	uint8 pass_raw[256];					// Raw password
+	uint8 ssid_raw[256];					// Raw SSID
+
 
         PRINT_DEBUG(DEBUG_LOW, "received data from client\r\n");
         PRINT_DEBUG(DEBUG_HIGH, "data=%s\r\n", pusrdata);
@@ -289,10 +291,17 @@ static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, un
                 pass_len = os_strlen(p1);                       // Calculate password length.
                 pass = p1;
 
+		os_memcpy(ssid_raw, ssid, ssid_len);		// Copy raw SSID for fixing
+		os_memcpy(pass_raw, pass, pass_len);		// Copy raw pass for fixing
+		
+		// "Fix" SSID/pass by decoding escapped characters"
+		ssid_len = user_http_post_fix(ssid_raw, ssid_len);
+		pass_len = user_http_post_fix(pass_raw, pass_len);
+
                 // Store retrieved data in flash     
                 struct user_data_station_config post_config;
-                os_memcpy(post_config.config.ssid, ssid, ssid_len);
-                os_memcpy(post_config.config.password, pass, pass_len);
+                os_memcpy(post_config.config.ssid, ssid_raw, ssid_len);
+                os_memcpy(post_config.config.password, pass_raw, pass_len);
                 post_config.config.ssid[ssid_len] = '\0';       // Append null terminators
                 post_config.config.password[pass_len] = '\0';
 
@@ -430,4 +439,70 @@ void ICACHE_FLASH_ATTR user_apmode_cleanup(os_event_t *e)
 
 	TASK_RETURN(SIG_APMODE, PAR_APMODE_CLEANUP_COMPLETE);
 	return;
+};
+
+uint16 ICACHE_FLASH_ATTR user_http_post_fix(uint8 *str, uint16 len)
+{
+	sint32 i = 0;		// Loop index
+	sint32 j = 0;		// Loop index
+	uint8 octet = 0;	// Extracted hex octect for an ASCII character
+	sint32 new_len = len;	// New length of the string
+
+	// Iterate backwards through the string
+	for (i = (len - 1); i >= 0; i--) {
+		
+		// Replace '+'s with spaces, length does not change
+		if (str[i] == '+') {
+			str[i] = ' ';
+		}
+	
+		// If we hit a '%' symbol, this indicates an escaped ASCII chararacter.
+		// Replace with the actual ASCII character 
+		else if (str[i] == '%') {
+			octet = user_axtoi(&str[i + 1], 2);	// Convert two hex nibble to an integer
+			str[i] = octet;				// Replace the '%' symbol with the encoded character
+			
+			// Move remaining characters backward
+			for (j = (i + 1); j < (new_len - 2); j++) {  
+				str[j] = str[j + 2];
+			}
+			new_len -= 2;	// Reduce length by 2
+		}		
+	}
+	return new_len;
+};
+
+uint32 ICACHE_FLASH_ATTR user_axtoi(uint8 *str, uint16 len)
+{
+	uint16 i = 0;	// Loop index
+	uint32 num = 0;	// Calculated hex number
+	
+	// Interate through each character
+	for (i = 0; i < len; i++){
+		
+		// Check if the character is a digit (0-9)	
+		if ((str[i] >= 0x30) && (str[i] <= 0x39)) {
+			num *= 16;		// Move nibble sections forward one sig-fig
+			num += (str[i] - 0x30);	// Add in newest hextet
+		}
+
+		// Check if the character is a lowercase character a-f
+		else if ((str[i] >= 0x61) && (str[i] <= 0x66)) {
+			num *= 16;		// Move nibble sections forward one sig-fig
+			num += (str[i] - 0x57);	// Add in newest nibble
+		}
+
+		// Check if the character is an uppercase character A-F
+		else if ((str[i] >= 0x41) && (str[i] <= 0x46)) {
+			num *= 16;		// Move nibble sections forward one sig-fig
+			num += (str[i] - 0x37);	// Add in newest nibble
+		}
+
+		// If the character is not a valid nibble, stop converting
+		else {
+			break;
+		}
+	}
+
+	return num;
 };

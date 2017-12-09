@@ -108,4 +108,25 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void);
 // Desc: Performs cleanup from AP mode (disconnected tcp connections, etc)
 void ICACHE_FLASH_ATTR user_apmode_cleanup(os_event_t *e);
 
+// Application Function: uint16 user_http_post_fix(uint8 *str, uint16 len)
+// Desc: Parses an HTTP post string and replaces escaped characters
+// 	with their equivalents (+ --> space, %XX to ASCII value)
+// Args:
+//	uint8 *str: HTTP post string
+//	uint16 len: Length of the string
+// Returns:
+//	The new length of the string
+uint16 ICACHE_FLASH_ATTR user_http_post_fix(uint8 *str, uint16 len);
+
+// Application Function: uint32 user_axtoi(uint8 *str, uint16 len)
+// Desc: Converts a string of ASCII characters representing a 
+//	hexadecimal integer and coverts it to the corresponding
+//	integer
+// Args:
+//	uint8 *str: Hexadecimal string
+//	uint16 len: Length of the string
+// Returns:
+//	The value of the hexadecimal string
+uint32 ICACHE_FLASH_ATTR user_axtoi(uint8 *str, uint16 len);
+
 #endif

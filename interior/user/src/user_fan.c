@@ -51,7 +51,7 @@ void user_gpio_isr(uint32 intr_mask, void *arg)
 	// Check if a tachometer interrupt occured
 	if (intr_mask & (TACH_BIT)) {
 		uint32 cur_time = system_get_time();	// Use the system time register for software debouncing
-		if ((cur_time - last_time) > 1500) {
+		if ((cur_time - last_time) > 2500) {
 			tach_cnt++;
 			last_time = cur_time;
 		};
