@@ -62106,3 +62106,572 @@ http GET request detected
 sending captive portal
 sent data to client
 user disconnected
+Ûpm open,type:2 0
+rlúÿrﬂåc‚n¿‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏé‹påÚnnÓƒ¡åél`êú#Çn¿èrnréíﬂ;ƒ¿?Ú«;àpÚn‡√‹Ä‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ¿rê‹#ÇnÄ$ål`8`rn|íínÄ‡r«€l`π~ƒ¿ê‹#Çn¿$ååÚnnÓƒ»l`nn‡√‹Ä‡r«‚‹éƒppí‹<ƒ‡Ïåé8åÚnnÓƒ¡ål`ê‹#Çn¿èrnréíﬂ;ƒ¿?l`∏éíﬂ;ƒ¿?l`å‚‹Ï8Çn¿‰>r‹ÿÚn„bÇÇlrå‚úÁ…8ÇåÚ±Ärå‚‹ÁI8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-40
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 11
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.85.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.85
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+int_cnt=0, tach_cnt=4, rpm=17, freq=2, drive_flag=0, drive_delay=4166
+pm open,type:2 0
+reading=10372, humidity=63, status=0
+ext_humidity=0
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=25, rpm=107, freq=12, drive_flag=1, drive_delay=4166
+reading=10372, humidity=63, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=272, rpm=1165, freq=136, drive_flag=1, drive_delay=4166
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=511, rpm=2190, freq=255, drive_flag=1, drive_delay=4166
+reading=10081, humidity=61, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=664, rpm=2845, freq=332, drive_flag=1, drive_delay=4166
+reading=9303, humidity=56, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=509, rpm=2181, freq=254, drive_flag=1, drive_delay=4166
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=484, rpm=2074, freq=242, drive_flag=1, drive_delay=4166
+reading=8679, humidity=52, status=0
+ext_humidity=39
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=452, rpm=1937, freq=226, drive_flag=1, drive_delay=4166
+reading=8288, humidity=50, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=445, rpm=1907, freq=222, drive_flag=1, drive_delay=3573
+received humidity=39 from exterior
+int_cnt=0, tach_cnt=528, rpm=2262, freq=264, drive_flag=1, drive_delay=3573
+reading=7960, humidity=48, status=0
+ext_humidity=39
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=612, rpm=2622, freq=306, drive_flag=1, drive_delay=3573
+reading=7638, humidity=46, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=626, rpm=2682, freq=313, drive_flag=1, drive_delay=3755
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=605, rpm=2592, freq=302, drive_flag=1, drive_delay=3847
+reading=7416, humidity=45, status=0
+ext_humidity=40
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=577, rpm=2472, freq=288, drive_flag=1, drive_delay=3847
+reading=7270, humidity=44, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=567, rpm=2430, freq=283, drive_flag=1, drive_delay=3777
+received humidity=41 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.81
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending front page
+sent to client
+int_cnt=0, tach_cnt=571, rpm=2447, freq=285, drive_flag=1, drive_delay=3724
+reading=7161, humidity=43, status=0
+ext_humidity=41
+received humidity=40 from exterior
+int_cnt=0, tach_cnt=585, rpm=2507, freq=292, drive_flag=1, drive_delay=3731
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.81
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Sec-WebSocket-Version: 13
+Origin: http://192.168.0.81
+Sec-WebSocket-Extensions: permessage-deflate
+Sec-WebSocket-Key: aIAWurzSRCPpW3lW8mlL0g==
+Connection: keep-alive, Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+
+http GET request detected
+found key of length 24
+concat_key=aIAWurzSRCPpW3lW8mlL0g==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+sha1_hash=o_1Ñ&¡Ï∞Rd§ÿΩ:Êrò®
+15:6f:5f:31:84:26:c1:ec:b0:52:64:a4:d8:bd:3a:e6:72:1d:98:a8:
+base64=FW9fMYQmweywUmSk2L065nIdmKg=
+sent=HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: FW9fMYQmweywUmSk2L065nIdmKg=
+
+
+sent to client
+opcode=1
+received masked packet=Hello HBFC/D
+reading=7084, humidity=43, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=588, rpm=2520, freq=294, drive_flag=1, drive_delay=3751
+received humidity=41 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3745
+reading=7018, humidity=42, status=0
+ext_humidity=41
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=579, rpm=2481, freq=289, drive_flag=1, drive_delay=3726
+sent to client
+opcode=1
+received masked packet=ack
+reading=6970, humidity=42, status=0
+ext_humidity=40
+tcp connection disconnected
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3720
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=1, drive_delay=3710
+reading=6949, humidity=42, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=587, rpm=2511, freq=293, drive_flag=1, drive_delay=3721
+sent to client
+opcode=1
+received masked packet=ack
+reading=6921, humidity=42, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=588, rpm=2520, freq=294, drive_flag=1, drive_delay=3741
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3752
+reading=6892, humidity=42, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3737
+sent to client
+opcode=1
+received masked packet=ack
+reading=6872, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=579, rpm=2481, freq=289, drive_flag=1, drive_delay=3718
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=1, drive_delay=3720
+reading=6860, humidity=41, status=0
+ext_humidity=40
+received humidity=39 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3735
+sent to client
+opcode=1
+received masked packet=ack
+reading=6884, humidity=42, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3729
+received humidity=39 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3723
+reading=6876, humidity=41, status=0
+ext_humidity=39
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=1, drive_delay=3725
+sent to client
+opcode=1
+received masked packet=ack
+reading=6876, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3736
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3734
+reading=6868, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3728
+sent to client
+opcode=1
+received masked packet=ack
+reading=6872, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=1, drive_delay=3730
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=1, drive_delay=3720
+reading=6876, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=1, drive_delay=3710
+sent to client
+opcode=1
+received masked packet=ack
+reading=6876, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3708
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3719
+reading=6864, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3730
+sent to client
+opcode=1
+received masked packet=ack
+reading=6847, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=585, rpm=2507, freq=292, drive_flag=1, drive_delay=3737
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3748
+reading=6839, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3733
+sent to client
+opcode=1
+received masked packet=ack
+reading=6839, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=1, drive_delay=3723
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=579, rpm=2481, freq=289, drive_flag=1, drive_delay=3704
+reading=6815, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=579, rpm=2481, freq=289, drive_flag=1, drive_delay=3685
+sent to client
+opcode=1
+received masked packet=ack
+reading=6807, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3700
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=588, rpm=2520, freq=294, drive_flag=1, drive_delay=3720
+reading=6798, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=1, drive_delay=3722
+sent to client
+opcode=1
+received masked packet=ack
+reading=6807, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3716
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=1, drive_delay=3706
+reading=6827, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=1, drive_delay=3696
+sent to client
+opcode=1
+received masked packet=ack
+reading=6851, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3707
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3722
+reading=6868, humidity=41, status=0
+ext_humidity=40
+received humidity=39 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=1, drive_delay=3724
+sent to client
+opcode=1
+received masked packet=ack
+reading=6884, humidity=42, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=581, rpm=2490, freq=290, drive_flag=1, drive_delay=3714
+received humidity=39 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=576, rpm=2468, freq=288, drive_flag=1, drive_delay=3682
+reading=6904, humidity=42, status=0
+ext_humidity=39
+received humidity=39 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=580, rpm=2485, freq=290, drive_flag=1, drive_delay=3667
+sent to client
+opcode=1
+received masked packet=ack
+reading=6908, humidity=42, status=0
+ext_humidity=39
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3678
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=589, rpm=2524, freq=294, drive_flag=1, drive_delay=3702
+reading=6908, humidity=42, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=588, rpm=2520, freq=294, drive_flag=1, drive_delay=3722
+sent to client
+opcode=1
+received masked packet=ack
+reading=6892, humidity=42, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=582, rpm=2494, freq=291, drive_flag=1, drive_delay=3716
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3693
+reading=6892, humidity=42, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=584, rpm=2502, freq=292, drive_flag=1, drive_delay=3695
+sent to client
+opcode=1
+received masked packet=ack
+reading=6888, humidity=42, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3706
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=587, rpm=2515, freq=293, drive_flag=1, drive_delay=3721
+reading=6872, humidity=41, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=577, rpm=2472, freq=288, drive_flag=1, drive_delay=3693
+sent to client
+opcode=1
+received masked packet=ack
+reading=6876, humidity=41, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=572, rpm=2451, freq=286, drive_flag=1, drive_delay=3644
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3655
+reading=6913, humidity=42, status=0
+ext_humidity=40
+received humidity=40 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=600, rpm=2571, freq=300, drive_flag=1, drive_delay=3726
+sent to client
+opcode=1
+received masked packet=ack
+reading=6953, humidity=42, status=0
+ext_humidity=40
+int_cnt=0, tach_cnt=590, rpm=2528, freq=295, drive_flag=1, drive_delay=3754
+received humidity=41 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=583, rpm=2498, freq=291, drive_flag=1, drive_delay=3752
+reading=6974, humidity=42, status=0
+ext_humidity=41
+received humidity=42 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=579, rpm=2481, freq=289, drive_flag=1, drive_delay=3733
+sent to client
+opcode=1
+received masked packet=ack
+reading=7010, humidity=42, status=0
+ext_humidity=42
+int_cnt=0, tach_cnt=575, rpm=2464, freq=287, drive_flag=1, drive_delay=3697
+received humidity=41 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=578, rpm=2477, freq=289, drive_flag=1, drive_delay=3674
+reading=7018, humidity=42, status=0
+ext_humidity=41
+received humidity=41 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+int_cnt=0, tach_cnt=586, rpm=2511, freq=293, drive_flag=1, drive_delay=3685
+sent to client
+opcode=1
+received masked packet=ack
+q

@@ -26,7 +26,10 @@ const char const *front_page = {
                                         if(evt.data instanceof ArrayBuffer) {\
                                                 var buffer = evt.data;\
                                                 var view = new DataView(buffer);\
-                                                console.log(\"int=\", view.getFloat32(0, true), \" ext=\", view.getFloat32(1, true));\
+						var int_element = document.getElementById(\"int_humidity\");\
+						var ext_element = document.getElementById(\"ext_humidity\");\
+						int_element.innerHTML = view.getFloat32(0, true);\
+						ext_element.innerHTML = view.getFloat32(4, true);\
                                         };\
 					ws.send(\"ack\");\
                                 };\
@@ -34,6 +37,8 @@ const char const *front_page = {
 				ws_init.style.display = \"none\";\
 				var config = document.getElementById(\"config\");\
 				config.style.display = \"block\";\
+				var data = document.getElementById(\"data\");\
+				data.style.display = \"block\";\
                         };\
 			function config_submit() {\
 				var config_speed = document.getElementById(\"config_speed\");\
@@ -51,6 +56,22 @@ const char const *front_page = {
 		<div id=\"config\" style=\"display:none\">\
 			<input id=\"config_speed\" type=\"number\" step=\"1\"><br>\
 			<button id=\"config_submit\" type=\"button\" onclick=\"config_submit();\">Modify Configuration</button><br>\
+		</div>\
+		</div id=\"data\" style=\"display:none\">\
+			<table>\
+				<tr>\
+					<th>Interior Humidity (%RH)</th>\
+					<td id=\"int_humidity\">Unknown</td>\
+				</tr>\
+				<tr>\
+					<th>Exterior Humidity (%RH)</th>\
+					<td id=\"ext_humidity\">Unknown</td>\
+				</tr>\
+				<tr>\
+					<th>Fan RPM</th>\
+					<td id=\"rpm\">Unknown</td>\
+				</tr>\
+			<table>\
 		</div>\
         </body>\
         </html>"
