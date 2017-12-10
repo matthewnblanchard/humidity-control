@@ -19,16 +19,26 @@
 
 // User Task: udp_broadcast_init()
 // Desc: Broadcasts UDP discovery data over wireless network.
-// Args: none 
+// Args: 
+//	os_event_t *e: Pointer to OS event data
+// Returns:
+//	Nothing
 void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e);
 
 // Callback Function: user_send_discover(void)
 // Desc: Broadcasts a discovery packet
-// Args: None
+// Args:
+//	Nothing
+// Returns:
+//	Nothing
 void ICACHE_FLASH_ATTR user_send_broadcast(void);
 
 // User Task: udp_broadcast_stop()
 // Desc: Terminates the UDP broadcasts
+// Args:
+//	os_event_t *e: Pointer to OS event data 
+// Returns:
+//	Nothing
 void ICACHE_FLASH_ATTR user_broadcast_stop(os_event_t *e);
 
 #endif

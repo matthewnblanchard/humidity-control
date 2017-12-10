@@ -2,6 +2,7 @@
 // Authors: Christian Auspland & Matthew Blanchard
 
 #include "user_humidity.h"
+#include "user_task.h"
 
 float sensor_data_int = 0;
 float sensor_data_ext = 0;
@@ -14,22 +15,19 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         uint16 humidity = 0;            // Humidity reading w/o calculations
         float adj_humidity = 0;         // Humidity reading after calculations
 
-	os_printf("reading humidity\r\nn");
-
-	ETS_GPIO_INTR_DISABLE();
+	PRINT_DEBUG(DEBUG_LOW, "reading humidity\r\nn");
 
         // Wake up the sensor by sending a measurement request. This consists of the slave's address
         // and a single 0 bit. 
         user_i2c_start_bit();
         if (user_i2c_write_byte((SENSOR_ADDR << 1) & 0xFE) == 1) {
-                os_printf("slave failed to initiate measurement\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "slave failed to initiate measurement\r\n");
         	user_i2c_stop_bit();
-		ETS_GPIO_INTR_ENABLE();
 		return;
         };
         user_i2c_stop_bit();
 
-	os_printf("sent measure request\r\n");
+	PRINT_DEBUG(DEBUG_LOW, "sent measure request\r\n");
 
         // The average measurement cycle takes 36.65ms. 100ms leaves a good amount
         // of leeway
@@ -39,9 +37,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         // Retrieve the data now that the measurement cycle has completed
         user_i2c_start_bit();
         if (user_i2c_write_byte((SENSOR_ADDR << 1) | 0x01) == 1) {
-                os_printf("slave failed to receive address\r\n");
+                PRINT_DEBUG(DEBUG_ERR, "slave failed to receive address\r\n");
         	user_i2c_stop_bit();
-		ETS_GPIO_INTR_ENABLE();
 		return;      
         };
 
@@ -54,13 +51,9 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         user_i2c_stop_bit();
         humidity |= read_byte;                           // Lower byte is lower 8 bits of humidity
 
-	os_printf("re-enabling interrupts\r\n");
-
-	ETS_GPIO_INTR_ENABLE();
-
         adj_humidity = ((float)humidity / (float)((1 << 14) - 2)) * 100;        // Calculate RH as defined by Honeywell
 
-        os_printf("reading=%d, humidity=%d, status=%d\r\n", humidity, (uint32)adj_humidity, status);
+        PRINT_DEBUG(DEBUG_HIGH, "reading=%d, humidity=%d, status=%d\r\n", humidity, (uint32)adj_humidity, status);
 
         // Store humidity.
         sensor_data_ext = adj_humidity;

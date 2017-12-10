@@ -6,7 +6,8 @@
 struct espconn tcp_connect_conn;
 struct _esp_tcp tcp_connect_proto;
 
-struct station_config interior_ssid = {
+// Interior config SSID
+static struct station_config interior_ssid = {
 	"HBFC/D Wireless Setup",	// SSID
 	"",				// Password
 	false,				// Connect by BSSID flag
@@ -17,14 +18,14 @@ void ICACHE_FLASH_ATTR user_config_assoc_init(os_event_t *e)
 {
 	// Ensure the system is in station mode
         if (wifi_set_opmode_current(STATION_MODE) != true) {
-		os_printf("ERROR: failed to set wifi mode to station\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to set wifi mode to station\r\n");
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_STATION_MODE_FAILURE);
 		return;
 	};
 
 	// Configure the system to connect to the interior's SSID
 	if (wifi_station_set_config(&interior_ssid) != true) {
-		os_printf("ERROR: failed to configure station mode\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to configure station mode\r\n");
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_CONFIG_FAILURE);
 		return;
 	};		
@@ -36,7 +37,7 @@ void ICACHE_FLASH_ATTR user_config_assoc_init(os_event_t *e)
 void ICACHE_FLASH_ATTR user_config_assoc(void)
 {
 	if (wifi_station_connect() == true) {
-		os_printf("connected to interior\r\n");
+		PRINT_DEBUG(DEBUG_LOW, "connected to interior\r\n");
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_ASSOC);
 		return;
 	};
@@ -62,7 +63,7 @@ void ICACHE_FLASH_ATTR user_config_connect_init(os_event_t *e)
 	// Regist callback for TCP connection
 	result = espconn_regist_connectcb(&tcp_connect_conn, user_tcp_connect_cb);
 	if (result < 0){
-		os_printf("ERROR: failed to register connect callback, error=%d\n\n", result);
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to register connect callback, error=%d\n\n", result);
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_SETUP_FAILED);
 		return;
 	}
@@ -70,7 +71,7 @@ void ICACHE_FLASH_ATTR user_config_connect_init(os_event_t *e)
 	// Attempt to connect
 	result = espconn_connect(&tcp_connect_conn);
 	if (result < 0) {
-		os_printf("ERROR: failed to connect to interior, error=%d\r\n", result);
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to connect to interior, error=%d\r\n", result);
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_CONNECT_FAILED);
 	}
 
@@ -82,14 +83,11 @@ void ICACHE_FLASH_ATTR user_config_connect_init(os_event_t *e)
 
 void ICACHE_FLASH_ATTR user_tcp_connect_cb(void *arg)
 {
-	os_printf("tcp connection established\r\n");
+	PRINT_DEBUG(DEBUG_LOW, "tcp connection established\r\n");
 	struct espconn *client_conn = arg;
 
 	// Register callbacks for the connected client
 	espconn_regist_recvcb(client_conn, user_tcp_recv_cb);
-//	espconn_regist_reconcb(client_conn, user_tcp_recon_cb);
-//	espconn_regist_disconcb(client_conn, user_tcp_discon_cb);
-//	espconn_regist_sentcb(client_conn, user_tcp_sent_cb);
 	
 	return;
 };
@@ -106,13 +104,13 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 	char *pass;				// User sent password
 	uint8 pass_len;				// Length of the password
 
-	os_printf("received data from interior\r\n");
-	os_printf("data=%s\r\n", pusrdata);
+	PRINT_DEBUG(DEBUG_LOW, "received data from interior\r\n");
+	PRINT_DEBUG(DEBUG_HIGH, "data=%s\r\n", pusrdata);
 
 	// Search for form data
 	p1 = (uint8 *)os_strstr(pusrdata, "ssid=");	//Locate SSID
 	if (p1 == NULL) {
-		os_printf("ERROR: received malformed config packet\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: received malformed config packet\r\n");
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_MALFORMED);
 		return;
 	}
@@ -127,8 +125,8 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 	pass_len = os_strlen(p1);			// Calculate the password length
 	pass = p1;
 	
-	os_printf("ssid read: %s\r\n", ssid);
-	os_printf("pass read: %d\r\n", pass);
+	PRINT_DEBUG(DEBUG_HIGH, "ssid read: %s\r\n", ssid);
+	PRINT_DEBUG(DEBUG_HIGH, "pass read: %d\r\n", pass);
 
 	// Store retrieved data in flash data structure
 	os_memcpy(post_config.config.ssid, ssid, ssid_len);
@@ -137,11 +135,11 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 	post_config.config.password[pass_len] = '\0';
 
 
-	os_printf("Writing new data to flash\r\n");
+	PRINT_DEBUG(DEBUG_LOW, "Writing new data to flash\r\n");
 
 	flash_result = spi_flash_erase_sector(USER_DATA_START_SECT);
 	if (flash_result != SPI_FLASH_RESULT_OK) {
-		os_printf("ERROR: flash erase failed!\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: flash erase failed!\r\n");
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_FLASH_FAILURE);
 		return;
 	}
@@ -153,7 +151,7 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 	);
 
 	if (flash_result != SPI_FLASH_RESULT_OK) {
-		os_printf("ERROR: flash write failed\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: flash write failed\r\n");
 		TASK_RETURN(SIG_CONFIG, PAR_CONFIG_FLASH_FAILURE);
 		return;
 	};
@@ -164,24 +162,6 @@ void ICACHE_FLASH_ATTR user_tcp_recv_cb(void *arg, char *pusrdata, unsigned shor
 	TASK_RETURN(SIG_CONFIG, PAR_CONFIG_RECV);
 	return;
 	
-/*	os_printf("deleting tcp transmission...\r\n");
-	if (espconn_delete(&tcp_connect_conn) < 0) {
-		os_printf("failed to delete tcp transmission\r\n");
-		CALL_ERROR(ERR_FATAL);
-	}
-
-	os_printf("reentering AP scan");
-
-	if (system_os_task(user_scan, USER_TASK_PRIO_1, user_msg_queue_1, MSG_QUEUE_LENGTH) == false) {
-		os_printf("failed to initialize user_scan task\r\n");
-		CALL_ERROR(ERR_FATAL);
-	}
-	
-	if (system_os_post(USER_TASK_PRIO_1, 1, 0) == false) {
-		os_printf("failed to call user_scan\r\n");
-		CALL_ERROR(ERR_FATAL);
-	}
-*/
 }
 
 void ICACHE_FLASH_ATTR user_config_cleanup(os_event_t *e)

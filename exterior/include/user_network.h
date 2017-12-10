@@ -26,7 +26,10 @@ struct station_config client_config;            // Station configuration
 //      broadcasting that SSID. If it finds one, attempts to connect.
 //      If it doesn't, switches to SoftAP mode to establish its own
 //      SSID, so that a user can connect and give it config
-// Args: None
+// Args: 
+//	os_event_t *e: Pointer to OS event data
+// Returns:
+//	Nothing
 void ICACHE_FLASH_ATTR user_scan(os_event_t *e);
 
 // Callback Function: user_scan_done(void *arg, STATUS status)
@@ -35,18 +38,18 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e);
 // Args:
 //      void *arg: Information on AP's found by wifi_station_scan
 //      STATUS status:  get status
+// Returns:
+//	Nothing
 static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
 
 
 // Callback Function: user_check_ip()
 // Desc: Called every 1000ms to check if the ESP8266 has received an IP. Disarms timer
 //      And moves forward when an IP is obtained.
+// Args:
+//	Nothing
+// Returns:
+//	Nothing
 void ICACHE_FLASH_ATTR user_check_ip(void);
-
-// User Task: user_force_solo()
-// Desc: Forces the system to skip the exterior connection.
-//	FOR TESTING PURPOSES ONLY, the system will never
-//	receive exterior humidities
-//void ICACHE_FLASH_ATTR user_force_solo(os_event_t *e);
 
 #endif /* USER_NETWORK_H */

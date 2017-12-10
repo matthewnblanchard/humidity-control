@@ -19,9 +19,7 @@
 #define HUMIDITY_READ_INTERVAL 3000
 
 // Humidity data storage.
-extern float sensor_data_int;         // Interior humidity
 extern float sensor_data_ext;	      // Exterior humidity
-extern float threshold_humidity;      // The system will not try to reduce the humidity below this
 
 // Function Prototypyes:
 

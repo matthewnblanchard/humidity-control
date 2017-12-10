@@ -4,8 +4,8 @@
 #include "user_discover.h"
 
 // espconn structs - these are control structures for TCP/UDP connections
-struct espconn udp_broadcast_conn;
-struct _esp_udp udp_broadcast_proto;
+static struct espconn udp_broadcast_conn;
+static struct _esp_udp udp_broadcast_proto;
 
 char *discovery_key = "hbfcd_exterior_confirm";
 uint16 discovery_keylen = 22;
@@ -30,7 +30,7 @@ void ICACHE_FLASH_ATTR user_broadcast_init(os_event_t *e)
 	// Open UDP connection
 	result = espconn_create(&udp_broadcast_conn);
 	if (result < 0 ) {
-		os_printf("ERROR %d: failed to open UDP broadcasts\r\n", result);
+		PRINT_DEBUG(DEBUG_ERR, "ERROR %d: failed to open UDP broadcasts\r\n", result);
 		TASK_RETURN(SIG_DISCOVERY, PAR_DISCOVERY_OPEN_FAILURE);
 		return;
 	};
@@ -57,7 +57,7 @@ void ICACHE_FLASH_ATTR user_send_broadcast(void)
 
 	// Retrieve current IP
 	if (wifi_get_ip_info(STATION_IF, &ip_config) == false) {
-		os_printf("ERROR: failed to check IP address for UDP broadcast\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to check IP address for UDP broadcast\r\n");
 		TASK_RETURN(SIG_DISCOVERY, PAR_DISCOVERY_BROADCAST_FAILURE);
 		return;	
 	};
@@ -67,7 +67,7 @@ void ICACHE_FLASH_ATTR user_send_broadcast(void)
 
 	result = espconn_send(&udp_broadcast_conn, packet_buf, packet_len);
 	if (result < 0) {
-		os_printf("ERROR: failed to send UDP broadcast packet\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to send UDP broadcast packet\r\n");
 		TASK_RETURN(SIG_DISCOVERY, PAR_DISCOVERY_BROADCAST_FAILURE);
 		return;	
 	};

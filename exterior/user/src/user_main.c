@@ -25,13 +25,13 @@ void ICACHE_FLASH_ATTR user_gpio_init(void);			// Performs GPIO initialization
 //      rather than IRAM, in which there is limited space.
 void ICACHE_FLASH_ATTR user_init(void)
 {
-        os_printf("user code entered\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "user code entered\r\n");
 
         // Set baud rate of UART0 to 115200 for serial debugging 
         // (default is nonstandard 74880) 
         uart_div_modify(0, UART_CLK_FREQ / 115200);
 
-        os_printf("UART speed set to 115200\r\n");
+        PRINT_DEBUG(DEBUG_LOW, "UART speed set to 115200\r\n");
 
         // Initialize GPIO interfaces
         user_gpio_init();
@@ -89,7 +89,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// if it is passed an error it cannot recover from. The system is restarted
 		// after a 5 second delay
 		case SIG_CONTROL | PAR_CONTROL_ERR_FATAL:
-			os_printf("rebooting system in 5 seconds\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "rebooting system in 5 seconds\r\n");
 			os_timer_setfn(&timer_reboot, system_restart, NULL);
 			os_timer_arm(&timer_reboot, 5000, false);
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_DEADLOOP);
@@ -110,7 +110,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// AP mode and serve a configuration webpage, where a user can enter a new SSID/pass
 		case SIG_AP_SCAN | PAR_AP_SCAN_NOAP:
 			config_mode = true;
-			os_printf("switching to configuration mode\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "switching to configuration mode\r\n");
 			TASK_START(user_config_assoc_init, 0, 0);
 			break;
  
@@ -120,7 +120,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		case SIG_AP_SCAN | PAR_AP_SCAN_FAILED_SCAN:          // Failed to begin AP scanning task 
 		case SIG_AP_SCAN | PAR_AP_SCAN_FLASH_FAILURE:        // Failed to read data from flash memory   
 		case SIG_AP_SCAN | PAR_AP_SCAN_STATION_MODE_FAILURE: // Failed to change the wifi mode to station
-			os_printf("RESPONSE: FATAL!\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break;
 			
@@ -131,7 +131,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		// Once the system has obtained an IP, disable the IP checking timer and initialize the
 		// exterior connection configuration
 		case SIG_IP_WAIT | PAR_IP_WAIT_GOTIP:
-			os_printf("gotip\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "gotip\r\n");
 			os_timer_disarm(&timer_ipcheck);
 			if (config_mode) {
 				TASK_START(user_config_connect_init, 0, 0);
@@ -142,7 +142,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 
 		// Error case. Failed to check IP info. In theory it's still there, so ignore this
 		case SIG_IP_WAIT | PAR_IP_WAIT_CHECK_FAILURE:
-			os_printf("RESPONSE: ignoring\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: ignoring\r\n");
 			break; 
 
 		/* ----------------- */
@@ -164,7 +164,7 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		
 		// If the discovery times out, go back to configuration mode
 		case SIG_DISCOVERY | PAR_DISCOVERY_TIMEOUT:
-			os_printf("discovery timed out\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "discovery timed out\r\n");
 			config_mode = true;
 			TASK_START(user_int_connect_cleanup, 0, 0);
 			break;
@@ -180,8 +180,8 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 					
 		// Once the interior is connected to the exterior, initialize the humidity readings
 		case SIG_DISCOVERY | PAR_DISCOVERY_CONNECTED:
-			os_printf("interior connected\r\n");
-			os_printf("starting humidity readings\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "interior connected\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "starting humidity readings\r\n");
 			os_timer_setfn(&timer_humidity, user_read_humidity, NULL);
 			os_timer_arm(&timer_humidity, HUMIDITY_READ_INTERVAL, true);
 
@@ -191,11 +191,11 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 
 		// Error cases:
 		case SIG_DISCOVERY | PAR_DISCOVERY_BROADCAST_FAILURE:	// Broadcast failed to send this time. Continue
-			os_printf("RESPONSE: ignoring\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: ignoring\r\n");
 			break;
 		case SIG_DISCOVERY | PAR_DISCOVERY_LISTEN_FAILURE:	// Failed to start listening for the interior with TCP
 		case SIG_DISCOVERY | PAR_DISCOVERY_OPEN_FAILURE:	// Failed to start listening for discovery packets
-			os_printf("RESPONSE: FATAL!\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break; 
 		
@@ -233,20 +233,20 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 		
 		// Once cleanup is complete, relaunch the AP scan
 		case SIG_CONFIG | PAR_CONFIG_CLEANUP_COMPLETE:
-			os_printf("re-entering AP scan\r\n");
+			PRINT_DEBUG(DEBUG_LOW, "re-entering AP scan\r\n");
 			TASK_START(user_scan, 0, 0);	
 			break;
 
 		// Error cases:
 		case SIG_CONFIG | PAR_CONFIG_MALFORMED:		// Received a malformed config packet
-			os_printf("RESPONSE: ignoring\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: ignoring\r\n");
 			break;
 		case SIG_CONFIG | PAR_CONFIG_STATION_MODE_FAILURE:	// Failed to set system to station mode
 		case SIG_CONFIG | PAR_CONFIG_CONFIG_FAILURE:	// Failed to configure system to connect to interior SSID
 		case SIG_CONFIG | PAR_CONFIG_FLASH_FAILURE:	// Failed to save config to flash
 		case SIG_CONFIG | PAR_CONFIG_CONNECT_FAILED:	// Failed to connect to interior via TCP 
 		case SIG_CONFIG | PAR_CONFIG_SETUP_FAILED:	// Failed to setup TCP connection to interior
-			os_printf("RESPONSE: FATAL!\r\n");
+			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: FATAL!\r\n");
 			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
 			break; 
 			
