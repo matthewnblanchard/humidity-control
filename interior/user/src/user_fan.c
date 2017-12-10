@@ -51,7 +51,7 @@ void user_gpio_isr(uint32 intr_mask, void *arg)
 	// Check if a tachometer interrupt occured
 	if (intr_mask & (TACH_BIT)) {
 		uint32 cur_time = system_get_time();	// Use the system time register for software debouncing
-		if ((cur_time - last_time) > 2500) {
+		if ((cur_time - last_time) > 1000) {
 			tach_cnt++;
 			last_time = cur_time;
 		};
@@ -80,10 +80,10 @@ void ICACHE_FLASH_ATTR user_tach_calc(void)
 	static sint32 last_rpm = -3100;			// Last measured RPM
 
 	// Calculate RPM
-	freq = ((float)tach_cnt * 1000) / TACH_PERIOD;	// Convert to pulses/second
-	measured_rpm = (freq * 60) / TACH_BLADE_N;	// Convert to rotations per minute
+	freq = ((float)tach_cnt * 1000) / (TACH_PERIOD * 2);	// Convert to pulses/second
+	measured_rpm = (freq * 60) / TACH_BLADE_N;		// Convert to rotations per minute
 
-	if (measured_rpm > FAN_RPM_MIN) {
+	if (measured_rpm > 250) {
 		if (((measured_rpm - last_rpm) < 100) && ((measured_rpm - last_rpm) > -100)) {
 			drive_delay += (FEEDBACK_GAIN * (measured_rpm - desired_rpm));
 			drive_delay = (drive_delay > DELAY_BOUNDH) ? DELAY_BOUNDH : drive_delay;

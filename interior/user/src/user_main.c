@@ -308,7 +308,7 @@ void ICACHE_FLASH_ATTR user_gpio_init(void)
 
 	// Initialize tachometer interrupt
 	gpio_output_set(0, 0, 0, TACH_BIT);					// Set Tachometer as input
-        gpio_pin_intr_state_set(GPIO_ID_PIN(TACH_PIN), GPIO_PIN_INTR_POSEDGE);  // Rising edge triggers
+        gpio_pin_intr_state_set(GPIO_ID_PIN(TACH_PIN), GPIO_PIN_INTR_ANYEDGE);  // Rising edge triggers
 
         // GPIO initialization
         gpio_init();

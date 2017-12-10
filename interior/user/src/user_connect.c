@@ -28,8 +28,10 @@ const char const *front_page = {
                                                 var view = new DataView(buffer);\
 						var int_element = document.getElementById(\"int_humidity\");\
 						var ext_element = document.getElementById(\"ext_humidity\");\
+						var rpm_element = document.getElementById(\"rpm\");\
 						int_element.innerHTML = view.getFloat32(0, true);\
 						ext_element.innerHTML = view.getFloat32(4, true);\
+						rpm_element.innerHTML = view.getInt32(8, true);\
                                         };\
 					ws.send(\"ack\");\
                                 };\
@@ -57,7 +59,7 @@ const char const *front_page = {
 			<input id=\"config_speed\" type=\"number\" step=\"1\"><br>\
 			<button id=\"config_submit\" type=\"button\" onclick=\"config_submit();\">Modify Configuration</button><br>\
 		</div>\
-		</div id=\"data\" style=\"display:none\">\
+		<div id=\"data\" style=\"display:none\">\
 			<table>\
 				<tr>\
 					<th>Interior Humidity (%RH)</th>\
@@ -340,8 +342,8 @@ void ICACHE_FLASH_ATTR user_ws_update(void *parg)
 {
         sint8 result = 0;                       // Function result
         struct espconn *ws_conn = parg;         // Grab WebSocket connection
-        uint8 data[10];                          // Packet data
-        os_memset(&data, 0, 10);                  
+        uint8 data[14];                         // Packet data
+        os_memset(&data, 0, 14);                  
 
         // Contruct packet. See user_sw_recv_cb for information on WebSocket packet structure.
         //      Packets from the server should never be masked
@@ -349,18 +351,17 @@ void ICACHE_FLASH_ATTR user_ws_update(void *parg)
 
         // Contruct bytes 1 & 2
         data[0] = (0x80) | (0x02);     // Unfragmented, binary data 
-        data[1] = 0x08;                // Unmasked, payload length 8 bytes  
+        data[1] = 0x0C;                // Unmasked, payload length 12 bytes  
         
-        // Read humidity data
+        // Add humidity data
 	os_memcpy(&data[2], &sensor_data_int, 4);
 	os_memcpy(&data[6], &sensor_data_ext, 4);
 
-        // Organize payload in big endian format
-//        user_endian_flip(&data[2], 8);  // Swap endianess
-//        user_endian_flip(&data[6], 4);  // Swap endianess
+	// Add measured RPM
+	os_memcpy(&data[10], &measured_rpm, 4);
 
         // Send data to WebSocket
-        result = espconn_send(ws_conn, data, 10);
+        result = espconn_send(ws_conn, data, 14);
 
         return;
 };
@@ -389,13 +390,13 @@ void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 	// Search for each config element
 	p1 = (uint8 *)os_strstr(data, "speed=");		// Locate speed element
 	if (p1 != NULL) {
-		p1 += 6;					// Move to end of 6 char substr "speed="
-		p2 = (uint8 *)os_strstr(p1, ",");		// Find end of speed element value (CSV)
-		speed = user_atoi(p1, p2 - p1);			// Extract integer fan RPM
+		p1 += 6;						// Move to end of 6 char substr "speed="
+		p2 = (uint8 *)os_strstr(p1, ",");			// Find end of speed element value (CSV)
+		speed = user_atoi(p1, p2 - p1);				// Extract integer fan RPM
 	
-		speed > FAN_RPM_MAX ? (speed = 3100) : 0;	// Cut speed down to max if RPM is above maximum
-		//drive_delay = SPEED_DELAY(speed);		// Modify triac delay 		
-		//os_printf("set rpm to %d, delay=%d us\r\n", speed, drive_delay);
+		speed > FAN_RPM_MAX ? (speed = FAN_RPM_MAX) : 0;	// Cut speed down to max if RPM is above maximum
+		speed < FAN_RPM_MIN ? (speed = FAN_RPM_MIN) : 0;	// Bump speed up to min if the RPM is below minimum
+		desired_rpm = speed;				// Modify triac delay 		
 	}
 
 	return;
