@@ -90,13 +90,13 @@ char *ws_response = {
         "Sec-WebSocket-Accept: %s\r\n\r\n"
 };
 
-struct espconn *ws_conn = NULL;		// WebSocket control structure
+static struct espconn *ws_conn = NULL;		// WebSocket control structure
 
 // espconn structs - these are control structures for TCP/UDP connections
-struct espconn tcp_ext_conn;
-struct _esp_tcp tcp_ext_proto;
-struct espconn tcp_front_conn;
-struct _esp_tcp tcp_front_proto;
+static struct espconn tcp_ext_conn;
+static struct _esp_tcp tcp_ext_proto;
+static struct espconn tcp_front_conn;
+static struct _esp_tcp tcp_front_proto;
 
 // WebSocket update timer
 os_timer_t ws_timer;
@@ -412,7 +412,7 @@ uint32 ICACHE_FLASH_ATTR user_atoi(uint8 *str, uint16 len)
 
 	// A 32 bit unsigned integer can hold at most 10 digits
 	if (len > 10) {
-		os_printf("atoi conversion error, input too large\r\n");
+		PRINT_DEBUG(DEBUG_ERR, "atoi conversion error, input too large\r\n");
 		return 0;
 	}
 

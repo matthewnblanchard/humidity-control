@@ -18,16 +18,12 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         uint16 humidity = 0;            // Humidity reading w/o calculations
         float adj_humidity = 0;         // Humidity reading after calculations
 
-//	ETS_GPIO_INTR_DISABLE();	// Interrupts during the I2C transaction will ruin the timing
-
         // Wake up the sensor by sending a measurement request. This consists of the slave's address
         // and a single 0 bit. 
         user_i2c_start_bit();
         if (user_i2c_write_byte((SENSOR_ADDR << 1) & 0xFE) == 1) {
                 PRINT_DEBUG(DEBUG_ERR, "slave failed to initiate measurement\r\n");
         	user_i2c_stop_bit();
-//		ETS_GPIO_INTR_ENABLE();
-//		gpio_intr_handler_register(user_gpio_isr, 0);
 		return;
         };
         user_i2c_stop_bit();
@@ -46,8 +42,6 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         if (user_i2c_write_byte((SENSOR_ADDR << 1) | 0x01) == 1) {
                 PRINT_DEBUG(DEBUG_ERR, "slave failed to receive address\r\n");
         	user_i2c_stop_bit();
-//		ETS_GPIO_INTR_ENABLE();
-//		gpio_intr_handler_register(user_gpio_isr, 0);
 		return;      
         };
 
@@ -77,7 +71,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 	// Compare interior/exterior humidities
 	user_humidity_cmp();
 
-	os_printf("ext_humidity=%d\r\n", (uint32)sensor_data_ext);
+	PRINT_DEBUG(DEBUG_HIGH, "ext_humidity=%d\r\n", (uint32)sensor_data_ext);
         return;
 };
 

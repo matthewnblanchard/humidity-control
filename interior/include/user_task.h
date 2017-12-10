@@ -110,7 +110,6 @@ enum {
 
 // Webserver Signals
 #define SIG_WEB					(uint32)(0x0005 << 16)
-
 #define PAR_WEB_INIT_FAILURE			(uint32)(0xFFFF)
 
 // AP Mode (Configuration Mode) signals

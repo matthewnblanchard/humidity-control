@@ -4,22 +4,22 @@
 #include "user_captive.h"
 
 // AP configuration
-struct softap_config ap_config = {      // SoftAP configuration
-        "HBFC/D Wireless Setup",        // SSID
-        "pass",                         // Password
-        21,                             // SSID length
-        1,                              // Channel
-        AUTH_OPEN,                      // Authentication mode
-        false,                          // SSID hidden
-        2,                              // Maximum connection #
-        1000                            // Beacon broadcast interval
+static struct softap_config ap_config = {      	// SoftAP configuration
+        "HBFC/D Wireless Setup",        	// SSID
+        "pass",                         	// Password
+        21,                             	// SSID length
+        1,                              	// Channel
+        AUTH_OPEN,                      	// Authentication mode
+        false,                          	// SSID hidden
+        2,                             	 	// Maximum connection #
+        1000                            	// Beacon broadcast interval
 };
 
 // espconn structs - Connection control structures
-struct espconn tcp_captive_conn;
-struct _esp_tcp tcp_captive_proto;
-struct espconn tcp_captive_ext_conn;
-struct _esp_tcp tcp_captive_ext_proto;
+static struct espconn tcp_captive_conn;
+static struct _esp_tcp tcp_captive_proto;
+static struct espconn tcp_captive_ext_conn;
+static struct _esp_tcp tcp_captive_ext_proto;
 
 // HTML for captive portal webpage
 const char const *captive_page = {
@@ -81,8 +81,8 @@ const char const *submit_page = {
         </html>"
 };
 
-bool captive_ext_connect = 0;
-struct espconn *ext_conn = NULL;
+static bool captive_ext_connect = 0;
+static struct espconn *ext_conn = NULL;
 
 // Static function prototypes
 static void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg);
@@ -291,12 +291,27 @@ static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, un
                 pass_len = os_strlen(p1);                       // Calculate password length.
                 pass = p1;
 
+		// Make sure the SSID/Pass will fit in the buffers
+		if (ssid_len > 256) {
+			PRINT_DEBUG(DEBUG_ERR, "ERROR: User submitted an SSID which was too large\r\n");
+			return;
+		}
+		if (pass_len > 256) {
+			PRINT_DEBUG(DEBUG_ERR, "ERROR: User submitted a password which was too large\r\n");
+			return;
+		}
+
+		// Copy the raw HTTP post contents to the "raw" buffers
 		os_memcpy(ssid_raw, ssid, ssid_len);		// Copy raw SSID for fixing
 		os_memcpy(pass_raw, pass, pass_len);		// Copy raw pass for fixing
 		
-		// "Fix" SSID/pass by decoding escapped characters"
+		// "Fix" SSID/pass by decoding escaped characters
 		ssid_len = user_http_post_fix(ssid_raw, ssid_len);
 		pass_len = user_http_post_fix(pass_raw, pass_len);
+
+		// SSID max = 32, Password max = 64. If these are too large, shave them down. Extra input will be ignored		
+		ssid_len = (ssid_len > 32) ? 32 : ssid_len;
+		pass_len = (pass_len > 64) ? 64 : pass_len;
 
                 // Store retrieved data in flash     
                 struct user_data_station_config post_config;

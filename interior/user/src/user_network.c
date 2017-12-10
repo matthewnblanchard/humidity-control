@@ -7,7 +7,7 @@
 static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status);
 
 // File scope variables
-static struct station_config client_config;            // Station configuration (must be accessible from callback)
+static struct station_config client_config;            // Station configuration (must be accessible from callbacks)
 
 void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
 {

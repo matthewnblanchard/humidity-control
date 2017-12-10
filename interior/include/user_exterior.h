@@ -15,24 +15,10 @@
 #include "user_connect.h"
 
 // Constants (ports, timing, etc)
-//#define MDNS_PORT 5353	
 #define BROADCAST_PORT 5000
 #define ESP_CONNECT_PORT 6000
 #define EXT_PACKET_SIZE 4	// Size of data contained within a packet from the exterior system
 #define EXT_WAIT_TIME 60000	// Maximum wait time (in ms) for discovery of the exterior system before fallback to config mode
-
-// User Task: user_mdns_init(os_event_t *e)
-// Desc: Initializes mDNS to discover the exterior system
-// Args:
-//	os_event_t *e: Pointer to OS event data
-// Return:
-//	Nothing
-//void ICACHE_FLASH_ATTR user_mdns_init(os_event_t *e);
-
-// Callback Function: user_mdns_recv_cb(void *arg, char *pusrdata, unsigned short len)
-// Desc: Callback for when the systme receives an mDNS packet.
-//	responded to queries for its hostname
-//void ICACHE_FLASH_ATTR user_mdns_recv_cb(void *arg, char *pusrdata, unsigned short len);
 
 // User Task: user_broadcast_init(os_event_t *e)
 // Desc: Initializes the UDP broadcast connection for discovery of the

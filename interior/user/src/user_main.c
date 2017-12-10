@@ -137,22 +137,6 @@ void ICACHE_FLASH_ATTR user_control_task(os_event_t *e)
 			PRINT_DEBUG(DEBUG_ERR, "RESPONSE: ignoring\r\n");
 			break; 
 
-		/* ------------ */
-		/* mDNS Signals */
-		/* ------------ */	
-		/*		
-		// PLACEHOLDER
-		case SIG_MDNS | PAR_MDNS_CONFIG_COMPLETE:
-
-			break; 	
-
-		// Error cases:
-		case SIG_MDNS | PAR_MDNS_INIT_FAILURE:
-			os_printf("RESPONSE: FATAL!\r\n"); 
-			TASK_RETURN(SIG_CONTROL, PAR_CONTROL_ERR_FATAL);
-			break;	
-		*/
-
 		/* ----------------- */
 		/* Discovery Signals */
 		/* ----------------- */
