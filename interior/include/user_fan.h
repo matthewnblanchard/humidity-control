@@ -49,6 +49,7 @@
 extern volatile bool drive_flag;		// Flag to indicate if fan should be driven
 extern volatile sint32 desired_rpm;		// Desired RPM of the fan
 extern volatile sint32 measured_rpm;		// Measured RPM of the fan
+extern volatile bool fan_on;			// Toggles whether the fan is able to be driven
 
 // Timers
 os_timer_t tach_t;	// Tachometer calculation timer

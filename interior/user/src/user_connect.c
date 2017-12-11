@@ -41,11 +41,27 @@ const char const *front_page = {
 				config.style.display = \"block\";\
 				var data = document.getElementById(\"data\");\
 				data.style.display = \"block\";\
+				var toggle_fan_off = document.getElementById(\"toggle_fan_off\");\
+				toggle_fan_off.style.display = \"block\";\
                         };\
 			function config_submit() {\
 				var config_speed = document.getElementById(\"config_speed\");\
 				ws.send(\"speed=\" + config_speed.value + \",\");\
 				console.log(\"Sending configuration\");\
+			};\
+			function fan_off() {\
+				var toggle_fan_off = document.getElementById(\"toggle_fan_off\");\
+				toggle_fan_off.style.display = \"none\";\
+				var toggle_fan_on = document.getElementById(\"toggle_fan_on\");\
+				toggle_fan_on.style.display = \"block\";\
+				ws.send(\"fan=off\");\
+			};\
+			function fan_on() {\
+				var toggle_fan_on = document.getElementById(\"toggle_fan_on\");\
+				toggle_fan_on.style.display = \"none\";\
+				var toggle_fan_off = document.getElementById(\"toggle_fan_off\");\
+				toggle_fan_off.style.display = \"block\";\
+				ws.send(\"fan=on\");\
 			};\
                 </script>\
         <body>\
@@ -54,6 +70,12 @@ const char const *front_page = {
                 </h1>\
 		<div id=\"ws_init\" style=\"\">\
                 	<button id=\"ws_start\" type=\"button\" onclick=\"button_ws();\">Start Websocket</button>\
+		</div>\
+		<div id=\"toggle_fan_off\" style=\"display:none\">\
+			<button id=\"fan_off\" type=\"button\" onclick=\"fan_off();\">Turn Fan Off</button><br>\
+		</div>\
+		<div id=\"toggle_fan_on\" style=\"display:none\">\
+			<button id=\"fan_on\" type=\"button\" onclick=\"fan_on();\">Turn Fan On</button><br>\
 		</div>\
 		<div id=\"config\" style=\"display:none\">\
 			<input id=\"config_speed\" type=\"number\" step=\"1\"><br>\
@@ -397,6 +419,18 @@ void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 		speed > FAN_RPM_MAX ? (speed = FAN_RPM_MAX) : 0;	// Cut speed down to max if RPM is above maximum
 		speed < FAN_RPM_MIN ? (speed = FAN_RPM_MIN) : 0;	// Bump speed up to min if the RPM is below minimum
 		desired_rpm = speed;				// Modify triac delay 		
+	}
+	p1 = (uint8 *)os_strstr(data, "fan=");			// Locate fan state element
+	if (p1 != NULL) {
+		p1 += 4;				// Move to end of 4 char substr "fan="
+		p2 = (uint8 *)os_strstr(p1, "on");	// Check if the state is "on"
+		if (p2 != NULL) {
+			fan_on = true;			// Change fan flag 
+		}
+		p2 = (uint8 *)os_strstr(p1, "off");	// Change fan flag
+		if (p2 != NULL) {
+			fan_on = false;
+		}
 	}
 
 	return;

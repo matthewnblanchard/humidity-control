@@ -111,7 +111,7 @@ static void ICACHE_FLASH_ATTR user_scan_done(void *arg, STATUS status)
 
 void ICACHE_FLASH_ATTR user_check_ip(void)
 {
-        struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info)); // Received IP info
+        //struct ip_info *ip = (struct ip_info *)os_zalloc(sizeof(struct ip_info)); // Received IP info
 	uint8 status = 0;	// Connection status
 
 	// Check connection status
@@ -122,7 +122,7 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
         if (status == STATION_GOT_IP) {
                 PRINT_DEBUG(DEBUG_LOW, "ip received\r\n");
 		TASK_RETURN(SIG_IP_WAIT, PAR_IP_WAIT_GOTIP);
-                if (wifi_get_ip_info(STATION_IF, ip) == true) { // Check ip info on station interface
+              /*  if (wifi_get_ip_info(STATION_IF, ip) == true) { // Check ip info on station interface
                         PRINT_DEBUG(DEBUG_HIGH, "ip=%d.%d.%d.%d\r\n", IP2STR(ip->ip.addr));
                         PRINT_DEBUG(DEBUG_HIGH, "netmask=%d.%d.%d.%d\r\n", IP2STR(ip->ip.addr));
                         PRINT_DEBUG(DEBUG_HIGH, "gw=%d.%d.%d.%d\r\n", IP2STR(ip->ip.addr));
@@ -130,8 +130,8 @@ void ICACHE_FLASH_ATTR user_check_ip(void)
                 } else {
                         PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to check ip\r\n");
 			TASK_RETURN(SIG_IP_WAIT, PAR_IP_WAIT_CHECK_FAILURE);
-                }
+                }*/
         }
-        os_free(ip);
+        //os_free(ip);
 	return;
 };

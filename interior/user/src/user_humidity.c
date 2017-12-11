@@ -77,9 +77,12 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 
 void ICACHE_FLASH_ATTR user_humidity_cmp(void)
 {
+	// If the fan state is off, never drive the fan
+	if (fan_on == false) {
+		drive_flag = false;
 
 	// Don't try to push the humidity below the threshold
-	if (sensor_data_int <= threshold_humidity) {
+	} else if (sensor_data_int <= threshold_humidity) {
 		drive_flag = false;
 
 	// Drive the humidity down if the interior is above the exterior

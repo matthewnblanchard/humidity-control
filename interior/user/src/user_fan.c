@@ -9,6 +9,7 @@ volatile sint32 drive_delay = SUPPLY_HALF_CYCLE / 2;	// Delay on triac pulse in 
 volatile uint16 tach_cnt = 0;				// Count of tachometer pulses
 volatile sint32 desired_rpm = 2500;			// The desired RPM of the fan
 volatile sint32 measured_rpm = 0;			// RPM measured by tachometer
+volatile bool fan_on = true;
 
 void user_gpio_isr(uint32 intr_mask, void *arg)
 {
