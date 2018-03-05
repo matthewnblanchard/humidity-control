@@ -22,8 +22,8 @@
 // Macros to calculate TRIAC delay
 #define CALC_DELAY(X)		X //((-0.01541*(X)*(X)*(X)) + (0.02207*(X)*(X)) - (0.01175*(X)) + 0.006587)
 #define SPEED_DELAY(X)		X //CALC_DELAY((X)/FAN_RPM_MAX) > 150 ? CALC_DELAY((X)/FAN_RPM_MAX) : 150	// Minimum delay of 150 u
-#define DELAY_BOUNDL		500
-#define DELAY_BOUNDH		SUPPLY_HALF_CYCLE - 300
+#define DELAY_BOUNDL		2000
+#define DELAY_BOUNDH		5300
 
 // Fan/ZCD GPIO definitions - DO NOT CHANGE THESE
 #define TRIAC_PIN	12	// GPIO pin connected to the fan triac
@@ -43,13 +43,28 @@
 #define TACH_PERIOD 2000	// Tach calculaiton period in ms
 #define TACH_BLADE_N 7 		// Number of fan blades with reflective tape (# of pulses per revolution)
 #define DEBOUNCE_TIME 100	// Debouncing period in us
-#define FEEDBACK_GAIN 1		// The RPM error is multiplied by this to arrive at the triac delay adjustment
+#define FEEDBACK_GAIN 0.4f	// The RPM error is multiplied by this to arrive at the triac delay adjustment
 
 // Fan driving variables
-extern volatile bool drive_flag;		// Flag to indicate if fan should be driven
+extern volatile bool drive_flag;		  // Flag to indicate if fan should be driven
+extern volatile sint32 desired_delay; // Desired TRIAC delay in us
 extern volatile sint32 desired_rpm;		// Desired RPM of the fan
-extern volatile sint32 measured_rpm;		// Measured RPM of the fan
-extern volatile bool fan_on;			// Toggles whether the fan is able to be driven
+extern volatile sint32 measured_rpm;	// Measured RPM of the fan
+extern volatile bool fan_on;			    // Toggles whether the fan is able to be driven
+extern volatile uint8 fan_mode;      // Operational mode of the fan
+extern volatile uint8 control_mode;  // Mode with which to control fan speed
+
+typedef enum {
+  FAN_LOCK_OFF = 0,      // Fan is locked off (will not run)
+  FAN_NORMAL   = 1,      // Fan runs using normal logic (to control humidity)
+  FAN_LOCK_ON  = 2,      // Fan is locked on (always running)
+  FAN_OVERRIDE = 3,      // Fan is locked on, and the drive delay can be controlled manually
+} FAN_MODE;
+
+typedef enum {
+  CONTROL_SPEED = 0,    // Fan is controlled by target RPM
+  CONTROL_DELAY = 1,    // Fan is controlled by manually setting a TRIAC delay
+} CONTROL_MODE;
 
 // Timers
 os_timer_t tach_t;	// Tachometer calculation timer
@@ -71,7 +86,7 @@ void ICACHE_FLASH_ATTR hw_timer_init(FRC1_TIMER_SOURCE_TYPE source_type, u8 req)
 //	uint32 intr_mask: Interrupt flag mask
 //	void *arg:	Arguments
 // Returns:
-//	Nothing 
+//	Nothing
 void user_gpio_isr(uint32 intr_mask, void *arg);
 
 // Callback Function: user_fire_triac(void)

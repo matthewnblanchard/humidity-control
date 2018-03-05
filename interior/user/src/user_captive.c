@@ -41,7 +41,7 @@ const char const *captive_page = {
                 SSID:<br>\
                 <input type=\"text\" name=\"ssid\"><br>\
                 Password:<br>\
-                <input type=\"password\" name=\"pass\"><br>\
+                <input type=\"password\" name=\"pass\"><br><br>\
                 <input type=\"submit\" value=\"Submit\"><br>\
         </form>\
         </body>\
@@ -116,42 +116,42 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         if (wifi_set_opmode_current(SOFTAP_MODE) == false) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to set WiFi mode to AP\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_AP_MODE_FAILURE);
-		return; 
+		return;
         }
 
         // Configure AP settings (SSID/pass, etc)
         if (wifi_softap_set_config_current(&ap_config) == false) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: softap config failed\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_MODE_CONFIG_FAILURE);
-		return; 
+		return;
         }
 
         // Stop DHCP service for configuration
         if (wifi_softap_dhcps_stop() == false) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to stop DHCP service\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
-		return; 
+		return;
         }
 
         // Set SoftAP IP info
         if (wifi_set_ip_info(SOFTAP_IF, &ip_config) == false) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: ip info configuration failed\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
-		return; 
+		return;
         }
 
         // Set DHCP lease range
         if (wifi_softap_set_dhcps_lease(&ip_range) == false) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to set dhcp lease range\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
-		return; 
+		return;
         }
 
         // Start DHCP service
         if (wifi_softap_dhcps_start() == false) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to start dhcp service\r\n");
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_DHCP_CONFIG_FAILURE);
-		return; 
+		return;
         }
 
         // Set up TCP server on port 80
@@ -167,15 +167,15 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         if (result < 0) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to register connect callback, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_WEB_INIT_FAILURE);
-		return; 
+		return;
         }
 
         // Start listening
-        result = espconn_accept(&tcp_captive_conn);      
+        result = espconn_accept(&tcp_captive_conn);
         if (result < 0) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to start tcp server, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_WEB_INIT_FAILURE);
-		return; 
+		return;
         }
 
 	// Set TCP timeout interval to 1 second
@@ -194,22 +194,22 @@ void ICACHE_FLASH_ATTR user_apmode_init(os_event_t *e)
         if (result < 0) {
                 PRINT_DEBUG(DEBUG_ERR, "failed to register connect callback, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_EXT_INIT_FAILURE);
-		return; 
+		return;
         }
 
         // Start listening
-        result = espconn_accept(&tcp_captive_ext_conn);      
+        result = espconn_accept(&tcp_captive_ext_conn);
         if (result < 0) {
                 PRINT_DEBUG(DEBUG_ERR, "failed to start tcp server, error=%d\r\n", result);
                 TASK_RETURN(SIG_APMODE, PAR_APMODE_EXT_INIT_FAILURE);
-		return; 
+		return;
         }
-	
+
 	// Set TCP timeout interval to 30 minutes (1800 seconds)
 	espconn_regist_time(&tcp_captive_ext_conn, 1800, 0);
 
         TASK_RETURN(SIG_APMODE, PAR_APMODE_SETUP_COMPLETE);
-	return; 
+	return;
 };
 
 static void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg)
@@ -226,7 +226,7 @@ static void ICACHE_FLASH_ATTR user_captive_connect_cb(void *arg)
 
 	return;
 };
-        
+
 static void ICACHE_FLASH_ATTR user_captive_recon_cb(void *arg, sint8 err)
 {
         PRINT_DEBUG(DEBUG_ERR, "user connection error, code=%d\r\n", err);
@@ -244,7 +244,7 @@ static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, un
         struct espconn *client_conn = arg;                      // Pull client connection
         sint8 flash_result = 0;                                 // Result of flash operation
         uint8 *p1;                                              // Char pointers for string manipulations
-        uint8 *p2;                              
+        uint8 *p2;
         uint8 *ssid;                                            // User sent SSID
         uint8 ssid_len;                                         // Length of the SSID
         uint8 *pass;                                            // User sent password
@@ -260,15 +260,15 @@ static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, un
         if (os_strncmp(pusrdata, "GET ", 4) == 0) {
 
                 PRINT_DEBUG(DEBUG_HIGH, "http GET request detected\r\n");
-	
+
 		// Send the configuration page only if the exterior system is connected,
 		// otherwise send the wait page
 		if (captive_ext_connect == true) {
                 	PRINT_DEBUG(DEBUG_LOW, "sending captive portal\r\n");
-                	espconn_send(client_conn, (uint8 *)captive_page, os_strlen(captive_page)); 
+                	espconn_send(client_conn, (uint8 *)captive_page, os_strlen(captive_page));
 		} else {
 			PRINT_DEBUG(DEBUG_LOW, "sending wait page\r\n");
-                	espconn_send(client_conn, (uint8 *)wait_page, os_strlen(wait_page)); 
+                	espconn_send(client_conn, (uint8 *)wait_page, os_strlen(wait_page));
 		}
         }
 
@@ -304,16 +304,16 @@ static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, un
 		// Copy the raw HTTP post contents to the "raw" buffers
 		os_memcpy(ssid_raw, ssid, ssid_len);		// Copy raw SSID for fixing
 		os_memcpy(pass_raw, pass, pass_len);		// Copy raw pass for fixing
-		
+
 		// "Fix" SSID/pass by decoding escaped characters
 		ssid_len = user_http_post_fix(ssid_raw, ssid_len);
 		pass_len = user_http_post_fix(pass_raw, pass_len);
 
-		// SSID max = 32, Password max = 64. If these are too large, shave them down. Extra input will be ignored		
+		// SSID max = 32, Password max = 64. If these are too large, shave them down. Extra input will be ignored
 		ssid_len = (ssid_len > 32) ? 32 : ssid_len;
 		pass_len = (pass_len > 64) ? 64 : pass_len;
 
-                // Store retrieved data in flash     
+                // Store retrieved data in flash
                 struct user_data_station_config post_config;
                 os_memcpy(post_config.config.ssid, ssid_raw, ssid_len);
                 os_memcpy(post_config.config.password, pass_raw, pass_len);
@@ -333,10 +333,10 @@ static void ICACHE_FLASH_ATTR user_captive_recv_cb(void *arg, char *pusrdata, un
                         TASK_RETURN(SIG_APMODE, PAR_APMODE_FLASH_FAILURE);
                         return;
                 }
-		
+
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_CONFIG_RECV);
-		return;		
-        } 
+		return;
+        }
 };
 
 static void ICACHE_FLASH_ATTR user_captive_sent_cb(void *arg)
@@ -385,8 +385,8 @@ static void ICACHE_FLASH_ATTR user_captive_ext_recv_cb(void *arg, char *pusrdata
 	// accepted WiFi configuration data
 	if (os_strstr(pusrdata, "accept")) {
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_EXT_ACCEPT);
-	};	
-	
+	};
+
 	return;
 };
 
@@ -399,7 +399,7 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void)
 {
 	uint8 buf[256];					// Data to send to the exterior system
         struct user_data_station_config *saved_conn;    // Retrieved station config
-	uint8 flash_result = 0;				// Result of flash operation	
+	uint8 flash_result = 0;				// Result of flash operation
 	sint16 data_len = 0;				// Length of data. Negative indicates an error
 	sint8 send_result = 0;				// Result of data sending operation
 
@@ -412,7 +412,7 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void)
 	// Check if the exterior system is available
 	if (!captive_ext_connect) {
 		return;
-	}	
+	}
 
         // Pull station info (SSID/pass) from memory
         flash_result = FLASH_READ(USER_DATA_START_ADDR, saved_conn);
@@ -424,8 +424,8 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void)
         }
 
 	// Format SSID/Pass
-	data_len = os_sprintf(buf, "ssid=%s&pass=%s", saved_conn->config.ssid, saved_conn->config.password);	
-	
+	data_len = os_sprintf(buf, "ssid=%s&pass=%s", saved_conn->config.ssid, saved_conn->config.password);
+
 	// Send data to exterior system
         send_result = espconn_send(ext_conn, buf, data_len);
 	if (send_result != 0) {
@@ -433,8 +433,8 @@ void ICACHE_FLASH_ATTR user_ext_send_cred(void)
 		TASK_RETURN(SIG_APMODE, PAR_APMODE_SEND_FAILURE);
 		os_free(saved_conn);
 		return;
-	}; 
-	
+	};
+
 	PRINT_DEBUG(DEBUG_LOW, "sent data\r\n");
 	os_free(saved_conn);
 	return;
@@ -465,24 +465,24 @@ uint16 ICACHE_FLASH_ATTR user_http_post_fix(uint8 *str, uint16 len)
 
 	// Iterate backwards through the string
 	for (i = (len - 1); i >= 0; i--) {
-		
+
 		// Replace '+'s with spaces, length does not change
 		if (str[i] == '+') {
 			str[i] = ' ';
 		}
-	
+
 		// If we hit a '%' symbol, this indicates an escaped ASCII chararacter.
-		// Replace with the actual ASCII character 
+		// Replace with the actual ASCII character
 		else if (str[i] == '%') {
 			octet = user_axtoi(&str[i + 1], 2);	// Convert two hex nibble to an integer
 			str[i] = octet;				// Replace the '%' symbol with the encoded character
-			
+
 			// Move remaining characters backward
-			for (j = (i + 1); j < (new_len - 2); j++) {  
+			for (j = (i + 1); j < (new_len - 2); j++) {
 				str[j] = str[j + 2];
 			}
 			new_len -= 2;	// Reduce length by 2
-		}		
+		}
 	}
 	return new_len;
 };
@@ -491,11 +491,11 @@ uint32 ICACHE_FLASH_ATTR user_axtoi(uint8 *str, uint16 len)
 {
 	uint16 i = 0;	// Loop index
 	uint32 num = 0;	// Calculated hex number
-	
+
 	// Interate through each character
 	for (i = 0; i < len; i++){
-		
-		// Check if the character is a digit (0-9)	
+
+		// Check if the character is a digit (0-9)
 		if ((str[i] >= 0x30) && (str[i] <= 0x39)) {
 			num *= 16;		// Move nibble sections forward one sig-fig
 			num += (str[i] - 0x30);	// Add in newest hextet
