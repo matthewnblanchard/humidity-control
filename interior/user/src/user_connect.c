@@ -5,119 +5,100 @@
 
 // HTML for front end webpage
 const char const *front_page = {
-"HTTP/1.1 200 OK\r\n\
-Content-type: text/html\r\n\r\n\
-<!DOCTYPE html>\
-<html>\
-<head>\
-  <meta charset=\"UTF-8\"/>\
-  <title>HBFC/D Front Page</title>\
-  <script>\
-    var ws;\
-    var debug = 0;\
-    function button_ws() {\
-      ws = new WebSocket('ws://' + window.location.hostname + ':80/');\
-      ws.binaryType = \"arraybuffer\";\
-      console.log('WebSocket opened');\
-      ws.onopen = function(evt) {\
-        console.log('WebSocket connected');\
-        ws.send('Hello HBFC/D');\
-      };\
-      ws.onmessage = function(evt) {\
-        if(evt.data instanceof ArrayBuffer) {\
-          var buffer = evt.data;\
-          var view = new DataView(buffer);\
-          var int_element = document.getElementById(\"int_humidity\");\
-          var ext_element = document.getElementById(\"ext_humidity\");\
-          var rpm_element = document.getElementById(\"rpm\");\
-          int_element.innerHTML = view.getFloat32(0, true);\
-          ext_element.innerHTML = view.getFloat32(4, true);\
-          rpm_element.innerHTML = view.getInt32(8, true);\
-        };\
-        ws.send(\"ack\");\
-      };\
-      var ws_init = document.getElementById(\"ws_init\");\
-      ws_init.style.display = \"none\";\
-      var config = document.getElementById(\"config\");\
-      config.style.display = \"block\";\
-      var data = document.getElementById(\"data\");\
-      data.style.display = \"block\";\
-    };\
-    function config_submit() {\
-      if (debug == 0) {\
-        var config_speed = document.getElementById(\"config_speed\");\
-        ws.send(\"speed=\" + config_speed.value + \",mode=normal\");\
-        console.log(\"Sending configuration\");\
-      } else {\
-        var control_mode = document.getElementById(\"control_mode\");\
-        var fan_mode = document.getElementById(\"fan_mode\");\
-        if (control_mode.value == \"speed\") {\
-          var config_speed = document.getElementById(\"config_speed\");\
-          ws.send(\"speed=\" + config_speed.value + \",mode=\" + fan_mode.value);\
-        } else {\
-          var config_delay = document.getElementById(\"config_delay\");\
-          ws.send(\"delay=\" + config_delay.value + \",mode=\" + fan_mode.value);\
-        }\
-      }\
-    };\
-    function toggle_debug() {\
-      if (debug == 0) {\
-        var debug_element = document.getElementById(\"debug\");\
-        debug_element.style.display = \"block\";\
-        debug = 1;\
-      } else {\
-        var debug_element = document.getElementById(\"debug\");\
-        debug_element.style.display = \"none\";\
-        debug = 0;\
-      }\
-    };\
-  </script>\
-<body>\
-  <h1>\
-    Humidity Based Fan Controller / Dehumidifer Monitoring & Control\
-  </h1>\
-  <div id=\"ws_init\" style=\"\">\
-    <button id=\"ws_start\" type=\"button\" onclick=\"button_ws();\">Start Websocket</button>\
-  </div>\
-  <div id=\"config\" style=\"display:none\">\
-    Fan Speed (RPM)<br>\
-    <input id=\"config_speed\" type=\"number\" step=\"1\"><br>\
-    <div id=\"debug\" style=\"display:none\">\
-      <br>Triac Firing Delay (microseconds)<br>\
-      <input id=\"config_delay\" type=\"number\" step=\"1\"><br><br>\
-      Control Mode: \
-      <select id=\"control_mode\">\
-        <option value=\"speed\">Fan Speed</option>\
-        <option value=\"delay\">Triac Delay</option>\
-      </select><br>\
-      Fan Mode: \
-      <select id=\"fan_mode\">\
-        <option value=\"normal\">Normal</option>\
-        <option value=\"lock_on\">Force On</option>\
-        <option value=\"lock_off\">Force Off</option>\
-      </select><br>\
-    </div>\
-    <button id=\"config_submit\" type=\"button\" onclick=\"config_submit();\">Modify Configuration</button><br>\
-    <button id=\"debug_on\" type=\"button\" onclick=\"toggle_debug();\">Toggle Debug Mode</button><br>\
-  </div>\
-  <div id=\"data\" style=\"display:none\">\
-    <table>\
-    <tr>\
-      <th>Interior Humidity (%RH)</th>\
-      <td id=\"int_humidity\">Unknown</td>\
-    </tr>\
-    <tr>\
-      <th>Exterior Humidity (%RH)</th>\
-      <td id=\"ext_humidity\">Unknown</td>\
-    </tr>\
-    <tr>\
-      <th>Fan RPM</th>\
-      <td id=\"rpm\">Unknown</td>\
-    </tr>\
-    <table>\
-  </div>\
-</body>\
-</html>"
+        "HTTP/1.1 200 OK\r\n\
+        Content-type: text/html\r\n\r\n\
+	<!DOCTYPE html>\
+        <html>\
+        <head>\
+		<meta charset=\"UTF-8\"/>\
+                <title>HBFC/D Front Page</title>\
+                <script>\
+                        var ws;\
+                        function button_ws() {\
+                                ws = new WebSocket('ws://' + window.location.hostname + ':80/');\
+                                ws.binaryType = \"arraybuffer\";\
+                                console.log('WebSocket opened');\
+                                ws.onopen = function(evt) {\
+                                        console.log('WebSocket connected');\
+                                        ws.send('Hello HBFC/D');\
+                              	};\
+                                ws.onmessage = function(evt) {\
+                                        if(evt.data instanceof ArrayBuffer) {\
+                                                var buffer = evt.data;\
+                                                var view = new DataView(buffer);\
+						var int_element = document.getElementById(\"int_humidity\");\
+						var ext_element = document.getElementById(\"ext_humidity\");\
+						var rpm_element = document.getElementById(\"rpm\");\
+						int_element.innerHTML = view.getFloat32(0, true);\
+						ext_element.innerHTML = view.getFloat32(4, true);\
+						rpm_element.innerHTML = view.getInt32(8, true);\
+                                        };\
+					ws.send(\"ack\");\
+                                };\
+				var ws_init = document.getElementById(\"ws_init\");\
+				ws_init.style.display = \"none\";\
+				var config = document.getElementById(\"config\");\
+				config.style.display = \"block\";\
+				var data = document.getElementById(\"data\");\
+				data.style.display = \"block\";\
+				var toggle_fan_off = document.getElementById(\"toggle_fan_off\");\
+				toggle_fan_off.style.display = \"block\";\
+                        };\
+			function config_submit() {\
+				var config_speed = document.getElementById(\"config_speed\");\
+				ws.send(\"speed=\" + config_speed.value + \",\");\
+				console.log(\"Sending configuration\");\
+			};\
+			function fan_off() {\
+				var toggle_fan_off = document.getElementById(\"toggle_fan_off\");\
+				toggle_fan_off.style.display = \"none\";\
+				var toggle_fan_on = document.getElementById(\"toggle_fan_on\");\
+				toggle_fan_on.style.display = \"block\";\
+				ws.send(\"fan=off\");\
+			};\
+			function fan_on() {\
+				var toggle_fan_on = document.getElementById(\"toggle_fan_on\");\
+				toggle_fan_on.style.display = \"none\";\
+				var toggle_fan_off = document.getElementById(\"toggle_fan_off\");\
+				toggle_fan_off.style.display = \"block\";\
+				ws.send(\"fan=on\");\
+			};\
+                </script>\
+        <body>\
+                <h1>\
+                        Humidity Based Fan Controller / Dehumidifer Monitoring & Control\
+                </h1>\
+		<div id=\"ws_init\" style=\"\">\
+                	<button id=\"ws_start\" type=\"button\" onclick=\"button_ws();\">Start Websocket</button>\
+		</div>\
+		<div id=\"toggle_fan_off\" style=\"display:none\">\
+			<button id=\"fan_off\" type=\"button\" onclick=\"fan_off();\">Turn Fan Off</button><br>\
+		</div>\
+		<div id=\"toggle_fan_on\" style=\"display:none\">\
+			<button id=\"fan_on\" type=\"button\" onclick=\"fan_on();\">Turn Fan On</button><br>\
+		</div>\
+		<div id=\"config\" style=\"display:none\">\
+			<input id=\"config_speed\" type=\"number\" step=\"1\"><br>\
+			<button id=\"config_submit\" type=\"button\" onclick=\"config_submit();\">Modify Configuration</button><br>\
+		</div>\
+		<div id=\"data\" style=\"display:none\">\
+			<table>\
+				<tr>\
+					<th>Interior Humidity (%RH)</th>\
+					<td id=\"int_humidity\">Unknown</td>\
+				</tr>\
+				<tr>\
+					<th>Exterior Humidity (%RH)</th>\
+					<td id=\"ext_humidity\">Unknown</td>\
+				</tr>\
+				<tr>\
+					<th>Fan RPM</th>\
+					<td id=\"rpm\">Unknown</td>\
+				</tr>\
+			<table>\
+		</div>\
+        </body>\
+        </html>"
 };
 
 // WebSocket constants
@@ -153,7 +134,7 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
         tcp_front_conn.type = ESPCONN_TCP;                              // TCP protocol
         tcp_front_conn.state = ESPCONN_NONE;
         tcp_front_conn.proto.tcp = &tcp_front_proto;
-
+        
         // Register callbacks for the TCP server
         result = espconn_regist_connectcb(&tcp_front_conn, user_front_connect_cb);
         if (result < 0) {
@@ -163,7 +144,7 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
         }
 
         // Start listening
-        result = espconn_accept(&tcp_front_conn);
+        result = espconn_accept(&tcp_front_conn);      
         if (result < 0) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to start tcp server, error=%d\r\n", result);
 		TASK_RETURN(SIG_WEB, PAR_WEB_INIT_FAILURE);
@@ -176,7 +157,7 @@ void ICACHE_FLASH_ATTR user_front_init(os_event_t *e)
 void ICACHE_FLASH_ATTR user_front_connect_cb(void *arg)
 {
         PRINT_DEBUG(DEBUG_LOW, "client connected to webserver front end\r\n");
-        struct espconn *client_conn = arg;
+        struct espconn *client_conn = arg;       
 
         // Register callbacks for the connected client
         espconn_regist_recvcb(client_conn, user_front_recv_cb);
@@ -201,7 +182,7 @@ void ICACHE_FLASH_ATTR user_front_discon_cb(void *arg)
 
 void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned short length)
 {
-        struct espconn *client_conn = arg;      // Pull client connection info
+        struct espconn *client_conn = arg;      // Pull client connection info 
         uint8 *p1;                              // Character pointers for navagating data
         uint8 *p2;
         uint8 key[64];                          // Concatenated secure key
@@ -209,7 +190,7 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
         uint8 guid_len = os_strlen(ws_guid);    // Length of GUID
         uint8 sha1_sum[20];                     // SHA-1 Hash sum
         uint8 sha1_key[32];                     // Secure key post-hash
-        size_t olen = 0;                        // Base-64 econding length
+        size_t olen = 0;                        // Base-64 econding length     
         uint8 response_buf[256];                // Buffer for HTTP response
         uint8 response_len = 0;                 // Length of HTTP response
 	sint8 result = 0;			// API call result
@@ -217,7 +198,7 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
         PRINT_DEBUG(DEBUG_LOW, "received data from client\r\n");
         PRINT_DEBUG(DEBUG_HIGH, "data=%s\r\n", pusrdata);
 
-
+        
         // Check if we recieved an HTTP GET request
         if (os_strncmp(pusrdata, "GET ", 4) == 0) {
                 PRINT_DEBUG(DEBUG_HIGH, "http GET request detected\r\n");
@@ -235,16 +216,16 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                         // Concatenate the secure key with the GUID for WebSockets
                         if ((key_len + guid_len) < 64) {
                                 os_memcpy(key, p1, key_len);                            // First half = client key
-                                os_memcpy(&key[key_len], ws_guid, guid_len);            // Second half = GUID
-                                PRINT_DEBUG(DEBUG_HIGH, "concat_key=%s\r\n", key);
+                                os_memcpy(&key[key_len], ws_guid, guid_len);            // Second half = GUID        
+                                PRINT_DEBUG(DEBUG_HIGH, "concat_key=%s\r\n", key);    
                         } else {
                                 PRINT_DEBUG(DEBUG_ERR, "failed to create websocket response\r\n");
                                 return;
-                        }
+                        } 
 
                         // Calculate SHA-1 Hash
                         os_memset(sha1_sum, 0, 20);
-                        mbedtls_sha1(key, guid_len + key_len, sha1_sum);
+                        mbedtls_sha1(key, guid_len + key_len, sha1_sum);    
                         PRINT_DEBUG(DEBUG_HIGH, "sha1_hash=%s\r\n", sha1_sum);
                         uint16 i = 0;
                         for (i = 0; i < 20; i++){
@@ -255,13 +236,13 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                         // Encode SHA-1 Hash in base 64
                         mbedtls_base64_encode(NULL, 0, &olen, sha1_sum, 20);                                    // Buffer length needed for Base64 encoding -> olen
                         if (mbedtls_base64_encode(sha1_key, sizeof(sha1_key), &olen, sha1_sum, 20) == 0) {      // Encode in base 64
-
+                       
                                 // Form WebSocket request response & send
-                                sha1_key[olen] = '\0';
+                                sha1_key[olen] = '\0'; 
                                 PRINT_DEBUG(DEBUG_HIGH, "base64=%s\r\n", sha1_key);
-                                response_len = os_sprintf(response_buf, ws_response, sha1_key);
+                                response_len = os_sprintf(response_buf, ws_response, sha1_key); 
                                 espconn_send(client_conn, response_buf, response_len);
-                                PRINT_DEBUG(DEBUG_HIGH, "sent=%s\r\n", response_buf);
+                                PRINT_DEBUG(DEBUG_HIGH, "sent=%s\r\n", response_buf);                         
 
                                 // The connection has upgraded to a WebSocket. Apply WebSocket callbacks for data transmission
                                 espconn_regist_recvcb(client_conn, user_ws_recv_cb);
@@ -275,7 +256,7 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                                 // Arm WebSocket update timer
                                 os_timer_setfn(&ws_timer, user_ws_update, client_conn);
                                 os_timer_arm(&ws_timer, WS_UPDATE_TIME, 1);
-
+                         
                         } else {
                                 PRINT_DEBUG(DEBUG_ERR, "failed to create websocket response\r\n");
                                 return;
@@ -284,7 +265,7 @@ void ICACHE_FLASH_ATTR user_front_recv_cb(void *arg, char *pusrdata, unsigned sh
                 // The request is ordinary
                 } else {
                         PRINT_DEBUG(DEBUG_LOW, "sending front page\r\n");
-                        espconn_send(client_conn, (uint8 *)front_page, os_strlen(front_page));
+                        espconn_send(client_conn, (uint8 *)front_page, os_strlen(front_page)); 
                 }
         }
 
@@ -332,14 +313,14 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
         /* Byte 6/8/14 - ?:                                             */
         /*      Bit 0-7: Payload data                                   */
         /* ============================================================ */
-
-        // The smallest possible packet (Opcode and payload length with no mask or payload)
+  
+        // The smallest possible packet (Opcode and payload length with no mask or payload)      
         if (length < 2) {
                 PRINT_DEBUG(DEBUG_ERR, "received malformed ws packet\r\n");
                 return;
         }
 
-        // Evaluate Opcode
+        // Evaluate Opcode 
         opcode = (pusrdata[0] & 0x0F);
         switch (opcode) {
                 case 0x01:      // Text   data
@@ -358,15 +339,15 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
                                 mask_start = 10;
                         } else {
                                 mask_start = 2;
-                        }
+                        } 
 
                         // Extract mask if necessary
                         mask_flag = pusrdata[1] & 0x80;
                         if (mask_flag == 0) {
                                 os_printf("received unmasked packet=%s\r\n", pusrdata);
                                 return;
-                        }
-                        os_strncpy(mask, &pusrdata[mask_start], 4);
+                        }       
+                        os_strncpy(mask, &pusrdata[mask_start], 4); 
 
                         // Perform unmasking operation: each byte can be unmasked by XORing it with byte (i % 4) of the mask
                         for (i = 0; i < (length - mask_start - 4); i++) {
@@ -375,7 +356,7 @@ void ICACHE_FLASH_ATTR user_ws_recv_cb(void *arg, char *pusrdata, unsigned short
                         os_printf("received masked packet=%s\r\n", &pusrdata[mask_start + 4]);
 			user_ws_parse_data(&pusrdata[mask_start + 4], length - mask_start - 4);
                         break;
-        };
+        }; 
         return;
 };
 
@@ -384,16 +365,16 @@ void ICACHE_FLASH_ATTR user_ws_update(void *parg)
         sint8 result = 0;                       // Function result
         struct espconn *ws_conn = parg;         // Grab WebSocket connection
         uint8 data[14];                         // Packet data
-        os_memset(&data, 0, 14);
+        os_memset(&data, 0, 14);                  
 
         // Contruct packet. See user_sw_recv_cb for information on WebSocket packet structure.
         //      Packets from the server should never be masked
 
 
         // Contruct bytes 1 & 2
-        data[0] = (0x80) | (0x02);     // Unfragmented, binary data
-        data[1] = 0x0C;                // Unmasked, payload length 12 bytes
-
+        data[0] = (0x80) | (0x02);     // Unfragmented, binary data 
+        data[1] = 0x0C;                // Unmasked, payload length 12 bytes  
+        
         // Add humidity data
 	os_memcpy(&data[2], &sensor_data_int, 4);
 	os_memcpy(&data[6], &sensor_data_ext, 4);
@@ -416,7 +397,7 @@ void ICACHE_FLASH_ATTR user_endian_flip(uint8 *buf, uint8 n)
         for (i = 0; i < (n/2); i++) {
                 swp = buf[i];
                 buf[i] = buf[n - 1 - i];
-                buf[n - 1 - i] = swp;
+                buf[n - 1 - i] = swp;               
         };
 
         return;
@@ -427,7 +408,6 @@ void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 	uint8 *p1 = NULL;	// Char pointer 1, for data navigation
 	uint8 *p2 = NULL;	// Char pointer 2, for data navigation
 	uint32 speed = 0;	// Fan speed in RPM
-  uint32 delay = 0; // TRIAC delay in us
 
 	// Search for each config element
 	p1 = (uint8 *)os_strstr(data, "speed=");		// Locate speed element
@@ -435,45 +415,22 @@ void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 		p1 += 6;						// Move to end of 6 char substr "speed="
 		p2 = (uint8 *)os_strstr(p1, ",");			// Find end of speed element value (CSV)
 		speed = user_atoi(p1, p2 - p1);				// Extract integer fan RPM
-
+	
 		speed > FAN_RPM_MAX ? (speed = FAN_RPM_MAX) : 0;	// Cut speed down to max if RPM is above maximum
 		speed < FAN_RPM_MIN ? (speed = FAN_RPM_MIN) : 0;	// Bump speed up to min if the RPM is below minimum
-		desired_rpm = speed;				// Modify triac delay
-    control_mode = CONTROL_SPEED;
+		desired_rpm = speed;				// Modify triac delay 		
 	}
-  p1 = (uint8 *)os_strstr(data, "delay=");		// Locate speed element
-  if (p1 != NULL) {
-    p1 += 6;						// Move to end of 6 char substr "speed="
-    p2 = (uint8 *)os_strstr(p1, ",");			// Find end of speed element value (CSV)
-    delay = user_atoi(p1, p2 - p1);				// Extract integer fan RPM
-
-    delay > SUPPLY_HALF_CYCLE ? (delay = SUPPLY_HALF_CYCLE) : 0;	// Cut speed down to max if RPM is above maximum
-    delay < 0 ? (delay = 0) : 0;	// Bump speed up to min if the RPM is below minimum
-    desired_delay = delay;				        // Modify triac delay
-    control_mode = CONTROL_DELAY;
-  }
-	p1 = (uint8 *)os_strstr(data, "mode=");			// Locate fan state element
+	p1 = (uint8 *)os_strstr(data, "fan=");			// Locate fan state element
 	if (p1 != NULL) {
 		p1 += 4;				// Move to end of 4 char substr "fan="
-
-    // Check if the state is "on"
-		p2 = (uint8 *)os_strstr(p1, "lock_on");
+		p2 = (uint8 *)os_strstr(p1, "on");	// Check if the state is "on"
 		if (p2 != NULL) {
-			fan_mode = FAN_LOCK_ON;
+			fan_on = true;			// Change fan flag 
 		}
-
-    // Change if the state is "off"
-		p2 = (uint8 *)os_strstr(p1, "lock_off");
+		p2 = (uint8 *)os_strstr(p1, "off");	// Change fan flag
 		if (p2 != NULL) {
-			fan_mode = FAN_LOCK_OFF;
+			fan_on = false;
 		}
-
-    // Change if the state is "normal"
-    p2 = (uint8 *)os_strstr(p1, "normal");
-    if (p2 != NULL) {
-      fan_mode = FAN_NORMAL;
-    }
-
 	}
 
 	return;
@@ -485,7 +442,7 @@ uint32 ICACHE_FLASH_ATTR user_atoi(uint8 *str, uint16 len)
 	uint32 mult = 1;	// Multiplier for each digit
 	sint8 i = 0;		// Loop index
 	uint8 c = 0;		// Extracted character
-	sint16 digit = 0;	// Converted digit
+	sint16 digit = 0;	// Converted digit 
 
 	// A 32 bit unsigned integer can hold at most 10 digits
 	if (len > 10) {
@@ -500,8 +457,8 @@ uint32 ICACHE_FLASH_ATTR user_atoi(uint8 *str, uint16 len)
 			return val;
 		}
 		val += (digit * mult);
-		mult *= 10;
+		mult *= 10;	
 	}
-
+	
 	return val;
 };

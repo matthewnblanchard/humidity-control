@@ -19,7 +19,7 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         float adj_humidity = 0;         // Humidity reading after calculations
 
         // Wake up the sensor by sending a measurement request. This consists of the slave's address
-        // and a single 0 bit.
+        // and a single 0 bit. 
         user_i2c_start_bit();
         if (user_i2c_write_byte((SENSOR_ADDR << 1) & 0xFE) == 1) {
                 PRINT_DEBUG(DEBUG_ERR, "slave failed to initiate measurement\r\n");
@@ -32,23 +32,23 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
         // of leeway
         os_delay_us(50000);
         os_delay_us(50000);
-
+        
         // Retrieve the data now that the measurement cycle has completed. The data is sent in two bytes
 	//         Byte 1                Byte 0
-	// | 15 14 13 12 11 10 9 8 | 7 6 5 4 3 2 1 0|
-	//   ^  ^  ^                               ^
+	// | 15 14 13 12 11 10 9 8 | 7 6 5 4 3 2 1 0| 
+	//   ^  ^  ^                               ^ 
 	// STATUS  HUMIDITY DATA -------------------
         user_i2c_start_bit();
         if (user_i2c_write_byte((SENSOR_ADDR << 1) | 0x01) == 1) {
                 PRINT_DEBUG(DEBUG_ERR, "slave failed to receive address\r\n");
         	user_i2c_stop_bit();
-		return;
+		return;      
         };
 
         read_byte = user_i2c_read_byte(0);               // Read upper byte and send ACK (indicates more data is desired)
         status = read_byte >> 6;                         // Upper two bits are status
         humidity |= ((read_byte  & 0b00111111) << 8);    // Remainder of byte is upper 6 bits of humidity
-
+        
         read_byte = user_i2c_read_byte(1);               // Read lower byte and send NACK (indicates no more data is desired)
         user_i2c_stop_bit();
         humidity |= read_byte;                           // Lower byte is lower 8 bits of humidity
@@ -78,12 +78,8 @@ void ICACHE_FLASH_ATTR user_read_humidity(void)
 void ICACHE_FLASH_ATTR user_humidity_cmp(void)
 {
 	// If the fan state is off, never drive the fan
-	if (fan_mode == FAN_LOCK_OFF) {
+	if (fan_on == false) {
 		drive_flag = false;
-
-  // If the fan state is locked on or override, keep the drive flag on
-  } else if (fan_mode == FAN_LOCK_ON) {
-    drive_flag = true;
 
 	// Don't try to push the humidity below the threshold
 	} else if (sensor_data_int <= threshold_humidity) {
@@ -97,6 +93,6 @@ void ICACHE_FLASH_ATTR user_humidity_cmp(void)
 	} else {
 		drive_flag = false;
 	}
-
+	
 	return;
 };

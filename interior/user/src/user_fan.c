@@ -4,14 +4,12 @@
 #include "user_fan.h"
 
 // Variables
-volatile bool drive_flag = true;				// True if the fan should be driven
-volatile sint32 desired_delay = SUPPLY_HALF_CYCLE / 2;
+volatile bool drive_flag = 0;				// True if the fan should be driven
 volatile sint32 drive_delay = SUPPLY_HALF_CYCLE / 2;	// Delay on triac pulse in us
 volatile uint16 tach_cnt = 0;				// Count of tachometer pulses
 volatile sint32 desired_rpm = 2500;			// The desired RPM of the fan
 volatile sint32 measured_rpm = 0;			// RPM measured by tachometer
-volatile uint8 fan_mode = FAN_NORMAL;
-volatile uint8 control_mode = CONTROL_SPEED;
+volatile bool fan_on = true;
 
 void user_gpio_isr(uint32 intr_mask, void *arg)
 {
@@ -27,7 +25,7 @@ void user_gpio_isr(uint32 intr_mask, void *arg)
 	// Check if a tachometer interrupt occured
 	if (intr_mask & (TACH_BIT)) {
 		uint32 cur_time = system_get_time();	// Use the system time register for software debouncing
-		if ((cur_time - last_time) > 500) {	// 500us debounce
+		if ((cur_time - last_time) > 1000) {	// 1ms debounce
 			tach_cnt++;
 			last_time = cur_time;
 		};
@@ -45,7 +43,7 @@ void user_fire_triac(void)
 	os_delay_us(TRIAC_PULSE_PERIOD);
 	gpio_output_set(0, TRIAC_BIT, TRIAC_BIT, 0);
 
-	return;
+	return;	
 };
 
 void ICACHE_FLASH_ATTR user_tach_calc(void)
@@ -58,15 +56,13 @@ void ICACHE_FLASH_ATTR user_tach_calc(void)
 	measured_rpm = (freq * 60) / TACH_BLADE_N;		// Convert to rotations per minute
 
 	// When the fan is running (RPM reading above minimum), adjust triac drive delay as the measured/desired RPM error changes
-	if ((drive_flag) && (control_mode == CONTROL_SPEED)) {
+	if (measured_rpm > 250) {
 		if (((measured_rpm - last_rpm) < 100) && ((measured_rpm - last_rpm) > -100)) {		// Allow up to 100 RPM error
 			drive_delay += (FEEDBACK_GAIN * (measured_rpm - desired_rpm));			// Proportional control
 			drive_delay = (drive_delay > DELAY_BOUNDH) ? DELAY_BOUNDH : drive_delay;	// Keep drive delay within bounds
-			drive_delay = (drive_delay < DELAY_BOUNDL) ? DELAY_BOUNDL : drive_delay;
+			drive_delay = (drive_delay < DELAY_BOUNDL) ? DELAY_BOUNDL : drive_delay;	
 		}
-		last_rpm = measured_rpm;
-	} else if (control_mode == CONTROL_DELAY) {
-		drive_delay = desired_delay;
+		last_rpm = measured_rpm; 
 	};
 
 	PRINT_DEBUG(DEBUG_HIGH, "tach_cnt=%d, rpm=%d, freq=%d, drive_flag=%d, drive_delay=%d\r\n", tach_cnt, measured_rpm, (uint32)freq, drive_flag, drive_delay);
@@ -75,3 +71,4 @@ void ICACHE_FLASH_ATTR user_tach_calc(void)
 	tach_cnt = 0;
 	return;
 };
+

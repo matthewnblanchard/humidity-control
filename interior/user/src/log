@@ -1,0 +1,1258 @@
+
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+rlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``pònàÃÜ€à‚‡Àl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àr‡âÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ‡;pònàƒÜàrÇâÜÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀàbœßl`¸’ß;„À?òÇ;ŒâÜì8‚nÀä>rœØònãb‚‚lrŒâÜçÉ8‚Œò±€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnä„;ònÄ’Üäbà$‰rrpònàÃÜà‚ÇÀl€€€bÀnâãn€äŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ;`òn€nÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<„Ã’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜ€àrÇâÜÄpp’Ü<Äßì˜pŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀàbœßl`8’ß;ÄÀ?òÇ;ˆrlœØrŸŒ#ân€àŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜ€àrÇâÜÄpp’Ü<„ßìØpŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀàbÜßl`8’ß;ÄÀ?òÇ;ˆŒâÜìx‚nÀä>rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿrlœØrßŒ#ân€àŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``rlœØrßŒ#ânrlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;òn„’Üäb#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜàr‡âœÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàbÜßl`¸’ß;ÄÀ?òÇ;rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàâÇàl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`œ#‚nÀrnr’ß;ÄÀ?’ì{pònàÃÜ€àrÇâÜÄpp’œ<„ßìØpŒònnîÄğrÜ#‚n€$Œl`8`rn|’’n€à‚ÇÀl`8’ß;ÄÀ?rrßÛ’nÀ$œÄbŸ;‚ßÇò’ç±ânßä¸ürlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbcl``rlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜxŒònnîÄÁŒl`rlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàŒœ;`ònÀnÜ„ÃŒŒ<~ònîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’Ÿ;ÄÀ?Ç;pònàÃÜàrÇâÜÄpp’Ü<Äßì˜pŒònnîÄğrÜ#‚n€$Œl`8`rn|’’n€àbÜßl`¸’ß;ÄÀ?òÇ;ˆrlœØrŸŒ#ânÀˆàŒ‚ìpŒ<‚ßìx’ŸÇ’œäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜ€à‚‡Àl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`rlœØrßŒ#ânÀàŒ‚ìpŒ|‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäb#l``pònàÃÜà‚ÇÀl€€€b€nâãnÀäŒìÜxŒònnîÄÁŒl`rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’œäbç$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀàŒœ{`ònÀnœÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâœ€pp’Ü<„Ã’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜ€àrÇâÜÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàbÜßl`8’ß;ÄÀ?ò‡;ŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßìx’ßÇ’ÜäŒpònnäÄ;òn„’Üäb#l``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚n€$Œl`¸`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜàrÇâÜ€pp’Ü<„Ã’ŒpŒònnîÄÁŒl`Ü#‚n€rnr’Ÿ;„À?Ç;ˆpònàÃÜ€àrÇâÜÄpp’Ü<„ßìØpŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàbÜßl`¸’ß;ÄÀ?ò‡;ŒâÜì8‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+read_pass=ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 60:01:94:36:f7:db join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=Soochboys&pass=purplefinch654
+user submitted config
+WiFi details obtained from user
+sent data to client
+read from flash
+sprintf
+sent data
+user disconnected
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+exterior disconnected
+AP mode cleanup completed
+station: 60:01:94:36:f7:db leave, AID = 1
+rm 1
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-41
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+state: 5 -> 2 (2a0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 5
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+attempted to connect to exterior, result=0
+connected to exterior system
+Initiating humidity readings
+slave failed to initiate measurement
+slave failed to initiate measurement
+pm open,type:2 0
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+exterior system disconnected
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+rlœØrßŒcânÀˆàŒ‚ìpŒ|‚Ÿìx’ŸÇ’ÜälpònnäÄ;ònÄ’Üäbcl``pònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìœ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàƒÜàr‡âÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’Ÿ;„À?‡;pònàƒÜàr‡âÜÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàbÜßl`8’ß;ÄÀ?òÇ;ˆŒâÜì8‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâœçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-40
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+rlœØrßŒcânÀàŒ‚ìpŒ<‚ßì8’ŸÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$‰rrpònàÃÜà‚‡Àl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’n€àŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;ˆpònàÃÜ€àrÇâÜÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàbÜßl`¸’Ÿ;ÄÀ?òÇ;ˆŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-41
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+attempted to connect to exterior, result=0
+connected to exterior system
+Initiating humidity readings
+slave failed to initiate measurement
+pm open,type:2 0
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ|‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbcl``pònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàƒÜàrÇâœ€pp’œ<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?Ç;pònàÃÜàrÇâÜÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàbÜßl`¸’ß;ÄÀ?òÇ;ˆŒâœìx‚nÀä¾rÜØònãb‚‚lrŒâÜçÉ8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-41
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+attempted to connect to exterior, result=0
+connected to exterior system
+Initiating humidity readings
+slave failed to initiate measurement
+pm open,type:2 0
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+exterior system disconnected
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+slave failed to initiate measurement
+
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnä„;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€b€nâãn€äŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâœ€pp’œ<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚n€rnr’ß;„À?à;pònàÃÜàrÇâœÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀàìrrßÛ’nÀàìrŒâÜì8‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò±€rŒâœçÙ8‚ìò!0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;òn„’Üäbç$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ{`ònÀnÜÄÃŒŒ|~ònîÄÈl`nnàÃÜ€àrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?à;pònàÃÜàrÇâÜÄpp’œ<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀàìrrßÛ’nÀàìrŒâÜì8‚n€ä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-41
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+attempted to connect to exterior, result=0
+connected to exterior system
+Initiating humidity readings
+reading=5486, humidity=33, status=0
+drive_flag=1
+reading=5461, humidity=33, status=0
+drive_flag=0
+pm open,type:2 0
+reading=5457, humidity=33, status=0
+drive_flag=0
+reading=5457, humidity=33, status=0
+drive_flag=0
+reading=5453, humidity=33, status=0
+drive_flag=0
+reading=5447, humidity=33, status=0
+drive_flag=0
+rlœ˜rßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbç$	rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚nÀ$Œl`8`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`Ü#‚nÀrnr’ß;ÄÀ?à;pònàÃÜ€àrÇâÜÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`8`rn|’’nÀàìrrŸÛ’n€àìrŒâÜìx‚nÀä¾rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçI8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+Fatal exception 0(IllegalInstructionCause):
+epc1=0x402385b4, epc2=0x00000000, epc3=0x00000000, excvaddr=0x00000000, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32764, room 16 
+tail 12
+chksum 0x9f
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 1052, room 12 
+tail 0
+chksum 0x84
+load 0x3ffe8420, len 7748, room 8 
+tail 12
+chksum 0x93
+csum 0x93
+ŒâÜì8‚n€ä>rœØònãb‚‚lrŒâœçÉ8‚Œò±€rŒâœçÉ8‚ìò±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-39
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+attempted to connect to exterior, result=0
+connected to exterior system
+Initiating humidity readings
+reading=5418, humidity=33, status=0
+drive_flag=1
+reading=5447, humidity=33, status=0
+drive_flag=0
+pm open,type:2 0
+reading=5449, humidity=33, status=0
+drive_flag=0
+reading=5492, humidity=33, status=0
+drive_flag=0
+reading=5518, humidity=33, status=0
+drive_flag=0
+reading=5533, humidity=33, status=0
+drive_flag=0
+reading=5527, humidity=33, status=0
+drive_flag=0
+reading=5503, humidity=33, status=0
+drive_flag=0
+reading=5494, humidity=33, status=0
+drive_flag=0
+reading=5472, humidity=33, status=0
+drive_flag=0
+reading=5449, humidity=33, status=0
+drive_flag=0
+reading=5433, humidity=33, status=0
+drive_flag=0
+reading=5412, humidity=33, status=0
+drive_flag=0
+reading=5398, humidity=32, status=0
+drive_flag=0
+reading=5389, humidity=32, status=0
+drive_flag=0
+reading=5381, humidity=32, status=0
+drive_flag=0
+reading=5381, humidity=32, status=0
+drive_flag=0
+reading=5383, humidity=32, status=0
+drive_flag=0
+exterior system disconnected
+reading=5375, humidity=32, status=0
+drive_flag=0
+reading=5379, humidity=32, status=0
+drive_flag=0
+reading=5387, humidity=32, status=0
+drive_flag=0
+reading=5391, humidity=32, status=0
+drive_flag=0
+reading=5402, humidity=32, status=0
+drive_flag=0
+reading=5414, humidity=33, status=0
+drive_flag=0
+reading=5414, humidity=33, status=0
+drive_flag=0
+reading=5423, humidity=33, status=0
+drive_flag=0
+reading=5418, humidity=33, status=0
+drive_flag=0
+reading=5423, humidity=33, status=0
+drive_flag=0
+reading=5570, humidity=34, status=0
+drive_flag=0
+reading=5653, humidity=34, status=0
+drive_flag=0
+reading=5535, humidity=33, status=0
+drive_flag=0
+reading=5522, humidity=33, status=0
+drive_flag=0
+reading=5531, humidity=33, status=0
+drive_flag=0
+reading=5522, humidity=33, status=0
+drive_flag=0
+reading=5490, humidity=33, status=0
+drive_flag=0
+reading=5474, humidity=33, status=0
+drive_flag=0
+reading=5459, humidity=33, status=0
+drive_flag=0
+reading=5444, humidity=33, status=0
+drive_flag=0
+reading=5433, humidity=33, status=0
+drive_flag=0
+reading=5421, humidity=33, status=0
+drive_flag=0
+reading=5408, humidity=33, status=0
+drive_flag=0
+reading=5396, humidity=32, status=0
+drive_flag=0
+reading=5398, humidity=32, status=0
+drive_flag=0
+reading=5377, humidity=32, status=0
+drive_flag=0
+reading=5359, humidity=32, status=0
+drive_flag=0
+reading=5347, humidity=32, status=0
+drive_flag=0
+reading=5334, humidity=32, status=0
+drive_flag=0
+reading=5351, humidity=32, status=0
+drive_flag=0
+reading=5363, humidity=32, status=0
+drive_flag=0
+reading=5367, humidity=32, status=0
+drive_flag=0
+reading=5375, humidity=32, status=0
+drive_flag=0
+reading=5370, humidity=32, status=0
+drive_flag=0
+reading=5361, humidity=32, status=0
+drive_flag=0
+reading=5375, humidity=32, status=0
+drive_flag=0
+reading=5381, humidity=32, status=0
+drive_flag=0
+reading=5372, humidity=32, status=0
+drive_flag=0
+reading=5355, humidity=32, status=0
+drive_flag=0
+reading=5363, humidity=32, status=0
+drive_flag=0
+reading=5334, humidity=32, status=0
+drive_flag=0
+
+reading=5285, humidity=32, status=0
+drive_flag=0
+reading=5289, humidity=32, status=0
+drive_flag=0
+reading=5370, humidity=32, status=0
+drive_flag=0
+reading=5623, humidity=34, status=0
+drive_flag=0
+reading=5703, humidity=34, status=0
+drive_flag=0
+reading=5699, humidity=34, status=0
+drive_flag=0
+reading=5646, humidity=34, status=0
+drive_flag=0
+reading=5549, humidity=33, status=0
+drive_flag=0
+reading=5492, humidity=33, status=0
+drive_flag=0
+reading=5459, humidity=33, status=0
+drive_flag=0
+reading=5435, humidity=33, status=0
+drive_flag=0
+reading=5435, humidity=33, status=0
+drive_flag=0
+rlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚Ÿì8’ßÇ’ÜäŒpònnäÄ;ònÄ’Üäbcl``pònàÃÜà‚ÇÀl€€€bÀnâãnÀäŒìÜ8ŒònnîÄÁŒl`Ü#‚n€$Œl`8`rn|’’nÀàŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàƒÜàrÇâÜ€pp’Ü<ÄÃ’ŒpŒònnîÄÁŒl`œ#‚nÀrnr’Ÿ;ÄÀ?à;pònàƒÜàrÇâÜÄpp’Ü<ÄßìØpŒònnîÄğrÜ#‚nÀ$Œl`¸`rn|’’nÀàìrrßÛ’nÀàìrŒâÜì8‚nÀä>rÜØònãb‚‚lrŒâÜçI8‚Œò1€rŒâÜçÉ8‚ìò10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=Soochboys
+read_pass=purplefinch654
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-42
+bssid=2c:30:33:7e:a6:7b
+connecting ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 10
+cnt 
+
+connected with Soochboys, channel 9
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.81,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+ip=0.128.36.0
+netmask=0.128.50.0
+gw=0.128.69.0
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.84.
+)Discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.84
+attempted to connect to exterior, result=0
+connected to exterior system
+Initiating humidity readings
+reading=5385, humidity=32, status=0
+drive_flag=1
+reading=5375, humidity=32, status=0
+drive_flag=0
+pm open,type:2 0
+reading=5402, humidity=32, status=0
+drive_flag=0
+reading=5474, humidity=33, status=0
+drive_flag=0
+reading=5490, humidity=33, status=0
+drive_flag=0
+reading=5496, humidity=33, status=0
+drive_flag=0
+reading=5459, humidity=33, status=0
+drive_flag=0
+reading=5402, humidity=32, status=0
+drive_flag=0
+reading=5338, humidity=32, status=0
+drive_flag=0
+reading=5309, humidity=32, status=0
+drive_flag=0
+reading=5300, humidity=32, status=0
+drive_flag=0
+reading=5309, humidity=32, status=0
+drive_flag=0
+reading=5303, humidity=32, status=0
+drive_flag=0
+reading=5298, humidity=32, status=0
+drive_flag=0
+reading=5271, humidity=32, status=0
+drive_flag=0
+reading=5256, humidity=32, status=0
+drive_flag=0
+reading=5260, humidity=32, status=0
+drive_flag=0
+reading=5260, humidity=32, status=0
+drive_flag=0
+exterior system disconnected
+reading=5289, humidity=32, status=0
+drive_flag=0
+reading=5298, humidity=32, status=0
+drive_flag=0
+reading=5298, humidity=32, status=0
+drive_flag=0
+reading=5298, humidity=32, status=0
+drive_flag=0
+reading=5294, humidity=32, status=0
+drive_flag=0
+reading=5268, humidity=32, status=0
+drive_flag=0
+reading=5264, humidity=32, status=0
+drive_flag=0
+reading=5268, humidity=32, status=0
+drive_flag=0
+reading=5285, humidity=32, status=0
+drive_flag=0
+reading=5294, humidity=32, status=0
+drive_flag=0
+reading=5289, humidity=32, status=0
+drive_flag=0
+reading=5273, humidity=32, status=0
+drive_flag=0
+reading=5264, humidity=32, status=0
+drive_flag=0
+reading=5264, humidity=32, status=0
+drive_flag=0
+reading=5264, humidity=32, status=0
+drive_flag=0
+reading=5256, humidity=32, status=0
+drive_flag=0
+reading=5260, humidity=32, status=0
+drive_flag=0
+reading=5260, humidity=32, status=0
+drive_flag=0
+reading=5264, humidity=32, status=0
+drive_flag=0
+reading=5273, humidity=32, status=0
+drive_flag=0
+reading=5273, humidity=32, status=0
+drive_flag=0
+reading=5268, humidity=32, status=0
+drive_flag=0
+reading=5243, humidity=32, status=0
+drive_flag=0
+reading=5233, humidity=31, status=0
+drive_flag=0
+reading=5217, humidity=31, status=0
+drive_flag=0
+reading=5213, humidity=31, status=0
+drive_flag=0
+reading=5222, humidity=31, status=0
+drive_flag=0
+reading=5230, humidity=31, status=0
+drive_flag=0
+reading=5283, humidity=32, status=0
+drive_flag=0
+reading=5315, humidity=32, status=0
+drive_flag=0
+reading=5322, humidity=32, status=0
+drive_flag=0
+reading=5307, humidity=32, status=0
+drive_flag=0
+reading=5296, humidity=32, status=0
+drive_flag=0
+reading=5289, humidity=32, status=0
+drive_flag=0
+reading=5302, humidity=32, status=0
+drive_flag=0
+reading=5302, humidity=32, status=0
+drive_flag=0
+reading=5377, humidity=32, status=0
+drive_flag=0
+reading=5560, humidity=33, status=0
+drive_flag=0
+reading=5524, humidity=33, status=0
+drive_flag=0
+reading=5474, humidity=33, status=0
+drive_flag=0
+reading=5433, humidity=33, status=0
+drive_flag=0
+reading=5520, humidity=33, status=0
+drive_flag=0
+reading=5543, humidity=33, status=0
+drive_flag=0
+reading=5627, humidity=34, status=0
+drive_flag=0
+reading=5583, humidity=34, status=0
+drive_flag=0
+reading=5539, humidity=33, status=0
+drive_flag=0
+reading=5442, humidity=33, status=0
+drive_flag=0
+reading=5391, humidity=32, status=0
+drive_flag=0
+reading=5353, humidity=32, status=0
+drive_flag=0
+reading=5324, humidity=32, status=0
+drive_flag=0
+reading=5332, humidity=32, status=0
+drive_flag=0
+reading=5336, humidity=32, status=0
+drive_flag=0
+reading=5324, humidity=32, status=0
+drive_flag=0
+reading=5289, humidity=32, status=0
+drive_flag=0
+reading=5313, humidity=32, status=0
+drive_flag=0
+reading=5305, humidity=32, status=0
+drive_flag=0
+reading=5389, humidity=32, status=0
+drive_flag=0
+reading=5383, humidity=32, status=0
+drive_flag=0
+reading=5370, humidity=32, status=0
+drive_flag=0
+reading=5330, humidity=32, status=0
+drive_flag=0
+reading=5300, humidity=32, status=0
+drive_flag=0
+reading=5294, humidity=32, status=0
+drive_flag=0
+reading=5279, humidity=32, status=0
+drive_flag=0
+reading=5277, humidity=32, status=0
+drive_flag=0
+reading=5258, humidity=32, status=0
+drive_flag=0
+reading=5273, humidity=32, status=0
+drive_flag=0
+reading=5313, humidity=32, status=0
+drive_flag=0
+reading=5345, humidity=32, status=0
+drive_flag=0
+reading=5332, humidity=32, status=0
+drive_flag=0
+reading=5336, humidity=32, status=0
+drive_flag=0
+reading=5328, humidity=32, status=0
+drive_flag=0
+reading=5311, humidity=32, status=0
+drive_flag=0
+reading=5315, humidity=32, status=0
+drive_flag=0
+reading=5357, humidity=32, status=0
+drive_flag=0
+reading=5365, humidity=32, status=0
+drive_flag=0
+reading=5370, humidity=32, status=0
+drive_flag=0
+reading=5349, humidity=32, status=0
+drive_flag=0
+reading=5338, humidity=32, status=0
+drive_flag=0
+reading=5332, humidity=32, status=0
+drive_flag=0
+reading=5313, humidity=32, status=0
+drive_flag=0
+reading=5303, humidity=32, status=0
+drive_flag=0
+reading=5281, humidity=32, status=0
+drive_flag=0
+reading=5444, humidity=33, status=0
+drive_flag=0
+reading=5492, humidity=33, status=0
+drive_flag=0
+reading=5453, humidity=33, status=0
+drive_flag=0
+reading=5400, humidity=32, status=0
+drive_flag=0
+reading=5365, humidity=32, status=0
+drive_flag=0
+reading=5328, humidity=32, status=0
+drive_flag=0
+reading=5324, humidity=32, status=0
+drive_flag=0
+reading=5332, humidity=32, status=0
+drive_flag=0
+reading=5336, humidity=32, status=0
+drive_flag=0
+reading=5345, humidity=32, status=0
+drive_flag=0
+reading=5379, humidity=32, status=0
+drive_flag=0
+reading=5372, humidity=32, status=0
+drive_flag=0
+reading=5367, humidity=32, status=0
+drive_flag=0
+reading=5367, humidity=32, status=0
+drive_flag=0
+reading=5383, humidity=32, status=0
+drive_flag=0
+reading=5387, humidity=32, status=0
+drive_flag=0
+reading=5383, humidity=32, status=0
+drive_flag=0
+reading=5498, humidity=33, status=0
+drive_flag=0
+reading=5545, humidity=33, status=0
+drive_flag=0
+reading=5554, humidity=33, status=0
+drive_flag=0
+reading=5503, humidity=33, status=0
+drive_flag=0
+reading=5437, humidity=33, status=0
+drive_flag=0
+reading=5393, humidity=32, status=0
+drive_flag=0
+reading=5334, humidity=32, status=0
+drive_flag=0
+reading=5289, humidity=32, status=0
+drive_flag=0
+reading=5256, humidity=32, status=0
+drive_flag=0
+

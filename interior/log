@@ -1,0 +1,3703 @@
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+connecting ... status=1
+pm open,type:2 0
+state: 5 -> 0 (2)
+rm 0
+pm close 7
+reconnect
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+Fatal exception 28(LoadProhibitedCause):
+epc1=0x4021301f, epc2=0x00000000, epc3=0x00000000, excvaddr=0x1c00a8c0, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32756, room 16 
+tail 4
+chksum 0x18
+load 0x3ffe8000, len 1052, room 4 
+tail 8
+chksum 0x88
+load 0x3ffe8420, len 9316, room 0 
+tail 4
+chksum 0x4b
+csum 0x4b
+å‚‹Ï8ÇnÄ‰>r‹ÿÚn„bÇÇlrå‚‹Á…8ÇåÚ1Ärå‚‹ÁI8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-49
+bssid=b8:27:eb:a7:db:d
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+state: 5 -> 2 (2c0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+Fatal exception 28(LoadProhibitedCause):
+epc1=0x4021301f, epc2=0x00000000, epc3=0x00000000, excvaddr=0x1c00a8c0, depc=0x00000000
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 32756, room 16 
+tail 4
+chksum 0x18
+load 0x3ffe8000, len 1052, room 4 
+tail 8
+chksum 0x88
+load 0x3ffe8420, len 9316, room 0 
+tail 4
+chksum 0x4b
+csum 0x4b
+å‚‹Ï8Çn¿‰>rúÿÚn„bÇÇlrå‚‹Á…8ÇåÚ1Ärå‚‹ÁI8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+brlúÿrﬂå#‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bécl``pÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`êú#Çn¿é{nréíü;ƒ¿?Äú;pÚn‡√‹Ä‡r«‚úÄppí‹<ƒ√íåpåÚnnÓƒ»rê‹#ÇnÄrnréíﬂ;ƒ¿?Äå8rpÚn‡√‹Ä‡r«‚úéƒppí‹<ƒ„ååpåÚnnÓƒ¿rê‹#ÇnÄé;nréíﬂ;Ñ¿?r‹;àrﬂ€ín¿‡b‹í`å‚‹ÏxÇn¿‰ær‹ÿÚn„bÇÇlrå‚‹Á…8ÇåÚ±Ärå‚‹Á…8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-51
+bssid=b8:27:eb:a7:db:d
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+state: 5 -> 2 (2c0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+listening on udp 5000
+pm open,type:2 0
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.24.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.24
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+tach_cnt=2, rpm=4, freq=0, drive_flag=0, drive_delay=4166
+reading=9331, humidity=56, status=0
+ext_humidity=0
+received humidity=46 from exterior
+tach_cnt=27, rpm=57, freq=6, drive_flag=1, drive_delay=4166
+reading=9335, humidity=56, status=0
+ext_humidity=46
+tach_cnt=288, rpm=617, freq=72, drive_flag=1, drive_delay=4166
+received humidity=46 from exterior
+tach_cnt=529, rpm=1133, freq=132, drive_flag=1, drive_delay=4166
+reading=9248, humidity=56, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=693, rpm=1485, freq=173, drive_flag=1, drive_delay=4166
+reading=8992, humidity=54, status=0
+ext_humidity=46
+tach_cnt=786, rpm=1684, freq=196, drive_flag=1, drive_delay=4166
+received humidity=46 from exterior
+tach_cnt=836, rpm=1791, freq=209, drive_flag=1, drive_delay=4166
+reading=8738, humidity=53, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=857, rpm=1836, freq=214, drive_flag=1, drive_delay=3502
+reading=8520, humidity=52, status=0
+ext_humidity=46
+tach_cnt=1059, rpm=2269, freq=264, drive_flag=1, drive_delay=3502
+received humidity=46 from exterior
+tach_cnt=1245, rpm=2667, freq=311, drive_flag=1, drive_delay=3502
+reading=8356, humidity=51, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1270, rpm=2721, freq=317, drive_flag=1, drive_delay=3723
+reading=8236, humidity=50, status=0
+ext_humidity=46
+tach_cnt=1223, rpm=2620, freq=305, drive_flag=1, drive_delay=3723
+received humidity=46 from exterior
+tach_cnt=1192, rpm=2554, freq=298, drive_flag=1, drive_delay=3777
+reading=8168, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3782
+reading=8096, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1153, rpm=2470, freq=288, drive_flag=1, drive_delay=3752
+received humidity=46 from exterior
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3724
+reading=8044, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3714
+reading=8008, humidity=48, status=0
+ext_humidity=46
+tach_cnt=1179, rpm=2526, freq=294, drive_flag=1, drive_delay=3740
+received humidity=46 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3749
+reading=7996, humidity=48, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3739
+reading=8000, humidity=48, status=0
+ext_humidity=46
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3731
+received humidity=45 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3729
+reading=8020, humidity=48, status=0
+ext_humidity=45
+received humidity=45 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3719
+reading=8028, humidity=49, status=0
+ext_humidity=45
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3702
+received humidity=45 from exterior
+tach_cnt=1179, rpm=2526, freq=294, drive_flag=1, drive_delay=3728
+reading=8052, humidity=49, status=0
+ext_humidity=45
+received humidity=45 from exterior
+tach_cnt=1183, rpm=2535, freq=295, drive_flag=1, drive_delay=3763
+reading=8060, humidity=49, status=0
+ext_humidity=45
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3750
+received humidity=45 from exterior
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3722
+reading=8068, humidity=49, status=0
+ext_humidity=45
+received humidity=46 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3707
+reading=8068, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3729
+received humidity=46 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3742
+reading=8076, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3744
+reading=8080, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3738
+received humidity=46 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3728
+reading=8080, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3735
+reading=8080, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3744
+received humidity=46 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending front page
+sent to client
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3746
+reading=8080, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3736
+reading=8088, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3719
+received humidity=46 from exterior
+tcp connection disconnected
+client connected to webserver front end
+received data from client
+data=GET /favicon.ico HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+
+
+http GET request detected
+sending front page
+tcp connection disconnected
+client connected to webserver front end
+received data from client
+data=GET /favicon.ico HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+http GET request detected
+sending front page
+sent to client
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3721
+reading=8092, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3717
+reading=8092, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3734
+received humidity=46 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3739
+reading=8100, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1168, rpm=2500, freq=291, drive_flag=1, drive_delay=3739
+tcp connection disconnected
+reading=8108, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3729
+received humidity=46 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending front page
+sent to client
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3727
+reading=8112, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3732
+reading=8116, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3732
+received humidity=46 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3719
+reading=8120, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3732
+tcp connection disconnected
+reading=8104, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3747
+received humidity=46 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3741
+reading=8080, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3728
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending front page
+client connected to webserver front end
+sent to client
+reading=8064, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3722
+received humidity=46 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3709
+reading=8048, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tcp connection disconnected
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3720
+reading=8032, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3729
+received humidity=46 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3725
+tcp connection disconnected
+reading=8028, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3717
+reading=8012, humidity=48, status=0
+ext_humidity=46
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3715
+received humidity=46 from exterior
+Ûconnecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+rlúÿrﬂå#‚n¿à‡åÇÏpå|éÇﬂÏ8íü«íú‰åpÚnn‰ƒ;Únƒí‹‰bé#l``pÚn‡√‹‡Ç«¿lÄÄÄb¿n‚„n¿‰åÏé€åé8åÚnnÓƒ¡åél`êú#ÇnÄé;nréíﬂ;ƒ¿?ÄlrpÚn‡√‹Ä‡r«‚‹Äppíú<Ñ√íåpåÚnnÓƒ»rê‹#Çn¿rnréíﬂ;Ñ¿?ÇÏé;pÚn‡√‹‡r«‚úéƒppí‹<Ñ„ååpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?«;rﬂ€ín¿‡‹¿l`å‚‹Ï8Çn¿‰>r‹ÿÚn„bÇÇlrå‚úÁ…8ÇåÚ1Ärå‚‹Á…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-49
+bssid=b8:27:eb:a7:db:d
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+state: 5 -> 2 (2c0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.24.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.24
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+tach_cnt=1, rpm=2, freq=0, drive_flag=0, drive_delay=4166
+reading=8272, humidity=50, status=0
+ext_humidity=0
+received humidity=46 from exterior
+tach_cnt=27, rpm=57, freq=6, drive_flag=1, drive_delay=4166
+pm open,type:2 0
+reading=8276, humidity=50, status=0
+ext_humidity=46
+tach_cnt=285, rpm=610, freq=71, drive_flag=1, drive_delay=4166
+received humidity=46 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending front page
+client connected to webserver front end
+sent to client
+tach_cnt=526, rpm=1127, freq=131, drive_flag=1, drive_delay=4166
+reading=8244, humidity=50, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=699, rpm=1497, freq=174, drive_flag=1, drive_delay=4166
+reading=8176, humidity=49, status=0
+ext_humidity=46
+tach_cnt=797, rpm=1707, freq=199, drive_flag=1, drive_delay=4166
+received humidity=46 from exterior
+tcp connection disconnected
+tach_cnt=847, rpm=1815, freq=211, drive_flag=1, drive_delay=4166
+reading=8116, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=869, rpm=1862, freq=217, drive_flag=1, drive_delay=3528
+tcp connection disconnected
+reading=8080, humidity=49, status=0
+ext_humidity=46
+tach_cnt=1052, rpm=2254, freq=263, drive_flag=1, drive_delay=3528
+received humidity=46 from exterior
+tach_cnt=1225, rpm=2625, freq=306, drive_flag=1, drive_delay=3528
+reading=8048, humidity=49, status=0
+ext_humidity=46
+received humidity=46 from exterior
+tach_cnt=1256, rpm=2691, freq=314, drive_flag=1, drive_delay=3719
+reading=8020, humidity=48, status=0
+ext_humidity=46
+tach_cnt=1214, rpm=2601, freq=303, drive_flag=1, drive_delay=3820
+received humidity=46 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3820
+reading=7996, humidity=48, status=0
+ext_humidity=46
+received humidity=46 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending front page
+client connected to webserver front end
+sent to client
+tach_cnt=1137, rpm=2436, freq=284, drive_flag=1, drive_delay=3756
+reading=7972, humidity=48, status=0
+ext_humidity=46
+tach_cnt=1144, rpm=2451, freq=286, drive_flag=1, drive_delay=3707
+received humidity=46 from exterior
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3729
+tcp connection disconnected
+reading=7964, humidity=48, status=0
+ext_humidity=46
+received humidity=45 from exterior
+tach_cnt=1179, rpm=2526, freq=294, drive_flag=1, drive_delay=3755
+reading=7960, humidity=48, status=0
+ext_humidity=45
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3768
+received humidity=45 from exterior
+tcp connection disconnected
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3753
+reading=7960, humidity=48, status=0
+ext_humidity=45
+received humidity=45 from exterior
+tach_cnt=1148, rpm=2460, freq=287, drive_flag=1, drive_delay=3713
+reading=7956, humidity=48, status=0
+ext_humidity=45
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3694
+received humidity=45 from exterior
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3714
+reading=7960, humidity=48, status=0
+ext_humidity=45
+received humidity=45 from exterior
+tach_cnt=1180, rpm=2528, freq=295, drive_flag=1, drive_delay=3742
+reading=7952, humidity=48, status=0
+ext_humidity=45
+tach_cnt=1182, rpm=2532, freq=295, drive_flag=1, drive_delay=3774
+received humidity=45 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3772
+reading=7952, humidity=48, status=0
+ext_humidity=45
+received humidity=45 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3755
+reading=7952, humidity=48, status=0
+ext_humidity=45
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3742
+received humidity=45 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3744
+reading=7944, humidity=48, status=0
+ext_humidity=45
+received humidity=45 from exterior
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3721
+reading=7948, humidity=48, status=0
+ext_humidity=45
+tach_cnt=1155, rpm=2475, freq=288, drive_flag=1, drive_delay=3696
+received humidity=45 from exterior
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3707
+reading=7960, humidity=48, status=0
+ext_humidity=45
+received humidity=45 from exterior
+Ûrlúÿrﬂå#‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹‡Ç«¿lÄÄÄbÄn‚„n¿‰éåÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é{nréíﬂ;ƒ¿?ÄlrpÚn‡É‹‡rá‚‹Äppí‹<Ñ√íåpåÚnnÓƒ»rêú#Çn¿èrnréíﬂ;ƒ¿?ÇÏé{pÚn‡É‹‡r«‚‹éƒppí‹<ƒ„ååpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?á;rﬂ€ín¿é‡‹¿l`å‚‹ÏxÇn¿‰ærúÿÚn„bÇÇlrå‚‹Á…8ÇåÚ1Ärå‚‹ÁI8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+read_pass=ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+no valid APs found with saved SSID
+switching to configuration mode
+del if0
+usl
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+apmode setup completed
+add 1
+aid 1
+station: 5c:cf:7f:57:3e:5d join, AID = 1
+exterior connected to the system
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET /favicon.ico HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+add 2
+aid 2
+station: 44:03:2c:7e:c8:90 join, AID = 2
+client connected to the captive portal
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending captive portal
+sent data to client
+user disconnected
+client connected to the captive portal
+received data from client
+data=POST /submit HTTP/1.1
+Host: 192.168.0.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.1/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 39
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+ssid=hbfcd_test_network&pass=hopewepass
+user submitted config
+WiFi details obtained from user
+sent data to client
+sent data
+user disconnected
+sent packet to exterior system
+received packet from exterior system: accept
+exterior has accepted WiFi credentials
+espconn_tcp_delete 1, 80
+station: 5c:cf:7f:57:3e:5d leave, AID = 1
+rm 1
+exterior disconnected
+AP mode cleanup completed
+station: 44:03:2c:7e:c8:90 leave, AID = 2
+rm 2
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-48
+bssid=b8:27:eb:a7:db:d
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+connecting ... status=1
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.24.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.24
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+tach_cnt=1349, rpm=2890, freq=337, drive_flag=0, drive_delay=4166
+reading=7936, humidity=48, status=0
+ext_humidity=0
+received humidity=44 from exterior
+tach_cnt=25, rpm=53, freq=6, drive_flag=1, drive_delay=4166
+reading=7948, humidity=48, status=0
+ext_humidity=44
+tach_cnt=271, rpm=580, freq=67, drive_flag=1, drive_delay=4166
+received humidity=44 from exterior
+tach_cnt=503, rpm=1077, freq=125, drive_flag=1, drive_delay=4166
+pm open,type:2 0
+reading=7888, humidity=48, status=0
+ext_humidity=44
+received humidity=44 from exterior
+tach_cnt=666, rpm=1427, freq=166, drive_flag=1, drive_delay=4166
+reading=7767, humidity=47, status=0
+ext_humidity=44
+tach_cnt=765, rpm=1639, freq=191, drive_flag=1, drive_delay=4166
+received humidity=44 from exterior
+tach_cnt=816, rpm=1748, freq=204, drive_flag=1, drive_delay=4166
+reading=7683, humidity=46, status=0
+ext_humidity=44
+received humidity=44 from exterior
+tach_cnt=830, rpm=1778, freq=207, drive_flag=1, drive_delay=3444
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending front page
+sent to client
+reading=7622, humidity=46, status=0
+ext_humidity=44
+tach_cnt=1017, rpm=2177, freq=254, drive_flag=1, drive_delay=3444
+received humidity=44 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Sec-WebSocket-Version: 13
+Origin: http://192.168.0.28
+Sec-WebSocket-Extensions: permessage-deflate
+Sec-WebSocket-Key: M4parcR4FxRPNCpsX+ZxzQ==
+DNT: 1
+Connection: keep-alive, Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+
+http GET request detected
+found key of length 24
+concat_key=M4parcR4FxRPNCpsX+ZxzQ==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+sha1_hash=ıˆ÷ª‘ú|rG˚ãÃÀ‰{
+f5:f6:d6:bb:d4:9b:35:7a:b:9c:7c:72:47:fb:8b:2:cc:cb:e4:7b:
+base64=9fbWu9SbNXoLnHxyR/uLAszL5Hs=
+sent=HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: 9fbWu9SbNXoLnHxyR/uLAszL5Hs=
+
+
+sent to client
+opcode=1
+received masked packet=Hello HBFC/D
+tach_cnt=1203, rpm=2577, freq=300, drive_flag=1, drive_delay=3444
+sent to client
+opcode=1
+received masked packet=ack
+reading=7562, humidity=46, status=0
+ext_humidity=44
+received humidity=44 from exterior
+tach_cnt=1229, rpm=2633, freq=307, drive_flag=1, drive_delay=3577
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7513, humidity=45, status=0
+ext_humidity=44
+tach_cnt=1204, rpm=2580, freq=301, drive_flag=1, drive_delay=3657
+received humidity=44 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3651
+sent to client
+opcode=1
+received masked packet=ack
+reading=7465, humidity=45, status=0
+ext_humidity=44
+tcp connection disconnected
+received humidity=44 from exterior
+client connected to webserver front end
+received data from client
+data=GET /favicon.ico HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+http GET request detected
+sending front page
+sent to client
+tach_cnt=1152, rpm=2468, freq=288, drive_flag=1, drive_delay=3619
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7412, humidity=45, status=0
+ext_humidity=44
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3609
+received humidity=44 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3592
+sent to client
+opcode=1
+received masked packet=ack
+reading=7359, humidity=44, status=0
+ext_humidity=44
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3592
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7315, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3588
+received humidity=43 from exterior
+tcp connection disconnected
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3573
+sent to client
+opcode=1
+received masked packet=ack
+reading=7282, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3567
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7270, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3561
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3563
+sent to client
+opcode=1
+received masked packet=ack
+reading=7262, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1182, rpm=2532, freq=295, drive_flag=1, drive_delay=3595
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ac9
+reading=7274, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1175, rpm=2515, freq=293, drive_flag=1, drive_delay=3610
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1157, rpm=2479, freq=289, drive_flag=1, drive_delay=3589
+sent to client
+opcode=1
+received masked packet=ack
+reading=7287, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3572
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7307, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3577
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3575
+sent to client
+opcode=1
+received masked packet=ack
+reading=7315, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3558
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3556
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3558
+sent to client
+opcode=1
+received masked packet=ack
+reading=7327, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3573
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7331, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3586
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3576
+sent to client
+opcode=1
+received masked packet=ack
+reading=7331, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3561
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3559
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3574
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3587
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3568
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3545
+sent to client
+opcode=1
+received masked packet=ack
+reading=7319, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3541
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7311, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3535
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1179, rpm=2526, freq=294, drive_flag=1, drive_delay=3561
+sent to client
+opcode=1
+received masked packet=ack
+reading=7299, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1189, rpm=2547, freq=297, drive_flag=1, drive_delay=3608
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7295, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1180, rpm=2528, freq=295, drive_flag=1, drive_delay=3636
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3608
+sent to client
+opcode=1
+received masked packet=ack
+reading=7287, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1143, rpm=2449, freq=285, drive_flag=1, drive_delay=3557
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7287, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3562
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3579
+sent to client
+opcode=1
+received masked packet=ack
+reading=7287, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3577
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7287, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3554
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1144, rpm=2451, freq=286, drive_flag=1, drive_delay=3505
+reading=7291, humidity=44, status=0
+ext_humidity=43
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+tach_cnt=1155, rpm=2475, freq=288, drive_flag=1, drive_delay=3480
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7295, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1196, rpm=2562, freq=299, drive_flag=1, drive_delay=3542
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1187, rpm=2543, freq=296, drive_flag=1, drive_delay=3585
+sent to client
+opcode=1
+received masked packet=ack
+reading=7303, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3585
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7319, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1149, rpm=2462, freq=287, drive_flag=1, drive_delay=3547
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3541
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3552
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7343, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1180, rpm=2528, freq=295, drive_flag=1, drive_delay=3580
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3582
+sent to client
+opcode=1
+received masked packet=ack
+reading=7351, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1155, rpm=2475, freq=288, drive_flag=1, drive_delay=3557
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3538
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3553
+sent to client
+opcode=1
+received masked packet=ack
+reading=7376, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3568
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7380, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3570
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3551
+sent to client
+opcode=1
+received masked packet=ack
+reading=7388, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3545
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7396, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3554
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3563
+sent to client
+opcode=1
+received masked packet=ack
+reading=7400, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2513, freq=293, drive_flag=1, drive_delay=3576
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7408, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3576
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3568
+sent to client
+opcode=1
+received masked packet=ack
+reading=7400, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3564
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7388, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3579
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3586
+sent to client
+opcode=1
+received masked packet=ack
+reading=7372, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3580
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3578
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3580
+sent to client
+opcode=1
+received masked packet=ack
+reading=7347, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3570
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3562
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3567
+sent to client
+opcode=1
+received masked packet=ack
+reading=7331, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3569
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3578
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3600
+sent to client
+opcode=1
+received masked packet=ack
+reading=7311, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3602
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7299, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3583
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3577
+sent to client
+opcode=1
+received masked packet=ack
+reading=7282, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3573
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7270, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3573
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3582
+sent to client
+opcode=1
+received masked packet=ack
+reading=7262, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3584
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7262, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3578
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3568
+sent to client
+opcode=1
+received masked packet=ack
+reading=7266, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3558
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7274, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3558
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3556
+sent to client
+opcode=1
+received masked packet=ack
+reading=7274, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3569
+sent to client
+opcode=1
+received masked packet=ack
+reading=7287, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3582
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3576
+sent to client
+opcode=1
+received masked packet=ack
+reading=7303, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1148, rpm=2460, freq=287, drive_flag=1, drive_delay=3536
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7315, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3536
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1183, rpm=2535, freq=295, drive_flag=1, drive_delay=3571
+reading=7327, humidity=44, status=0
+ext_humidity=43
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+tach_cnt=1178, rpm=2524, freq=294, drive_flag=1, drive_delay=3595
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1145, rpm=2453, freq=286, drive_flag=1, drive_delay=3548
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3525
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3540
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3557
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3564
+sent to client
+opcode=1
+received masked packet=ack
+reading=7339, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3558
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7339, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3556
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3554
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3569
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7339, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3580
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3578
+sent to client
+opcode=1
+received masked packet=ack
+reading=7339, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3583
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7347, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3570
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3570
+sent to client
+opcode=1
+received masked packet=ack
+reading=7351, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3564
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7355, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3569
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3565
+sent to client
+opcode=1
+received masked packet=ack
+reading=7355, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3561
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7351, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3553
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3558
+sent to client
+opcode=1
+received masked packet=ack
+reading=7339, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3563
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3574
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3570
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3555
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3551
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3558
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3573
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7343, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3569
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3576
+reading=7347, humidity=44, status=0
+ext_humidity=43
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3561
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7347, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3563
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3563
+sent to client
+opcode=1
+received masked packet=ack
+reading=7355, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3563
+sent to client
+opcode=1
+received masked packet=ack
+reading=7367, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3572
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3579
+sent to client
+opcode=1
+received masked packet=ack
+reading=7376, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3581
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7380, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3577
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3554
+sent to client
+opcode=1
+received masked packet=ack
+reading=7380, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3531
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7376, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3523
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1182, rpm=2532, freq=295, drive_flag=1, drive_delay=3555
+sent to client
+opcode=1
+received masked packet=ack
+reading=7367, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1178, rpm=2524, freq=294, drive_flag=1, drive_delay=3579
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3581
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3573
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3563
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7359, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3555
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3562
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3569
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3571
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3571
+reading=7359, humidity=44, status=0
+ext_humidity=43
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3567
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7359, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3552
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3563
+sent to client
+opcode=1
+received masked packet=ack
+reading=7347, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3574
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7343, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3566
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3562
+sent to client
+opcode=1
+received masked packet=ack
+reading=7339, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3562
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7347, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3564
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3577
+reading=7347, humidity=44, status=0
+ext_humidity=43
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3582
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7355, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3587
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3581
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3564
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3545
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3552
+sent to client
+opcode=1
+received masked packet=ack
+reading=7367, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3557
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7367, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3553
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3562
+sent to client
+opcode=1
+received masked packet=ack
+reading=7376, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3569
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7380, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3571
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3591
+sent to client
+opcode=1
+received masked packet=ack
+reading=7380, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3581
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7380, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3583
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3583
+sent to client
+opcode=1
+received masked packet=ack
+reading=7384, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1151, rpm=2466, freq=287, drive_flag=1, drive_delay=3549
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7384, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1147, rpm=2457, freq=286, drive_flag=1, drive_delay=3506
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3478
+sent to client
+opcode=1
+received masked packet=ack
+reading=7376, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3493
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7367, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3506
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3517
+reading=7367, humidity=44, status=0
+ext_humidity=43
+sent to client
+opcode=1
+received masked packet=ack
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3530
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3517
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3504
+sent to client
+opcode=1
+received masked packet=ack
+reading=7359, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3494
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7359, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3514
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3519
+sent to client
+opcode=1
+received masked packet=ack
+reading=7359, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1150, rpm=2464, freq=287, drive_flag=1, drive_delay=3483
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7359, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1144, rpm=2451, freq=286, drive_flag=1, drive_delay=3434
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3436
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3453
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7355, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3470
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3472
+sent to client
+opcode=1
+received masked packet=ack
+reading=7351, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3470
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7347, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3468
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3466
+sent to client
+opcode=1
+received masked packet=ack
+reading=7339, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1185, rpm=2539, freq=296, drive_flag=1, drive_delay=3505
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7335, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1205, rpm=2582, freq=301, drive_flag=1, drive_delay=3587
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1191, rpm=2552, freq=297, drive_flag=1, drive_delay=3639
+sent to client
+opcode=1
+received masked packet=ack
+reading=7327, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3626
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3613
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3607
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3629
+sent to client
+opcode=1
+received masked packet=ack
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3642
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3649
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3645
+sent to client
+opcode=1
+received masked packet=ack
+reading=7323, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3635
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3620
+reading=7319, humidity=44, status=0
+ext_humidity=43
+received humidity=44 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3627
+reading=7315, humidity=44, status=0
+ext_humidity=44
+tach_cnt=1180, rpm=2528, freq=295, drive_flag=1, drive_delay=3655
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3662
+reading=7315, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3654
+tcp connection disconnected
+reading=7303, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3652
+received humidity=43 from exterior
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3633
+reading=7307, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3640
+Ûrecevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.24.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.24
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+tach_cnt=1, rpm=2, freq=0, drive_flag=0, drive_delay=4166
+reading=7545, humidity=46, status=0
+ext_humidity=0
+received humidity=43 from exterior
+pm open,type:2 0
+tach_cnt=27, rpm=57, freq=6, drive_flag=1, drive_delay=4166
+reading=7554, humidity=46, status=0
+ext_humidity=43
+tach_cnt=280, rpm=600, freq=70, drive_flag=1, drive_delay=4166
+received humidity=43 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+http GET request detected
+sending front page
+client connected to webserver front end
+sent to client
+tach_cnt=517, rpm=1107, freq=129, drive_flag=1, drive_delay=4166
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Sec-WebSocket-Version: 13
+Origin: http://192.168.0.28
+Sec-WebSocket-Extensions: permessage-deflate
+Sec-WebSocket-Key: VNGZS3vE8GfKcrQNLb/rlw==
+DNT: 1
+Connection: keep-alive, Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+
+http GET request detected
+found key of length 24
+concat_key=VNGZS3vE8GfKcrQNLb/rlw==258EAFA5-E914-47DA-95CA-C5AB0DC85B11t@X¬ˇ?
+sha1_hash=êjÓ=ÍÄ_i›j–Tö≈áÄ
+90:6a:ee:3d:ea:80:5f:69:dd:6a:1f:d0:54:9a:c5:87:7:80:f0:19:
+base64=kGruPeqAX2ndah/QVJrFhweA8Bk=
+sent=HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: kGruPeqAX2ndah/QVJrFhweA8Bk=
+
+
+client connected to webserver front end
+sent to client
+opcode=1
+received masked packet=Hello HBFC/D
+reading=7525, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=680, rpm=1457, freq=170, drive_flag=1, drive_delay=4166
+sent to client
+opcode=1
+received masked packet=ack
+tcp connection disconnected
+reading=7481, humidity=45, status=0
+ext_humidity=43
+tach_cnt=776, rpm=1662, freq=194, drive_flag=1, drive_delay=4166
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tcp connection disconnected
+tach_cnt=829, rpm=1776, freq=207, drive_flag=1, drive_delay=4166
+sent to client
+opcode=1
+received masked packet=ac¨
+opcode=1
+received masked packet=fan=off
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=794, rpm=1701, freq=198, drive_flag=0, drive_delay=3367
+tcp connection disconnected
+sent to client
+opcode=1
+received masked packet=ack
+reading=7428, humidity=45, status=0
+ext_humidity=43
+tach_cnt=517, rpm=1107, freq=129, drive_flag=0, drive_delay=3367
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=353, rpm=756, freq=88, drive_flag=0, drive_delay=3367
+sent to client
+opcode=1
+received masked packet=ack
+reading=7420, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=264, rpm=565, freq=66, drive_flag=0, drive_delay=3367
+opcode=1
+received masked packet=fan=off
+opcode=1
+received masked packet=fan=off
+sent to client
+opcode=1
+received masked packet=ack
+reading=7420, humidity=45, status=0
+ext_humidity=43
+opcode=1
+received masked packet=fan=off
+tach_cnt=203, rpm=435, freq=50, drive_flag=0, drive_delay=3367
+received humidity=43 from exterior
+opcode=1
+received masked packet=fan=off
+opcode=1
+received masked packet=fan=off
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=158, rpm=338, freq=39, drive_flag=0, drive_delay=1205
+sent to client
+opcode=1
+received masked packet=ack
+reading=7420, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=122, rpm=261, freq=30, drive_flag=0, drive_delay=500
+sent to client
+opcode=1
+received masked packet=ack
+reading=7428, humidity=45, status=0
+ext_humidity=43
+tach_cnt=94, rpm=201, freq=23, drive_flag=0, drive_delay=500
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+∆Ö‰ÊÖ∑∑ udp 5000
+rlúÿrüå#‚n¿à‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bé#l``pÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏéé8åÚnnÓƒ¡åél`ê‹#Çn¿é{nréíﬂ;ƒ¿?l`nn‡√‹‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#ÇnÄrnréíﬂ;ƒ¿?íÏé;pÚn‡√‹Ä‡r«‚‹éƒppí‹<ƒ„åíåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?élrrﬂ€ín¿é‡r«„l`å‚‹ÏxÇn¿‰ær‹ÿÚn„bÇÇlrå‚úÁ…8ÇåÚ1Ärå‚‹Á…8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-51
+bssid=b8:27:eb:a7:db:d
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+state: 5 -> 2 (2c0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+connecting ... status=1
+connecting ... status=1
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.24.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.24
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+tach_cnt=1, rpm=2, freq=0, drive_flag=0, drive_delay=4166
+reading=7566, humidity=46, status=0
+ext_humidity=0
+received humidity=43 from exterior
+tach_cnt=27, rpm=57, freq=6, drive_flag=1, drive_delay=4166
+pm open,type:2 0
+reading=7570, humidity=46, status=0
+ext_humidity=43
+tach_cnt=282, rpm=604, freq=70, drive_flag=1, drive_delay=4166
+received humidity=43 from exterior
+tach_cnt=519, rpm=1112, freq=129, drive_flag=1, drive_delay=4166
+reading=7545, humidity=46, status=0
+ext_humidity=43
+received humidity=43 from exterior
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+http GET request detected
+sending front page
+sent to client
+tach_cnt=685, rpm=1467, freq=171, drive_flag=1, drive_delay=4166
+client connected to webserver front end
+received data from client
+data=GET / HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Sec-WebSocket-Version: 13
+Origin: http://192.168.0.28
+Sec-WebSocket-Extensions: permessage-deflate
+Sec-WebSocket-Key: LywRxLJVYQP+fyASGQlbqg==
+DNT: 1
+Connection: keep-alive, Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+
+http GET request detected
+found key of length 24
+concat_key=LywRxLJVYQP+fyASGQlbqg==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+sha1_hash=πªláë˛lÒË6πCj<˚˜©¡ß
+b9:bb:6c:87:91:fe:6c:f1:e8:36:b9:18:43:6a:3c:fb:f7:a9:c1:a7:
+base64=ubtsh5H+bPHoNrkYQ2o8+/epwac=
+sent=HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: ubtsh5H+bPHoNrkYQ2o8+/epwac=
+
+
+sent to client
+opcode=1
+received masked packet=Hello HBFC/D
+reading=7493, humidity=45, status=0
+ext_humidity=43
+tach_cnt=780, rpm=1671, freq=195, drive_flag=1, drive_delay=4166
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=827, rpm=1772, freq=206, drive_flag=1, drive_delay=4166
+sent to client
+opcode=1
+received masked packet=ack
+reading=7461, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+opcode=1
+received masked packet=fan=off
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=845, rpm=1810, freq=211, drive_flag=1, drive_delay=3476
+sent to client
+opcode=1
+received masked packet=ack
+reading=7436, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1034, rpm=2215, freq=258, drive_flag=0, drive_delay=3476
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tcp connection disconnected
+tach_cnt=839, rpm=1797, freq=209, drive_flag=0, drive_delay=3476
+sent to client
+opcode=1
+received masked packet=ack
+reading=7420, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=496, rpm=1062, freq=124, drive_flag=0, drive_delay=3476
+sent to client
+opcode=1
+received masked packet=ack
+reading=7412, humidity=45, status=0
+ext_humidity=43
+tach_cnt=343, rpm=735, freq=85, drive_flag=0, drive_delay=3476
+received humidity=43 from exterior
+opcode=1
+received masked packet=fan=on
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=256, rpm=548, freq=64, drive_flag=0, drive_delay=3476
+sent to client
+opcode=1
+received masked packet=ack
+reading=7412, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=269, rpm=576, freq=67, drive_flag=1, drive_delay=1552
+sent to client
+opcode=1
+received masked packet=ack
+reading=7412, humidity=45, status=0
+ext_humidity=43
+tach_cnt=129, rpm=276, freq=32, drive_flag=1, drive_delay=1552
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=631, rpm=1352, freq=157, drive_flag=1, drive_delay=1552
+sent to client
+opcode=1
+received masked packet=ack
+reading=7408, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1183, rpm=2535, freq=295, drive_flag=1, drive_delay=1552
+sent to client
+opcode=1
+received masked packet=ack
+reading=7388, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1251, rpm=2680, freq=312, drive_flag=1, drive_delay=1552
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1278, rpm=2738, freq=319, drive_flag=1, drive_delay=1790
+sent to client
+opcode=1
+received masked packet=ack
+reading=7372, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1279, rpm=2740, freq=319, drive_flag=1, drive_delay=2030
+sent to client
+opcode=1
+received masked packet=ack
+reading=7363, humidity=44, status=0
+ext_humidity=43
+tach_cnt=1284, rpm=2751, freq=321, drive_flag=1, drive_delay=2281
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1283, rpm=2749, freq=320, drive_flag=1, drive_delay=2530
+sent to client
+opcode=1
+received masked packet=ack
+reading=7367, humidity=44, status=0
+ext_humidity=43
+received humidity=43 from exterior
+sent to client
+opcode=1
+received masked packet=ack
+tach_cnt=1288, rpm=2760, freq=322, drive_flag=1, drive_delay=2790
+rlúòrﬂå#‚n¿‡åÇÏpå<éÇﬂÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$ârrpÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏéé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;Ñ¿?l`nn‡√‹Ä‡r«‚‹Äppí‹<ƒ√íåpåÚnnÓƒ»rê‹#ÇnÄrnréíﬂ;ƒ¿íÏé;pÚn‡√‹‡r«‚‹éƒppí‹<ƒ„åíåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?élrrü€ínÄ‡rá„l`å‚‹Ï8Çn¿‰>r‹ÿÚn„bÇÇlrå‚‹ÁI8ÇåÚ1Ärå‚‹Á…8ÇÏÚ10UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-50
+bssid=b8:27:eb:a7:db:d
+connecting ...
+waiting for IP ...
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+state: 5 -> 2 (2c0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+connecting ... status=1
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+listening on udp 5000
+rlúÿrüå#‚n¿‡åÇÏpå<éÇüÏ8íﬂ«í‹‰åpÚnn‰ƒ;Únƒí‹‰bÁ$	rrpÚn‡√‹Ä‡Ç«¿lÄÄÄb¿n‚„n¿‰éåÏé€åé8åÚnnÓƒ¡åél`ê‹#Çn¿é;nréíﬂ;ƒ¿?l`nn‡É‹‡rá‚úÄppíú<Ñ√íåpåÚnnÓƒ»rê‹#Çn¿èrnréíﬂ;ƒ¿?íÏé;pÚn‡√‹Ä‡r«‚‹éƒppí‹<ƒ„åíåpåÚnnÓƒ¿rê‹#Çn¿é;nréíﬂ;ƒ¿?élrrﬂ€ín¿é‡r«„l`å‚úÏxÇnÄ‰>rúÿÚn„bÇÇlrå‚úÁŸ8ÇåÚ1Ärå‚‹Á…8ÇÏÚ±0UART speed set to 115200
+mode : softAP(a2:20:a6:23:6f:81)
+add if1
+dhcp server start:(ip:192.168.4.1,mask:255.255.255.0,gw:192.168.4.1)
+bcn 100
+bcn 0
+del if1
+usl
+mode : sta(a0:20:a6:23:6f:81)
+add if0
+read flash, result=0
+read_ssid=hbfcd_test_network
+read_pass=hopewepass
+scanning for APs ...
+scandone
+AP scan succeeded, status=0
+found 1 APs, best_rssi=-51
+bssid=b8:27:eb:a7:db:d
+connecting ...
+waiting for IP ...
+connecting ... status=1
+connecting ... status=1
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+state: 5 -> 2 (2c0)
+rm 0
+connecting ... status=1
+reconnect
+state: 2 -> 0 (0)
+scandone
+state: 0 -> 2 (b0)
+state: 2 -> 3 (0)
+state: 3 -> 5 (10)
+add 0
+aid 2
+cnt 
+
+connected with hbfcd_test_network, channel 6
+dhcp client start...
+ip:192.168.0.28,mask:255.255.255.0,gw:192.168.0.1
+connecting ... status=5
+ip received
+listening on udp 5000
+recevied data (udp 5000): data=key=hbfcd_exterior_confirm&ip=192.168.0.24.
+)discovery key match detected, from ip=255.255.255.255
+discovery ip=192.168.0.24
+attempted to connect to exterior, result=0
+connected to exterior system
+initiating humidity readings
+tach_cnt=1589, rpm=3405, freq=397, drive_flag=0, drive_delay=4166
+reading=7400, humidity=45, status=0
+ext_humidity=0
+received humidity=42 from exterior
+tach_cnt=171, rpm=366, freq=42, drive_flag=1, drive_delay=4166
+reading=7404, humidity=45, status=0
+ext_humidity=42
+tach_cnt=403, rpm=863, freq=100, drive_flag=1, drive_delay=4166
+received humidity=42 from exterior
+pm open,type:2 0
+tach_cnt=579, rpm=1240, freq=144, drive_flag=1, drive_delay=4166
+reading=7392, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=712, rpm=1525, freq=178, drive_flag=1, drive_delay=4166
+reading=7392, humidity=45, status=0
+ext_humidity=42
+tach_cnt=786, rpm=1684, freq=196, drive_flag=1, drive_delay=4166
+received humidity=42 from exterior
+tach_cnt=824, rpm=1765, freq=206, drive_flag=1, drive_delay=3431
+reading=7392, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1033, rpm=2213, freq=258, drive_flag=1, drive_delay=3431
+reading=7396, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1215, rpm=2603, freq=303, drive_flag=1, drive_delay=3431
+received humidity=42 from exterior
+tach_cnt=1242, rpm=2661, freq=310, drive_flag=1, drive_delay=3592
+reading=7392, humidity=45, status=0
+ext_humidity=42
+received humidity=43 from exterior
+tach_cnt=1219, rpm=2612, freq=304, drive_flag=1, drive_delay=3704
+reading=7396, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3704
+received humidity=43 from exterior
+tach_cnt=1145, rpm=2453, freq=286, drive_flag=1, drive_delay=3657
+reading=7396, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1147, rpm=2457, freq=286, drive_flag=1, drive_delay=3614
+reading=7396, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3616
+received humidity=42 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3631
+reading=7396, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3648
+reading=7400, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3638
+received humidity=42 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3623
+reading=7408, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3630
+reading=7416, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3650
+received humidity=42 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3663
+reading=7424, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3663
+reading=7428, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3644
+received humidity=42 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3636
+reading=7428, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3634
+reading=7432, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3632
+received humidity=42 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3619
+reading=7436, humidity=45, status=0
+ext_humidity=42
+received humidity=43 from exterior
+tach_cnt=1163, rpm=2490, freq=290, drive_flag=1, drive_delay=3609
+reading=7436, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1178, rpm=2524, freq=294, drive_flag=1, drive_delay=3633
+received humidity=43 from exterior
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3653
+reading=7436, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3649
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3626
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3624
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3633
+reading=7448, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3640
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3647
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=42 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3647
+reading=7448, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3645
+received humidity=42 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3641
+reading=7452, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3639
+reading=7457, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3629
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3636
+reading=7465, humidity=45, status=0
+ext_humidity=42
+received humidity=43 from exterior
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3656
+reading=7469, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3661
+received humidity=43 from exterior
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3638
+reading=7473, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3628
+reading=7477, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3643
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3633
+reading=7477, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3631
+reading=7473, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3640
+received humidity=43 from exterior
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3651
+reading=7473, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3651
+reading=7477, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3658
+received humidity=43 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3645
+reading=7473, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3630
+reading=7473, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3626
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3626
+reading=7469, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3639
+reading=7469, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3637
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3642
+reading=7473, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3638
+reading=7477, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3615
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3617
+reading=7485, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2505, freq=292, drive_flag=1, drive_delay=3622
+reading=7489, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3631
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3640
+reading=7489, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3647
+reading=7489, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3649
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3643
+reading=7493, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3645
+reading=7489, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1151, rpm=2466, freq=287, drive_flag=1, drive_delay=3611
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3596
+reading=7485, humidity=45, status=0
+ext_humidity=43
+received humidity=42 from exterior
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3618
+reading=7485, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1178, rpm=2524, freq=294, drive_flag=1, drive_delay=3642
+received humidity=42 from exterior
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3653
+reading=7485, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3660
+reading=7481, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3650
+received humidity=42 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3648
+reading=7473, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3646
+reading=7469, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3651
+received humidity=42 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3645
+reading=7457, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3635
+reading=7448, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3622
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3629
+reading=7440, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3644
+reading=7432, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3664
+received humidity=42 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3654
+reading=7428, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3654
+reading=7428, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3648
+received humidity=42 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3646
+reading=7428, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3668
+reading=7436, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3664
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3649
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3647
+reading=7452, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3619
+received humidity=43 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3602
+reading=7452, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1181, rpm=2530, freq=295, drive_flag=1, drive_delay=3632
+reading=7448, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3639
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3648
+reading=7452, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3650
+reading=7452, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3642
+received humidity=43 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3629
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3640
+reading=7444, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3642
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3640
+reading=7440, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3645
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3637
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3644
+reading=7436, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3649
+reading=7428, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3656
+received humidity=42 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3658
+reading=7424, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3639
+reading=7420, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3635
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3642
+reading=7416, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3644
+reading=7416, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3649
+received humidity=42 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3647
+reading=7420, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3637
+reading=7428, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1152, rpm=2468, freq=288, drive_flag=1, drive_delay=3605
+received humidity=42 from exterior
+tach_cnt=1158, rpm=2481, freq=289, drive_flag=1, drive_delay=3586
+reading=7440, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1182, rpm=2532, freq=295, drive_flag=1, drive_delay=3618
+reading=7444, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1182, rpm=2532, freq=295, drive_flag=1, drive_delay=3650
+received humidity=42 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3652
+reading=7448, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3637
+reading=7452, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3639
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3646
+reading=7452, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3642
+reading=7461, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3632
+received humidity=42 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3617
+reading=7461, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3634
+reading=7465, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3626
+received humidity=42 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3616
+reading=7465, humidity=45, status=0
+ext_humidity=42
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3629
+reading=7465, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3651
+received humidity=42 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3666
+reading=7461, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3662
+reading=7452, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3634
+received humidity=42 from exterior
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3606
+reading=7452, humidity=45, status=0
+ext_humidity=42
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3608
+reading=7444, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1179, rpm=2526, freq=294, drive_flag=1, drive_delay=3634
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3643
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3652
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3657
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3659
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=42 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3657
+reading=7448, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3649
+received humidity=43 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3641
+reading=7440, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3643
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3637
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3635
+reading=7436, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3635
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3646
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3646
+reading=7432, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3629
+reading=7428, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3616
+received humidity=43 from exterior
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3633
+reading=7424, humidity=45, status=0
+ext_humidity=43
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3640
+reading=7420, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3642
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3640
+reading=7416, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3647
+reading=7416, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3649
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3647
+reading=7428, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3654
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3654
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3652
+reading=7432, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3624
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1151, rpm=2466, freq=287, drive_flag=1, drive_delay=3590
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3588
+reading=7436, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1185, rpm=2539, freq=296, drive_flag=1, drive_delay=3627
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1180, rpm=2528, freq=295, drive_flag=1, drive_delay=3655
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3649
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=42 from exterior
+tach_cnt=1151, rpm=2466, freq=287, drive_flag=1, drive_delay=3615
+reading=7448, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3600
+received humidity=43 from exterior
+tach_cnt=1179, rpm=2526, freq=294, drive_flag=1, drive_delay=3626
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1180, rpm=2528, freq=295, drive_flag=1, drive_delay=3654
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3661
+received humidity=42 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3655
+reading=7444, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3645
+reading=7444, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3643
+received humidity=43 from exterior
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3660
+reading=7452, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3652
+reading=7452, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3639
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3641
+reading=7461, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3648
+reading=7452, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3655
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3645
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3637
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3629
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3638
+reading=7440, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3636
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3638
+received humidity=42 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3630
+reading=7436, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3632
+reading=7432, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3647
+received humidity=42 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3654
+reading=7432, humidity=45, status=0
+ext_humidity=42
+received humidity=42 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3648
+reading=7436, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3642
+received humidity=42 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3642
+reading=7436, humidity=45, status=0
+ext_humidity=42
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3636
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3638
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3638
+reading=7428, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3638
+reading=7424, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3634
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3630
+reading=7432, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3628
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3639
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3641
+reading=7432, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3641
+reading=7436, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3641
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3643
+reading=7440, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3658
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3669
+received humidity=43 from exterior
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3646
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1141, rpm=2445, freq=285, drive_flag=1, drive_delay=3591
+reading=7452, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3576
+received humidity=43 from exterior
+tach_cnt=1182, rpm=2532, freq=295, drive_flag=1, drive_delay=3608
+reading=7461, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1189, rpm=2547, freq=297, drive_flag=1, drive_delay=3655
+reading=7461, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1175, rpm=2517, freq=293, drive_flag=1, drive_delay=3672
+received humidity=43 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3655
+reading=7461, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1153, rpm=2470, freq=288, drive_flag=1, drive_delay=3625
+reading=7465, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3621
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3630
+reading=7469, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3637
+reading=7473, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1177, rpm=2522, freq=294, drive_flag=1, drive_delay=3659
+received humidity=43 from exterior
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3679
+reading=7469, humidity=45, status=0
+ext_humidity=43
+received humidity=42 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3671
+reading=7473, humidity=45, status=0
+ext_humidity=42
+tach_cnt=1149, rpm=2462, freq=287, drive_flag=1, drive_delay=3633
+received humidity=43 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3625
+reading=7473, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3636
+reading=7473, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3651
+received humidity=43 from exterior
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3645
+reading=7473, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3645
+reading=7469, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3656
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3658
+reading=7465, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3658
+reading=7461, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3652
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3637
+reading=7461, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3635
+reading=7461, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3644
+received humidity=43 from exterior
+tach_cnt=1171, rpm=2509, freq=292, drive_flag=1, drive_delay=3653
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3651
+reading=7448, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3649
+received humidity=43 from exterior
+tach_cnt=1159, rpm=2483, freq=289, drive_flag=1, drive_delay=3632
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3634
+reading=7448, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3639
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3644
+reading=7452, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3657
+reading=7452, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3662
+received humidity=43 from exterior
+tach_cnt=1166, rpm=2498, freq=291, drive_flag=1, drive_delay=3660
+reading=7452, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3637
+reading=7448, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3627
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3632
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3637
+reading=7452, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3631
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3627
+reading=7448, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3627
+reading=7448, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3638
+received humidity=43 from exterior
+tach_cnt=1174, rpm=2515, freq=293, drive_flag=1, drive_delay=3653
+reading=7452, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1163, rpm=2492, freq=290, drive_flag=1, drive_delay=3645
+reading=7444, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3635
+received humidity=43 from exterior
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3620
+reading=7444, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1154, rpm=2472, freq=288, drive_flag=1, drive_delay=3592
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3582
+received humidity=43 from exterior
+tach_cnt=1184, rpm=2537, freq=296, drive_flag=1, drive_delay=3619
+reading=7436, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1182, rpm=2532, freq=295, drive_flag=1, drive_delay=3651
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3656
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3646
+reading=7436, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1156, rpm=2477, freq=289, drive_flag=1, drive_delay=3623
+reading=7440, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3617
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3619
+reading=7432, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3619
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3624
+received humidity=43 from exterior
+tach_cnt=1169, rpm=2505, freq=292, drive_flag=1, drive_delay=3629
+reading=7428, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3625
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3625
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3625
+reading=7432, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3625
+reading=7436, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3627
+received humidity=43 from exterior
+tach_cnt=1170, rpm=2507, freq=292, drive_flag=1, drive_delay=3634
+reading=7436, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3624
+reading=7432, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1167, rpm=2500, freq=291, drive_flag=1, drive_delay=3624
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3626
+reading=7424, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3639
+reading=7428, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3641
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3637
+reading=7424, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1162, rpm=2490, freq=290, drive_flag=1, drive_delay=3627
+reading=7416, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1164, rpm=2494, freq=291, drive_flag=1, drive_delay=3621
+received humidity=43 from exterior
+tach_cnt=1165, rpm=2496, freq=291, drive_flag=1, drive_delay=3617
+reading=7412, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1168, rpm=2502, freq=292, drive_flag=1, drive_delay=3619
+reading=7412, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1172, rpm=2511, freq=293, drive_flag=1, drive_delay=3630
+received humidity=43 from exterior
+tach_cnt=1173, rpm=2513, freq=293, drive_flag=1, drive_delay=3643
+reading=7404, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3630
+reading=7412, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1160, rpm=2485, freq=290, drive_flag=1, drive_delay=3615
+received humidity=43 from exterior
+tach_cnt=1155, rpm=2475, freq=288, drive_flag=1, drive_delay=3590
+reading=7412, humidity=45, status=0
+ext_humidity=43
+received humidity=43 from exterior
+tach_cnt=1161, rpm=2487, freq=290, drive_flag=1, drive_delay=3577
+reading=7416, humidity=45, status=0
+ext_humidity=43
+tach_cnt=1176, rpm=2520, freq=294, drive_flag=1, drive_delay=3597
+received humidity=43 from exterior
