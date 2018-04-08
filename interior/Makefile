@@ -38,13 +38,13 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) -c $(CFLAGS) $< $(LDFLAGS) $(LDLIBS) -o $@
 
 flash: $(BINDIR)/user_main-0x00000.bin
-	esptool.py --port /dev/ttyUSB0 --baud 57600 write_flash 0 $(BINDIR)/user_main-0x00000.bin 0x10000 $(BINDIR)/user_main-0x10000.bin
+	esptool.py --port /dev/ttyUSB0 write_flash 0 $(BINDIR)/user_main-0x00000.bin 0x10000 $(BINDIR)/user_main-0x10000.bin
 
 default: $(BINDIR)/esp_init_data_default.bin
-	esptool.py --port /dev/ttyUSB0 --baud 57600 write_flash 0x3FC000 $(BINDIR)/esp_init_data_default.bin
+	esptool.py --port /dev/ttyUSB0 write_flash 0x3FC000 $(BINDIR)/esp_init_data_default.bin
 
 erase:
-	esptool.py --port /dev/ttyUSB0 --baud 57600 erase_flash
+	esptool.py --port /dev/ttyUSB0 erase_flash
 
 clean:
 	rm -f $(TARGET) $(OBJ) $(BINDIR)/user_main-0x00000.bin $(BINDIR)/user_main-0x10000.bin

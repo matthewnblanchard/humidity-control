@@ -15,6 +15,8 @@ Content-type: text/html\r\n\r\n\
   <script>\
     var ws;\
     var debug = 0;\
+    var ext_data = [];\
+    var int_data = [];\
     function button_ws() {\
       ws = new WebSocket('ws://' + window.location.hostname + ':80/');\
       ws.binaryType = \"arraybuffer\";\
@@ -30,9 +32,21 @@ Content-type: text/html\r\n\r\n\
           var int_element = document.getElementById(\"int_humidity\");\
           var ext_element = document.getElementById(\"ext_humidity\");\
           var rpm_element = document.getElementById(\"rpm\");\
-          int_element.innerHTML = view.getFloat32(0, true).toPrecision(4);\
-          ext_element.innerHTML = view.getFloat32(4, true).toPrecision(4);\
+          var int_val = view.getFloat32(0, true);\
+          var ext_val = view.getFloat32(4, true);\
+          int_element.innerHTML = int_val.toPrecision(4);\
+          ext_element.innerHTML = ext_val.toPrecision(4);\
           rpm_element.innerHTML = view.getInt32(8, true);\
+          if(int_data.length >= 100) {\
+            int_data.shift();\
+            ext_data.shift();\
+            int_data.push(int_val);\
+            ext_data.push(ext_val);\
+          } else {\
+            int_data.push(int_val);\
+            ext_data.push(ext_val);\
+          }\
+          update_plot();\
         };\
         ws.send(\"ack\");\
       };\
@@ -71,6 +85,83 @@ Content-type: text/html\r\n\r\n\
         debug = 0;\
       }\
     };\
+    function update_plot() {\
+      var plot = document.getElementById(\"plot\");\
+      var ctx = plot.getContext('2d');\
+      ctx.clearRect(0, 0, plot.width, plot.height);\
+      ctx.font = \"14px Arial\";\
+      ctx.fillStyle = \"black\";\
+      ctx.textAlign = \"center\";\
+      ctx.strokeStyle=\"#D3D3D3\";\
+      ctx.lineWidth=0.5;\
+      for (var i = 1; i < 10; i++) {\
+        ctx.fillText(i*10, 10, plot.height - ((i / 10.0) * plot.height) - 1);\
+        ctx.moveTo(15, plot.height - ((i / 10.0) * plot.height));\
+        ctx.lineTo(plot.width, plot.height - ((i / 10.0) * plot.height));\
+        ctx.stroke();\
+      }\
+      ctx.fillText(\"RH (%)\", 35, 15);\
+      for (var i = 1; i < 10; i++) {\
+        ctx.fillText(i*10, (i / 10.0) * plot.width, plot.height - 10);\
+        ctx.moveTo((i / 10.0) * plot.width, plot.height - 20);\
+        ctx.lineTo((i / 10.0) * plot.width, 0);\
+        ctx.stroke();\
+      }\
+      ctx.fillText(\"Time (s)\", plot.width - 30, plot.height - 15);\
+      ctx.strokeStyle=\"#FF0000\";\
+      ctx.lineWidth=3;\
+      ctx.beginPath();\
+      ctx.moveTo(0, (100 - int_data[0]) / 100 * plot.height);\
+      for (var i = 1; i < int_data.length; i++) {\
+        ctx.lineTo((i / 99.0) * plot.width, (100 - int_data[i]) / 100 * plot.height);\
+      }\
+      ctx.stroke();\
+      ctx.strokeStyle=\"#0000FF\";\
+      ctx.lineWidth=3;\
+      ctx.beginPath();\
+      ctx.moveTo(0, (100 - ext_data[0]) / 100 * plot.height);\
+      for (var i = 1; i < ext_data.length; i++) {\
+        ctx.lineTo((i / 99.0) * plot.width, (100 - ext_data[i]) / 100 * plot.height);\
+      }\
+      ctx.stroke();\
+      ctx.strokeStyle=\"#00FF00\";\
+      ctx.lineWidth=3;\
+      ctx.beginPath();\
+      var limit = (40 > ext_data[0]) ? 45 : (ext_data[0] + 5);\
+      ctx.moveTo(0, (100 - limit) / 100 * plot.height);\
+      for (var i = 1; i < ext_data.length; i++) {\
+        limit = (40 > ext_data[i]) ? 45 : (ext_data[i] + 5);\
+        ctx.lineTo((i / 99.0) * plot.width, (100 - limit) / 100 * plot.height);\
+      }\
+      ctx.stroke();\
+      ctx.fillStyle=\"white\";\
+      ctx.strokeStyle=\"black\";\
+      ctx.lineWidth=0.5;\
+      ctx.fillRect(plot.width - 160, plot.height - 150, 100, 90);\
+      ctx.strokeRect(plot.width - 160, plot.height - 150, 100, 90);\
+      ctx.fillStyle=\"black\";\
+      ctx.fillText(\"Int\", plot.width - 140, plot.height - 130);\
+      ctx.fillText(\"Ext\", plot.width - 140, plot.height - 100);\
+      ctx.fillText(\"Spec\", plot.width - 140, plot.height - 70);\
+      ctx.strokeStyle=\"#FF0000\";\
+      ctx.lineWidth=3;\
+      ctx.beginPath();\
+      ctx.moveTo(plot.width - 100, plot.height - 135);\
+      ctx.lineTo(plot.width - 70, plot.height - 135);\
+      ctx.stroke();\
+      ctx.strokeStyle=\"#0000FF\";\
+      ctx.lineWidth=3;\
+      ctx.beginPath();\
+      ctx.moveTo(plot.width - 100, plot.height - 105);\
+      ctx.lineTo(plot.width - 70, plot.height - 105);\
+      ctx.stroke();\
+      ctx.strokeStyle=\"#00FF00\";\
+      ctx.lineWidth=3;\
+      ctx.beginPath();\
+      ctx.moveTo(plot.width - 100, plot.height - 75);\
+      ctx.lineTo(plot.width - 70, plot.height - 75);\
+      ctx.stroke();\
+    }\
   </script>\
 <body>\
   <h1>\
@@ -115,6 +206,9 @@ Content-type: text/html\r\n\r\n\
       <td id=\"rpm\">Unknown</td>\
     </tr>\
     <table>\
+    <br>\
+    <h2>Humidity vs. Time Plot</h2>\
+    <canvas id=\"plot\" width=\"800\" height=\"600\" style=\"border:1px solid #d3d3d3;\"></canvas>\
   </div>\
 </body>\
 </html>"
@@ -427,6 +521,7 @@ void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 	uint8 *p1 = NULL;	// Char pointer 1, for data navigation
 	uint8 *p2 = NULL;	// Char pointer 2, for data navigation
 	uint32 speed = 0;	// Fan speed in RPM
+  uint32 delay = 0; // TRIAC delay in us
 
 	// Search for each config element
 	p1 = (uint8 *)os_strstr(data, "speed=");		// Locate speed element
@@ -438,18 +533,41 @@ void ICACHE_FLASH_ATTR user_ws_parse_data(uint8 *data, uint16 len)
 		speed > FAN_RPM_MAX ? (speed = FAN_RPM_MAX) : 0;	// Cut speed down to max if RPM is above maximum
 		speed < FAN_RPM_MIN ? (speed = FAN_RPM_MIN) : 0;	// Bump speed up to min if the RPM is below minimum
 		desired_rpm = speed;				// Modify triac delay
+    control_mode = CONTROL_SPEED;
 	}
-	p1 = (uint8 *)os_strstr(data, "fan=");			// Locate fan state element
+  p1 = (uint8 *)os_strstr(data, "delay=");		// Locate speed element
+  if (p1 != NULL) {
+    p1 += 6;						// Move to end of 6 char substr "speed="
+    p2 = (uint8 *)os_strstr(p1, ",");			// Find end of speed element value (CSV)
+    delay = user_atoi(p1, p2 - p1);				// Extract integer fan RPM
+
+    delay > SUPPLY_HALF_CYCLE ? (delay = SUPPLY_HALF_CYCLE) : 0;	// Cut speed down to max if RPM is above maximum
+    delay < 0 ? (delay = 0) : 0;	// Bump speed up to min if the RPM is below minimum
+    desired_delay = delay;				        // Modify triac delay
+    control_mode = CONTROL_DELAY;
+  }
+	p1 = (uint8 *)os_strstr(data, "mode=");			// Locate fan state element
 	if (p1 != NULL) {
 		p1 += 4;				// Move to end of 4 char substr "fan="
-		p2 = (uint8 *)os_strstr(p1, "on");	// Check if the state is "on"
+
+    // Check if the state is "on"
+		p2 = (uint8 *)os_strstr(p1, "lock_on");
 		if (p2 != NULL) {
-			fan_on = true;			// Change fan flag
+			fan_mode = FAN_LOCK_ON;
 		}
-		p2 = (uint8 *)os_strstr(p1, "off");	// Change fan flag
+
+    // Change if the state is "off"
+		p2 = (uint8 *)os_strstr(p1, "lock_off");
 		if (p2 != NULL) {
-			fan_on = false;
+			fan_mode = FAN_LOCK_OFF;
 		}
+
+    // Change if the state is "normal"
+    p2 = (uint8 *)os_strstr(p1, "normal");
+    if (p2 != NULL) {
+      fan_mode = FAN_NORMAL;
+    }
+
 	}
 
 	return;
