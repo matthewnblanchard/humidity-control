@@ -14,6 +14,8 @@
 #include "user_flash.h"
 #include "user_task.h"
 
+#define DEBUG_CONFIG_BYPASS 1
+
 /* ------------------- */
 /* Function Prototypes */
 /* ------------------- */
@@ -21,7 +23,7 @@
 // User Task: user_scan(os_event_t *e)
 // Desc: Pulls SSID/pass from flash memory then attempts to find an AP
 //      broadcasting that SSID.
-// Args: 
+// Args:
 //	os_event_t *e: Pointer to OS event data
 // Return:
 //	Nothing
