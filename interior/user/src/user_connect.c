@@ -30,8 +30,8 @@ Content-type: text/html\r\n\r\n\
           var int_element = document.getElementById(\"int_humidity\");\
           var ext_element = document.getElementById(\"ext_humidity\");\
           var rpm_element = document.getElementById(\"rpm\");\
-          int_element.innerHTML = view.getFloat32(0, true);\
-          ext_element.innerHTML = view.getFloat32(4, true);\
+          int_element.innerHTML = view.getFloat32(0, true).toPrecision(4);\
+          ext_element.innerHTML = view.getFloat32(4, true).toPrecision(4);\
           rpm_element.innerHTML = view.getInt32(8, true);\
         };\
         ws.send(\"ack\");\

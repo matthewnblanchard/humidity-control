@@ -4,7 +4,7 @@
 #include "user_fan.h"
 
 // Variables
-volatile bool drive_flag = true;				// True if the fan should be driven
+volatile bool drive_flag = false;				// True if the fan should be driven
 volatile sint32 desired_delay = SUPPLY_HALF_CYCLE / 2;
 volatile sint32 drive_delay = SUPPLY_HALF_CYCLE / 2;	// Delay on triac pulse in us
 volatile uint16 tach_cnt = 0;				// Count of tachometer pulses

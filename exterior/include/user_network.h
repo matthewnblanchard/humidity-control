@@ -14,6 +14,8 @@
 #include "user_flash.h"
 #include "user_task.h"
 
+#define DEBUG_CONFIG_BYPASS 1
+
 // Global configurations (must be accessible from callback functions)
 struct station_config client_config;            // Station configuration
 
@@ -26,7 +28,7 @@ struct station_config client_config;            // Station configuration
 //      broadcasting that SSID. If it finds one, attempts to connect.
 //      If it doesn't, switches to SoftAP mode to establish its own
 //      SSID, so that a user can connect and give it config
-// Args: 
+// Args:
 //	os_event_t *e: Pointer to OS event data
 // Returns:
 //	Nothing

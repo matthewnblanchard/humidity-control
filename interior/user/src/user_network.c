@@ -15,26 +15,34 @@ void ICACHE_FLASH_ATTR user_scan(os_event_t *e)
         struct user_data_station_config saved_conn;     // Retrieved station config
         uint8 flash_result = 0;                         // Result of flash operation
 
-	// Clear structures
-	os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
-	os_memset(&saved_conn, 0, sizeof(saved_conn));
+         // Clear structures
+         os_memset(&ap_scan_config, 0, sizeof(ap_scan_config));
+         os_memset(&saved_conn, 0, sizeof(saved_conn));
 
         // Set ESP8266 to station (client) mode
         if (wifi_set_opmode_current(STATION_MODE) != true) {
-		PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to set wifi mode to station\r\n");
-		TASK_RETURN(SIG_AP_SCAN, PAR_AP_SCAN_STATION_MODE_FAILURE);
-		return;
-	};
+          PRINT_DEBUG(DEBUG_ERR, "ERROR: failed to set wifi mode to station\r\n");
+          TASK_RETURN(SIG_AP_SCAN, PAR_AP_SCAN_STATION_MODE_FAILURE);
+          return;
+        };
 
-        // Pull station info (SSID/pass) from memory
-        flash_result = FLASH_READ(USER_DATA_START_ADDR, &saved_conn);
-        if (flash_result != SPI_FLASH_RESULT_OK) {
+        if (DEBUG_CONFIG_BYPASS) {
+          char debug_ssid[32] = "hbfcd_test_network";
+          char debug_pass[64] = "hopewepass";
+          os_memcpy(saved_conn.config.ssid, debug_ssid, sizeof(char)*32);
+          os_memcpy(saved_conn.config.password, debug_pass, sizeof(char)*64);
+        } else {
+
+          // Pull station info (SSID/pass) from memory
+          flash_result = FLASH_READ(USER_DATA_START_ADDR, &saved_conn);
+          if (flash_result != SPI_FLASH_RESULT_OK) {
                 PRINT_DEBUG(DEBUG_ERR, "ERROR: flash read failed\r\n");
-		TASK_RETURN(SIG_AP_SCAN, PAR_AP_SCAN_FLASH_FAILURE);
+                TASK_RETURN(SIG_AP_SCAN, PAR_AP_SCAN_FLASH_FAILURE);
                 return;
+          }
         }
 
-	// Print results
+        // Print results
        	PRINT_DEBUG(DEBUG_HIGH, "read flash, result=%d\r\n", flash_result);
         PRINT_DEBUG(DEBUG_HIGH, "read_ssid=%s\r\n", saved_conn.config.ssid);
         PRINT_DEBUG(DEBUG_HIGH, "read_pass=%s\r\n", saved_conn.config.password);
